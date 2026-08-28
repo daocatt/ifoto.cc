@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useCallback } from 'react'
-import { Excalidraw, MainMenu, Footer } from '@excalidraw/excalidraw'
+import { Excalidraw, Footer } from '@excalidraw/excalidraw'
 import type { ExcalidrawImperativeAPI } from '@excalidraw/excalidraw/types'
 
 interface ExcalidrawBoardProps {
