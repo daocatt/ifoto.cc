@@ -16,12 +16,22 @@ scoresRouter.post('/', authMiddleware, async (c) => {
     return c.json({ error: '参数不完整' }, 400)
   }
 
+  // 服务端校验：拒绝负数/非数字/超大数值，防止客户端伪造天价战绩
+  const numScore = Number(score)
+  const numRound = Number(roundCount) || 1
+  if (!Number.isFinite(numScore) || numScore < 0 || numScore > 1000) {
+    return c.json({ error: '分数值非法' }, 400)
+  }
+  if (!Number.isInteger(numRound) || numRound < 1 || numRound > 100) {
+    return c.json({ error: '回合数非法' }, 400)
+  }
+
   const [record] = await db.insert(schema.gameRecords).values({
     userId: user.id,
     roomId: roomId,
     roomName: roomName || '游戏房间',
-    roundCount: roundCount || 1,
-    score: Number(score) || 0
+    roundCount: numRound,
+    score: Math.floor(numScore)
   }).returning()
 
   return c.json({ message: '战绩记录成功', record })

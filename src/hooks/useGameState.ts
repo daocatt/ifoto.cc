@@ -74,11 +74,14 @@ export function useGameState(
 
   // Refs 保持最新值，避免把函数/对象放进 useEffect deps 导致副作用重建
   const currentRoomIdRef = useRef(currentRoomId)
+  const currentUserRef = useRef(currentUser)
   const playersRef = useRef(players)
   const gameStateRef = useRef(gameState)
+  const pendingScoreRef = useRef(0)
   const onRemoteSceneUpdateRef = useRef(onRemoteSceneUpdate)
   const onRemoteSceneClearRef = useRef(onRemoteSceneClear)
   useEffect(() => { currentRoomIdRef.current = currentRoomId }, [currentRoomId])
+  useEffect(() => { currentUserRef.current = currentUser }, [currentUser])
   useEffect(() => { playersRef.current = players }, [players])
   useEffect(() => { gameStateRef.current = gameState }, [gameState])
   useEffect(() => { onRemoteSceneUpdateRef.current = onRemoteSceneUpdate }, [onRemoteSceneUpdate])
@@ -173,6 +176,19 @@ export function useGameState(
     sendWS({ type: 'CLEAR_CANVAS_SCENE', roomId: currentRoomIdRef.current })
   }, [sendWS])
 
+  // ── 1.5 回合结束时一次性落库当前登录玩家本回合获得的分数（避免每点一次 +1 都写一条记录） ──
+  const flushScore = useCallback(() => {
+    const gained = pendingScoreRef.current
+    if (gained <= 0 || !currentRoomIdRef.current) return
+    pendingScoreRef.current = 0
+    api.reportScore({
+      roomId: currentRoomIdRef.current,
+      roomName: currentRoomIdRef.current === 'english' ? '英语猜猜看' : '你画我猜',
+      score: gained,
+      roundCount: 1
+    }).catch(() => {})
+  }, [])
+
   // ── 2. 加入/切换房间 ──
   const joinRoom = useCallback((name: string, avatar: string, roomId: RoomId) => {
     // 优先复用 localStorage 中已有的 player ID（同一浏览器再次进入保持同一身份）
@@ -213,13 +229,14 @@ export function useGameState(
         const next = { ...prev, timeLeft: prev.timeLeft - 1 }
         if (next.timeLeft === 0) {
           next.isTimerRunning = false
+          flushScore()
           sendWS({ type: 'UPDATE_GAME_STATE', roomId: currentRoomIdRef.current, payload: { gameState: { isTimerRunning: false, timeLeft: 0 } } })
         }
         return next
       })
     }, 1000)
     return () => { if (timerRef.current) clearTimeout(timerRef.current) }
-  }, [gameState.isTimerRunning, gameState.timeLeft, sendWS])
+  }, [gameState.isTimerRunning, gameState.timeLeft, sendWS, flushScore])
 
   // ── 4. 加减分 ──
   const addScore = useCallback((playerId: string, delta: number, event?: React.MouseEvent) => {
@@ -234,14 +251,9 @@ export function useGameState(
       triggerCelebration(x, y)
       sendWS({ type: 'CELEBRATION_EVENT', roomId: currentRoomIdRef.current, payload: { x, y } })
 
-      // 若加分玩家是当前登录者，异步落库
-      if (currentRoomIdRef.current) {
-        api.reportScore({
-          roomId: currentRoomIdRef.current,
-          roomName: currentRoomIdRef.current === 'english' ? '英语猜猜看' : '你画我猜',
-          score: delta,
-          roundCount: 1
-        }).catch(() => {})
+      // 仅当被加分玩家是当前登录者时累计，待回合结束时统一落库
+      if (playerId === currentUserRef.current?.id) {
+        pendingScoreRef.current += delta
       }
     }
   }, [broadcastState, sendWS])
@@ -297,8 +309,9 @@ export function useGameState(
       timeLeft: gameStateRef.current.totalTime, isTimerRunning: false
     }
     setGameState(prev => ({ ...prev, ...patch }))
+    flushScore()
     broadcastState(patch)
-  }, [getNextDrawerId, broadcastState])
+  }, [getNextDrawerId, broadcastState, flushScore])
 
   const nextRound = useCallback(() => {
     const nextId = getNextDrawerId()
@@ -316,8 +329,9 @@ export function useGameState(
       history: historyItem ? [historyItem, ...gs.history].slice(0, 20) : gs.history
     }
     setGameState(prev => ({ ...prev, ...patch }))
+    flushScore()
     broadcastState(patch)
-  }, [getNextDrawerId, broadcastState])
+  }, [getNextDrawerId, broadcastState, flushScore])
 
   const sendQuickChat = useCallback((text: string) => {
     if (!currentUser?.id) return
