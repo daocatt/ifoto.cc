@@ -1,5 +1,7 @@
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
+import { initDb, schema } from './db.js'
+import { eq } from 'drizzle-orm'
 
 // JWT 密钥：必须在 .env 中显式配置（online 模式启动时校验，不再使用硬编码兜底密钥）
 const JWT_SECRET = process.env.JWT_SECRET
@@ -41,17 +43,56 @@ export function verifyToken(token) {
   }
 }
 
-// Hono 认证中间件
+// Hono 认证中间件：校验 token 并在 DB 中实时核对账号状态（禁用后立即失效）
 export async function authMiddleware(c, next) {
   const authHeader = c.req.header('Authorization')
   if (!authHeader || !authHeader.startsWith('Bearer ')) {
     return c.json({ error: '未提供认证凭证，请先登录' }, 401)
   }
   const token = authHeader.split(' ')[1]
-  const user = verifyToken(token)
-  if (!user) {
+  const payload = verifyToken(token)
+  if (!payload) {
     return c.json({ error: '登录凭证已过期或无效，请重新登录' }, 401)
   }
-  c.set('user', user)
-  await next()
+
+  const db = initDb()
+  if (db) {
+    try {
+      const [user] = await db.select().from(schema.users).where(eq(schema.users.id, payload.id)).limit(1)
+      if (!user) {
+        return c.json({ error: '用户不存在，请重新登录' }, 401)
+      }
+      if (!user.enabled) {
+        return c.json({ error: '账号已被禁用，请联系管理员' }, 403)
+      }
+      // 以 DB 最新数据为准（角色/头像/昵称可能被管理员修改）
+      c.set('user', {
+        id: user.id,
+        uid: user.uid,
+        email: user.email,
+        name: user.name,
+        role: user.role,
+        avatarKey: user.avatarKey,
+        enabled: user.enabled
+      })
+      return next()
+    } catch (e) {
+      return c.json({ error: '认证服务暂不可用' }, 500)
+    }
+  }
+
+  // 本地模式（无 DB）：仅信任 token
+  c.set('user', payload)
+  return next()
+}
+
+// 管理员中间件：必须是已启用的超级管理员
+export function adminMiddleware(c, next) {
+  return authMiddleware(c, async () => {
+    const user = c.get('user')
+    if (user.role !== 'admin') {
+      return c.json({ error: '需要超级管理员权限' }, 403)
+    }
+    return next()
+  })
 }

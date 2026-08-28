@@ -12,6 +12,7 @@ import { authRouter } from './server/routes/auth.js'
 import { roomsRouter } from './server/routes/rooms.js'
 import { profileRouter } from './server/routes/profile.js'
 import { scoresRouter } from './server/routes/scores.js'
+import { adminRouter } from './server/routes/admin.js'
 import { initWebSocketServer } from './server/websocket.js'
 import { runAutoMigrations } from './server/migrate.js'
 
@@ -45,6 +46,7 @@ app.route('/api/auth', authRouter)
 app.route('/api/rooms', roomsRouter)
 app.route('/api/profile', profileRouter)
 app.route('/api/scores', scoresRouter)
+app.route('/api/admin', adminRouter)
 
 // 题库热更新路由（内存缓存，避免每次请求都整文件读盘）
 const wordBankCache = new Map() // fileName -> { content, mtimeMs }

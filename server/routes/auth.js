@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { eq } from 'drizzle-orm'
 import { initDb, schema } from '../db.js'
+import { getSettings } from '../settings.js'
 import { validatePasswordStrength, hashPassword, comparePassword, signToken, authMiddleware } from '../auth.js'
 
 const authRouter = new Hono()
@@ -10,7 +11,8 @@ authRouter.post('/register', async (c) => {
   if (process.env.APP_MODE === 'local') {
     return c.json({ error: '本地模式无需注册' }, 400)
   }
-  if (process.env.ALLOW_REGISTER === 'false') {
+  const settings = await getSettings()
+  if (settings.allowRegister === false) {
     return c.json({ error: '当前系统已关闭公开注册，请联系管理员' }, 403)
   }
 
@@ -91,6 +93,10 @@ authRouter.post('/login', async (c) => {
   const [user] = await db.select().from(schema.users).where(eq(schema.users.email, cleanEmail)).limit(1)
   if (!user) {
     return c.json({ error: '邮箱或密码错误' }, 400)
+  }
+
+  if (user.enabled === false) {
+    return c.json({ error: '账号已被禁用，请联系管理员' }, 403)
   }
 
   const isValid = await comparePassword(password, user.passwordHash)

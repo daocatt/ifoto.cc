@@ -9,6 +9,28 @@ export async function runAutoMigrations() {
     // 1. 创建全局自增 UID 序列 (从 100001 起步，保证 6~12 位数字)
     await db.execute('CREATE SEQUENCE IF NOT EXISTS user_uid_seq START WITH 100001;')
 
+    // 1.1 系统设置表（单行 id=1），并播种默认值
+    await db.execute(`
+      CREATE TABLE IF NOT EXISTS "settings" (
+        "id" integer PRIMARY KEY DEFAULT 1,
+        "allow_register" boolean DEFAULT true NOT NULL,
+        "allow_user_create_room" boolean DEFAULT true NOT NULL,
+        "system_rooms_enabled" boolean DEFAULT true NOT NULL,
+        "updated_at" timestamp with time zone DEFAULT now() NOT NULL
+      );
+      INSERT INTO "settings" ("id") VALUES (1) ON CONFLICT ("id") DO NOTHING;
+    `)
+
+    // 1.2 用户表补充 enabled 字段（禁用后登录失效）
+    await db.execute(`
+      ALTER TABLE "users" ADD COLUMN IF NOT EXISTS "enabled" boolean DEFAULT true NOT NULL;
+    `)
+
+    // 1.3 房间表补充 admin_disabled 字段（管理员禁用，无法进入/房主无法编辑）
+    await db.execute(`
+      ALTER TABLE "rooms" ADD COLUMN IF NOT EXISTS "admin_disabled" boolean DEFAULT false NOT NULL;
+    `)
+
     // 2. 确保数据库中存在所需的基础表结构
     await db.execute(`
       CREATE TABLE IF NOT EXISTS "users" (
