@@ -232,7 +232,7 @@ export function useGameState(
       const x = event ? event.clientX / window.innerWidth : 0.5
       const y = event ? event.clientY / window.innerHeight : 0.5
       triggerCelebration(x, y)
-      sendWS({ type: 'TRIGGER_CELEBRATION', roomId: currentRoomIdRef.current, payload: { x, y } })
+      sendWS({ type: 'CELEBRATION_EVENT', roomId: currentRoomIdRef.current, payload: { x, y } })
 
       // 若加分玩家是当前登录者，异步落库
       if (currentRoomIdRef.current) {
@@ -339,7 +339,7 @@ export function useGameState(
     }, 3500)
 
     // 2. 通过 WS 广播给房间其他玩家
-    sendWS({ type: 'SEND_QUICK_CHAT', roomId: currentRoomIdRef.current, payload: { text, playerId: currentUser.id } })
+    sendWS({ type: 'QUICK_CHAT_EVENT', roomId: currentRoomIdRef.current, payload: { text, playerId: currentUser.id, timestamp: now } })
   }, [currentUser?.id, sendWS])
 
   return {
