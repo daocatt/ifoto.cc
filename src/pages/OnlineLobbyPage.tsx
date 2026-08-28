@@ -33,6 +33,8 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
 
   // 专属房间编辑/创建状态
   const [isEditingMyRoom, setIsEditingMyRoom] = useState(false)
+  const [roomEmojiInput, setRoomEmojiInput] = useState('🎨')
+  const [showEmojiPicker, setShowEmojiPicker] = useState(false)
   const [roomNameInput, setRoomNameInput] = useState('')
   const [roomTypeInput, setRoomTypeInput] = useState<'draw' | 'english'>('draw')
   const [roomPasswordInput, setRoomPasswordInput] = useState('')
@@ -65,7 +67,14 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
       setMyRoom(myRoomRes.room || null)
 
       if (myRoomRes.room) {
-        setRoomNameInput(myRoomRes.room.name)
+        const emojiMatch = myRoomRes.room.name.match(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u);
+        if (emojiMatch) {
+          setRoomEmojiInput(emojiMatch[0]);
+          setRoomNameInput(myRoomRes.room.name.replace(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)\s*/u, ''));
+        } else {
+          setRoomEmojiInput(myRoomRes.room.type === 'english' ? '🔤' : '🎨');
+          setRoomNameInput(myRoomRes.room.name);
+        }
         setRoomTypeInput(myRoomRes.room.type)
         setRoomIsOpen(myRoomRes.room.isOpen)
         setRoomOpenStartTime(myRoomRes.room.openStartTime || '')
@@ -95,8 +104,9 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
 
     setSavingRoom(true)
     try {
+      const fullName = roomEmojiInput ? `${roomEmojiInput} ${roomNameInput.trim()}` : roomNameInput.trim();
       const res = await api.saveMyRoom({
-        name: roomNameInput.trim(),
+        name: fullName,
         type: roomTypeInput,
         password: roomPasswordInput || undefined,
         isOpen: roomIsOpen,
@@ -314,11 +324,15 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
                 <div className="flex items-start justify-between gap-2">
                   <div className="flex items-center gap-2.5">
                     <div className="w-9 h-9 rounded-[8px] bg-tint flex items-center justify-center text-primary text-lg shrink-0 border border-primary/20">
-                      {room.type === 'english' ? '🔤' : '🎨'}
+                      {(() => {
+                        const emojiMatch = room.name.match(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u);
+                        if (emojiMatch) return emojiMatch[0];
+                        return room.type === 'english' ? '🔤' : '🎨';
+                      })()}
                     </div>
                     <div className="flex flex-col">
                       <div className="flex items-center gap-1.5">
-                        <span className="text-xs font-normal text-ink line-clamp-1">{room.name}</span>
+                        <span className="text-xs font-normal text-ink line-clamp-1">{room.name.replace(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)\s*/u, '')}</span>
                         {room.hasPassword && (
                           <span title="该房间有密码">
                             <Lock className="w-3 h-3 text-gold shrink-0" />
@@ -401,18 +415,48 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
             )}
 
             <form onSubmit={handleSaveMyRoom} className="flex flex-col gap-3.5 text-xs">
-              {/* 房间名称 */}
+              {/* 房间图标与名称 */}
               <div className="flex flex-col gap-1">
-                <label className="font-normal text-ink">房间名称</label>
-                <input
-                  type="text"
-                  required
-                  maxLength={24}
-                  value={roomNameInput}
-                  onChange={(e) => setRoomNameInput(e.target.value)}
-                  placeholder="例如：小明的一起画画派对"
-                  className="px-3 py-2 rounded-md bg-paper/80 border border-edge/80 text-ink outline-none focus:border-primary font-normal"
-                />
+                <label className="font-normal text-ink">房间图标与名称</label>
+                <div className="flex items-center gap-2 relative">
+                  {/* Emoji 选择按钮 */}
+                  <div className="relative">
+                    <button
+                      type="button"
+                      onClick={() => setShowEmojiPicker(!showEmojiPicker)}
+                      className="w-9 h-9 rounded-md border border-edge/80 bg-paper/80 hover:bg-edge/40 flex items-center justify-center text-lg transition-colors cursor-pointer shrink-0 shadow-xs"
+                      title="选择房间图标"
+                    >
+                      {roomEmojiInput}
+                    </button>
+                    {showEmojiPicker && (
+                      <div className="absolute left-0 top-11 z-50 p-2 bg-card/95 backdrop-blur-md rounded-[10px] border border-edge/80 shadow-[0_4px_16px_rgba(0,0,0,0.12)] w-56 grid grid-cols-6 gap-1 animate-in fade-in zoom-in-95">
+                        {['🎨', '🖌️', '🎭', '🎪', '🎠', '🌈', '🦄', '🐼', '🐙', '🦊', '🐱', '🐶', '🎮', '🕹️', '⭐', '🔥', '💫', '🍀', '🌸', '🌻', '🍎', '🍓', '🍰', '☕', '🎵', '🎶', '🏆', '🎯', '🚀', '🌙'].map((e) => (
+                          <button
+                            key={e}
+                            type="button"
+                            onClick={() => {
+                              setRoomEmojiInput(e);
+                              setShowEmojiPicker(false);
+                            }}
+                            className={`w-7 h-7 rounded flex items-center justify-center text-base hover:bg-tint transition-all cursor-pointer ${roomEmojiInput === e ? 'bg-tint ring-1 ring-primary/40' : ''}`}
+                          >
+                            {e}
+                          </button>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                  <input
+                    type="text"
+                    required
+                    maxLength={20}
+                    value={roomNameInput}
+                    onChange={(e) => setRoomNameInput(e.target.value)}
+                    placeholder="例如：小明的一起画画派对"
+                    className="flex-1 px-3 py-2 rounded-md bg-paper/80 border border-edge/80 text-ink outline-none focus:border-primary font-normal"
+                  />
+                </div>
               </div>
 
               {/* 房间类型 */}
