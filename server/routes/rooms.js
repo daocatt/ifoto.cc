@@ -1,6 +1,7 @@
 import { Hono } from 'hono'
 import { eq, desc } from 'drizzle-orm'
 import { initDb, schema } from '../db.js'
+import { getSettings } from '../settings.js'
 import { authMiddleware, hashPassword, comparePassword } from '../auth.js'
 
 const roomsRouter = new Hono()
@@ -37,12 +38,15 @@ roomsRouter.get('/public', async (c) => {
     })
   }
 
-  // 线上模式：预设系统房间 + 用户创建的公开房间
+  const settings = await getSettings()
+
+  // 线上模式：预设系统房间(可按开关隐藏) + 用户创建的公开房间
   const dbRooms = await db.select({
     id: schema.rooms.id,
     name: schema.rooms.name,
     type: schema.rooms.type,
     isOpen: schema.rooms.isOpen,
+    adminDisabled: schema.rooms.adminDisabled,
     openStartTime: schema.rooms.openStartTime,
     openEndTime: schema.rooms.openEndTime,
     isPublic: schema.rooms.isPublic,
@@ -59,13 +63,14 @@ roomsRouter.get('/public', async (c) => {
 
   const processedRooms = dbRooms.map(r => {
     const inTime = isRoomInOpenTime(r.openStartTime, r.openEndTime)
-    const effectiveOpen = r.isOpen && inTime
+    const effectiveOpen = r.isOpen && inTime && !r.adminDisabled
     return {
       id: r.id,
       name: r.name,
       type: r.type,
       isOpen: effectiveOpen,
       rawIsOpen: r.isOpen,
+      adminDisabled: !!r.adminDisabled,
       openStartTime: r.openStartTime,
       openEndTime: r.openEndTime,
       hasPassword: !!r.hasPassword,
@@ -75,12 +80,15 @@ roomsRouter.get('/public', async (c) => {
     }
   })
 
-  // 置顶系统两大核心房间
-  const result = [
-    { id: 'draw', name: '🎨 你画我猜', type: 'draw', isSystem: true, isOpen: true, hasPassword: false, ownerName: 'ifoto', ownerAvatar: 'voxel_10' },
-    { id: 'english', name: '🔤 英语猜猜看', type: 'english', isSystem: true, isOpen: true, hasPassword: false, ownerName: 'ifoto', ownerAvatar: 'voxel_12' },
-    ...processedRooms
-  ]
+  // 系统房间按开关决定是否出现在列表；未启用时既不出现在列表也无法进入
+  const result = []
+  if (settings.systemRoomsEnabled) {
+    result.push(
+      { id: 'draw', name: '🎨 你画我猜', type: 'draw', isSystem: true, isOpen: true, hasPassword: false, ownerName: 'ifoto', ownerAvatar: 'voxel_10' },
+      { id: 'english', name: '🔤 英语猜猜看', type: 'english', isSystem: true, isOpen: true, hasPassword: false, ownerName: 'ifoto', ownerAvatar: 'voxel_12' }
+    )
+  }
+  result.push(...processedRooms)
 
   return c.json({ rooms: result })
 })
@@ -101,7 +109,8 @@ roomsRouter.get('/my', authMiddleware, async (c) => {
       name: myRoom.name,
       type: myRoom.type,
       isOpen: myRoom.isOpen,
-      effectiveIsOpen: myRoom.isOpen && inTime,
+      adminDisabled: !!myRoom.adminDisabled,
+      effectiveIsOpen: myRoom.isOpen && inTime && !myRoom.adminDisabled,
       openStartTime: myRoom.openStartTime,
       openEndTime: myRoom.openEndTime,
       isPublic: myRoom.isPublic,
@@ -130,6 +139,11 @@ roomsRouter.post('/my', authMiddleware, async (c) => {
   }
 
   if (existingRoom) {
+    // 管理员已禁用的房间，房主无法编辑
+    if (existingRoom.adminDisabled) {
+      return c.json({ error: '房间已被管理员禁用，暂无法编辑' }, 403)
+    }
+
     const updateValues = {
       name: name.trim(),
       type: type || existingRoom.type,
@@ -149,6 +163,12 @@ roomsRouter.post('/my', authMiddleware, async (c) => {
 
     return c.json({ message: '房间更新成功', room: updated })
   } else {
+    // 新建房间受系统设置约束
+    const settings = await getSettings()
+    if (settings.allowUserCreateRoom === false) {
+      return c.json({ error: '当前系统已关闭用户创建房间功能' }, 403)
+    }
+
     // 新建房间，生成随机 slug
     const roomId = `room_${Math.random().toString(36).substring(2, 8)}`
     const [created] = await db.insert(schema.rooms).values({
@@ -170,15 +190,25 @@ roomsRouter.post('/my', authMiddleware, async (c) => {
 // 4. 验证房间密码
 roomsRouter.post('/verify-password', async (c) => {
   const { roomId, password } = await c.req.json()
-  if (roomId === 'draw' || roomId === 'english') {
-    return c.json({ valid: true })
-  }
 
   const db = initDb()
   if (!db) return c.json({ valid: true })
 
+  const settings = await getSettings()
+
+  if (roomId === 'draw' || roomId === 'english') {
+    if (!settings.systemRoomsEnabled) {
+      return c.json({ error: '系统房间已停用' }, 404)
+    }
+    return c.json({ valid: true })
+  }
+
   const [room] = await db.select().from(schema.rooms).where(eq(schema.rooms.id, roomId)).limit(1)
   if (!room) return c.json({ error: '房间不存在' }, 404)
+
+  if (room.adminDisabled) {
+    return c.json({ error: '房间已被管理员禁用' }, 403)
+  }
 
   if (!room.passwordHash) {
     return c.json({ valid: true })
@@ -194,7 +224,13 @@ roomsRouter.post('/verify-password', async (c) => {
 // 5. 获取指定房间详情（检查开放状态）
 roomsRouter.get('/:id', async (c) => {
   const roomId = c.req.param('id')
+  const db = initDb()
+
   if (roomId === 'draw' || roomId === 'english') {
+    const settings = db ? await getSettings() : { systemRoomsEnabled: true }
+    if (!settings.systemRoomsEnabled) {
+      return c.json({ error: '系统房间已停用' }, 404)
+    }
     return c.json({
       room: {
         id: roomId,
@@ -207,7 +243,6 @@ roomsRouter.get('/:id', async (c) => {
     })
   }
 
-  const db = initDb()
   if (!db) {
     return c.json({ room: { id: roomId, name: '游戏房间', type: 'draw', isOpen: true, hasPassword: false } })
   }
@@ -217,6 +252,7 @@ roomsRouter.get('/:id', async (c) => {
     name: schema.rooms.name,
     type: schema.rooms.type,
     isOpen: schema.rooms.isOpen,
+    adminDisabled: schema.rooms.adminDisabled,
     openStartTime: schema.rooms.openStartTime,
     openEndTime: schema.rooms.openEndTime,
     isPublic: schema.rooms.isPublic,
@@ -238,7 +274,7 @@ roomsRouter.get('/:id', async (c) => {
     room: {
       ...room,
       hasPassword: !!room.hasPassword,
-      effectiveIsOpen: room.isOpen && inTime,
+      effectiveIsOpen: room.isOpen && inTime && !room.adminDisabled,
       isTimeRestricted: !!(room.openStartTime && room.openEndTime),
       inTime
     }

@@ -1,6 +1,7 @@
 import { WebSocketServer, WebSocket } from 'ws'
 import { isRoomInOpenTime } from './routes/rooms.js'
 import { initDb, schema } from './db.js'
+import { getSettings } from './settings.js'
 import { verifyToken } from './auth.js'
 import { eq } from 'drizzle-orm'
 
@@ -8,6 +9,47 @@ import { eq } from 'drizzle-orm'
 const rooms = new Map()
 
 const MAX_PLAYERS_PER_ROOM = 12
+
+// 管理端：强制关闭某房间（禁用/删除房间时调用）
+export function forceCloseRoom(roomId, reason = '房间已被管理员关闭') {
+  const room = rooms.get(roomId)
+  if (!room) return
+  for (const [client] of room.clients.entries()) {
+    if (client.readyState === WebSocket.OPEN) {
+      client.send(JSON.stringify({ type: 'ROOM_CLOSED_NOTICE', payload: { reason } }))
+      client.close(4001, 'Room Disabled')
+    }
+  }
+  rooms.delete(roomId)
+}
+
+// 管理端：关闭某用户的所有 WebSocket 连接（禁用/删除账号时调用）
+export function forceCloseUserConnections(userId) {
+  for (const [roomId, room] of rooms.entries()) {
+    for (const [ws, player] of room.clients.entries()) {
+      if (player && player.id === userId) {
+        ws.send(JSON.stringify({ type: 'ACCOUNT_DISABLED', payload: { message: '账号已被禁用' } }))
+        ws.close(4003, 'Account Disabled')
+      }
+    }
+  }
+}
+
+// 房间加入拦截：返回不可加入的原因字符串，可加入则返回 null
+async function getRoomBlockReason(roomId) {
+  const db = initDb()
+  if (!db) return null
+  const settings = await getSettings()
+  if (roomId === 'draw' || roomId === 'english') {
+    return settings.systemRoomsEnabled ? null : '系统房间已停用'
+  }
+  try {
+    const [room] = await db.select({ adminDisabled: schema.rooms.adminDisabled }).from(schema.rooms).where(eq(schema.rooms.id, roomId)).limit(1)
+    if (!room) return '房间不存在或已解散'
+    if (room.adminDisabled) return '房间已被管理员禁用'
+  } catch (e) { /* 表尚未就绪等情况放行 */ }
+  return null
+}
 
 // 本地模式：清洗客户端传入的玩家信息，防止注入异常昵称/头像/ID
 function sanitizePlayer(player) {
@@ -57,12 +99,12 @@ export function initWebSocketServer(httpServer) {
   const wss = new WebSocketServer({ noServer: true })
 
   // 1. HTTP Upgrade 握手（兼容 /ws, /ws-game, /ws/game）
-  httpServer.on('upgrade', (request, socket, head) => {
+  httpServer.on('upgrade', async (request, socket, head) => {
     const url = new URL(request.url, `http://${request.headers.host}`)
     const pathname = url.pathname
 
     if (pathname === '/ws' || pathname === '/ws-game' || pathname === '/ws/game') {
-      // 线上模式：必须携带有效 JWT，未鉴权直接拒绝，防止伪造身份
+      // 线上模式：必须携带有效 JWT，且账号须处于启用状态，未鉴权/已禁用直接拒绝
       if (process.env.APP_MODE === 'online') {
         const token = url.searchParams.get('token')
         const user = token ? verifyToken(token) : null
@@ -70,6 +112,17 @@ export function initWebSocketServer(httpServer) {
           socket.write('HTTP/1.1 401 Unauthorized\r\n\r\n')
           socket.destroy()
           return
+        }
+        const db = initDb()
+        if (db) {
+          try {
+            const [dbUser] = await db.select().from(schema.users).where(eq(schema.users.id, user.id)).limit(1)
+            if (!dbUser || dbUser.enabled === false) {
+              socket.write('HTTP/1.1 403 Forbidden\r\n\r\n')
+              socket.destroy()
+              return
+            }
+          } catch (e) { /* 忽略，放行 */ }
         }
         wss.handleUpgrade(request, socket, head, (ws) => {
           ws.ifotoUser = {
@@ -94,7 +147,7 @@ export function initWebSocketServer(httpServer) {
   wss.on('connection', (ws) => {
     let currentRoomId = null
 
-    ws.on('message', (message) => {
+    ws.on('message', async (message) => {
       try {
         const data = JSON.parse(message.toString())
         const type = data.type
@@ -103,6 +156,15 @@ export function initWebSocketServer(httpServer) {
         if (type === 'JOIN_ROOM') {
           const roomId = data.roomId || 'draw'
           let player = data.payload?.player
+
+          // 房间可用性拦截（系统房间开关 / 管理员禁用房间）
+          if (process.env.APP_MODE === 'online') {
+            const blockReason = await getRoomBlockReason(roomId)
+            if (blockReason) {
+              ws.send(JSON.stringify({ type: 'ERROR', payload: { message: blockReason } }))
+              return
+            }
+          }
 
           if (process.env.APP_MODE === 'online') {
             // 线上模式：以服务端鉴权用户为准，不信任客户端传入的 player
