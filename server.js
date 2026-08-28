@@ -1,3 +1,4 @@
+import 'dotenv/config' // 必须在最顶部，确保 .env 变量在所有模块加载前注入
 import http from 'http'
 import fs from 'fs'
 import path from 'path'
