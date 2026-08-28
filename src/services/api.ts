@@ -5,6 +5,7 @@ const LAST_ROOM_KEY = 'whiteboard_last_room_v2'
 
 export interface ApiUser {
   id: string
+  uid?: number
   email: string
   name: string
   role: 'admin' | 'user'

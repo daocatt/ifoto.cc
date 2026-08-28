@@ -52,6 +52,7 @@ authRouter.post('/register', async (c) => {
 
   const token = signToken({
     id: newUser.id,
+    uid: newUser.uid,
     email: newUser.email,
     name: newUser.name,
     role: newUser.role,
@@ -63,6 +64,7 @@ authRouter.post('/register', async (c) => {
     token,
     user: {
       id: newUser.id,
+      uid: newUser.uid,
       email: newUser.email,
       name: newUser.name,
       role: newUser.role,
@@ -98,6 +100,7 @@ authRouter.post('/login', async (c) => {
 
   const token = signToken({
     id: user.id,
+    uid: user.uid,
     email: user.email,
     name: user.name,
     role: user.role,
@@ -109,6 +112,7 @@ authRouter.post('/login', async (c) => {
     token,
     user: {
       id: user.id,
+      uid: user.uid,
       email: user.email,
       name: user.name,
       role: user.role,

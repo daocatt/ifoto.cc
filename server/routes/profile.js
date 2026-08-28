@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { eq, count, sum } from 'drizzle-orm'
+import { eq, count, sum, or } from 'drizzle-orm'
 import { initDb, schema } from '../db.js'
 import { authMiddleware, validatePasswordStrength, hashPassword, comparePassword } from '../auth.js'
 
@@ -63,6 +63,7 @@ profileRouter.put('/me', authMiddleware, async (c) => {
     message: '个人资料已更新',
     user: {
       id: updated.id,
+      uid: updated.uid,
       email: updated.email,
       name: updated.name,
       role: updated.role,
@@ -72,20 +73,41 @@ profileRouter.put('/me', authMiddleware, async (c) => {
   })
 })
 
-// 查看用户公开主页
-profileRouter.get('/:userId', async (c) => {
-  const userId = c.req.param('userId')
+// 查看用户公开主页（支持 6~12 位数字 UID 或 UUID）
+profileRouter.get('/:uidOrId', async (c) => {
+  const uidOrId = c.req.param('uidOrId')
   const db = initDb()
   if (!db) return c.json({ error: '数据库不可用' }, 500)
 
-  const [targetUser] = await db.select({
-    id: schema.users.id,
-    name: schema.users.name,
-    avatarKey: schema.users.avatarKey,
-    role: schema.users.role,
-    isStatsPublic: schema.users.isStatsPublic,
-    createdAt: schema.users.createdAt
-  }).from(schema.users).where(eq(schema.users.id, userId)).limit(1)
+  const isNumericUid = /^[0-9]{6,12}$/.test(uidOrId)
+  let targetUser = null
+
+  if (isNumericUid) {
+    const numUid = parseInt(uidOrId, 10)
+    const [u] = await db.select({
+      id: schema.users.id,
+      uid: schema.users.uid,
+      name: schema.users.name,
+      avatarKey: schema.users.avatarKey,
+      role: schema.users.role,
+      isStatsPublic: schema.users.isStatsPublic,
+      createdAt: schema.users.createdAt
+    }).from(schema.users).where(eq(schema.users.uid, numUid)).limit(1)
+    targetUser = u
+  } else {
+    try {
+      const [u] = await db.select({
+        id: schema.users.id,
+        uid: schema.users.uid,
+        name: schema.users.name,
+        avatarKey: schema.users.avatarKey,
+        role: schema.users.role,
+        isStatsPublic: schema.users.isStatsPublic,
+        createdAt: schema.users.createdAt
+      }).from(schema.users).where(eq(schema.users.id, uidOrId)).limit(1)
+      targetUser = u
+    } catch (_) {}
+  }
 
   if (!targetUser) return c.json({ error: '玩家不存在' }, 404)
 
@@ -97,7 +119,7 @@ profileRouter.get('/:userId', async (c) => {
     const [scoreStats] = await db.select({
       totalGames: count(),
       totalScore: sum(schema.gameRecords.score)
-    }).from(schema.gameRecords).where(eq(schema.gameRecords.userId, userId))
+    }).from(schema.gameRecords).where(eq(schema.gameRecords.userId, targetUser.id))
 
     stats = {
       totalGames: scoreStats.totalGames || 0,
@@ -105,8 +127,7 @@ profileRouter.get('/:userId', async (c) => {
     }
 
     records = await db.select().from(schema.gameRecords)
-      .where(eq(schema.gameRecords.userId, userId))
-      .orderBy(eq(schema.gameRecords.playedAt, schema.gameRecords.playedAt))
+      .where(eq(schema.gameRecords.userId, targetUser.id))
       .limit(20)
   }
 

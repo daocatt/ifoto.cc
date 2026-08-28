@@ -1,8 +1,9 @@
-import { pgTable, text, varchar, timestamp, boolean, integer, uuid } from 'drizzle-orm/pg-core'
+import { pgTable, text, varchar, timestamp, boolean, integer, uuid, bigint } from 'drizzle-orm/pg-core'
 
 // 1. 用户表
 export const users = pgTable('users', {
   id: uuid('id').defaultRandom().primaryKey(),
+  uid: bigint('uid', { mode: 'number' }).notNull().unique(), // 6-12位全局数字UID
   email: varchar('email', { length: 255 }).notNull().unique(),
   name: varchar('name', { length: 50 }).notNull().unique(), // 全局唯一昵称
   passwordHash: text('password_hash').notNull(),

@@ -79,6 +79,7 @@ statusRouter.post('/init-admin', async (c) => {
 
   const token = signToken({
     id: newUser.id,
+    uid: newUser.uid,
     email: newUser.email,
     name: newUser.name,
     role: newUser.role,
@@ -90,6 +91,7 @@ statusRouter.post('/init-admin', async (c) => {
     token,
     user: {
       id: newUser.id,
+      uid: newUser.uid,
       email: newUser.email,
       name: newUser.name,
       role: newUser.role,

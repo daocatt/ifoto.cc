@@ -6,7 +6,7 @@ import { Button } from '../components/Common/Button'
 
 interface ProfilePageProps {
   currentUser: ApiUser
-  viewUserId?: string | null
+  viewUserId?: string | null // 可以是 uid 或 uuid
   onNavigate: (route: string) => void
 }
 
@@ -85,6 +85,11 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({
               <span className="text-[10px] font-normal px-2 py-0.2 rounded-md bg-primary/10 text-primary border border-primary/20">
                 {user.role === 'admin' ? '超级管理员' : '画画达人'}
               </span>
+              {user.uid && (
+                <span className="text-[10px] font-mono font-normal px-1.5 py-0.2 rounded-md bg-warm text-ink-soft border border-edge/60">
+                  UID: {user.uid}
+                </span>
+              )}
             </div>
             <div className="flex flex-wrap items-center justify-center sm:justify-start gap-3 text-xs text-ink-soft font-normal">
               {user.email && isMe && (

@@ -19,7 +19,14 @@ export function App() {
   const [appMode, setAppMode] = useState<'local' | 'online'>('local')
   const [allowRegister, setAllowRegister] = useState(true)
   const [currentUser, setCurrentUser] = useState<ApiUser | null>(getStoredUser())
+  const [viewUserUid, setViewUserUid] = useState<string | null>(null)
   const [currentRoute, setCurrentRoute] = useState<string>(() => {
+    // 自动解析 /u/:uid 个人主页链接
+    const path = window.location.pathname
+    const match = path.match(/^\/u\/([0-9a-zA-Z_-]+)/)
+    if (match && match[1]) {
+      return 'profile'
+    }
     try {
       const savedRoom = localStorage.getItem('whiteboard_current_room_v2')
       const savedUser = localStorage.getItem('whiteboard_current_user_v2')
@@ -40,6 +47,11 @@ export function App() {
   // 1. 初始化系统状态与鉴权探针
   useEffect(() => {
     const initApp = async () => {
+      const path = window.location.pathname
+      const match = path.match(/^\/u\/([0-9a-zA-Z_-]+)/)
+      if (match && match[1]) {
+        setViewUserUid(match[1])
+      }
       try {
         const status = await api.getStatus()
         setAppMode(status.mode)
@@ -349,7 +361,11 @@ export function App() {
         {currentRoute === 'profile' && currentUser && (
           <ProfilePage
             currentUser={currentUser}
-            onNavigate={(r) => setCurrentRoute(r)}
+            viewUserId={viewUserUid}
+            onNavigate={(r) => {
+              setViewUserUid(null)
+              setCurrentRoute(r)
+            }}
           />
         )}
 
