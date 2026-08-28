@@ -1,6 +1,5 @@
-import { useState, useEffect, useRef, useCallback } from 'react'
+import { lazy, Suspense, useState, useEffect, useRef, useCallback } from 'react'
 import type { ExcalidrawImperativeAPI } from '@excalidraw/excalidraw/types'
-import { ExcalidrawBoard } from './components/Whiteboard/ExcalidrawBoard'
 import { ScoreboardPanel } from './components/GameHUD/ScoreboardPanel'
 import { QuickChatDrawer } from './components/GameHUD/QuickChatDrawer'
 import { Navbar } from './components/Navigation/Navbar'
@@ -15,6 +14,11 @@ import { HelpPage } from './pages/HelpPage'
 import { useGameState } from './hooks/useGameState'
 import { api, ApiUser, getStoredUser, setStoredToken, setStoredUser, setLastPlayedRoom } from './services/api'
 import { RoomId } from './types/game'
+
+// 白板（Excalidraw）体积较大，仅在进入游戏房间时才加载，避免拖慢首页/大厅等首屏
+const ExcalidrawBoard = lazy(() =>
+  import('./components/Whiteboard/ExcalidrawBoard').then(m => ({ default: m.ExcalidrawBoard }))
+)
 
 export function App() {
   const [appMode, setAppMode] = useState<'local' | 'online'>('local')
@@ -404,7 +408,13 @@ export function App() {
         {/* 7. 游戏全屏房间 (画板全屏沉浸 + 左上角退出 + 右上角悬浮毛玻璃 HUD) */}
         {currentRoute === 'game' && (
           <div className="w-full h-full relative overflow-hidden">
-            {/* 100% 满屏画板 */}
+            {/* 100% 满屏画板（懒加载） */}
+            <Suspense fallback={
+              <div className="w-full h-full flex items-center justify-center bg-paper text-ink gap-3">
+                <Loader2 className="w-6 h-6 text-primary animate-spin" />
+                <span className="text-xs text-ink-soft font-bold tracking-wide">正在加载画板...</span>
+              </div>
+            }>
             <ExcalidrawBoard
               isDrawer={isDrawer}
               onApiReady={(api) => {
@@ -413,6 +423,7 @@ export function App() {
               }}
               onChange={handleExcalidrawChange}
             />
+            </Suspense>
 
             {/* 左上角退出游戏按钮 (无阴影、小圆角) */}
             <button

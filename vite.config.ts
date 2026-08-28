@@ -11,6 +11,23 @@ export default defineConfig({
   define: {
     'process.env.IS_PREACT': JSON.stringify('false'),
   },
+  build: {
+    // 核心 UI 框架拆成独立 vendor chunk，便于浏览器长期缓存；超过该阈值才告警
+    chunkSizeWarningLimit: 1000,
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          // React 全家桶单独分包（Excalidraw 也会复用该 chunk）
+          if (id.includes('node_modules/react') || id.includes('node_modules/react-dom') || id.includes('node_modules/scheduler')) {
+            return 'react-vendor'
+          }
+          if (id.includes('node_modules/lucide-react')) {
+            return 'icons'
+          }
+        }
+      }
+    }
+  },
   server: {
     host: '0.0.0.0',
     port: 3000,
