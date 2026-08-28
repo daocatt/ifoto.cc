@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowLeft, Pencil, Users, Globe, Zap, ExternalLink } from 'lucide-react'
+import { ArrowLeft, Pencil, Users, Globe, Zap } from 'lucide-react'
 
 interface HelpPageProps {
   onNavigate: (route: string) => void
@@ -103,16 +103,13 @@ export const HelpPage: React.FC<HelpPageProps> = ({ onNavigate }) => {
 
       {/* 底部 */}
       <div className="flex items-center justify-between text-[11px] text-ink-soft font-normal px-1">
-        <span>iFOTO © 2026 · Open Source</span>
-        <a
-          href="https://github.com/daocatt/ifoto.cc"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 hover:text-ink transition-colors"
+        <span>iFOTO © 2026</span>
+        <button
+          onClick={() => onNavigate('help')}
+          className="inline-flex items-center gap-1.5 hover:text-ink transition-colors cursor-pointer"
         >
-          <ExternalLink className="w-3.5 h-3.5" />
-          <span>daocatt/ifoto.cc</span>
-        </a>
+          <span>About · Help</span>
+        </button>
       </div>
     </div>
   )

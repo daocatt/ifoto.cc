@@ -1,4 +1,4 @@
-import { LogOut, Settings, LayoutGrid, Home, HelpCircle } from 'lucide-react'
+import { LogOut, Settings, LayoutGrid, Home } from 'lucide-react'
 import { ApiUser } from '../../services/api'
 import { AppLogo } from '../Common/AppLogo'
 
@@ -40,18 +40,6 @@ export const Navbar: React.FC<NavbarProps> = ({
 
       {/* 2. 右侧操作区 */}
       <div className="flex items-center gap-2">
-        <button
-          onClick={() => onNavigate('help')}
-          className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
-            currentRoute === 'help'
-              ? 'bg-warm text-ink border border-edge'
-              : 'text-ink-soft hover:text-ink hover:bg-warm border border-transparent'
-          }`}
-          title="关于 iFOTO"
-        >
-          <HelpCircle className="w-3.5 h-3.5" />
-          <span className="hidden sm:inline">关于</span>
-        </button>
         {mode === 'local' ? (
           <div className="flex items-center gap-2">
             {currentRoute === 'lobby' ? (
