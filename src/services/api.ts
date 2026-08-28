@@ -38,6 +38,50 @@ export interface SystemStatus {
   needsInitAdmin: boolean
 }
 
+export interface SystemSettings {
+  id: number
+  allowRegister: boolean
+  allowUserCreateRoom: boolean
+  systemRoomsEnabled: boolean
+  updatedAt?: string
+}
+
+export interface AdminUser {
+  id: string
+  uid: number
+  email: string
+  name: string
+  role: 'admin' | 'user'
+  avatarKey: string
+  enabled: boolean
+  isStatsPublic: boolean
+  createdAt: string
+}
+
+export interface AdminRoom {
+  id: string
+  name: string
+  type: 'draw' | 'english'
+  ownerId: string
+  ownerName?: string
+  ownerEmail?: string
+  isOpen: boolean
+  adminDisabled: boolean
+  isPublic: boolean
+  hasPassword: boolean
+  openStartTime?: string | null
+  openEndTime?: string | null
+  createdAt: string
+}
+
+export interface Paged<T> {
+  items: T[]
+  total: number
+  page: number
+  pageSize: number
+  totalPages: number
+}
+
 export function getStoredToken(): string | null {
   return localStorage.getItem(TOKEN_KEY)
 }
@@ -185,7 +229,33 @@ export const api = {
 
   getMyScores: () => request<{ records: any[] }>('/api/scores/my'),
 
-  getScoreSummary: () => request<{ summary: ScoreSummary | null }>('/api/scores/summary')
+  getScoreSummary: () => request<{ summary: ScoreSummary | null }>('/api/scores/summary'),
+
+  // 8. 管理后台（仅超级管理员）
+  getAdminSettings: () => request<{ settings: SystemSettings }>('/api/admin/settings'),
+  saveAdminSettings: (payload: Partial<Pick<SystemSettings, 'allowRegister' | 'allowUserCreateRoom' | 'systemRoomsEnabled'>>) =>
+    request<{ settings: SystemSettings }>('/api/admin/settings', {
+      method: 'PUT',
+      body: JSON.stringify(payload)
+    }),
+  getAdminUsers: (params: { page?: number; pageSize?: number; search?: string }) =>
+    request<Paged<AdminUser>>(`/api/admin/users?page=${params.page || 1}&pageSize=${params.pageSize || 10}&search=${encodeURIComponent(params.search || '')}`),
+  updateAdminUser: (id: string, payload: Partial<Pick<AdminUser, 'enabled' | 'role' | 'name' | 'avatarKey'>> & { password?: string }) =>
+    request<{ user: Partial<AdminUser> }>(`/api/admin/users/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(payload)
+    }),
+  deleteAdminUser: (id: string) =>
+    request<{ message: string }>(`/api/admin/users/${id}`, { method: 'DELETE' }),
+  getAdminRooms: (params: { page?: number; pageSize?: number; search?: string }) =>
+    request<Paged<AdminRoom>>(`/api/admin/rooms?page=${params.page || 1}&pageSize=${params.pageSize || 10}&search=${encodeURIComponent(params.search || '')}`),
+  updateAdminRoom: (id: string, payload: Partial<Pick<AdminRoom, 'name' | 'type' | 'isOpen' | 'isPublic' | 'adminDisabled'>> & { password?: string }) =>
+    request<{ room: Partial<AdminRoom> }>(`/api/admin/rooms/${id}`, {
+      method: 'PUT',
+      body: JSON.stringify(payload)
+    }),
+  deleteAdminRoom: (id: string) =>
+    request<{ message: string }>(`/api/admin/rooms/${id}`, { method: 'DELETE' })
 }
 
 export interface ScoreSummary {

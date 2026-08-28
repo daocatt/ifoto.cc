@@ -11,6 +11,7 @@ import { AuthPage } from './pages/AuthPages'
 import { ProfilePage } from './pages/ProfilePage'
 import { SettingsPage } from './pages/SettingsPage'
 import { HelpPage } from './pages/HelpPage'
+import { AdminPage } from './pages/AdminPage'
 import { useGameState } from './hooks/useGameState'
 import { useSEO } from './hooks/useSEO'
 import { api, ApiUser, getStoredUser, setStoredToken, setStoredUser, setLastPlayedRoom } from './services/api'
@@ -24,7 +25,7 @@ const ExcalidrawBoard = lazy(() =>
 // ─── URL 路由体系 ───────────────────────────────────────────────
 type RouteName =
   | 'home' | 'lobby' | 'game' | 'settings'
-  | 'login' | 'register' | 'init-admin' | 'help' | 'profile'
+  | 'login' | 'register' | 'init-admin' | 'help' | 'profile' | 'admin'
 
 interface Route {
   name: RouteName
@@ -51,6 +52,7 @@ function parseLocation(): Route {
   if (a === 'register') return { name: 'register' }
   if (a === 'init-admin') return { name: 'init-admin' }
   if (a === 'help') return { name: 'help' }
+  if (a === 'admin') return { name: 'admin' }
   if (a === 'u' && b) return { name: 'profile', uid: b }
   return { name: 'home' }
 }
@@ -66,6 +68,7 @@ function urlFor(r: Route): string {
     case 'register': return '/register'
     case 'init-admin': return '/init-admin'
     case 'help': return '/help'
+    case 'admin': return '/admin'
     case 'profile': return `/u/${r.uid || ''}`
     default: return '/'
   }
@@ -109,6 +112,7 @@ export function App() {
       case 'register': return go({ name: 'register' })
       case 'init-admin': return go({ name: 'init-admin' })
       case 'help': return go({ name: 'help' })
+      case 'admin': return go({ name: 'admin' })
       case 'profile':
         return currentUser?.uid
           ? go({ name: 'profile', uid: String(currentUser.uid) })
@@ -262,6 +266,12 @@ export function App() {
       case 'init-admin':
         if (needsInitAdmin) return null
         return isLocal ? { name: 'home' } : { name: 'lobby' }
+      // 管理后台：仅超级管理员可进入
+      case 'admin':
+        if (isLocal) return { name: 'home' }
+        if (!currentUser) return { name: 'login' }
+        if (currentUser.role !== 'admin') return { name: 'home' }
+        return null
       default:
         return null
     }
@@ -283,6 +293,7 @@ export function App() {
       case 'register': return { title: `注册 · ${base}`, path: '/register' }
       case 'init-admin': return { title: `初始化管理员 · ${base}`, path: '/init-admin' }
       case 'help': return { title: `关于 iFOTO · 你画我猜`, path: '/help' }
+      case 'admin': return { title: `管理后台 · ${base}`, path: '/admin' }
       case 'profile': return { title: `个人主页 · ${base}`, path: `/u/${effectiveRoute.uid || ''}` }
       default: return { title: base, path: '/' }
     }
@@ -533,6 +544,11 @@ export function App() {
         {/* 5. 帮助/关于页面 */}
         {effectiveRoute.name === 'help' && (
           <HelpPage onNavigate={handleNavigate} />
+        )}
+
+        {/* 5.1 管理后台 */}
+        {effectiveRoute.name === 'admin' && (
+          <AdminPage />
         )}
 
         {/* 6. 个人设置页面 */}
