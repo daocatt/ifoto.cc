@@ -11,6 +11,7 @@ import { OnlineLobbyPage } from './pages/OnlineLobbyPage'
 import { AuthPage } from './pages/AuthPages'
 import { ProfilePage } from './pages/ProfilePage'
 import { SettingsPage } from './pages/SettingsPage'
+import { HelpPage } from './pages/HelpPage'
 import { useGameState } from './hooks/useGameState'
 import { api, ApiUser, getStoredUser, setStoredToken, setStoredUser, setLastPlayedRoom } from './services/api'
 import { RoomId } from './types/game'
@@ -27,6 +28,7 @@ export function App() {
     if (match && match[1]) {
       return 'profile'
     }
+    if (path === '/help') return 'help'
     try {
       const savedRoom = localStorage.getItem('whiteboard_current_room_v2')
       const savedUser = localStorage.getItem('whiteboard_current_user_v2')
@@ -387,6 +389,10 @@ export function App() {
         )}
 
         {/* 6. 个人设置页面 */}
+        {currentRoute === 'help' && (
+          <HelpPage onNavigate={(r) => setCurrentRoute(r)} />
+        )}
+
         {currentRoute === 'settings' && currentUser && (
           <SettingsPage
             currentUser={currentUser}
