@@ -87,13 +87,8 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
 
       <div className="bg-card/95 backdrop-blur-md rounded-[10px] border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] p-6 sm:p-8 flex flex-col gap-5">
         <div className="flex flex-col gap-1 border-b border-edge/60 pb-3">
-          <h2 className="text-base font-normal text-ink flex items-center gap-2">
-            <span>个人资料与安全设置</span>
-            <Sparkles className="w-4 h-4 text-gold" />
-          </h2>
-          <p className="text-xs text-ink-soft font-normal">
-            自定义您的体素艺术人设、修改登录密码与隐私偏好
-          </p>
+          <h2 className="text-base font-normal text-ink">个人资料</h2>
+
         </div>
 
         {successMsg && (
@@ -114,8 +109,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
           {/* 1. 更换体素头像 */}
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center justify-between">
-              <label className="font-normal text-ink">1. 选择体素艺术头像</label>
-              <span className="text-[10px] text-ink-soft font-normal">当前: {avatarKey}</span>
+              <label className="font-normal text-ink">1. 选择头像</label>
             </div>
 
             <div className="grid grid-cols-4 sm:grid-cols-6 gap-2 max-h-48 overflow-y-auto p-2 bg-paper/70 rounded-[8px] border border-edge/60">
@@ -143,7 +137,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
           {/* 2. 玩家唯一昵称 */}
           <div className="flex flex-col gap-1">
             <label className="font-normal text-ink flex items-center justify-between">
-              <span>2. 玩家昵称</span>
+              <span>2. 昵称</span>
               <span className="text-[10px] text-ink-soft font-normal">全局唯一</span>
             </label>
             <input

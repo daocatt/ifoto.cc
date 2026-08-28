@@ -79,34 +79,37 @@ export const Navbar: React.FC<NavbarProps> = ({
 
                 <button
                   onClick={() => onNavigate('profile')}
-                  className={`flex items-center gap-2 p-1 pl-2.5 rounded-xl text-xs font-bold transition-all cursor-pointer border ${
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                     currentRoute === 'profile'
-                      ? 'bg-tint/80 border-primary text-primary shadow-xs'
-                      : 'bg-warm border-edge text-ink hover:border-primary/40'
+                      ? 'bg-primary text-white shadow-xs'
+                      : 'bg-warm text-ink hover:bg-edge/80'
                   }`}
                   title="查看个人主页"
                 >
                   <span className="max-w-[80px] truncate">{currentUser.name}</span>
-                  <VoxelAvatar avatarKey={currentUser.avatarKey} size={28} />
                 </button>
 
                 <button
                   onClick={() => onNavigate('settings')}
-                  className={`p-2 rounded-xl text-ink-soft hover:text-ink hover:bg-warm transition-colors cursor-pointer border border-transparent hover:border-edge ${
-                    currentRoute === 'settings' ? 'bg-warm text-ink border-edge' : ''
+                  className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
+                    currentRoute === 'settings'
+                      ? 'bg-warm text-ink border border-edge'
+                      : 'text-ink-soft hover:text-ink hover:bg-warm border border-transparent hover:border-edge'
                   }`}
                   title="个人设置"
                 >
-                  <Settings className="w-4 h-4" />
+                  <Settings className="w-3.5 h-3.5" />
+                  <span>设置</span>
                 </button>
 
                 {onLogout && (
                   <button
                     onClick={onLogout}
-                    className="p-2 rounded-xl text-ink-soft hover:text-coral hover:bg-coral/10 transition-colors cursor-pointer"
+                    className="px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer text-ink-soft hover:text-coral hover:bg-coral/10 border border-transparent hover:border-coral/20"
                     title="退出登录"
                   >
-                    <LogOut className="w-4 h-4" />
+                    <LogOut className="w-3.5 h-3.5" />
+                    <span>退出</span>
                   </button>
                 )}
               </>
