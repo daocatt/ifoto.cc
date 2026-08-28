@@ -12,7 +12,7 @@ export function initDb() {
     return null
   }
   if (!db) {
-    const connectionString = process.env.DATABASE_URL || 'postgres://whiteboard_user:whiteboard_secret_password@localhost:5432/whiteboard_db'
+    const connectionString = process.env.DATABASE_URL || 'postgres://ifoto_user:ifoto_secret_password@localhost:5432/ifoto_db'
     pool = new Pool({
       connectionString,
       max: 10,
