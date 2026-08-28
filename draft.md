@@ -64,10 +64,10 @@
 
 ## 📂 四、NAS 部署目录结构
 
-在 NAS 上的 Docker 目录（例如 `/volume1/docker/family-whiteboard`）创建：
+在 NAS 上的 Docker 目录（例如 `/volume1/docker/ifotocc`）创建：
 
 ```bash
-family-whiteboard/
+ifotocc/
 ├── docker-compose.yml       # 一体化容器编排文件
 ├── Caddyfile                # 局域网自动化 HTTPS 与反代配置
 └── scoreboard/              # 计分系统前端与题库配置 (如需定制挂载)
