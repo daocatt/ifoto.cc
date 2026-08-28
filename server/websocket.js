@@ -1,10 +1,24 @@
 import { WebSocketServer, WebSocket } from 'ws'
 import { isRoomInOpenTime } from './routes/rooms.js'
 import { initDb, schema } from './db.js'
+import { verifyToken } from './auth.js'
 import { eq } from 'drizzle-orm'
 
 // 房间状态映射：roomId -> { clients: Map<ws, Player>, elements: any[], gameState: any }
 const rooms = new Map()
+
+const MAX_PLAYERS_PER_ROOM = 12
+
+// 本地模式：清洗客户端传入的玩家信息，防止注入异常昵称/头像/ID
+function sanitizePlayer(player) {
+  if (!player || typeof player !== 'object') return null
+  const name = String(player.name || '').trim().slice(0, 20) || '玩家'
+  const avatar = /^voxel_\d+$/.test(String(player.avatar || '')) ? String(player.avatar) : 'voxel_01'
+  const id = /^[a-zA-Z0-9_-]{1,64}$/.test(String(player.id || ''))
+    ? String(player.id)
+    : ('u_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6))
+  return { id, name, avatar }
+}
 
 export function getRoomState(roomId) {
   if (!rooms.has(roomId)) {
@@ -48,9 +62,29 @@ export function initWebSocketServer(httpServer) {
     const pathname = url.pathname
 
     if (pathname === '/ws' || pathname === '/ws-game' || pathname === '/ws/game') {
-      wss.handleUpgrade(request, socket, head, (ws) => {
-        wss.emit('connection', ws, request)
-      })
+      // 线上模式：必须携带有效 JWT，未鉴权直接拒绝，防止伪造身份
+      if (process.env.APP_MODE === 'online') {
+        const token = url.searchParams.get('token')
+        const user = token ? verifyToken(token) : null
+        if (!user) {
+          socket.write('HTTP/1.1 401 Unauthorized\r\n\r\n')
+          socket.destroy()
+          return
+        }
+        wss.handleUpgrade(request, socket, head, (ws) => {
+          ws.ifotoUser = {
+            id: user.id,
+            name: user.name,
+            avatarKey: user.avatarKey,
+            role: user.role
+          }
+          wss.emit('connection', ws, request)
+        })
+      } else {
+        wss.handleUpgrade(request, socket, head, (ws) => {
+          wss.emit('connection', ws, request)
+        })
+      }
     } else {
       socket.destroy()
     }
@@ -68,7 +102,20 @@ export function initWebSocketServer(httpServer) {
         // 玩家加入房间
         if (type === 'JOIN_ROOM') {
           const roomId = data.roomId || 'draw'
-          const player = data.payload?.player
+          let player = data.payload?.player
+
+          if (process.env.APP_MODE === 'online') {
+            // 线上模式：以服务端鉴权用户为准，不信任客户端传入的 player
+            if (!ws.ifotoUser) {
+              ws.send(JSON.stringify({ type: 'ERROR', payload: { message: '未鉴权，无法加入房间' } }))
+              ws.close(4001, 'Unauthorized')
+              return
+            }
+            player = { id: ws.ifotoUser.id, name: ws.ifotoUser.name, avatar: ws.ifotoUser.avatarKey }
+          } else {
+            // 本地模式：清洗客户端传入的玩家数据
+            player = sanitizePlayer(player)
+          }
 
           if (currentRoomId && currentRoomId !== roomId) {
             const oldRoom = getRoomState(currentRoomId)
@@ -81,6 +128,13 @@ export function initWebSocketServer(httpServer) {
 
           currentRoomId = roomId
           const room = getRoomState(roomId)
+
+          // 房间人数上限保护
+          if (!room.clients.has(ws) && room.clients.size >= MAX_PLAYERS_PER_ROOM) {
+            ws.send(JSON.stringify({ type: 'ERROR', payload: { message: '房间已满，无法加入' } }))
+            ws.close(4000, 'Room Full')
+            return
+          }
 
           if (player) {
             room.clients.set(ws, player)
@@ -153,11 +207,12 @@ export function initWebSocketServer(httpServer) {
               room.gameState = { ...(room.gameState || {}), ...data.payload.gameState }
             }
             if (data.payload?.players) {
-              // 同步分值
+              // 同步分值（钳制到合理范围，防止客户端伪造超高分数）
               for (const p of data.payload.players) {
+                const safeScore = Number.isFinite(p.score) ? Math.max(0, Math.min(1000000, Math.floor(p.score))) : 0
                 for (const [clientWs, clientPlayer] of room.clients.entries()) {
                   if (clientPlayer.id === p.id) {
-                    room.clients.set(clientWs, { ...clientPlayer, score: p.score })
+                    room.clients.set(clientWs, { ...clientPlayer, score: safeScore })
                   }
                 }
               }

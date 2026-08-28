@@ -2,7 +2,7 @@ import { useState, useEffect, useCallback, useRef } from 'react'
 import { Player, GameState, RoomId } from '../types/game'
 import { WORD_DATABASE, WORD_DATABASE_EN } from '../constants/words'
 import { triggerCelebration } from '../components/Common/ConfettiEffect'
-import { api } from '../services/api'
+import { api, getStoredToken } from '../services/api'
 
 const SESSION_USER_KEY = 'whiteboard_current_user_v2'
 const SESSION_ROOM_KEY = 'whiteboard_current_room_v2'
@@ -92,7 +92,10 @@ export function useGameState(
     if (!currentUser?.id || !currentRoomId) return
 
     const protocol = window.location.protocol === 'https:' ? 'wss:' : 'ws:'
-    const ws = new WebSocket(`${protocol}//${window.location.host}/ws`)
+    // 线上模式携带 JWT 以便服务端鉴权（本地模式无 token 则不带）
+    const token = getStoredToken()
+    const tokenParam = token ? `?token=${encodeURIComponent(token)}` : ''
+    const ws = new WebSocket(`${protocol}//${window.location.host}/ws${tokenParam}`)
     wsRef.current = ws
 
     ws.onopen = () => {
@@ -190,13 +193,13 @@ export function useGameState(
   }, [])
 
   // ── 2. 加入/切换房间 ──
-  const joinRoom = useCallback((name: string, avatar: string, roomId: RoomId) => {
+  const joinRoom = useCallback((name: string, avatar: string, roomId: RoomId, externalId?: string) => {
     // 优先复用 localStorage 中已有的 player ID（同一浏览器再次进入保持同一身份）
     let existingUser: Player | null = null
     try { existingUser = JSON.parse(localStorage.getItem(SESSION_USER_KEY) || 'null') } catch {}
 
     const user: Player = {
-      id: existingUser?.id || ('u_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6)),
+      id: externalId || existingUser?.id || ('u_' + Date.now() + '_' + Math.random().toString(36).slice(2, 6)),
       name: name.trim() || '玩家', avatar, score: 0
     }
     setCurrentUser(user)

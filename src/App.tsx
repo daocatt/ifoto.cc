@@ -237,7 +237,7 @@ export function App() {
       ? { name: currentUser.name, avatar: currentUser.avatarKey }
       : { name: '玩家', avatar: 'voxel_01' }
 
-    joinRoom(userToJoin.name, userToJoin.avatar, roomId as RoomId)
+    joinRoom(userToJoin.name, userToJoin.avatar, roomId as RoomId, currentUser?.id)
     setLastPlayedRoom(roomId)
     setCurrentRoute('game')
 
