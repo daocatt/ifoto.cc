@@ -24,9 +24,17 @@ const DIST_DIR = path.join(__dirname, 'dist')
 // 1. 初始化 Hono 应用
 const app = new Hono()
 
+// CORS 白名单：生产域名 + 本地开发端口，禁止任意来源
+const CORS_ORIGINS = (() => {
+  const domain = process.env.APP_DOMAIN || ''
+  const devPorts = process.env.CORS_DEV_PORTS || '3000,3001'
+  const devOrigins = devPorts.split(',').map(p => `http://localhost:${p.trim()}`)
+  return [...new Set([domain, 'http://localhost:3000', 'http://localhost:3001', ...devOrigins].filter(Boolean))]
+})()
+
 app.use('*', logger())
 app.use('*', cors({
-  origin: '*',
+  origin: (origin) => (origin && CORS_ORIGINS.includes(origin)) || !origin,
   allowMethods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowHeaders: ['Content-Type', 'Authorization']
 }))
@@ -38,25 +46,43 @@ app.route('/api/rooms', roomsRouter)
 app.route('/api/profile', profileRouter)
 app.route('/api/scores', scoresRouter)
 
-// 题库热更新路由
+// 题库热更新路由（内存缓存，避免每次请求都整文件读盘）
+const wordBankCache = new Map() // fileName -> { content, mtimeMs }
+
+function readWordBank(fileName) {
+  const jsonPath = path.join(__dirname, fileName)
+  try {
+    const stat = fs.statSync(jsonPath)
+    const cached = wordBankCache.get(fileName)
+    if (cached && cached.mtimeMs === stat.mtimeMs) {
+      return cached.content
+    }
+    const content = fs.readFileSync(jsonPath, 'utf-8')
+    wordBankCache.set(fileName, { content, mtimeMs: stat.mtimeMs })
+    return content
+  } catch (e) {
+    return null
+  }
+}
+
 app.get('/api/words', (c) => {
   const isEn = c.req.query('room') === 'english'
   const fileName = isEn ? 'words_en.json' : 'words.json'
-  const jsonPath = path.join(__dirname, fileName)
-  if (fs.existsSync(jsonPath)) {
-    c.header('Content-Type', 'application/json; charset=UTF-8')
-    return c.body(fs.readFileSync(jsonPath, 'utf-8'))
+  const content = readWordBank(fileName)
+  if (content === null) {
+    return c.json({ error: 'File not found' }, 404)
   }
-  return c.json({ error: 'File not found' }, 404)
+  c.header('Content-Type', 'application/json; charset=UTF-8')
+  return c.body(content)
 })
 
 app.get('/api/words_en', (c) => {
-  const jsonPath = path.join(__dirname, 'words_en.json')
-  if (fs.existsSync(jsonPath)) {
-    c.header('Content-Type', 'application/json; charset=UTF-8')
-    return c.body(fs.readFileSync(jsonPath, 'utf-8'))
+  const content = readWordBank('words_en.json')
+  if (content === null) {
+    return c.json({ error: 'File not found' }, 404)
   }
-  return c.json({ error: 'File not found' }, 404)
+  c.header('Content-Type', 'application/json; charset=UTF-8')
+  return c.body(content)
 })
 
 // MIME 映射
@@ -106,7 +132,13 @@ const server = http.createServer(async (req, res) => {
     reqPath = '/index.html'
   }
 
-  let filePath = path.join(DIST_DIR, reqPath)
+  // 路径包含校验：确保解析后的真实路径始终落在 DIST_DIR 内，防止路径穿越泄露源码/.env
+  const resolvedFile = path.resolve(path.join(DIST_DIR, reqPath))
+  if (!resolvedFile.startsWith(path.resolve(DIST_DIR) + path.sep) && resolvedFile !== path.resolve(DIST_DIR, 'index.html')) {
+    res.writeHead(403, { 'Content-Type': 'text/plain; charset=UTF-8' })
+    return res.end('Forbidden')
+  }
+  let filePath = resolvedFile
 
   fs.stat(filePath, (err, stats) => {
     if (err || !stats.isFile()) {
@@ -130,6 +162,15 @@ initWebSocketServer(server)
 
 server.listen(PORT, '0.0.0.0', async () => {
   const mode = process.env.APP_MODE === 'online' ? 'online' : 'local'
+
+  // online 模式安全校验：必须配置强 JWT 密钥，否则拒绝启动（防止使用默认/空密钥被伪造 token）
+  if (mode === 'online') {
+    if (!process.env.JWT_SECRET || process.env.JWT_SECRET.length < 16) {
+      console.error('❌ [Security] online 模式必须配置至少 16 位的强随机 JWT_SECRET，拒绝启动。')
+      process.exit(1)
+    }
+  }
+
   console.log(`=======================================================`)
   console.log(`🎨 你画我猜 (Whiteboard Game V2) 服务已启动`)
   console.log(`📡 运行模式: [${mode.toUpperCase()}] | 监听端口: ${PORT}`)

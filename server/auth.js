@@ -1,7 +1,8 @@
 import bcrypt from 'bcryptjs'
 import jwt from 'jsonwebtoken'
 
-const JWT_SECRET = process.env.JWT_SECRET || 'whiteboard_super_secret_jwt_key_2026_change_me_please'
+// JWT 密钥：必须在 .env 中显式配置（online 模式启动时校验，不再使用硬编码兜底密钥）
+const JWT_SECRET = process.env.JWT_SECRET
 
 // 强密码校验 (至少 8 位，包含字母与数字)
 export function validatePasswordStrength(password) {
