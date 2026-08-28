@@ -1,5 +1,5 @@
 import React from 'react'
-import { ArrowLeft, Pencil, Users, Globe, Zap, Github } from 'lucide-react'
+import { ArrowLeft, Pencil, Users, Globe, Zap, ExternalLink } from 'lucide-react'
 
 interface HelpPageProps {
   onNavigate: (route: string) => void
@@ -110,7 +110,7 @@ export const HelpPage: React.FC<HelpPageProps> = ({ onNavigate }) => {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 hover:text-ink transition-colors"
         >
-          <Github className="w-3.5 h-3.5" />
+          <ExternalLink className="w-3.5 h-3.5" />
           <span>daocatt/ifoto.cc</span>
         </a>
       </div>
