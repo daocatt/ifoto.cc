@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Sparkles, ArrowRight, ShieldCheck, Mail, Lock, User, AlertCircle } from 'lucide-react'
+import { ArrowRight, Mail, Lock, User, AlertCircle } from 'lucide-react'
 import { api, ApiUser, setStoredToken, setStoredUser } from '../services/api'
 import { VOXEL_AVATAR_LIST } from '../constants/voxelAvatars'
 import { VoxelAvatar } from '../components/Common/VoxelAvatar'
