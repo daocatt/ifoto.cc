@@ -85,7 +85,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   }`}
                   title="查看个人主页"
                 >
-                  <span className="max-w-[80px] truncate">{currentUser.name}</span>
+                  <span className="max-w-[80px] truncate">主页</span>
                 </button>
 
                 <button

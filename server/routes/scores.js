@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { eq, desc } from 'drizzle-orm'
+import { eq, desc, count, min, max, sum, avg } from 'drizzle-orm'
 import { initDb, schema } from '../db.js'
 import { authMiddleware } from '../auth.js'
 
@@ -49,6 +49,31 @@ scoresRouter.get('/my', authMiddleware, async (c) => {
     .limit(50)
 
   return c.json({ records })
+})
+
+// 获取我的战绩统计（对局数 / 总得分 / 最高分 / 最低分 / 平均分）
+scoresRouter.get('/summary', authMiddleware, async (c) => {
+  const user = c.get('user')
+  const db = initDb()
+  if (!db) return c.json({ summary: null })
+
+  const [agg] = await db.select({
+    totalGames: count(),
+    totalScore: sum(schema.gameRecords.score),
+    bestScore: max(schema.gameRecords.score),
+    lowestScore: min(schema.gameRecords.score),
+    avgScore: avg(schema.gameRecords.score)
+  }).from(schema.gameRecords).where(eq(schema.gameRecords.userId, user.id))
+
+  return c.json({
+    summary: {
+      totalGames: agg.totalGames || 0,
+      totalScore: Number(agg.totalScore || 0),
+      bestScore: Number(agg.bestScore || 0),
+      lowestScore: Number(agg.lowestScore || 0),
+      avgScore: Math.round(Number(agg.avgScore || 0))
+    }
+  })
 })
 
 export { scoresRouter }

@@ -183,5 +183,15 @@ export const api = {
       body: JSON.stringify(payload)
     }),
 
-  getMyScores: () => request<{ records: any[] }>('/api/scores/my')
+  getMyScores: () => request<{ records: any[] }>('/api/scores/my'),
+
+  getScoreSummary: () => request<{ summary: ScoreSummary | null }>('/api/scores/summary')
+}
+
+export interface ScoreSummary {
+  totalGames: number
+  totalScore: number
+  bestScore: number
+  lowestScore: number
+  avgScore: number
 }

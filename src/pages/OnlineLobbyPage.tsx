@@ -11,7 +11,7 @@ import {
   History,
   Loader2
 } from 'lucide-react'
-import { api, ApiUser, ApiRoom, getLastPlayedRoom, setLastPlayedRoom } from '../services/api'
+import { api, ApiUser, ApiRoom, getLastPlayedRoom, setLastPlayedRoom, ScoreSummary } from '../services/api'
 import { VoxelAvatar } from '../components/Common/VoxelAvatar'
 import { Button } from '../components/Common/Button'
 import { ShareRoomModal } from '../components/GameHUD/ShareRoomModal'
@@ -28,6 +28,7 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
 }) => {
   const [publicRooms, setPublicRooms] = useState<ApiRoom[]>([])
   const [myRoom, setMyRoom] = useState<ApiRoom | null>(null)
+  const [summary, setSummary] = useState<ScoreSummary | null>(null)
   const [loading, setLoading] = useState(true)
   const [searchQuery, setSearchQuery] = useState('')
 
@@ -59,12 +60,14 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
   const loadData = async () => {
     setLoading(true)
     try {
-      const [roomsRes, myRoomRes] = await Promise.all([
+      const [roomsRes, myRoomRes, summaryRes] = await Promise.all([
         api.getPublicRooms(),
-        api.getMyRoom()
+        api.getMyRoom(),
+        api.getScoreSummary()
       ])
       setPublicRooms(roomsRes.rooms || [])
       setMyRoom(myRoomRes.room || null)
+      setSummary(summaryRes.summary || null)
 
       if (myRoomRes.room) {
         const emojiMatch = myRoomRes.room.name.match(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)/u);
@@ -194,6 +197,26 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
             <p className="text-xs text-ink-soft font-normal">
               欢迎来到你画我猜大厅，随时进入公开房间或管理您的专属画室
             </p>
+            {summary && (
+              <div className="flex items-center gap-4 mt-1.5">
+                <div className="flex items-center gap-1">
+                  <span className="text-sm font-bold text-primary font-mono">{summary.totalGames}</span>
+                  <span className="text-[10px] text-ink-soft font-normal">对局</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-sm font-bold text-primary font-mono">{summary.totalScore}</span>
+                  <span className="text-[10px] text-ink-soft font-normal">总得分</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-sm font-bold text-gold font-mono">{summary.bestScore}</span>
+                  <span className="text-[10px] text-ink-soft font-normal">最高分</span>
+                </div>
+                <div className="flex items-center gap-1">
+                  <span className="text-sm font-bold text-ink font-mono">{summary.lowestScore}</span>
+                  <span className="text-[10px] text-ink-soft font-normal">最低分</span>
+                </div>
+              </div>
+            )}
           </div>
         </div>
 
