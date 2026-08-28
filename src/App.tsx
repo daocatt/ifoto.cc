@@ -37,7 +37,7 @@ export function App() {
     return 'home'
   })
   const [targetRoomId, setTargetRoomId] = useState<string | null>(null)
-  const [appLoading, setAppLoading] = useState(false)
+  const [appLoading, setAppLoading] = useState(true)
 
   const excalidrawAPIRef = useRef<ExcalidrawImperativeAPI | null>(null)
   const isApplyingRemoteRef = useRef(false)
