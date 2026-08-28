@@ -84,19 +84,10 @@ export const AuthPage: React.FC<AuthPageProps> = ({
       <div className="w-full max-w-md bg-card/95 backdrop-blur-md rounded-[10px] border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] p-6 sm:p-8 flex flex-col gap-5 animate-in fade-in zoom-in-95 duration-200">
         {/* 头部 */}
         <div className="flex flex-col items-center text-center gap-1.5 border-b border-edge/60 pb-4">
-          <div className="w-10 h-10 rounded-[8px] bg-tint flex items-center justify-center text-primary mb-1 border border-primary/20 shadow-xs">
-            {isInitAdmin ? <ShieldCheck className="w-5 h-5 text-gold" /> : <Sparkles className="w-5 h-5" />}
-          </div>
-          <h2 className="text-base font-normal text-ink">
+<h2 className="text-base font-normal text-ink">
             {isInitAdmin ? '初始化超级管理员' : isRegister ? '注册你画我猜账号' : '登录游戏大厅'}
           </h2>
-          <p className="text-xs text-ink-soft font-normal">
-            {isInitAdmin
-              ? '首次部署需创建超级管理员账号，请妥善保管密码'
-              : isRegister
-              ? '注册专属账号，享受自定义房间、积分历史与战绩排行'
-              : '欢迎回来，请输入您的登录凭证'}
-          </p>
+
         </div>
 
         {error && (
@@ -111,7 +102,7 @@ export const AuthPage: React.FC<AuthPageProps> = ({
           {(isRegister || isInitAdmin) && (
             <div className="flex flex-col gap-1.5">
               <label className="text-xs font-normal text-ink flex items-center justify-between">
-                <span>选择体素头像</span>
+                <span>选择头像</span>
                 <span className="text-[10px] text-ink-soft font-normal">24 款可选</span>
               </label>
               <div className="grid grid-cols-6 gap-1.5 max-h-32 overflow-y-auto p-2 bg-paper/70 rounded-[8px] border border-edge/60">
