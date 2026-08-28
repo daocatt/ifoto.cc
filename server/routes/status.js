@@ -5,37 +5,28 @@ import { validatePasswordStrength, hashPassword, signToken } from '../auth.js'
 
 const statusRouter = new Hono()
 
-// 获取系统状态与运行模式
+// 获取系统状态与运行模式 — 以 .env APP_MODE 为绝对权威，不允许 fallback
 statusRouter.get('/status', async (c) => {
   const mode = process.env.APP_MODE === 'online' ? 'online' : 'local'
   const allowRegister = process.env.ALLOW_REGISTER !== 'false'
   const domain = process.env.APP_DOMAIN || 'http://localhost:3000'
 
   if (mode === 'local') {
-    return c.json({
-      mode: 'local',
-      allowRegister: true,
-      domain,
-      needsInitAdmin: false
-    })
+    return c.json({ mode: 'local', allowRegister: true, domain, needsInitAdmin: false })
   }
 
+  // online 模式：必须有正常的 DB 连接，否则返回 503 错误（不 fallback 为 local）
   try {
     const db = initDb()
     if (!db) {
-      return c.json({ mode: 'local', allowRegister: true, domain, needsInitAdmin: false })
+      return c.json({ mode: 'online', error: 'DATABASE_NOT_CONFIGURED' }, 503)
     }
     const [result] = await db.select({ total: count() }).from(schema.users)
     const needsInitAdmin = result.total === 0
-    return c.json({
-      mode: 'online',
-      allowRegister,
-      domain,
-      needsInitAdmin
-    })
+    return c.json({ mode: 'online', allowRegister, domain, needsInitAdmin })
   } catch (err) {
-    console.error('Check DB status failed:', err)
-    return c.json({ mode: 'online', allowRegister, domain, needsInitAdmin: false, error: 'Database connection failed' })
+    console.error('[status] DB connection failed:', err)
+    return c.json({ mode: 'online', error: 'DATABASE_CONNECTION_FAILED' }, 503)
   }
 })
 

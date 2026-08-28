@@ -38,6 +38,7 @@ export function App() {
   })
   const [targetRoomId, setTargetRoomId] = useState<string | null>(null)
   const [appLoading, setAppLoading] = useState(true)
+  const [appError, setAppError] = useState<string | null>(null)
 
   const excalidrawAPIRef = useRef<ExcalidrawImperativeAPI | null>(null)
   const isApplyingRemoteRef = useRef(false)
@@ -74,8 +75,8 @@ export function App() {
           }
         }
       } catch (e) {
-        console.warn('Init app status error, fallback to local mode:', e)
-        setAppMode('local')
+        console.error('Init app status error:', e)
+        setAppError('无法连接到服务器，请检查后端服务是否已启动')
       } finally {
         setAppLoading(false)
       }
@@ -305,7 +306,23 @@ export function App() {
     return (
       <div className="h-screen w-screen flex flex-col items-center justify-center bg-paper text-ink gap-3">
         <Loader2 className="w-8 h-8 text-primary animate-spin" />
-        <span className="text-xs text-ink-soft font-bold tracking-wide">正在初始化你画我猜...</span>
+        <span className="text-xs text-ink-soft font-bold tracking-wide">正在初始化...</span>
+      </div>
+    )
+  }
+
+  if (appError) {
+    return (
+      <div className="h-screen w-screen flex flex-col items-center justify-center bg-paper text-ink gap-4">
+        <div className="text-4xl">⚠️</div>
+        <h2 className="text-base font-bold text-ink">服务连接失败</h2>
+        <p className="text-xs text-ink-soft max-w-xs text-center">{appError}</p>
+        <button
+          onClick={() => window.location.reload()}
+          className="mt-2 px-5 py-2 rounded-xl text-xs font-bold bg-primary text-white cursor-pointer hover:bg-primary-hover transition-colors"
+        >
+          重新连接
+        </button>
       </div>
     )
   }
