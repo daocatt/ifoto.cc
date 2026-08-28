@@ -264,7 +264,25 @@ export function initWebSocketServer(httpServer) {
     })
   })
 
-  // 3. 定时检查开放时段
+  // 3. 服务端心跳：定时探测并清理半开/僵尸连接（浏览器端 WebSocket 会自动回协议级 pong）
+  wss.on('connection', (ws) => {
+    ws.isAlive = true
+    ws.on('pong', () => { ws.isAlive = true })
+  })
+
+  const heartbeatInterval = setInterval(() => {
+    for (const ws of wss.clients) {
+      if (ws.isAlive === false) {
+        ws.terminate()
+        continue
+      }
+      ws.isAlive = false
+      ws.ping()
+    }
+  }, 30000)
+  wss.on('close', () => clearInterval(heartbeatInterval))
+
+  // 4. 定时检查开放时段
   setInterval(async () => {
     if (process.env.APP_MODE === 'local') return
     const db = initDb()
