@@ -54,7 +54,7 @@ export const Navbar: React.FC<NavbarProps> = ({
         </button>
         {mode === 'local' ? (
           <div className="flex items-center gap-2">
-            {currentRoute === 'local-lobby' ? (
+            {currentRoute === 'lobby' ? (
               <button
                 onClick={() => onNavigate('home')}
                 className="px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-warm text-ink hover:bg-edge/80 border border-edge/60 shadow-xs"
@@ -64,7 +64,7 @@ export const Navbar: React.FC<NavbarProps> = ({
               </button>
             ) : (
               <button
-                onClick={() => onNavigate('local-lobby')}
+                onClick={() => onNavigate('lobby')}
                 className="px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer bg-primary text-white shadow-xs"
               >
                 <LayoutGrid className="w-3.5 h-3.5" />
