@@ -326,9 +326,6 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
                         )}
                       </div>
                       <div className="flex items-center gap-1.5 text-[11px] text-ink-soft mt-0.5 font-normal">
-                        <VoxelAvatar avatarKey={room.ownerAvatar} size={16} />
-                        <span className="font-normal text-ink truncate max-w-[80px]">{room.ownerName}</span>
-                        <span>•</span>
                         <span>{room.type === 'english' ? '英语猜猜看' : '你画我猜'}</span>
                       </div>
                     </div>
@@ -354,7 +351,7 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
                 {/* 底部操作 */}
                 <div className="flex items-center justify-between pt-1 border-t border-edge/40">
                   <span className="text-[10px] text-ink-soft font-mono font-normal">
-                    {room.isSystem ? '官方推荐' : `ID: ${room.id}`}
+                    {room.isSystem ? 'ifoto' : `ID: ${room.id}`}
                   </span>
                   <Button
                     variant={isClosed ? 'outline' : 'primary'}

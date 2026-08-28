@@ -77,8 +77,8 @@ roomsRouter.get('/public', async (c) => {
 
   // 置顶系统两大核心房间
   const result = [
-    { id: 'draw', name: '🎨 你画我猜 (官方大厅)', type: 'draw', isSystem: true, isOpen: true, hasPassword: false, ownerName: '系统官方', ownerAvatar: 'voxel_10' },
-    { id: 'english', name: '🔤 英语猜猜看 (官方大厅)', type: 'english', isSystem: true, isOpen: true, hasPassword: false, ownerName: '系统官方', ownerAvatar: 'voxel_12' },
+    { id: 'draw', name: '🎨 你画我猜', type: 'draw', isSystem: true, isOpen: true, hasPassword: false, ownerName: 'ifoto', ownerAvatar: 'voxel_10' },
+    { id: 'english', name: '🔤 英语猜猜看', type: 'english', isSystem: true, isOpen: true, hasPassword: false, ownerName: 'ifoto', ownerAvatar: 'voxel_12' },
     ...processedRooms
   ]
 
