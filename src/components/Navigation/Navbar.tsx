@@ -1,6 +1,5 @@
 import { LogOut, Settings, LayoutGrid, Home } from 'lucide-react'
 import { ApiUser } from '../../services/api'
-import { VoxelAvatar } from '../Common/VoxelAvatar'
 import { AppLogo } from '../Common/AppLogo'
 
 interface NavbarProps {
