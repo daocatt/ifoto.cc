@@ -74,6 +74,7 @@ function urlFor(r: Route): string {
 export function App() {
   const [appMode, setAppMode] = useState<'local' | 'online'>('local')
   const [allowRegister, setAllowRegister] = useState(true)
+  const [needsInitAdmin, setNeedsInitAdmin] = useState(false)
   const [currentUser, setCurrentUser] = useState<ApiUser | null>(getStoredUser())
   const [route, setRoute] = useState<Route>(() => parseLocation())
   const [appLoading, setAppLoading] = useState(true)
@@ -236,23 +237,56 @@ export function App() {
     broadcastClearCanvas()
   }
 
-  // ── 动态 SEO ──
+  // ── 渲染期鉴权门控：根据 (路由, 模式, 登录态, 是否需要初始化管理员) 同步决定显示什么，避免受保护页闪现 ──
+  // 返回 null 表示当前路由可直接渲染；否则返回应回退到的路由
+  const gate = useCallback((): Route | null => {
+    const isLocal = appMode === 'local'
+    switch (route.name) {
+      // 房间 / 大厅：线上未登录 → 登录
+      case 'game':
+      case 'lobby':
+        if (!isLocal && !currentUser) return { name: 'login' }
+        return null
+      // 设置 / 个人主页：需账号（本地模式无账号 → 首页；线上未登录 → 登录）
+      case 'settings':
+      case 'profile':
+        if (isLocal) return { name: 'home' }
+        if (!currentUser) return { name: 'login' }
+        return null
+      // 已登录访问登录/注册页 → 大厅
+      case 'login':
+      case 'register':
+        if (!isLocal && currentUser) return { name: 'lobby' }
+        return null
+      // 超管初始化：仅当数据库为空时允许
+      case 'init-admin':
+        if (needsInitAdmin) return null
+        return isLocal ? { name: 'home' } : { name: 'lobby' }
+      default:
+        return null
+    }
+  }, [route.name, appMode, currentUser, needsInitAdmin])
+
+  // 实际用于渲染的路由（被门控时回退到登录/首页等，受保护页面绝不渲染）
+  const effectiveRoute = gate() ?? route
+
+  // ── 动态 SEO（跟随实际渲染的页面） ──
   const seo = useMemo(() => {
     const base = 'iFOTO 你画我猜'
     const desc = 'iFOTO 开源的有趣益智互动游戏，在线多人实时你画我猜白板。'
-    switch (route.name) {
+    switch (effectiveRoute.name) {
       case 'home': return { title: `${base} · 在线你画我猜互动`, description: desc, path: '/' }
       case 'lobby': return { title: `游戏大厅 · ${base}`, description: '选择或创建房间，开始在线多人你画我猜。', path: '/lobby' }
-      case 'game': return { title: `房间 · ${base}`, description: '实时多人你画我猜房间。', path: `/room/${route.roomId || 'draw'}` }
+      case 'game': return { title: `房间 · ${base}`, description: '实时多人你画我猜房间。', path: `/room/${effectiveRoute.roomId || 'draw'}` }
       case 'settings': return { title: `个人设置 · ${base}`, path: '/settings' }
       case 'login': return { title: `登录 · ${base}`, path: '/login' }
       case 'register': return { title: `注册 · ${base}`, path: '/register' }
       case 'init-admin': return { title: `初始化管理员 · ${base}`, path: '/init-admin' }
       case 'help': return { title: `关于 iFOTO · 你画我猜`, path: '/help' }
-      case 'profile': return { title: `个人主页 · ${base}`, path: `/u/${route.uid || ''}` }
+      case 'profile': return { title: `个人主页 · ${base}`, path: `/u/${effectiveRoute.uid || ''}` }
       default: return { title: base, path: '/' }
     }
-  }, [route.name, route.roomId, route.uid])
+  }, [effectiveRoute.name, effectiveRoute.roomId, effectiveRoute.uid])
   useSEO(seo)
 
   // ── 1. 初始化系统状态与鉴权探针 ──
@@ -262,6 +296,7 @@ export function App() {
         const status = await api.getStatus()
         setAppMode(status.mode)
         setAllowRegister(status.allowRegister)
+        setNeedsInitAdmin(status.needsInitAdmin)
 
         if (status.mode === 'online') {
           if (status.needsInitAdmin) {
@@ -317,10 +352,9 @@ export function App() {
     if (appLoading) return // 等系统状态/运行模式确定后再处理房间加入
     if (route.name !== 'game' || !route.roomId) return
 
-    // 在线模式未登录访问房间 → 先去登录，登录后回跳
+    // 在线模式未登录访问房间 → 记录待回跳房间，由渲染期门控显示登录页（保留 /room URL）
     if (appMode === 'online' && !currentUser) {
       pendingJoinRoomIdRef.current = route.roomId
-      go({ name: 'login' })
       return
     }
 
@@ -432,16 +466,16 @@ export function App() {
     )
   }
 
-  const roomId = route.roomId || currentRoomId || 'draw'
+  const roomId = effectiveRoute.roomId || currentRoomId || 'draw'
 
   return (
     <div className="h-screen w-screen overflow-hidden flex flex-col bg-paper text-ink">
       {/* 顶部统一导航栏 (仅在非全屏游戏房间时常驻展示) */}
-      {route.name !== 'game' && (
+      {effectiveRoute.name !== 'game' && (
         <Navbar
           mode={appMode}
           currentUser={currentUser}
-          currentRoute={route.name}
+          currentRoute={effectiveRoute.name}
           onNavigate={handleNavigate}
           onLogout={handleLogout}
         />
@@ -450,12 +484,12 @@ export function App() {
       {/* 主视图区域根据当前路由切换 */}
       <main className="flex-1 overflow-y-auto relative">
         {/* 1. 首页 */}
-        {route.name === 'home' && (
+        {effectiveRoute.name === 'home' && (
           <HomePage onStart={handleStartFromHome} />
         )}
 
         {/* 2. 大厅（本地/线上共用 /lobby，按模式渲染对应页面） */}
-        {route.name === 'lobby' && (
+        {effectiveRoute.name === 'lobby' && (
           appMode === 'local' ? (
             <LocalLobbyPage
               initialRoom={currentRoomId || 'draw'}
@@ -478,9 +512,9 @@ export function App() {
         )}
 
         {/* 3. 认证页面 (登录/注册/超管初始化) */}
-        {(route.name === 'login' || route.name === 'register' || route.name === 'init-admin') && (
+        {(effectiveRoute.name === 'login' || effectiveRoute.name === 'register' || effectiveRoute.name === 'init-admin') && (
           <AuthPage
-            type={route.name as 'login' | 'register' | 'init-admin'}
+            type={effectiveRoute.name as 'login' | 'register' | 'init-admin'}
             allowRegister={allowRegister}
             onSuccess={handleAuthSuccess}
             onNavigate={handleNavigate}
@@ -488,21 +522,21 @@ export function App() {
         )}
 
         {/* 4. 个人主页 */}
-        {route.name === 'profile' && currentUser && (
+        {effectiveRoute.name === 'profile' && currentUser && (
           <ProfilePage
             currentUser={currentUser}
-            viewUserId={route.uid}
+            viewUserId={effectiveRoute.uid}
             onNavigate={handleNavigate}
           />
         )}
 
         {/* 5. 帮助/关于页面 */}
-        {route.name === 'help' && (
+        {effectiveRoute.name === 'help' && (
           <HelpPage onNavigate={handleNavigate} />
         )}
 
         {/* 6. 个人设置页面 */}
-        {route.name === 'settings' && currentUser && (
+        {effectiveRoute.name === 'settings' && currentUser && (
           <SettingsPage
             currentUser={currentUser}
             onUserUpdated={(u) => setCurrentUser(u)}
@@ -511,7 +545,7 @@ export function App() {
         )}
 
         {/* 7. 游戏全屏房间 (画板全屏沉浸 + 左上角退出 + 右上角悬浮毛玻璃 HUD) */}
-        {route.name === 'game' && (
+        {effectiveRoute.name === 'game' && (
           <div className="w-full h-full relative overflow-hidden">
             {/* 100% 满屏画板（懒加载） */}
             <Suspense fallback={
