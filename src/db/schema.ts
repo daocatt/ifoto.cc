@@ -1,9 +1,12 @@
-import { pgTable, text, varchar, timestamp, boolean, integer, uuid, bigint } from 'drizzle-orm/pg-core'
+import { pgTable, text, varchar, timestamp, boolean, integer, uuid, bigint, pgSequence } from 'drizzle-orm/pg-core'
+
+// UID 全局自增序列 (从 100001 起，6位数字，自然增长至12位)
+export const userUidSeq = pgSequence('user_uid_seq', { startWith: 100001, increment: 1 })
 
 // 1. 用户表
 export const users = pgTable('users', {
   id: uuid('id').defaultRandom().primaryKey(),
-  uid: bigint('uid', { mode: 'number' }).notNull().unique(), // 6-12位全局数字UID
+  uid: bigint('uid', { mode: 'number' }).notNull().unique(), // 6-12位全局数字UID，由 server 端调用 nextval('user_uid_seq') 填充
   email: varchar('email', { length: 255 }).notNull().unique(),
   name: varchar('name', { length: 50 }).notNull().unique(), // 全局唯一昵称
   passwordHash: text('password_hash').notNull(),
@@ -16,15 +19,15 @@ export const users = pgTable('users', {
 
 // 2. 自定义房间表 (每个用户最多拥有1个专属房间)
 export const rooms = pgTable('rooms', {
-  id: varchar('id', { length: 64 }).primaryKey(), // 房间唯一 slug/code，如 my-room-abc
+  id: varchar('id', { length: 64 }).primaryKey(), // 房间唯一 slug/code
   ownerId: uuid('owner_id').notNull().unique().references(() => users.id, { onDelete: 'cascade' }),
   name: varchar('name', { length: 100 }).notNull(),
-  type: varchar('type', { length: 20 }).notNull().default('draw'), // 'draw' (中文) | 'english' (英文)
-  passwordHash: varchar('password_hash', { length: 255 }), // 可选简单密码哈希
-  isOpen: boolean('is_open').notNull().default(true), // 房主手动开关状态
-  openStartTime: varchar('open_start_time', { length: 10 }), // 每日开放开始时段，如 "09:00"
-  openEndTime: varchar('open_end_time', { length: 10 }), // 每日开放结束时段，如 "22:00"
-  isPublic: boolean('is_public').notNull().default(true), // 是否在公开大厅展示
+  type: varchar('type', { length: 20 }).notNull().default('draw'), // 'draw' | 'english'
+  passwordHash: varchar('password_hash', { length: 255 }),
+  isOpen: boolean('is_open').notNull().default(true),
+  openStartTime: varchar('open_start_time', { length: 10 }),
+  openEndTime: varchar('open_end_time', { length: 10 }),
+  isPublic: boolean('is_public').notNull().default(true),
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow()
 })
 

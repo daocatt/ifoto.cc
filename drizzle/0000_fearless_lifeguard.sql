@@ -1,3 +1,4 @@
+CREATE SEQUENCE "public"."user_uid_seq" INCREMENT BY 1 MINVALUE 1 MAXVALUE 9223372036854775807 START WITH 100001 CACHE 1;--> statement-breakpoint
 CREATE TABLE "game_records" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
 	"user_id" uuid NOT NULL,
@@ -24,6 +25,7 @@ CREATE TABLE "rooms" (
 --> statement-breakpoint
 CREATE TABLE "users" (
 	"id" uuid PRIMARY KEY DEFAULT gen_random_uuid() NOT NULL,
+	"uid" bigint NOT NULL,
 	"email" varchar(255) NOT NULL,
 	"name" varchar(50) NOT NULL,
 	"password_hash" text NOT NULL,
@@ -32,6 +34,7 @@ CREATE TABLE "users" (
 	"is_stats_public" boolean DEFAULT true NOT NULL,
 	"created_at" timestamp with time zone DEFAULT now() NOT NULL,
 	"updated_at" timestamp with time zone DEFAULT now() NOT NULL,
+	CONSTRAINT "users_uid_unique" UNIQUE("uid"),
 	CONSTRAINT "users_email_unique" UNIQUE("email"),
 	CONSTRAINT "users_name_unique" UNIQUE("name")
 );

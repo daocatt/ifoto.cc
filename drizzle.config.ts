@@ -5,6 +5,6 @@ export default defineConfig({
   out: './drizzle',
   dialect: 'postgresql',
   dbCredentials: {
-    url: process.env.DATABASE_URL || 'postgres://whiteboard_user:whiteboard_secret_password@localhost:5432/whiteboard_db'
+    url: process.env.DATABASE_URL || 'postgres://ifoto_user:ifoto_secret_password@localhost:5432/ifoto_db'
   }
 })
