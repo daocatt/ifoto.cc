@@ -8,7 +8,7 @@
     "build": "tsc && vite build",
     "preview": "vite preview",
     "start": "node server.js",
-    "dev:server": "PORT=3001 node server.js",
+    "dev:server": "PORT=3001 npx tsx server.js",
     "dev:all": "concurrently \"npm run dev:server\" \"npm run dev\""
   },
   "dependencies": {
