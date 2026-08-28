@@ -29,13 +29,11 @@ export const Navbar: React.FC<NavbarProps> = ({
         <div className="flex flex-col">
           <div className="flex items-center gap-2">
             <span className="font-black text-base text-ink tracking-tight">你画我猜</span>
-            <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border ${
-              mode === 'online'
-                ? 'bg-primary/10 text-primary border-primary/20'
-                : 'bg-warm text-ink-soft border-edge'
-            }`}>
-              {mode === 'online' ? '线上多房版' : '本地单机版'}
-            </span>
+            {mode === 'local' && (
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full border bg-warm text-ink-soft border-edge">
+                本地模式
+              </span>
+            )}
           </div>
           <span className="text-[11px] text-ink-soft hidden sm:inline">iFOTO 开源的有趣益智互动</span>
         </div>
