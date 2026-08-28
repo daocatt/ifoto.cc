@@ -1,5 +1,5 @@
 import { Hono } from 'hono'
-import { eq, count, sum, or } from 'drizzle-orm'
+import { eq, count, sum } from 'drizzle-orm'
 import { initDb, schema } from '../db.js'
 import { authMiddleware, validatePasswordStrength, hashPassword, comparePassword } from '../auth.js'
 
