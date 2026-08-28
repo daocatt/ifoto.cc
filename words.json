@@ -1,0 +1,7989 @@
+[
+  {
+    "id": "animals_1",
+    "word": "熊猫",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "黑眼圈圆耳朵吃竹子"
+  },
+  {
+    "id": "animals_2",
+    "word": "小狗",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "吐舌头摇尾巴耷拉耳"
+  },
+  {
+    "id": "animals_3",
+    "word": "长颈鹿",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "极长脖子黄色斑块"
+  },
+  {
+    "id": "animals_4",
+    "word": "企鹅",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "黑白相间胖肚皮小翅膀"
+  },
+  {
+    "id": "animals_5",
+    "word": "大象",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "长鼻子大扇耳粗柱腿"
+  },
+  {
+    "id": "animals_6",
+    "word": "变色龙",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "卷曲尾巴大凸眼长舌头"
+  },
+  {
+    "id": "animals_7",
+    "word": "袋鼠",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "肚子有育儿袋大尾巴跳跃"
+  },
+  {
+    "id": "animals_8",
+    "word": "水母",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "半圆透明伞盖飘动触须"
+  },
+  {
+    "id": "animals_9",
+    "word": "火烈鸟",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "粉红羽毛弯嘴单腿站立"
+  },
+  {
+    "id": "animals_10",
+    "word": "独角兽",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "白马额头长螺旋尖角"
+  },
+  {
+    "id": "animals_11",
+    "word": "兔子",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "长耳朵红眼睛短圆尾"
+  },
+  {
+    "id": "animals_12",
+    "word": "树懒",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "倒挂在树上动作极慢"
+  },
+  {
+    "id": "animals_13",
+    "word": "刺猬",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "背满尖刺缩成圆球"
+  },
+  {
+    "id": "animals_14",
+    "word": "孔雀",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "身后张开五彩大扇羽"
+  },
+  {
+    "id": "animals_15",
+    "word": "海豚",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "聪明跃出水面顶球"
+  },
+  {
+    "id": "animals_16",
+    "word": "猫头鹰",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "夜里大圆眼睛转动脑袋"
+  },
+  {
+    "id": "animals_17",
+    "word": "松鼠",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "大蓬松尾巴捧着松果"
+  },
+  {
+    "id": "animals_18",
+    "word": "鳄鱼",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "潜伏在沼泽里的大嘴巴"
+  },
+  {
+    "id": "animals_19",
+    "word": "考拉",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "抱在桉树干上睡觉"
+  },
+  {
+    "id": "animals_20",
+    "word": "章鱼",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "大圆脑袋八条带吸盘腕足"
+  },
+  {
+    "id": "animals_21",
+    "word": "斑马",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "全身黑白相间条纹马"
+  },
+  {
+    "id": "animals_22",
+    "word": "河马",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "大肚皮泡在水里张大嘴"
+  },
+  {
+    "id": "animals_23",
+    "word": "狮子",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "草原之王金色大鬃毛"
+  },
+  {
+    "id": "animals_24",
+    "word": "老虎",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "额头有王字黄色黑条纹"
+  },
+  {
+    "id": "animals_25",
+    "word": "北极熊",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "雪地里白白胖胖抓鱼"
+  },
+  {
+    "id": "animals_26",
+    "word": "骆驼",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "沙漠里背着高高驼峰"
+  },
+  {
+    "id": "animals_27",
+    "word": "青蛙",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "蹲在圆荷叶上大嘴鼓腮"
+  },
+  {
+    "id": "animals_28",
+    "word": "蝴蝶",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "对称大花纹翅膀细长触角"
+  },
+  {
+    "id": "animals_29",
+    "word": "蜜蜂",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "嗡嗡采蜜屁股有小毒针"
+  },
+  {
+    "id": "animals_30",
+    "word": "蜗牛",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "背着螺旋壳头顶两只触角"
+  },
+  {
+    "id": "animals_31",
+    "word": "鸭子",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "扁扁嘴巴嘎嘎叫游水"
+  },
+  {
+    "id": "animals_32",
+    "word": "天鹅",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "优雅长脖子倒映在湖面"
+  },
+  {
+    "id": "animals_33",
+    "word": "狐狸",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "尖尖嘴大红尾巴聪明狡猾"
+  },
+  {
+    "id": "animals_34",
+    "word": "狼",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "月光下站在悬崖仰天嚎叫"
+  },
+  {
+    "id": "animals_35",
+    "word": "蝙蝠",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "倒挂在山洞黑夜雷达飞行"
+  },
+  {
+    "id": "animals_36",
+    "word": "海龟",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "在大海里划水游泳长寿"
+  },
+  {
+    "id": "animals_37",
+    "word": "螃蟹",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "横行多脚举着两只大钳子"
+  },
+  {
+    "id": "animals_38",
+    "word": "龙虾",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "长长触须红色硬壳大钳"
+  },
+  {
+    "id": "animals_39",
+    "word": "水獭",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "躺在水面上胸口敲贝壳"
+  },
+  {
+    "id": "animals_40",
+    "word": "海獭",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "漂在水面手拉手睡觉"
+  },
+  {
+    "id": "animals_41",
+    "word": "海象",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "两颗长长白牙胡须密集"
+  },
+  {
+    "id": "animals_42",
+    "word": "海狮",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "鼻尖顶皮球鼓掌叫好"
+  },
+  {
+    "id": "animals_43",
+    "word": "鲸鱼",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "头顶喷出巨大水柱"
+  },
+  {
+    "id": "animals_44",
+    "word": "鲨鱼",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "海面上露出三角形黑色背鳍"
+  },
+  {
+    "id": "animals_45",
+    "word": "海马",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "弯曲身躯卷尾巴竖立游动"
+  },
+  {
+    "id": "animals_46",
+    "word": "小丑鱼",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "橙白条纹在海葵里穿梭"
+  },
+  {
+    "id": "animals_47",
+    "word": "金鱼",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "玻璃鱼缸里大尾巴飘逸"
+  },
+  {
+    "id": "animals_48",
+    "word": "鹦鹉",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "五彩羽毛会学人类说话"
+  },
+  {
+    "id": "animals_49",
+    "word": "啄木鸟",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "长嘴巴咚咚咚给大树看病"
+  },
+  {
+    "id": "animals_50",
+    "word": "蜂鸟",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "世界上最小鸟悬停吸花蜜"
+  },
+  {
+    "id": "animals_51",
+    "word": "老鹰",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "在高空盘旋锋利双爪俯冲"
+  },
+  {
+    "id": "animals_52",
+    "word": "秃鹫",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "光秃秃脑袋在荒漠盘旋"
+  },
+  {
+    "id": "animals_53",
+    "word": "火鸡",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "扇形尾巴下巴红肉瘤"
+  },
+  {
+    "id": "animals_54",
+    "word": "公鸡",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "早晨喔喔啼红红大鸡冠"
+  },
+  {
+    "id": "animals_55",
+    "word": "母鸡",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "咯咯哒下蛋孵小鸡"
+  },
+  {
+    "id": "animals_56",
+    "word": "小鸡",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "毛茸茸黄色小毛球吃米"
+  },
+  {
+    "id": "animals_57",
+    "word": "鸽子",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "衔着橄榄枝象征和平的白鸟"
+  },
+  {
+    "id": "animals_58",
+    "word": "乌鸦",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "黑羽毛叼小石子放瓶子里喝水"
+  },
+  {
+    "id": "animals_59",
+    "word": "喜鹊",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "黑白羽毛停在枝头报喜"
+  },
+  {
+    "id": "animals_60",
+    "word": "燕子",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "剪刀尾巴春天飞回筑巢"
+  },
+  {
+    "id": "animals_61",
+    "word": "麻雀",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "灰褐色小鸟在电线杆上跳跃"
+  },
+  {
+    "id": "animals_62",
+    "word": "穿山甲",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "披着坚硬鳞片挖洞吃白蚁"
+  },
+  {
+    "id": "animals_63",
+    "word": "食蚁兽",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "长管嘴巴伸出长舌头吃蚂蚁"
+  },
+  {
+    "id": "animals_64",
+    "word": "犰狳",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "遇到危险卷成一个坚硬球体"
+  },
+  {
+    "id": "animals_65",
+    "word": "羊驼",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "脖子长长刘海呆萌吐口水"
+  },
+  {
+    "id": "animals_66",
+    "word": "梅花鹿",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "身上有白斑点美丽鹿角"
+  },
+  {
+    "id": "animals_67",
+    "word": "驯鹿",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "给圣诞老人拉雪橇的大角鹿"
+  },
+  {
+    "id": "animals_68",
+    "word": "驼鹿",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "掌状大鹿角高大威猛"
+  },
+  {
+    "id": "animals_69",
+    "word": "野猪",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "两颗獠牙往前冲皮糙肉厚"
+  },
+  {
+    "id": "animals_70",
+    "word": "仓鼠",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "腮帮子塞满瓜子转跑轮"
+  },
+  {
+    "id": "animals_71",
+    "word": "龙猫",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "圆滚滚灰色毛茸茸大肚子"
+  },
+  {
+    "id": "animals_72",
+    "word": "豚鼠",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "圆头无尾短腿爱叫唤"
+  },
+  {
+    "id": "animals_73",
+    "word": "雪貂",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "长条形身体柔软敏捷"
+  },
+  {
+    "id": "animals_74",
+    "word": "小浣熊",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "黑眼罩爱在水里洗棉花糖"
+  },
+  {
+    "id": "animals_75",
+    "word": "果子狸",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "鼻梁上一条白线善于爬树"
+  },
+  {
+    "id": "animals_76",
+    "word": "蜜獾",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "白头发敢和狮子毒蛇打架平头哥"
+  },
+  {
+    "id": "animals_77",
+    "word": "臭鼬",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "黑白条纹遇到危险喷臭气"
+  },
+  {
+    "id": "animals_78",
+    "word": "土拨鼠",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "站在洞口双手合十尖叫"
+  },
+  {
+    "id": "animals_79",
+    "word": "水豚",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "方方大脑袋头顶小橘子"
+  },
+  {
+    "id": "animals_80",
+    "word": "鸭嘴兽",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "鸭子嘴海狸尾巴下蛋哺乳"
+  },
+  {
+    "id": "animals_81",
+    "word": "针鼹",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "长嘴巴身上带刺吃白蚁"
+  },
+  {
+    "id": "animals_82",
+    "word": "树蛙",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "脚趾有吸盘趴在翠绿树叶上"
+  },
+  {
+    "id": "animals_83",
+    "word": "六角恐龙",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "头上长着六根粉红羽毛鳃"
+  },
+  {
+    "id": "animals_84",
+    "word": "娃娃鱼",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "趴在清澈溪流叫声像婴儿"
+  },
+  {
+    "id": "animals_85",
+    "word": "壁虎",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "断尾逃生在天花板上爬"
+  },
+  {
+    "id": "animals_86",
+    "word": "蜥蜴",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "长尾巴在沙地上吐信子晒太阳"
+  },
+  {
+    "id": "animals_87",
+    "word": "科莫多巨蜥",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "巨大体型吐长舌头像恐龙"
+  },
+  {
+    "id": "animals_88",
+    "word": "眼镜蛇",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "上半身竖起脖子撑开成扇形"
+  },
+  {
+    "id": "animals_89",
+    "word": "响尾蛇",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "尾巴尖沙沙作响预警"
+  },
+  {
+    "id": "animals_90",
+    "word": "蟒蛇",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "长长身体缠绕大树干"
+  },
+  {
+    "id": "animals_91",
+    "word": "珊瑚",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "五彩斑斓像鹿角树枝的海底群落"
+  },
+  {
+    "id": "animals_92",
+    "word": "海星",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "五角星形状吸附在礁石上"
+  },
+  {
+    "id": "animals_93",
+    "word": "海胆",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "黑乎乎带满尖刺的大刺球"
+  },
+  {
+    "id": "animals_94",
+    "word": "寄居蟹",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "背着螺壳到处搬家的小螃蟹"
+  },
+  {
+    "id": "animals_95",
+    "word": "珍珠贝",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "贝壳张开里面躺着一颗圆珍珠"
+  },
+  {
+    "id": "animals_96",
+    "word": "萤火虫",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "尾部发绿色亮光的小甲虫"
+  },
+  {
+    "id": "animals_97",
+    "word": "瓢虫",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "红色圆背上有七个黑点"
+  },
+  {
+    "id": "animals_98",
+    "word": "螳螂",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "举着两把绿色大砍刀祈祷"
+  },
+  {
+    "id": "animals_99",
+    "word": "蜻蜓",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "透明大翅膀点水飞在荷花上"
+  },
+  {
+    "id": "animals_100",
+    "word": "知了",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "趴在树干上炎炎夏日长鸣"
+  },
+  {
+    "id": "animals_101",
+    "word": "蚂蚁",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "排成一长队头顶食物前行"
+  },
+  {
+    "id": "animals_102",
+    "word": "蚕茧",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "吃桑叶结出一个白色椭圆蚕茧"
+  },
+  {
+    "id": "animals_103",
+    "word": "毛毛虫",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "毛毛虫挂在树枝结蛹破茧成蝶"
+  },
+  {
+    "id": "animals_104",
+    "word": "独角仙",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "头顶大分叉犄角威武霸气"
+  },
+  {
+    "id": "animals_105",
+    "word": "锹甲",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "头顶两把大铁锹夹子甲虫"
+  },
+  {
+    "id": "animals_106",
+    "word": "金龟子",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "绿莹莹反光硬壳在树叶上"
+  },
+  {
+    "id": "animals_107",
+    "word": "竹节虫",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "长得像一截小树枝一动不动"
+  },
+  {
+    "id": "animals_108",
+    "word": "屎壳郎",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "倒退着推着大粪球前行"
+  },
+  {
+    "id": "animals_109",
+    "word": "水黾",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "细长细腿在水面上滑行"
+  },
+  {
+    "id": "animals_110",
+    "word": "海蛞蝓",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "五彩斑斓的海底无壳海兔"
+  },
+  {
+    "id": "food_1",
+    "word": "西瓜",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "绿黑条纹圆球红瓤黑籽"
+  },
+  {
+    "id": "food_2",
+    "word": "汉堡包",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "两片面包夹牛肉生菜芝士"
+  },
+  {
+    "id": "food_3",
+    "word": "冰淇淋",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "三角形蛋筒顶着彩色圆球"
+  },
+  {
+    "id": "food_4",
+    "word": "火锅",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "圆形大锅冒热气中间隔开"
+  },
+  {
+    "id": "food_5",
+    "word": "珍珠奶茶",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "透明杯插粗吸管底部黑圆珠"
+  },
+  {
+    "id": "food_6",
+    "word": "披萨",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "切成三角形的面饼拉丝芝士"
+  },
+  {
+    "id": "food_7",
+    "word": "糖葫芦",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "竹签串着一排红圆果亮糖衣"
+  },
+  {
+    "id": "food_8",
+    "word": "寿司",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "黑海苔裹白米饭上盖橙色鱼肉"
+  },
+  {
+    "id": "food_9",
+    "word": "爆米花",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "红白纸筒装满炸开的金黄玉米"
+  },
+  {
+    "id": "food_10",
+    "word": "榴莲",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "满身大尖刺闻着臭吃着香"
+  },
+  {
+    "id": "food_11",
+    "word": "甜甜圈",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "中空圆环淋粉色糖霜撒彩糖"
+  },
+  {
+    "id": "food_12",
+    "word": "热狗",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "长面包夹着一整根香肠芥末酱"
+  },
+  {
+    "id": "food_13",
+    "word": "煎蛋",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "平底锅里蛋白包着金黄荷包蛋"
+  },
+  {
+    "id": "food_14",
+    "word": "包子",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "白白胖胖顶上有小褶子热气腾腾"
+  },
+  {
+    "id": "food_15",
+    "word": "薯条",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "红纸盒插满金黄长条土豆"
+  },
+  {
+    "id": "food_16",
+    "word": "拉面",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "大海碗里有热汤溏心蛋和叉烧"
+  },
+  {
+    "id": "food_17",
+    "word": "牛排",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "铁板上滋滋作响带着烤痕"
+  },
+  {
+    "id": "food_18",
+    "word": "牛角面包",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "弯弯月牙形状层层金黄酥皮"
+  },
+  {
+    "id": "food_19",
+    "word": "章鱼小丸子",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "圆圆小丸子上面撒满木鱼花海苔"
+  },
+  {
+    "id": "food_20",
+    "word": "生日蛋糕",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "圆柱奶油多层顶插燃烧蜡烛"
+  },
+  {
+    "id": "food_21",
+    "word": "水饺",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "像元宝一样肚皮鼓鼓蘸醋吃"
+  },
+  {
+    "id": "food_22",
+    "word": "粽子",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "绿色竹叶包成三角体绑细线"
+  },
+  {
+    "id": "food_23",
+    "word": "月饼",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "圆形上面印着漂亮花纹中秋节"
+  },
+  {
+    "id": "food_24",
+    "word": "汤圆",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "碗里圆滚滚白胖白糖黑芝麻馅"
+  },
+  {
+    "id": "food_25",
+    "word": "油条",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "两根金黄酥脆长油条配豆浆"
+  },
+  {
+    "id": "food_26",
+    "word": "豆浆",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "玻璃杯装满乳白色浓郁饮品"
+  },
+  {
+    "id": "food_27",
+    "word": "烤串",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "铁签穿满肉块撒孜然辣椒粉"
+  },
+  {
+    "id": "food_28",
+    "word": "烤红薯",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "剥开焦黑外皮露出热腾腾金黄肉"
+  },
+  {
+    "id": "food_29",
+    "word": "糖炒栗子",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "黑砂石翻炒裂开口子香甜栗子"
+  },
+  {
+    "id": "food_30",
+    "word": "煎饼果子",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "大铁板摊鸡蛋撒葱花夹薄脆脆饼"
+  },
+  {
+    "id": "food_31",
+    "word": "肉夹馍",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "白吉馍烤出焦圈切开夹满碎肉"
+  },
+  {
+    "id": "food_32",
+    "word": "小笼包",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "竹蒸笼里皮薄透亮满满汤汁"
+  },
+  {
+    "id": "food_33",
+    "word": "春卷",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "金黄酥脆长条油炸卷夹蔬菜肉丝"
+  },
+  {
+    "id": "food_34",
+    "word": "蛋挞",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "千层酥皮金黄焦糖斑点奶香浓"
+  },
+  {
+    "id": "food_35",
+    "word": "华夫饼",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "格子状烘烤松饼淋蜂蜜草莓"
+  },
+  {
+    "id": "food_36",
+    "word": "马卡龙",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "两片圆圆彩色杏仁饼夹奶油馅"
+  },
+  {
+    "id": "food_37",
+    "word": "布丁",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "倒扣在盘子里焦糖顶DuangDuang晃"
+  },
+  {
+    "id": "food_38",
+    "word": "泡芙",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "酥脆圆空心球咬一口爆出鲜奶油"
+  },
+  {
+    "id": "food_39",
+    "word": "三明治",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "两片切角三角形吐司夹火腿煎蛋"
+  },
+  {
+    "id": "food_40",
+    "word": "意面",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "卷在叉子上的红酱番茄肉酱面"
+  },
+  {
+    "id": "food_41",
+    "word": "千层面",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "一层肉酱一层芝士层层叠叠焗烤"
+  },
+  {
+    "id": "food_42",
+    "word": "咖喱饭",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "浓稠金黄咖喱土豆胡萝卜浇白饭"
+  },
+  {
+    "id": "food_43",
+    "word": "炒饭",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "金黄米饭粒粒分明撒葱花胡萝卜"
+  },
+  {
+    "id": "food_44",
+    "word": "紫菜包饭",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "海苔卷米饭黄瓜胡萝卜切成圆片"
+  },
+  {
+    "id": "food_45",
+    "word": "天妇罗",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "大虾裹上面糊炸出金黄脆花"
+  },
+  {
+    "id": "food_46",
+    "word": "寿喜烧",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "铁锅煮牛肉豆腐香菇蘸生鸡蛋液"
+  },
+  {
+    "id": "food_47",
+    "word": "烤全羊",
+    "category": "FOOD",
+    "difficulty": "HARD",
+    "hint": "木架上整只烤羊金黄流油撒香料"
+  },
+  {
+    "id": "food_48",
+    "word": "北京烤鸭",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "荷叶饼卷着红润鸭皮葱丝甜面酱"
+  },
+  {
+    "id": "food_49",
+    "word": "麻辣烫",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "大铁盆里选满丸子蔬菜红汤沸腾"
+  },
+  {
+    "id": "food_50",
+    "word": "串串香",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "一把竹签穿满食材浸在红油锅"
+  },
+  {
+    "id": "food_51",
+    "word": "螺蛳粉",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "红油酸笋炸腐竹卤蛋花生米米粉"
+  },
+  {
+    "id": "food_52",
+    "word": "过桥米线",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "大汤碗滚烫鸡汤依次倒入生肉片米线"
+  },
+  {
+    "id": "food_53",
+    "word": "热干面",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "浓郁芝麻酱拌碱水面撒酸豆角辣油"
+  },
+  {
+    "id": "food_54",
+    "word": "肠粉",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "晶莹剔透米浆皮卷牛肉虾仁淋豉油"
+  },
+  {
+    "id": "food_55",
+    "word": "叉烧包",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "蒸得顶端开裂露出红亮甜叉烧肉"
+  },
+  {
+    "id": "food_56",
+    "word": "烧卖",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "顶部敞口像石榴露出肉馅与糯米"
+  },
+  {
+    "id": "food_57",
+    "word": "菠萝包",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "金黄酥皮像菠萝纹中间夹冰黄油"
+  },
+  {
+    "id": "food_58",
+    "word": "杨枝甘露",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "芒果泥西米红柚果肉椰浆甜品"
+  },
+  {
+    "id": "food_59",
+    "word": "双皮奶",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "白瓷碗里凝固如脂表面一层奶皮"
+  },
+  {
+    "id": "food_60",
+    "word": "刨冰",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "大碗碎冰淋草莓酱炼乳插小伞"
+  },
+  {
+    "id": "food_61",
+    "word": "棉花糖",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "竹签卷着一大团蓬松粉白云朵"
+  },
+  {
+    "id": "food_62",
+    "word": "棒棒糖",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "细白色小棒顶着彩色螺旋圆球"
+  },
+  {
+    "id": "food_63",
+    "word": "巧克力",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "整块凹凸方格包装纸撕开一角"
+  },
+  {
+    "id": "food_64",
+    "word": "饼干",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "圆形金黄边缘有小孔干脆小点心"
+  },
+  {
+    "id": "food_65",
+    "word": "吐司",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "方形切片面包表面微焦涂黄油"
+  },
+  {
+    "id": "food_66",
+    "word": "法棍",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "长长硬皮面包斜切几道刀口"
+  },
+  {
+    "id": "food_67",
+    "word": "培根",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "红白相间波浪纹煎得焦香卷曲"
+  },
+  {
+    "id": "food_68",
+    "word": "香肠",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "红亮灌肠两端扎绳斜切花刀"
+  },
+  {
+    "id": "food_69",
+    "word": "芝士棒",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "金黄面包糠油炸咬开长长拉丝"
+  },
+  {
+    "id": "food_70",
+    "word": "关东煮",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "九宫格热汤里煮着萝卜福袋魔芋丝"
+  },
+  {
+    "id": "food_71",
+    "word": "烤冷面",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "铁板冷面板打鸡蛋香肠刷酱卷起"
+  },
+  {
+    "id": "food_72",
+    "word": "手抓饼",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "层层撕开金黄酥脆夹火腿生菜"
+  },
+  {
+    "id": "food_73",
+    "word": "驴打滚",
+    "category": "FOOD",
+    "difficulty": "HARD",
+    "hint": "黄豆粉里滚一圈裹着红豆沙糯米卷"
+  },
+  {
+    "id": "food_74",
+    "word": "青团",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "清明翠绿艾草糯米团裹鸭蛋黄肉松"
+  },
+  {
+    "id": "food_75",
+    "word": "糍粑",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "烤得膨胀鼓起蘸红糖黄豆粉"
+  },
+  {
+    "id": "food_76",
+    "word": "年糕",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "白色切片或长条炒得软糯拉丝"
+  },
+  {
+    "id": "food_77",
+    "word": "桂花糕",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "半透明水晶方块撒满金黄桂花干"
+  },
+  {
+    "id": "food_78",
+    "word": "龙须糖",
+    "category": "FOOD",
+    "difficulty": "HARD",
+    "hint": "细如发丝白色糖丝包裹花生碎"
+  },
+  {
+    "id": "food_79",
+    "word": "椰子水",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "插着吸管砍开顶部的青大椰子"
+  },
+  {
+    "id": "food_80",
+    "word": "牛油果",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "切开两半露出中间大圆核深绿皮"
+  },
+  {
+    "id": "food_81",
+    "word": "草莓",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "红心形表面带黑籽顶戴绿叶"
+  },
+  {
+    "id": "food_82",
+    "word": "蓝莓",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "一捧深蓝紫色带白霜小圆浆果"
+  },
+  {
+    "id": "food_83",
+    "word": "车厘子",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "两颗深红油亮大樱桃连着绿果梗"
+  },
+  {
+    "id": "food_84",
+    "word": "葡萄",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "一整串紫色圆水灵葡萄挂着绿叶"
+  },
+  {
+    "id": "food_85",
+    "word": "香蕉",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "一弯黄色月亮剥开果皮露果肉"
+  },
+  {
+    "id": "food_86",
+    "word": "菠萝",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "满身菱形格子刺头顶一丛绿冠"
+  },
+  {
+    "id": "food_87",
+    "word": "猕猴桃",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "棕色毛茸茸切开露出绿果肉黑籽"
+  },
+  {
+    "id": "food_88",
+    "word": "哈密瓜",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "网纹粗糙切开橙色香甜果肉"
+  },
+  {
+    "id": "food_89",
+    "word": "山竹",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "厚厚紫红外壳剥开像大蒜瓣白肉"
+  },
+  {
+    "id": "food_90",
+    "word": "火龙果",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "玫红外皮带绿色鳞片切开黑籽白肉"
+  },
+  {
+    "id": "food_91",
+    "word": "芒果",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "金黄腰子形状果肉香甜滑嫩"
+  },
+  {
+    "id": "food_92",
+    "word": "橙子",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "圆圆橙黄切开八瓣果肉饱满"
+  },
+  {
+    "id": "food_93",
+    "word": "柠檬",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "两头尖尖亮黄椭圆酸味水果"
+  },
+  {
+    "id": "food_94",
+    "word": "石榴",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "顶端开裂露出一颗颗红宝石晶莹籽"
+  },
+  {
+    "id": "food_95",
+    "word": "柿子",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "深橙色扁圆挂在枝头红灯笼"
+  },
+  {
+    "id": "food_96",
+    "word": "桃子",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "粉白带毛尖尖粉红心形寿桃"
+  },
+  {
+    "id": "food_97",
+    "word": "苹果",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "圆圆红苹果顶上一根小果梗绿叶"
+  },
+  {
+    "id": "food_98",
+    "word": "木瓜",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "橙黄果肉中间密密麻麻黑籽"
+  },
+  {
+    "id": "food_99",
+    "word": "无花果",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "紫红切开像花朵一样红心果肉"
+  },
+  {
+    "id": "food_100",
+    "word": "杨梅",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "深紫红圆球表面布满细密果粒"
+  },
+  {
+    "id": "food_101",
+    "word": "荔枝",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "红红凹凸硬壳剥开晶莹剔透白果肉"
+  },
+  {
+    "id": "food_102",
+    "word": "桂圆",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "黄褐色圆壳剥开半透明甜果肉黑核"
+  },
+  {
+    "id": "objects_1",
+    "word": "雨伞",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "半圆穹顶伞面下带弯手柄"
+  },
+  {
+    "id": "objects_2",
+    "word": "眼镜",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "两个圆镜框中间横梁两边镜腿"
+  },
+  {
+    "id": "objects_3",
+    "word": "手机",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长方形黑屏幕背面几个圆镜头"
+  },
+  {
+    "id": "objects_4",
+    "word": "电风扇",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆形网罩里面三片扇叶旋转"
+  },
+  {
+    "id": "objects_5",
+    "word": "牙刷",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长手柄顶着排排细软刷毛"
+  },
+  {
+    "id": "objects_6",
+    "word": "吉他",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "葫芦木琴身长琴颈带六根琴弦"
+  },
+  {
+    "id": "objects_7",
+    "word": "台灯",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "底座连弯曲灯柱向下照亮桌面"
+  },
+  {
+    "id": "objects_8",
+    "word": "扫地机",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "圆盘扁平在地面自动巡航清扫"
+  },
+  {
+    "id": "objects_9",
+    "word": "望远镜",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "两个圆筒看遥远星空与风景"
+  },
+  {
+    "id": "objects_10",
+    "word": "热气球",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "巨大彩色气囊吊着藤条吊篮"
+  },
+  {
+    "id": "objects_11",
+    "word": "剪刀",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "两个圆指环交叉连着两把尖刃"
+  },
+  {
+    "id": "objects_12",
+    "word": "闹钟",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆表盘顶两个小耳朵铃铛"
+  },
+  {
+    "id": "objects_13",
+    "word": "书包",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "双肩背带前面有拉链大口袋"
+  },
+  {
+    "id": "objects_14",
+    "word": "自行车",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "前后两个大圆轮三角车架"
+  },
+  {
+    "id": "objects_15",
+    "word": "吹风机",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "手枪形状插电吹出热风"
+  },
+  {
+    "id": "objects_16",
+    "word": "耳机",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "头戴式两个圆耳罩连着头梁"
+  },
+  {
+    "id": "objects_17",
+    "word": "指南针",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆盘里红蓝磁针永远指北"
+  },
+  {
+    "id": "objects_18",
+    "word": "沙漏",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "上下两个玻璃泡细颈漏沙"
+  },
+  {
+    "id": "objects_19",
+    "word": "钥匙",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆环连着带凹凸锯齿金属杆"
+  },
+  {
+    "id": "objects_20",
+    "word": "急救箱",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "白色方箱子印着红色十字标志"
+  },
+  {
+    "id": "objects_21",
+    "word": "手表",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "皮表带扣在手腕上圆表盘"
+  },
+  {
+    "id": "objects_22",
+    "word": "计算器",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "液晶小屏幕上一排排数字按键"
+  },
+  {
+    "id": "objects_23",
+    "word": "文具盒",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长方形铁盒装满铅笔橡皮擦"
+  },
+  {
+    "id": "objects_24",
+    "word": "订书机",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "按压把一排订书针装订纸张"
+  },
+  {
+    "id": "objects_25",
+    "word": "胶水",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "拧开盖子挤出透明粘液粘纸"
+  },
+  {
+    "id": "objects_26",
+    "word": "卷尺",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆形塑料盒拉出长长刻度金属带"
+  },
+  {
+    "id": "objects_27",
+    "word": "手电筒",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆柱手柄前端射出锥形黄光"
+  },
+  {
+    "id": "objects_28",
+    "word": "保温杯",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "不锈钢真空杯盖能倒水喝"
+  },
+  {
+    "id": "objects_29",
+    "word": "雨靴",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "橡胶高筒鞋踩水坑不湿脚"
+  },
+  {
+    "id": "objects_30",
+    "word": "行李箱",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "带万向轮和拉杆的旅行大箱子"
+  },
+  {
+    "id": "objects_31",
+    "word": "雨衣",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "带连帽透明防水长外套"
+  },
+  {
+    "id": "objects_32",
+    "word": "手套",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "五个手指套保暖防寒手套"
+  },
+  {
+    "id": "objects_33",
+    "word": "围巾",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长长毛线织物绕在脖子上流苏"
+  },
+  {
+    "id": "objects_34",
+    "word": "遮阳帽",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "宽大圆形帽檐遮阳防晒帽"
+  },
+  {
+    "id": "objects_35",
+    "word": "墨镜",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "深黑色防紫外线太阳眼镜"
+  },
+  {
+    "id": "objects_36",
+    "word": "折叠伞",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "三折收缩短短塞进包里小伞"
+  },
+  {
+    "id": "objects_37",
+    "word": "钥匙扣",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "挂着卡通挂件的金属钥匙圈"
+  },
+  {
+    "id": "objects_38",
+    "word": "打火机",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "大拇指一按噗嗤窜出火苗"
+  },
+  {
+    "id": "objects_39",
+    "word": "火柴盒",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "小抽屉盒子侧面刮纸火柴棒"
+  },
+  {
+    "id": "objects_40",
+    "word": "蜡烛",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆柱形白蜡顶端点燃黄色烛光"
+  },
+  {
+    "id": "objects_41",
+    "word": "灭火器",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "红色压力罐带喷嘴和安全栓"
+  },
+  {
+    "id": "objects_42",
+    "word": "水桶",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "带金属提手的大圆塑料水桶"
+  },
+  {
+    "id": "objects_43",
+    "word": "拖把",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长木杆底下一大扎吸水布条"
+  },
+  {
+    "id": "objects_44",
+    "word": "扫帚",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长柄底下扎成排的扫地毛刷"
+  },
+  {
+    "id": "objects_45",
+    "word": "簸箕",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "用来装垃圾的铁皮倾斜撮箕"
+  },
+  {
+    "id": "objects_46",
+    "word": "垃圾桶",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆桶带踩踏开盖翻转盖子"
+  },
+  {
+    "id": "objects_47",
+    "word": "衣架",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "三角形挂钩撑起衣服晾晒"
+  },
+  {
+    "id": "objects_48",
+    "word": "洗衣机",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "方形大铁箱透明圆玻璃门滚筒"
+  },
+  {
+    "id": "objects_49",
+    "word": "微波炉",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "方形带玻璃观察窗旋转旋钮"
+  },
+  {
+    "id": "objects_50",
+    "word": "冰箱",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "上下双开门冷藏冷冻大保鲜柜"
+  },
+  {
+    "id": "objects_51",
+    "word": "烤箱",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "透明玻璃门里面发热管烤盘"
+  },
+  {
+    "id": "objects_52",
+    "word": "电饭煲",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆圆电锅一按煮饭按钮冒蒸汽"
+  },
+  {
+    "id": "objects_53",
+    "word": "平底锅",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长长手柄扁平底煎牛排鸡蛋"
+  },
+  {
+    "id": "objects_54",
+    "word": "炒锅",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "大弧度圆底双耳大铁锅颠勺"
+  },
+  {
+    "id": "objects_55",
+    "word": "菜刀",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长方形大铁刀锋利刀刃切菜"
+  },
+  {
+    "id": "objects_56",
+    "word": "砧板",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "厚厚木头圆菜板剁肉切菜"
+  },
+  {
+    "id": "objects_57",
+    "word": "筷子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "两根细长木竹棍夹菜吃饭"
+  },
+  {
+    "id": "objects_58",
+    "word": "勺子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆圆小凹坑带手柄喝汤挖饭"
+  },
+  {
+    "id": "objects_59",
+    "word": "叉子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "三四根金属尖齿叉牛排意面"
+  },
+  {
+    "id": "objects_60",
+    "word": "马克杯",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "大圆筒带一个大耳朵手柄泡咖啡"
+  },
+  {
+    "id": "objects_61",
+    "word": "高脚杯",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "细细长腿托着郁金香酒杯"
+  },
+  {
+    "id": "objects_62",
+    "word": "茶壶",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "带弯弯壶嘴手柄和圆圆壶盖"
+  },
+  {
+    "id": "objects_63",
+    "word": "咖啡机",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "手柄装咖啡粉流出浓郁浓缩"
+  },
+  {
+    "id": "objects_64",
+    "word": "榨汁机",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "透明杯底快速旋转刀片打果汁"
+  },
+  {
+    "id": "objects_65",
+    "word": "体重秤",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "玻璃平板站上去显示数字体重"
+  },
+  {
+    "id": "objects_66",
+    "word": "挂钟",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "挂在墙上时针分针滴答走大圆盘"
+  },
+  {
+    "id": "objects_67",
+    "word": "花瓶",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "陶瓷细颈大肚插着一束鲜花"
+  },
+  {
+    "id": "objects_68",
+    "word": "相框",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "木质边框嵌着玻璃夹照片"
+  },
+  {
+    "id": "objects_69",
+    "word": "镜子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "椭圆玻璃镜面照出清晰人脸"
+  },
+  {
+    "id": "objects_70",
+    "word": "梳子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "排排梳齿理顺头发防打结"
+  },
+  {
+    "id": "objects_71",
+    "word": "剃须刀",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "三个圆形旋转刀头剃胡子"
+  },
+  {
+    "id": "objects_72",
+    "word": "指甲剪",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "上下按压杠杆咔嚓剪指甲"
+  },
+  {
+    "id": "objects_73",
+    "word": "棉签",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "细小塑料棒两端缠着白色脱脂棉"
+  },
+  {
+    "id": "objects_74",
+    "word": "创可贴",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "中间吸水垫两翼透气粘胶小贴布"
+  },
+  {
+    "id": "objects_75",
+    "word": "体温计",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "细长水银玻璃管或电子测温枪"
+  },
+  {
+    "id": "objects_76",
+    "word": "听诊器",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "挂在医生耳朵连着圆金属听头"
+  },
+  {
+    "id": "objects_77",
+    "word": "注射器",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "带刻度针筒和细长金属针头"
+  },
+  {
+    "id": "objects_78",
+    "word": "轮椅",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "两个大轮子两个小轮推手坐椅"
+  },
+  {
+    "id": "objects_79",
+    "word": "拐杖",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "腋下支撑长木拐杖助行"
+  },
+  {
+    "id": "objects_80",
+    "word": "梯子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "一阶一阶横杠爬向高处人字梯"
+  },
+  {
+    "id": "objects_81",
+    "word": "工具箱",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "手提塑料箱装满各种五金工具"
+  },
+  {
+    "id": "objects_82",
+    "word": "锤子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "木手柄顶着厚重金属T型铁头"
+  },
+  {
+    "id": "objects_83",
+    "word": "螺丝刀",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "十字或一字金属杆拧紧螺丝"
+  },
+  {
+    "id": "objects_84",
+    "word": "扳手",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "六角开口卡紧螺母旋转紧固"
+  },
+  {
+    "id": "objects_85",
+    "word": "电钻",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "手枪形状带旋转钻头钻墙洞"
+  },
+  {
+    "id": "objects_86",
+    "word": "锯子",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长手柄连着带细密尖齿大铁锯片"
+  },
+  {
+    "id": "objects_87",
+    "word": "安全帽",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "黄色坚硬塑料圆帽工地佩戴"
+  },
+  {
+    "id": "objects_88",
+    "word": "反光衣",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "荧光黄绿色带反光条安全马甲"
+  },
+  {
+    "id": "objects_89",
+    "word": "对讲机",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "带长长天线旋转频道按键通话"
+  },
+  {
+    "id": "objects_90",
+    "word": "扩音器",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "手持大喇叭红白机身喊话大声"
+  },
+  {
+    "id": "objects_91",
+    "word": "三脚架",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "三根伸缩金属腿架起单反相机"
+  },
+  {
+    "id": "objects_92",
+    "word": "自拍杆",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "伸长金属杆顶头夹着一台手机"
+  },
+  {
+    "id": "objects_93",
+    "word": "无人机",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "四个小旋翼支架中间带小摄像头"
+  },
+  {
+    "id": "objects_94",
+    "word": "VR头显",
+    "category": "OBJECTS",
+    "difficulty": "HARD",
+    "hint": "眼罩式戴在头上沉浸式游戏眼镜"
+  },
+  {
+    "id": "objects_95",
+    "word": "游戏手柄",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "左右方向摇杆和XYAB彩按键"
+  },
+  {
+    "id": "objects_96",
+    "word": "机械键盘",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "一排排发光机械按键打字咔哒"
+  },
+  {
+    "id": "objects_97",
+    "word": "无线鼠标",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "手握弧形两个左右键中间滚轮"
+  },
+  {
+    "id": "objects_98",
+    "word": "数位板",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "黑色扁平板连着压感笔画画"
+  },
+  {
+    "id": "objects_99",
+    "word": "投影仪",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "发光镜头向幕布投射巨大画面"
+  },
+  {
+    "id": "objects_100",
+    "word": "充电宝",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "长方形移动电源插着USB充电线"
+  },
+  {
+    "id": "objects_101",
+    "word": "台球杆",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "细长木杆顶端白皮头击打台球"
+  },
+  {
+    "id": "objects_102",
+    "word": "哑铃",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "两头圆形铁块中间手握把手健身"
+  },
+  {
+    "id": "objects_103",
+    "word": "跑步机",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "履带皮带在脚底旋转室内跑步"
+  },
+  {
+    "id": "objects_104",
+    "word": "跳跳床",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "圆形弹力网面四周弹簧支撑跳跃"
+  },
+  {
+    "id": "objects_105",
+    "word": "飞镖盘",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "红绿相间同心圆靶盘投掷细飞镖"
+  },
+  {
+    "id": "objects_106",
+    "word": "帐篷",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "支架撑起布面拉地钉露营小房子"
+  },
+  {
+    "id": "objects_107",
+    "word": "睡袋",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "拉链拉起像大蚕茧包裹全身保暖"
+  },
+  {
+    "id": "objects_108",
+    "word": "吊床",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "两头拴在两棵大树之间晃悠悠"
+  },
+  {
+    "id": "objects_109",
+    "word": "烧烤架",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "四脚支架铁丝网底下红炭火烤肉"
+  },
+  {
+    "id": "actions_1",
+    "word": "游泳",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "水波中露出戴泳帽泳镜的人"
+  },
+  {
+    "id": "actions_2",
+    "word": "跳绳",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "人腾空跳起脚底下一根弧形绳"
+  },
+  {
+    "id": "actions_3",
+    "word": "钓鱼",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手握细长杆垂线下落水面"
+  },
+  {
+    "id": "actions_4",
+    "word": "放风筝",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "奔跑小人手里牵着空中长线"
+  },
+  {
+    "id": "actions_5",
+    "word": "弹琴",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "坐在钢琴前双手手指黑白琴键飞舞"
+  },
+  {
+    "id": "actions_6",
+    "word": "打篮球",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "起跳投篮篮球划出弧线进筐"
+  },
+  {
+    "id": "actions_7",
+    "word": "拍照",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手托方盒子镜头前闪光"
+  },
+  {
+    "id": "actions_8",
+    "word": "做梦",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "躺在枕头上头顶冒出云朵泡泡"
+  },
+  {
+    "id": "actions_9",
+    "word": "踢足球",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "抬脚抽射足球飞向球门挂死角"
+  },
+  {
+    "id": "actions_10",
+    "word": "滑雪",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手拿双雪杖脚踩双板雪山疾驰"
+  },
+  {
+    "id": "actions_11",
+    "word": "攀岩",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双手抓紧岩壁支点安全绳攀爬"
+  },
+  {
+    "id": "actions_12",
+    "word": "浇花",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手提洒水壶细水喷洒花草"
+  },
+  {
+    "id": "actions_13",
+    "word": "理发",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "围着围布手拿剪刀梳子剪头发"
+  },
+  {
+    "id": "actions_14",
+    "word": "捉迷藏",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "蒙着眼睛数数伙伴躲在树后"
+  },
+  {
+    "id": "actions_15",
+    "word": "打喷嚏",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手帕捂口鼻阿嚏张嘴闭眼"
+  },
+  {
+    "id": "actions_16",
+    "word": "跳芭蕾",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "脚尖直立踮起双手高举天鹅舞姿"
+  },
+  {
+    "id": "actions_17",
+    "word": "击剑",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "戴面罩手握细长佩剑向前突刺"
+  },
+  {
+    "id": "actions_18",
+    "word": "射箭",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "拉满弓弦瞄准远处红心靶子"
+  },
+  {
+    "id": "actions_19",
+    "word": "打羽毛球",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "挥舞球拍高高跃起扣杀白色羽毛球"
+  },
+  {
+    "id": "actions_20",
+    "word": "打乒乓",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "小球拍在绿色球台反手推挡快攻"
+  },
+  {
+    "id": "actions_21",
+    "word": "滑板",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双脚踩在四轮滑板腾空跃起翻板"
+  },
+  {
+    "id": "actions_22",
+    "word": "溜冰",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "脚踩排轮旱冰鞋在地面滑行旋转"
+  },
+  {
+    "id": "actions_23",
+    "word": "骑马",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手拉紧缰绳脚踩马镫飞奔"
+  },
+  {
+    "id": "actions_24",
+    "word": "打哈欠",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手伸懒腰张大嘴巴流眼泪"
+  },
+  {
+    "id": "actions_25",
+    "word": "刷牙",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "嘴边白色泡沫手里握小刷子"
+  },
+  {
+    "id": "actions_26",
+    "word": "化妆",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手拿口红腮红对着镜子涂抹"
+  },
+  {
+    "id": "actions_27",
+    "word": "叠被子",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手将被褥折叠成方方正正豆腐块"
+  },
+  {
+    "id": "actions_28",
+    "word": "系鞋带",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手将两根鞋带系成蝴蝶结"
+  },
+  {
+    "id": "actions_29",
+    "word": "打领带",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "对着镜子将领带绕过衣领打结"
+  },
+  {
+    "id": "actions_30",
+    "word": "穿针",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "眯着一只眼手拿细线穿入针孔"
+  },
+  {
+    "id": "actions_31",
+    "word": "瑜伽",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "在瑜伽垫上单腿站立双手合十冥想"
+  },
+  {
+    "id": "actions_32",
+    "word": "俯卧撑",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手撑地身体笔直上下撑起"
+  },
+  {
+    "id": "actions_33",
+    "word": "仰卧起坐",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手抱头双腿弯曲身体坐起"
+  },
+  {
+    "id": "actions_34",
+    "word": "引体向上",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双手反握单杠将下巴拉过铁杠"
+  },
+  {
+    "id": "actions_35",
+    "word": "跳远",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "全力助跑踩板高高跃入沙坑"
+  },
+  {
+    "id": "actions_36",
+    "word": "跑步",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "身体前倾冲过终点红色丝带"
+  },
+  {
+    "id": "actions_37",
+    "word": "举重",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "深吸气将沉重杠铃高高举过头顶"
+  },
+  {
+    "id": "actions_38",
+    "word": "摔跤",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "两人缠抱在一起发力掀翻对手"
+  },
+  {
+    "id": "actions_39",
+    "word": "拔河",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "两排人身体后倾紧拉粗麻绳"
+  },
+  {
+    "id": "actions_40",
+    "word": "接力赛",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "伸出手臂向前将红色接力棒交接"
+  },
+  {
+    "id": "actions_41",
+    "word": "切洋葱",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "菜刀切洋葱辣得眼泪汪汪"
+  },
+  {
+    "id": "actions_42",
+    "word": "吃西瓜",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "捧着大半个月牙西瓜埋头大啃"
+  },
+  {
+    "id": "actions_43",
+    "word": "吹泡泡",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "嘴对圆圈吹出一串飘浮圆圈"
+  },
+  {
+    "id": "actions_44",
+    "word": "剥香蕉",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手将黄色香蕉皮四面撕开"
+  },
+  {
+    "id": "actions_45",
+    "word": "吸饮料",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "嘴巴含着弯弯吸管大口吸果汁"
+  },
+  {
+    "id": "actions_46",
+    "word": "烤肉",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "用夹子将铁网上的肉片翻面冒油"
+  },
+  {
+    "id": "actions_47",
+    "word": "包饺子",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "手托圆形饺子皮放肉馅捏出花褶"
+  },
+  {
+    "id": "actions_48",
+    "word": "炒菜",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "大厨单手颠起铁锅火焰翻滚菜肴"
+  },
+  {
+    "id": "actions_49",
+    "word": "洗碗",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手戴胶皮手套用海绵洗泡沫盘子"
+  },
+  {
+    "id": "actions_50",
+    "word": "擦窗",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手拿抹布喷清洁剂将玻璃擦亮"
+  },
+  {
+    "id": "actions_51",
+    "word": "拖地",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手握拖把把地板拖得反光"
+  },
+  {
+    "id": "actions_52",
+    "word": "倒垃圾",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "拎着系紧的黑色垃圾袋扔进桶"
+  },
+  {
+    "id": "actions_53",
+    "word": "遛狗",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手里拉着牵引绳小狗欢快在前跑"
+  },
+  {
+    "id": "actions_54",
+    "word": "梳毛",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "用小排梳给毛茸茸小猫咪梳掉毛"
+  },
+  {
+    "id": "actions_55",
+    "word": "喂鱼",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手指捏起鱼食碎屑撒入鱼缸水面"
+  },
+  {
+    "id": "actions_56",
+    "word": "捉蝴蝶",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手举捕蝶网在花丛中轻手轻脚追"
+  },
+  {
+    "id": "actions_57",
+    "word": "堆沙堡",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "小铲子小水桶在沙滩堆砌城堡"
+  },
+  {
+    "id": "actions_58",
+    "word": "荡秋千",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手抓绳索双腿借力荡向高空"
+  },
+  {
+    "id": "actions_59",
+    "word": "滑滑梯",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "顺着光滑彩色滑梯滑落欢笑"
+  },
+  {
+    "id": "actions_60",
+    "word": "跷跷板",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "一上一下两个人两端起伏升降"
+  },
+  {
+    "id": "actions_61",
+    "word": "吹气球",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "腮帮子鼓足气将气球吹得大大"
+  },
+  {
+    "id": "actions_62",
+    "word": "拆快递",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手拿小刀划开胶带惊喜打开纸箱"
+  },
+  {
+    "id": "actions_63",
+    "word": "读书",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "台灯下翻开书本用笔做批注笔记"
+  },
+  {
+    "id": "actions_64",
+    "word": "看显微镜",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "一只眼凑在目镜前调焦观察载玻片"
+  },
+  {
+    "id": "actions_65",
+    "word": "做实验",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双手拿试管烧杯倒入产生彩色烟雾"
+  },
+  {
+    "id": "actions_66",
+    "word": "调色",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "画笔在调色盘上混合两种颜料"
+  },
+  {
+    "id": "actions_67",
+    "word": "吉他弹唱",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "抱木吉他扫弦嘴对着麦克风歌唱"
+  },
+  {
+    "id": "actions_68",
+    "word": "打架子鼓",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手持鼓棒双脚踩镲击打节奏"
+  },
+  {
+    "id": "actions_69",
+    "word": "吹萨克斯",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双手按键深情吹奏弯管萨克斯"
+  },
+  {
+    "id": "actions_70",
+    "word": "交响指挥",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双手握细细指挥棒站在台前挥动"
+  },
+  {
+    "id": "actions_71",
+    "word": "飙高音",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双手握紧话筒仰头身体后倾歌唱"
+  },
+  {
+    "id": "actions_72",
+    "word": "街舞",
+    "category": "ACTIONS",
+    "difficulty": "HARD",
+    "hint": "单手撑地身体倒立旋转街舞动作"
+  },
+  {
+    "id": "actions_73",
+    "word": "变魔术",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "高筒礼帽里伸手拉出一只白鸽"
+  },
+  {
+    "id": "actions_74",
+    "word": "说相声",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "两人穿着长袍大褂在桌前说学逗唱"
+  },
+  {
+    "id": "actions_75",
+    "word": "走钢丝",
+    "category": "ACTIONS",
+    "difficulty": "HARD",
+    "hint": "双手握长长平衡杆在高空钢丝走"
+  },
+  {
+    "id": "actions_76",
+    "word": "空中飞人",
+    "category": "ACTIONS",
+    "difficulty": "HARD",
+    "hint": "高空秋千倒挂抓住飞过来的伙伴手"
+  },
+  {
+    "id": "actions_77",
+    "word": "踩高跷",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双腿绑在长长木棍上高高走步"
+  },
+  {
+    "id": "actions_78",
+    "word": "转呼啦圈",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "腰部画圆扭动让塑料圈旋转不落"
+  },
+  {
+    "id": "actions_79",
+    "word": "踢毽子",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "脚内侧连续颠起彩毛羽毛毽子"
+  },
+  {
+    "id": "actions_80",
+    "word": "丢沙包",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "两端扔沙包中间人左闪右躲避开"
+  },
+  {
+    "id": "actions_81",
+    "word": "打雪仗",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手揉捏圆雪球用力砸向朋友"
+  },
+  {
+    "id": "actions_82",
+    "word": "堆雪人",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "两个大雪球叠起插胡萝卜鼻子"
+  },
+  {
+    "id": "actions_83",
+    "word": "花样滑冰",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "冰刀划出弧线单腿高举旋转跃起"
+  },
+  {
+    "id": "actions_84",
+    "word": "冲浪",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "踩着冲浪板在巨大卷曲海浪中穿梭"
+  },
+  {
+    "id": "actions_85",
+    "word": "潜水",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "背着氧气瓶戴面罩在珊瑚群游动"
+  },
+  {
+    "id": "actions_86",
+    "word": "跳伞",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "高空跳出机舱头顶绽放巨大降落伞"
+  },
+  {
+    "id": "actions_87",
+    "word": "蹦极",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双脚绑着粗弹力绳从高桥跃下反弹"
+  },
+  {
+    "id": "actions_88",
+    "word": "划皮艇",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "坐在窄窄艇里双手划动双叶船桨"
+  },
+  {
+    "id": "actions_89",
+    "word": "赛龙舟",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "整船齐心划桨船头鼓手用力擂鼓"
+  },
+  {
+    "id": "actions_90",
+    "word": "开卡丁车",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "戴头盔紧握方向盘紧贴地面漂移"
+  },
+  {
+    "id": "actions_91",
+    "word": "开飞机",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "驾驶舱推拉操纵杆飞机冲上云霄"
+  },
+  {
+    "id": "actions_92",
+    "word": "开火车",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "拉响汽笛火车冒白烟在轨道飞驰"
+  },
+  {
+    "id": "actions_93",
+    "word": "骑摩托",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "压低身体头盔挡风摩托弯道倾斜"
+  },
+  {
+    "id": "actions_94",
+    "word": "打车",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "站在路边伸直手臂招手示意出租车"
+  },
+  {
+    "id": "actions_95",
+    "word": "过马路",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "走在斑马线上左右张望绿灯通行"
+  },
+  {
+    "id": "actions_96",
+    "word": "让座",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "在公交车上站起身示意孕妇老人坐下"
+  },
+  {
+    "id": "actions_97",
+    "word": "敬礼",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "右手五指并拢高举过头顶敬少先队礼"
+  },
+  {
+    "id": "actions_98",
+    "word": "升国旗",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "抬头注目鲜红旗帜缓缓升至杆顶"
+  },
+  {
+    "id": "actions_99",
+    "word": "握手",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "两人伸出右手紧紧相握微笑致意"
+  },
+  {
+    "id": "actions_100",
+    "word": "登山",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手拿登山杖背大背包登顶插红旗"
+  },
+  {
+    "id": "actions_101",
+    "word": "跳高",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "背越式身体弯曲横跨横杆落垫"
+  },
+  {
+    "id": "actions_102",
+    "word": "保龄球",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "手指插入球孔滑步推球撞倒十个球瓶"
+  },
+  {
+    "id": "actions_103",
+    "word": "高尔夫",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "双手握球杆大幅转体击飞白色小白球"
+  },
+  {
+    "id": "actions_104",
+    "word": "打网球",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手反拍挥动大网球拍击过球网"
+  },
+  {
+    "id": "actions_105",
+    "word": "台球",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "趴在桌边手架球杆白球撞击彩球进袋"
+  },
+  {
+    "id": "actions_106",
+    "word": "划船",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "双手握双桨在公园湖面荡起双桨"
+  },
+  {
+    "id": "actions_107",
+    "word": "打太极",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "白衣飘飘双手画圆推掌野马分鬃"
+  },
+  {
+    "id": "actions_108",
+    "word": "跳水",
+    "category": "ACTIONS",
+    "difficulty": "HARD",
+    "hint": "高台翻腾三周半笔直落水压水花"
+  },
+  {
+    "id": "k12_science_1",
+    "word": "黑洞",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "宇宙中引力巨大连光线都无法逃脱的天体"
+  },
+  {
+    "id": "k12_science_2",
+    "word": "土星环",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "大圆球星球周围套着倾斜扁光环"
+  },
+  {
+    "id": "k12_science_3",
+    "word": "火山",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "三角形山顶喷红黄岩浆黑烟"
+  },
+  {
+    "id": "k12_science_4",
+    "word": "彩虹",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "天空中跨过七道彩色弧线"
+  },
+  {
+    "id": "k12_science_5",
+    "word": "恐龙化石",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "岩石中保存完整的巨大远古骨骼"
+  },
+  {
+    "id": "k12_science_6",
+    "word": "月食",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "地球挡住太阳光导致月亮变成红铜色"
+  },
+  {
+    "id": "k12_science_7",
+    "word": "显微镜",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "弯曲金属臂顶目镜底载玻片"
+  },
+  {
+    "id": "k12_science_8",
+    "word": "DNA",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "两条拧成麻花的线中间带横杠"
+  },
+  {
+    "id": "k12_science_9",
+    "word": "太阳能板",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "排排深蓝色多边形吸收阳光发电板"
+  },
+  {
+    "id": "k12_science_10",
+    "word": "磁铁",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "U型红蓝两端分别写NS字母"
+  },
+  {
+    "id": "k12_science_11",
+    "word": "龙卷风",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "连接天地旋转的巨大漏斗状风暴"
+  },
+  {
+    "id": "k12_science_12",
+    "word": "火箭",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "圆柱尖头航天器尾部喷大火"
+  },
+  {
+    "id": "k12_science_13",
+    "word": "光合作用",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "绿叶吸收二氧化碳阳光释放出氧气"
+  },
+  {
+    "id": "k12_science_14",
+    "word": "宇航员",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "身穿白色厚重宇航服漫步太空"
+  },
+  {
+    "id": "k12_science_15",
+    "word": "潜水艇",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "深潜海底带有潜望镜和螺旋桨的战舰"
+  },
+  {
+    "id": "k12_science_16",
+    "word": "量筒",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "透明玻璃柱带精准刻度装有彩色试剂"
+  },
+  {
+    "id": "k12_science_17",
+    "word": "陨石坑",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "太空陨石撞击地面形成巨大凹陷环形山"
+  },
+  {
+    "id": "k12_science_18",
+    "word": "极光",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "极地夜空中绿色紫色舞动的绚丽光带"
+  },
+  {
+    "id": "k12_science_19",
+    "word": "雷暴",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "漆黑积雨云中劈下耀眼分叉闪电"
+  },
+  {
+    "id": "k12_science_20",
+    "word": "地磁",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "地球内部像大磁铁产生保护地磁场"
+  },
+  {
+    "id": "k12_science_21",
+    "word": "天平",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "左右两个小托盘中间指针平衡称重"
+  },
+  {
+    "id": "k12_science_22",
+    "word": "三棱镜",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "一束白光射入三角玻璃射出七彩"
+  },
+  {
+    "id": "k12_science_23",
+    "word": "热气球",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "加热空气膨胀变轻使巨大气球升空"
+  },
+  {
+    "id": "k12_science_24",
+    "word": "电路",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "电池导线连小灯泡发光圈"
+  },
+  {
+    "id": "k12_science_25",
+    "word": "日晷",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "圆盘指针在太阳照射下投出阴影测时间"
+  },
+  {
+    "id": "k12_science_26",
+    "word": "原子",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "中心原子核周围环绕着电子轨道云"
+  },
+  {
+    "id": "k12_science_27",
+    "word": "三态变化",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "水固态冰液态水气态水蒸气循环"
+  },
+  {
+    "id": "k12_science_28",
+    "word": "钟乳石",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "溶洞顶部向下垂挂的尖尖石柱"
+  },
+  {
+    "id": "k12_science_29",
+    "word": "板块运动",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "地壳板块碰撞挤压隆起形成高山地震"
+  },
+  {
+    "id": "k12_science_30",
+    "word": "日食",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "月球挡住太阳使天空白昼变成黑夜"
+  },
+  {
+    "id": "k12_science_31",
+    "word": "八大行星",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "围绕太阳公转的八个不同大小星球"
+  },
+  {
+    "id": "k12_science_32",
+    "word": "流星雨",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "夜空中一道道耀眼流星划破天际"
+  },
+  {
+    "id": "k12_science_33",
+    "word": "哈勃望远镜",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "漂浮在宇宙轨道上的大型太空望远镜"
+  },
+  {
+    "id": "k12_science_34",
+    "word": "空间站",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "太空中巨大的十字形太阳能帆板舱体"
+  },
+  {
+    "id": "k12_science_35",
+    "word": "火星车",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "六个轮子带机械臂天线在火星探测"
+  },
+  {
+    "id": "k12_science_36",
+    "word": "月球车",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "在月球荒漠表面行驶留下一串车辙"
+  },
+  {
+    "id": "k12_science_37",
+    "word": "人造卫星",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "两侧展开太阳能电池翼绕地球运转"
+  },
+  {
+    "id": "k12_science_38",
+    "word": "回音壁",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "圆形光滑墙面将微弱声音反射传播"
+  },
+  {
+    "id": "k12_science_39",
+    "word": "凸透镜",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "中间厚边缘薄聚焦太阳光到焦点发热"
+  },
+  {
+    "id": "k12_science_40",
+    "word": "潜望镜",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "上下两块45度反射镜看到水面外"
+  },
+  {
+    "id": "k12_science_41",
+    "word": "滑轮组",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "定滑轮和动滑轮组合在一起省力提重物"
+  },
+  {
+    "id": "k12_science_42",
+    "word": "斜面",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "利用倾斜坡面省力将重物推向高处"
+  },
+  {
+    "id": "k12_science_43",
+    "word": "浮力",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "物体浸在水里受到向上托起的力量"
+  },
+  {
+    "id": "k12_science_44",
+    "word": "温度计",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "玻璃管里红色水银柱根据温度升降"
+  },
+  {
+    "id": "k12_science_45",
+    "word": "静电",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "摩擦后塑料尺吸起一撮干燥小纸屑"
+  },
+  {
+    "id": "k12_science_46",
+    "word": "发电机",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "旋转磁场切割磁感线输出强劲电力"
+  },
+  {
+    "id": "k12_science_47",
+    "word": "水力发电",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "拦河巨型混凝土大坝开闸泄洪发电"
+  },
+  {
+    "id": "k12_science_48",
+    "word": "潮汐",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "月球引力使海水产生涨潮退潮发电"
+  },
+  {
+    "id": "k12_science_49",
+    "word": "温泉",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "地底岩浆加热地下水冒着腾腾热气"
+  },
+  {
+    "id": "k12_science_50",
+    "word": "食物链",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "青草吃蚂蚱青蛙吃蛇老鹰生态链"
+  },
+  {
+    "id": "k12_science_51",
+    "word": "花粉授粉",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "蜜蜂蝴蝶身上粘满黄色花粉传播花朵"
+  },
+  {
+    "id": "k12_science_52",
+    "word": "种子发芽",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "土里一粒小种子吸水破土抽出嫩绿芽"
+  },
+  {
+    "id": "k12_science_53",
+    "word": "年轮",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "锯开大树桩上一圈圈深浅同心圆环"
+  },
+  {
+    "id": "k12_science_54",
+    "word": "向光性",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "阳台上的植物幼苗总是朝着阳光弯曲"
+  },
+  {
+    "id": "k12_science_55",
+    "word": "叶绿体",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "植物细胞里一颗颗翠绿制造养分小颗粒"
+  },
+  {
+    "id": "k12_science_56",
+    "word": "草履虫",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "显微镜下单细胞生物像只草鞋游动"
+  },
+  {
+    "id": "k12_science_57",
+    "word": "微生物",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "一滴池塘水在显微镜下看见游动小生命"
+  },
+  {
+    "id": "k12_science_58",
+    "word": "病毒",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "球形表面长满凸起刺突蛋白微小颗粒"
+  },
+  {
+    "id": "k12_science_59",
+    "word": "人体骨骼",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "支撑人体站立运动的全副白色骨头架"
+  },
+  {
+    "id": "k12_science_60",
+    "word": "心脏",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "像拳头大小四个腔室不知疲倦泵血"
+  },
+  {
+    "id": "k12_science_61",
+    "word": "肺",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "左右两片像海绵吸气膨胀呼气收缩"
+  },
+  {
+    "id": "k12_science_62",
+    "word": "大脑",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "两半球充满沟壑回旋思考神经中枢"
+  },
+  {
+    "id": "k12_science_63",
+    "word": "胃",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "像个C型大口袋分泌胃酸研磨食物"
+  },
+  {
+    "id": "k12_science_64",
+    "word": "红细胞",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "血液中像双凹圆盘运送氧气的小红细胞"
+  },
+  {
+    "id": "k12_science_65",
+    "word": "翼龙",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "远古长着巨大皮膜翅膀翱翔天空的飞龙"
+  },
+  {
+    "id": "k12_science_66",
+    "word": "三叶虫",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "远古海洋里背部分成三叶的坚硬化石"
+  },
+  {
+    "id": "k12_science_67",
+    "word": "始祖鸟",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "长着羽毛和利爪既像鸟又像恐龙过渡"
+  },
+  {
+    "id": "k12_science_68",
+    "word": "猛犸象",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "全身长满厚长棕毛两根巨大弯曲长牙"
+  },
+  {
+    "id": "k12_science_69",
+    "word": "琥珀",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "透明金黄松脂包裹着亿万年前远古昆虫"
+  },
+  {
+    "id": "k12_science_70",
+    "word": "齿轮",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "带齿轮齿相互咬合传递动力和转速"
+  },
+  {
+    "id": "k12_science_71",
+    "word": "杠杆",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "一根硬棒一个支点给我支点撬动地球"
+  },
+  {
+    "id": "k12_science_72",
+    "word": "地动仪",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "八条铜龙口含铜珠下方八只张嘴蟾蜍"
+  },
+  {
+    "id": "k12_science_73",
+    "word": "水车",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "大木轮靠水流冲击转动把水提升灌溉"
+  },
+  {
+    "id": "k12_science_74",
+    "word": "漏刻",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "古代铜壶滴水浮箭测量时间仪器"
+  },
+  {
+    "id": "k12_science_75",
+    "word": "避雷针",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "建筑物最高点金属尖针将雷电引向地底"
+  },
+  {
+    "id": "k12_science_76",
+    "word": "声呐",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "向深海发射声波接收回波探测地形鱼群"
+  },
+  {
+    "id": "k12_science_77",
+    "word": "雷达",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "大抛物面天线旋转扫描空中飞行目标"
+  },
+  {
+    "id": "k12_science_78",
+    "word": "X光片",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "穿透皮肤照出里面黑色底片上的白骨骼"
+  },
+  {
+    "id": "k12_science_79",
+    "word": "红外热像",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "热成像夜视仪看见人体发出的红黄热量"
+  },
+  {
+    "id": "k12_science_80",
+    "word": "激光",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "极细高能量光束瞬间切割坚硬金属板"
+  },
+  {
+    "id": "k12_science_81",
+    "word": "磁悬浮",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "利用同名磁极相斥使列车悬浮轨道飞驰"
+  },
+  {
+    "id": "k12_science_82",
+    "word": "机械臂",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "多关节工业机器人在车间精准焊接组装"
+  },
+  {
+    "id": "k12_science_83",
+    "word": "无人驾驶",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "车顶激光雷达360度旋转自动驾驶汽车"
+  },
+  {
+    "id": "k12_science_84",
+    "word": "量子通信",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "在太空发射纠缠光子进行不可破译通信"
+  },
+  {
+    "id": "k12_science_85",
+    "word": "核反应堆",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "巨大圆柱形冷却塔顶部冒出白色水蒸汽"
+  },
+  {
+    "id": "k12_science_86",
+    "word": "风洞",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "巨大管道风扇制造超强风力测试飞机模型"
+  },
+  {
+    "id": "k12_science_87",
+    "word": "对撞机",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "地下几十公里超导环形隧道粒子高速碰撞"
+  },
+  {
+    "id": "k12_science_88",
+    "word": "深海潜水器",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "球形坚固载人舱下潜万米深海马里亚纳"
+  },
+  {
+    "id": "k12_science_89",
+    "word": "南极科考站",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "南极冰原上橙红色像宇宙飞船的坚固基地"
+  },
+  {
+    "id": "k12_science_90",
+    "word": "雪线",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "高山终年积雪与融化区域的分界线"
+  },
+  {
+    "id": "k12_science_91",
+    "word": "臭氧空洞",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "高空吸收有害紫外线保护地球的保护伞"
+  },
+  {
+    "id": "k12_science_92",
+    "word": "温室效应",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "大玻璃圆罩扣住地球冒热汗"
+  },
+  {
+    "id": "k12_science_93",
+    "word": "碳循环",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "森林海洋吸收碳排放维持生态平衡"
+  },
+  {
+    "id": "k12_science_94",
+    "word": "垃圾分类",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "蓝绿红灰四个分类垃圾桶循环再生"
+  },
+  {
+    "id": "k12_science_95",
+    "word": "超导体",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "极低温下电阻完全消失磁体悬浮"
+  },
+  {
+    "id": "k12_science_96",
+    "word": "石墨烯",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "蜂窝状六边形单层碳原子超强薄膜"
+  },
+  {
+    "id": "k12_science_97",
+    "word": "水循环",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "海水蒸发成云降雨汇入河流归大海"
+  },
+  {
+    "id": "k12_science_98",
+    "word": "日冕",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "日全食时太阳周围露出的珍珠色光芒"
+  },
+  {
+    "id": "k12_science_99",
+    "word": "彗星",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "拖着长长发光尾巴掠过夜空的脏雪球"
+  },
+  {
+    "id": "k12_science_100",
+    "word": "小行星带",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "火星和木星之间数以万计岩石碎块群"
+  },
+  {
+    "id": "k12_geo_1",
+    "word": "长城",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "山顶蜿蜒石墙连着方形烽火台"
+  },
+  {
+    "id": "k12_geo_2",
+    "word": "埃菲尔铁塔",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "四角镂空高耸钢铁高塔"
+  },
+  {
+    "id": "k12_geo_3",
+    "word": "金字塔",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "沙漠里巨大石头方锥三角建筑"
+  },
+  {
+    "id": "k12_geo_4",
+    "word": "自由女神像",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "长袍女子右手高举发光火炬"
+  },
+  {
+    "id": "k12_geo_5",
+    "word": "悉尼歌剧院",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "海港边一片片像白贝壳帆船的大剧院"
+  },
+  {
+    "id": "k12_geo_6",
+    "word": "比萨斜塔",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "多层圆柱白色石塔明显倾斜"
+  },
+  {
+    "id": "k12_geo_7",
+    "word": "泰姬陵",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "白色纯净大理石巨大圆顶倒影在长水池"
+  },
+  {
+    "id": "k12_geo_8",
+    "word": "大本钟",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "伦敦泰晤士河畔高大古典四面大钟楼"
+  },
+  {
+    "id": "k12_geo_9",
+    "word": "富士山",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "对称圆锥火山顶覆盖白色积雪"
+  },
+  {
+    "id": "k12_geo_10",
+    "word": "地球仪",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "斜轴支架上可以自由旋转的世界地图圆球"
+  },
+  {
+    "id": "k12_geo_11",
+    "word": "绿洲",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "黄色沙丘中间一汪蓝水几棵树"
+  },
+  {
+    "id": "k12_geo_12",
+    "word": "冰山",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "水面露小尖角水下巨大白冰块"
+  },
+  {
+    "id": "k12_geo_13",
+    "word": "梯田",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "沿山坡层层叠叠修筑像大地指纹的水田"
+  },
+  {
+    "id": "k12_geo_14",
+    "word": "风车",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "小木屋房顶挂着十字形大叶片"
+  },
+  {
+    "id": "k12_geo_15",
+    "word": "热带雨林",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "参天大树藤蔓缠绕高密度热带丛林"
+  },
+  {
+    "id": "k12_geo_16",
+    "word": "大峡谷",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "奔腾河流在红褐色岩层切出深邃绝壁"
+  },
+  {
+    "id": "k12_geo_17",
+    "word": "灯塔",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "海边红白条纹圆塔顶端放光"
+  },
+  {
+    "id": "k12_geo_18",
+    "word": "蘑菇石",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "风沙千万年吹蚀形成上大下小蘑菇巨石"
+  },
+  {
+    "id": "k12_geo_19",
+    "word": "珠穆朗玛峰",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "世界最高峰尖锐金字塔形雪峰直插云霄"
+  },
+  {
+    "id": "k12_geo_20",
+    "word": "窑洞",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "黄土高原山崖上掏出的拱形冬暖夏凉房屋"
+  },
+  {
+    "id": "k12_geo_21",
+    "word": "莫高窟",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "悬崖上开凿的千佛洞窟和九层飞檐木楼"
+  },
+  {
+    "id": "k12_geo_22",
+    "word": "故宫",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "红墙金瓦金水桥九千间皇家宫殿群"
+  },
+  {
+    "id": "k12_geo_23",
+    "word": "布达拉宫",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "雪域高原依山而建红白相间宏伟宫殿"
+  },
+  {
+    "id": "k12_geo_24",
+    "word": "天坛",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "圆形三层蓝色琉璃瓦祈年殿祈求丰收"
+  },
+  {
+    "id": "k12_geo_25",
+    "word": "兵马俑",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "坑道里整齐排列千人千面的陶土军阵"
+  },
+  {
+    "id": "k12_geo_26",
+    "word": "都江堰",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "鱼嘴分水飞沙堰宝瓶口千年治水工程"
+  },
+  {
+    "id": "k12_geo_27",
+    "word": "黄鹤楼",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "长江边五层飞檐气势磅礴江南名楼"
+  },
+  {
+    "id": "k12_geo_28",
+    "word": "苏州园林",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "粉墙黛瓦漏窗小桥流水假山亭台"
+  },
+  {
+    "id": "k12_geo_29",
+    "word": "桂林山水",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "清澈漓江穿过一座座奇峰拔地倒影如画"
+  },
+  {
+    "id": "k12_geo_30",
+    "word": "张家界",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "三千座拔地而起的石英砂岩奇峰石柱群"
+  },
+  {
+    "id": "k12_geo_31",
+    "word": "九寨沟",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "色彩斑斓清澈见底倒映雪山的高山彩池"
+  },
+  {
+    "id": "k12_geo_32",
+    "word": "间歇泉",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "地面裂口定时喷出几十米高滚烫白水柱"
+  },
+  {
+    "id": "k12_geo_33",
+    "word": "科罗拉多大峡谷",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "红色砂岩被河流切割出的万丈深渊"
+  },
+  {
+    "id": "k12_geo_34",
+    "word": "尼亚加拉瀑布",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "马蹄形巨大跨国瀑布水雾冲天雷鸣轰响"
+  },
+  {
+    "id": "k12_geo_35",
+    "word": "维多利亚瀑布",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "非洲大地上巨大的水帘跌入深邃裂谷"
+  },
+  {
+    "id": "k12_geo_36",
+    "word": "亚马逊河",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "地球之肺蜿蜒巨河与无尽热带雨林"
+  },
+  {
+    "id": "k12_geo_37",
+    "word": "死海",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "盐度极高人躺在水面上漂浮看报纸"
+  },
+  {
+    "id": "k12_geo_38",
+    "word": "撒哈拉沙漠",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "金黄沙丘连绵起伏一队骆驼慢慢前行"
+  },
+  {
+    "id": "k12_geo_39",
+    "word": "猴面包树",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "马达加斯加粗大像大水桶的巨大奇特大树"
+  },
+  {
+    "id": "k12_geo_40",
+    "word": "乞力马扎罗山",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "赤道附近的孤峰非洲屋脊山顶白雪"
+  },
+  {
+    "id": "k12_geo_41",
+    "word": "复活节岛石像",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "海边一排排巨大长脸长耳神秘深邃石雕"
+  },
+  {
+    "id": "k12_geo_42",
+    "word": "马丘比丘",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "安第斯山巅云雾缭绕的印加古城石头遗址"
+  },
+  {
+    "id": "k12_geo_43",
+    "word": "救世基督像",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "里约山顶张开双臂俯瞰海湾的巨大白雕像"
+  },
+  {
+    "id": "k12_geo_44",
+    "word": "贡多拉",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "威尼斯水城两头翘起黑色狭长游览小船"
+  },
+  {
+    "id": "k12_geo_45",
+    "word": "古罗马斗兽场",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "罗马圆形拱门层层叠叠的古代角斗看台"
+  },
+  {
+    "id": "k12_geo_46",
+    "word": "帕特农神庙",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "雅典卫城山顶巍峨立柱大理石古希腊神殿"
+  },
+  {
+    "id": "k12_geo_47",
+    "word": "克里姆林宫",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "红场边五彩斑斓洋葱头圆顶童话城堡"
+  },
+  {
+    "id": "k12_geo_48",
+    "word": "伦敦塔桥",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "两座高塔中间桥面可以从中间升起通船"
+  },
+  {
+    "id": "k12_geo_49",
+    "word": "巨石阵",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "平原上围成圆圈屹立千年的巨大神秘石柱"
+  },
+  {
+    "id": "k12_geo_50",
+    "word": "阿尔卑斯山",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "白雪皑皑的山峰下有翠绿草甸小木屋"
+  },
+  {
+    "id": "k12_geo_51",
+    "word": "峡湾",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "海水深入两侧悬崖峭壁狭长蓝色水道"
+  },
+  {
+    "id": "k12_geo_52",
+    "word": "水上屋",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "海岛浅海木桩上搭建的草顶度假小屋"
+  },
+  {
+    "id": "k12_geo_53",
+    "word": "黑沙滩",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "冰岛火山碎屑形成的漆黑沙滩白浪花"
+  },
+  {
+    "id": "k12_geo_54",
+    "word": "大堡礁",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "热带海下绵延千里五彩斑斓珊瑚群"
+  },
+  {
+    "id": "k12_geo_55",
+    "word": "霍比特村",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "山坡草地里一个个圆形门窗矮人小洞屋"
+  },
+  {
+    "id": "k12_geo_56",
+    "word": "吴哥窟",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "热带密林中石雕佛塔群高棉的微笑"
+  },
+  {
+    "id": "k12_geo_57",
+    "word": "下龙湾",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "平静海面上千座喀斯特小石岛林立"
+  },
+  {
+    "id": "k12_geo_58",
+    "word": "仰光大金塔",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "通体金箔贴面顶嵌宝石的巨大黄金佛塔"
+  },
+  {
+    "id": "k12_geo_59",
+    "word": "婆罗浮屠",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "层层递进堆叠的火山岩巨大佛教金字塔"
+  },
+  {
+    "id": "k12_geo_60",
+    "word": "佩特拉古城",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "红褐色岩壁直接雕刻出的宏伟神殿大门"
+  },
+  {
+    "id": "k12_geo_61",
+    "word": "帆船酒店",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "海边人工岛上像迎风扬帆阿拉伯白色帆船"
+  },
+  {
+    "id": "k12_geo_62",
+    "word": "哈利法塔",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "迪拜直插云霄数百米世界最高摩天大楼"
+  },
+  {
+    "id": "k12_geo_63",
+    "word": "金沙酒店",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "三栋高楼顶托着一艘大船形状无边泳池"
+  },
+  {
+    "id": "k12_geo_64",
+    "word": "日月潭",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "高山深潭拉鲁岛分界一边如日一边如月"
+  },
+  {
+    "id": "k12_geo_65",
+    "word": "维多利亚港",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "两岸摩天大楼霓虹闪烁中西游船穿梭夜景"
+  },
+  {
+    "id": "k12_geo_66",
+    "word": "大三巴牌坊",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "圣保禄教堂大火后残留的壮丽石头前壁"
+  },
+  {
+    "id": "k12_geo_67",
+    "word": "东方明珠",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "黄浦江畔大大小小粉红球体串联电视塔"
+  },
+  {
+    "id": "k12_geo_68",
+    "word": "广州塔",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "珠江边婀娜扭腰变幻七彩灯光的小蛮腰"
+  },
+  {
+    "id": "k12_geo_69",
+    "word": "断桥残雪",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "西湖白堤上雪后半边雪融宛如断开石拱桥"
+  },
+  {
+    "id": "k12_geo_70",
+    "word": "三峡夔门",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "长江三峡西大门两岸悬崖峭壁如刀削"
+  },
+  {
+    "id": "k12_geo_71",
+    "word": "壶口瀑布",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "黄河奔腾至此缩窄如壶巨浪翻滚如雷"
+  },
+  {
+    "id": "k12_geo_72",
+    "word": "青海湖",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "高原上一片蔚蓝无际大湖周围油菜花盛开"
+  },
+  {
+    "id": "k12_geo_73",
+    "word": "长白山天池",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "火山口积水成湖十六座奇峰环抱如明镜"
+  },
+  {
+    "id": "k12_geo_74",
+    "word": "野柳女王头",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "海风侵蚀岩石形成雍容华贵女王侧脸"
+  },
+  {
+    "id": "k12_geo_75",
+    "word": "阿里山",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "穿行在千年参天红桧神木森林里红色小火车"
+  },
+  {
+    "id": "k12_geo_76",
+    "word": "蒙古包",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "呼伦贝尔大草原上一座座白色圆形帐篷"
+  },
+  {
+    "id": "k12_geo_77",
+    "word": "天山天池",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "雪山雪峰倒映在清澈如镜的高山冰川湖"
+  },
+  {
+    "id": "k12_geo_78",
+    "word": "月牙泉",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "鸣沙山金色沙丘环抱中一汪碧绿不干涸泉水"
+  },
+  {
+    "id": "k12_geo_79",
+    "word": "沙漠公路",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "像黑丝带切开无垠流动沙丘的笔直公路"
+  },
+  {
+    "id": "k12_geo_80",
+    "word": "热带植物园",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "大王莲巨大圆叶绞杀榕热带奇花异木"
+  },
+  {
+    "id": "k12_geo_81",
+    "word": "茶马古道",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "穿行在崇山峻岭间马帮骡马踏出的古道"
+  },
+  {
+    "id": "k12_geo_82",
+    "word": "京杭大运河",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "连通南北的古代人工大运河与高大拱桥"
+  },
+  {
+    "id": "k12_geo_83",
+    "word": "赵州桥",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "世界最早敞肩石拱桥两端各有两个小拱"
+  },
+  {
+    "id": "k12_geo_84",
+    "word": "客家土楼",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "巨大圆形或方形厚实生土围合防御民居"
+  },
+  {
+    "id": "k12_geo_85",
+    "word": "乌篷船",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "江南水乡黑色半圆竹篾蓬摇橹小船"
+  },
+  {
+    "id": "k12_geo_86",
+    "word": "马头墙",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "徽派建筑白墙黑瓦高出屋顶阶梯形山墙"
+  },
+  {
+    "id": "k12_geo_87",
+    "word": "开平碉楼",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "乡村田野中古堡般中西合璧防匪高碉楼"
+  },
+  {
+    "id": "k12_geo_88",
+    "word": "苗寨吊脚楼",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "依山顺势层层叠叠木质悬空撑柱楼房"
+  },
+  {
+    "id": "k12_geo_89",
+    "word": "平遥古城",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "保存完好的高大砖石城墙与十字街市楼"
+  },
+  {
+    "id": "k12_geo_90",
+    "word": "丽江古城",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "石板路上小桥流水入口处巨大木水车"
+  },
+  {
+    "id": "k12_geo_91",
+    "word": "乌镇水乡",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "水巷两岸民居依水而建石板桥系缆桩"
+  },
+  {
+    "id": "k12_geo_92",
+    "word": "乐山大佛",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "依悬崖绝壁开凿数十米高依山而坐大佛"
+  },
+  {
+    "id": "k12_geo_93",
+    "word": "悬空寺",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "建在悬崖绝壁上几根细木支撑千年古寺"
+  },
+  {
+    "id": "k12_geo_94",
+    "word": "少林寺",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "嵩山密林中天下第一名刹练武木桩"
+  },
+  {
+    "id": "k12_geo_95",
+    "word": "武当山",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "云雾缭绕金顶道观道教圣地太极"
+  },
+  {
+    "id": "k12_geo_96",
+    "word": "泰山日出",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "五岳独尊玉皇顶俯瞰云海日出一轮红日"
+  },
+  {
+    "id": "k12_geo_97",
+    "word": "华山长空栈道",
+    "category": "K12_GEO",
+    "difficulty": "HARD",
+    "hint": "绝壁上几块木板铁链惊险绝伦天下第一险"
+  },
+  {
+    "id": "k12_geo_98",
+    "word": "黄山迎客松",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "悬崖绝壁上伸出一侧树枝热情迎客名松"
+  },
+  {
+    "id": "k12_geo_99",
+    "word": "千岛湖",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "碧绿湖面上散落千座翠绿小岛星罗棋布"
+  },
+  {
+    "id": "k12_geo_100",
+    "word": "西双版纳野象谷",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "高架观象栈道看野生亚洲大象戏水"
+  },
+  {
+    "id": "english_1",
+    "word": "Apple",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Red or green round fruit with stem and leaf"
+  },
+  {
+    "id": "english_2",
+    "word": "Banana",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Yellow curved sweet tropical fruit peeled"
+  },
+  {
+    "id": "english_3",
+    "word": "Cat",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Cute furry pet with whiskers pointy ears and tail"
+  },
+  {
+    "id": "english_4",
+    "word": "Dog",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Loyal furry pet with wagging tail and floppy ears"
+  },
+  {
+    "id": "english_5",
+    "word": "Sun",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Bright yellow glowing sun with smiling rays"
+  },
+  {
+    "id": "english_6",
+    "word": "Moon",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Glowing yellow crescent moon in the night sky"
+  },
+  {
+    "id": "english_7",
+    "word": "Star",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Five pointed shining yellow star in the sky"
+  },
+  {
+    "id": "english_8",
+    "word": "Tree",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Green bushy crown with brown trunk and roots"
+  },
+  {
+    "id": "english_9",
+    "word": "Book",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Open book with white pages and colorful cover"
+  },
+  {
+    "id": "english_10",
+    "word": "Car",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Four wheeled automobile with windshield and headlights"
+  },
+  {
+    "id": "english_11",
+    "word": "Fish",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Swimming animal with fins scales and tail"
+  },
+  {
+    "id": "english_12",
+    "word": "House",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Cozy home with pitched roof chimney and door"
+  },
+  {
+    "id": "english_13",
+    "word": "Clock",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Round wall clock with hour and minute hands"
+  },
+  {
+    "id": "english_14",
+    "word": "Heart",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Classic red love heart shape symbol"
+  },
+  {
+    "id": "english_15",
+    "word": "Flower",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Petals blooming on green stem with leaves"
+  },
+  {
+    "id": "english_16",
+    "word": "Cloud",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Fluffy white or gray puff floating in sky"
+  },
+  {
+    "id": "english_17",
+    "word": "Rain",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Dark cloud pouring blue raindrops to ground"
+  },
+  {
+    "id": "english_18",
+    "word": "Snowman",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Three stacked snowballs with carrot nose and hat"
+  },
+  {
+    "id": "english_19",
+    "word": "Bird",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Flying creature with wings beak and feathers"
+  },
+  {
+    "id": "english_20",
+    "word": "Shoe",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Running sneaker with laces and rubber sole"
+  },
+  {
+    "id": "english_21",
+    "word": "Hat",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Fashionable headwear with brim or top hat"
+  },
+  {
+    "id": "english_22",
+    "word": "Butterfly",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Colorful symmetrical wings flutter on flower"
+  },
+  {
+    "id": "english_23",
+    "word": "Airplane",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Jet aircraft with wings jet engines and tail"
+  },
+  {
+    "id": "english_24",
+    "word": "Rainbow",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Seven colored arch bridge across the sky"
+  },
+  {
+    "id": "english_25",
+    "word": "Crown",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Golden royal headpiece studded with gems"
+  },
+  {
+    "id": "english_26",
+    "word": "Guitar",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Acoustic musical instrument with six strings"
+  },
+  {
+    "id": "english_27",
+    "word": "Candle",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Wax stick with flickering yellow flame on top"
+  },
+  {
+    "id": "english_28",
+    "word": "Camera",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Device with glass lens viewfinder and flash"
+  },
+  {
+    "id": "english_29",
+    "word": "Key",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Metal tool with notched teeth to open locks"
+  },
+  {
+    "id": "english_30",
+    "word": "Umbrella",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Open canopy with curved handle for rain"
+  },
+  {
+    "id": "english_31",
+    "word": "Lollipop",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Swirl patterned hard candy on a white stick"
+  },
+  {
+    "id": "english_32",
+    "word": "Submarine",
+    "category": "ENGLISH",
+    "difficulty": "MEDIUM",
+    "hint": "Underwater vessel with periscope and propeller"
+  },
+  {
+    "id": "english_33",
+    "word": "Microscope",
+    "category": "ENGLISH",
+    "difficulty": "MEDIUM",
+    "hint": "Lab optical instrument to magnify cells"
+  },
+  {
+    "id": "english_34",
+    "word": "Volcano",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Mountain erupting with red lava and ash"
+  },
+  {
+    "id": "english_35",
+    "word": "Telescope",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Tube optical tool pointed at distant stars"
+  },
+  {
+    "id": "english_36",
+    "word": "Chameleon",
+    "category": "ENGLISH",
+    "difficulty": "MEDIUM",
+    "hint": "Lizard that changes color with curly tail"
+  },
+  {
+    "id": "english_37",
+    "word": "Lighthouse",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Tower by the sea beaming rotating light"
+  },
+  {
+    "id": "english_38",
+    "word": "Dragon",
+    "category": "ENGLISH",
+    "difficulty": "MEDIUM",
+    "hint": "Mythical reptile with wings breathing fire"
+  },
+  {
+    "id": "english_39",
+    "word": "Treasure Chest",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Wooden chest overflowing with gold and jewels"
+  },
+  {
+    "id": "english_40",
+    "word": "Hourglass",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Two glass bulbs trickling sand through neck"
+  },
+  {
+    "id": "english_41",
+    "word": "Windmill",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Tall building with four rotating sail blades"
+  },
+  {
+    "id": "english_42",
+    "word": "Elephant",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Huge grey mammal with long trunk and tusks"
+  },
+  {
+    "id": "english_43",
+    "word": "Giraffe",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Tallest animal with super long neck and spots"
+  },
+  {
+    "id": "english_44",
+    "word": "Penguin",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Flightless black and white bird in Antarctica"
+  },
+  {
+    "id": "english_45",
+    "word": "Dolphin",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Smart marine animal jumping out of ocean"
+  },
+  {
+    "id": "english_46",
+    "word": "Monkey",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Playful primate swinging from tail eating banana"
+  },
+  {
+    "id": "english_47",
+    "word": "Lion",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "King of the jungle with big golden mane"
+  },
+  {
+    "id": "english_48",
+    "word": "Tiger",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Fierce big cat with orange fur and black stripes"
+  },
+  {
+    "id": "english_49",
+    "word": "Zebra",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Wild horse covered in black and white stripes"
+  },
+  {
+    "id": "english_50",
+    "word": "Kangaroo",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Australian marsupial with pouch jumping high"
+  },
+  {
+    "id": "english_51",
+    "word": "Octopus",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Sea creature with eight suction cupped arms"
+  },
+  {
+    "id": "english_52",
+    "word": "Strawberry",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Red heart shaped berry with tiny seed dots"
+  },
+  {
+    "id": "english_53",
+    "word": "Watermelon",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Green striped rind with sweet red seeded flesh"
+  },
+  {
+    "id": "english_54",
+    "word": "Ice Cream",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Frozen sweet treat in a waffle cone"
+  },
+  {
+    "id": "english_55",
+    "word": "Hamburger",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Beef patty lettuce cheese inside sesame bun"
+  },
+  {
+    "id": "english_56",
+    "word": "Pizza",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Round baked crust with cheese and pepperoni"
+  },
+  {
+    "id": "english_57",
+    "word": "Sandwich",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Two sliced bread stuffed with ham and veggies"
+  },
+  {
+    "id": "english_58",
+    "word": "Cake",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Multi layered birthday cake with candles"
+  },
+  {
+    "id": "english_59",
+    "word": "Cookie",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Crispy round biscuit with chocolate chips"
+  },
+  {
+    "id": "english_60",
+    "word": "Chocolate",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Divided rectangular sweet brown candy bar"
+  },
+  {
+    "id": "english_61",
+    "word": "Donut",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Fried dough ring with pink strawberry frosting"
+  },
+  {
+    "id": "english_62",
+    "word": "Bicycle",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Two wheeled pedal powered transport with handlebar"
+  },
+  {
+    "id": "english_63",
+    "word": "Train",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Locomotive chugging on steel tracks pulling cars"
+  },
+  {
+    "id": "english_64",
+    "word": "Ship",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Large cruise liner sailing on deep ocean waves"
+  },
+  {
+    "id": "english_65",
+    "word": "Rocket",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Spacecraft launching into stars with flame trail"
+  },
+  {
+    "id": "english_66",
+    "word": "Helicopter",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Aircraft lifted by large spinning top rotor"
+  },
+  {
+    "id": "english_67",
+    "word": "Bus",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Long public transport vehicle with many windows"
+  },
+  {
+    "id": "english_68",
+    "word": "Truck",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Heavy motor vehicle with large cargo container"
+  },
+  {
+    "id": "english_69",
+    "word": "Fire Truck",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Red rescue truck with water hose and long ladder"
+  },
+  {
+    "id": "english_70",
+    "word": "Ambulance",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Emergency medical vehicle with flashing blue red light"
+  },
+  {
+    "id": "english_71",
+    "word": "Police Car",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Patrol cruiser with siren light bar on roof"
+  },
+  {
+    "id": "english_72",
+    "word": "Backpack",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "School bag with shoulder straps and zipper pocket"
+  },
+  {
+    "id": "english_73",
+    "word": "Pencil",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Wooden writing stick with graphite lead eraser"
+  },
+  {
+    "id": "english_74",
+    "word": "Scissors",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Two crossed pivoted cutting blades with handle loops"
+  },
+  {
+    "id": "english_75",
+    "word": "Ruler",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Straight plastic stick marked with measurement units"
+  },
+  {
+    "id": "english_76",
+    "word": "Globe",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Spherical model of Earth tilted on a stand"
+  },
+  {
+    "id": "english_77",
+    "word": "Compass",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Direction finding tool with needle pointing North"
+  },
+  {
+    "id": "english_78",
+    "word": "Glasses",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Pair of optical lenses set in a nose frame"
+  },
+  {
+    "id": "english_79",
+    "word": "Watch",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Small timekeeper strapped around the wrist"
+  },
+  {
+    "id": "english_80",
+    "word": "Phone",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Handheld smartphone with touch display and apps"
+  },
+  {
+    "id": "english_81",
+    "word": "Computer",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Desktop monitor keyboard mouse and CPU box"
+  },
+  {
+    "id": "english_82",
+    "word": "Drum",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Percussion instrument beaten with wooden sticks"
+  },
+  {
+    "id": "english_83",
+    "word": "Violin",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Wooden four stringed instrument played with a bow"
+  },
+  {
+    "id": "english_84",
+    "word": "Piano",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Large keyboard instrument with black and white keys"
+  },
+  {
+    "id": "english_85",
+    "word": "Trumpet",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Shiny brass wind instrument with three valves"
+  },
+  {
+    "id": "english_86",
+    "word": "Saxophone",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Curved brass jazz instrument with mouthpiece"
+  },
+  {
+    "id": "english_87",
+    "word": "Microphone",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Device held to mouth to amplify singing voice"
+  },
+  {
+    "id": "english_88",
+    "word": "Headphones",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Audio cups worn over ears with headband"
+  },
+  {
+    "id": "english_89",
+    "word": "Palette",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Wooden flat board holding blobs of wet paint"
+  },
+  {
+    "id": "english_90",
+    "word": "Brush",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Long handle with bristles dipped in colorful paint"
+  },
+  {
+    "id": "english_91",
+    "word": "Easel",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Three legged wooden stand holding painting canvas"
+  },
+  {
+    "id": "english_92",
+    "word": "Castle",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Medieval stone fortress with turrets and flags"
+  },
+  {
+    "id": "english_93",
+    "word": "Pyramid",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Ancient Egyptian monumental triangular tomb"
+  },
+  {
+    "id": "english_94",
+    "word": "Bridge",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Suspension structure spanning across wide river"
+  },
+  {
+    "id": "english_95",
+    "word": "Tower",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Tall architectural structure rising high above"
+  },
+  {
+    "id": "english_96",
+    "word": "Tent",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Canvas shelter pitched outdoors with ropes and pegs"
+  },
+  {
+    "id": "english_97",
+    "word": "Igloo",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Dome shaped house built of compacted snow blocks"
+  },
+  {
+    "id": "english_98",
+    "word": "Barn",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Red wooden farm building with big double doors"
+  },
+  {
+    "id": "english_99",
+    "word": "Skyscraper",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Very tall multistory glass modern building"
+  },
+  {
+    "id": "english_100",
+    "word": "Cabin",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Rustic wooden log house in pine forest"
+  },
+  {
+    "id": "english_101",
+    "word": "Campfire",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Logs burning in circle with bright yellow flames"
+  },
+  {
+    "id": "english_102",
+    "word": "Waterfall",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "River water cascading down steep mountain cliff"
+  },
+  {
+    "id": "english_103",
+    "word": "Spaceship",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Futuristic flying saucer hovering with light beam"
+  },
+  {
+    "id": "english_104",
+    "word": "Robot",
+    "category": "ENGLISH",
+    "difficulty": "EASY",
+    "hint": "Metallic figure with antenna glowing eyes and gears"
+  },
+  {
+    "id": "music_1",
+    "word": "架子鼓",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "几个圆鼓与金属圆镲支架组合"
+  },
+  {
+    "id": "music_2",
+    "word": "小提琴",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "葫芦木琴身用一根细长弓拉奏"
+  },
+  {
+    "id": "music_3",
+    "word": "萨克斯",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "弯成J字形的金色金属吹管"
+  },
+  {
+    "id": "music_4",
+    "word": "麦克风",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "手握圆柱体顶端是个金属网圆头"
+  },
+  {
+    "id": "music_5",
+    "word": "五线谱",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "五条平行横线挂着黑白小音符"
+  },
+  {
+    "id": "music_6",
+    "word": "八音盒",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "发条带动带刺滚筒拨动金属片发出清脆声"
+  },
+  {
+    "id": "music_7",
+    "word": "黑胶唱机",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "旋转黑色胶木大圆盘唱针划过凹槽播放"
+  },
+  {
+    "id": "music_8",
+    "word": "指挥家",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "手握细长指挥棒站在交响乐团前统领全场"
+  },
+  {
+    "id": "music_9",
+    "word": "竖琴",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "巨大木质三角框排列数十根琴弦拨奏"
+  },
+  {
+    "id": "music_10",
+    "word": "手风琴",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "双手拉推风箱右手按键盘左手按和弦键"
+  },
+  {
+    "id": "music_11",
+    "word": "二胡",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "两根弦木琴筒蒙蛇皮马尾琴弓拉奏"
+  },
+  {
+    "id": "music_12",
+    "word": "节拍器",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "金字塔木盒前面摆动的金属长针"
+  },
+  {
+    "id": "music_13",
+    "word": "尤克里里",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "四根尼龙弦夏威夷小吉他欢快好弹"
+  },
+  {
+    "id": "music_14",
+    "word": "电吉他",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "实木琴身拾音器插音箱弹奏摇滚失真音"
+  },
+  {
+    "id": "music_15",
+    "word": "长笛",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "横握吹奏的银色金属管身清脆悠扬"
+  },
+  {
+    "id": "music_16",
+    "word": "大提琴",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "坐着双腿夹住底部撑地拉奏深沉低音"
+  },
+  {
+    "id": "music_17",
+    "word": "音箱",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "黑色大箱子发出震撼澎湃音乐重低音"
+  },
+  {
+    "id": "music_18",
+    "word": "古筝",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "长长木质共鸣箱排列二十一根琴弦琴码"
+  },
+  {
+    "id": "music_19",
+    "word": "三角铁",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "悬挂的空心三角形金属棒配敲棒"
+  },
+  {
+    "id": "music_20",
+    "word": "DJ打碟机",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "双唱盘转盘混音推子滑动现场调节节奏"
+  },
+  {
+    "id": "music_21",
+    "word": "小号",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "三枚活塞按键金黄铜管高亢嘹亮"
+  },
+  {
+    "id": "music_22",
+    "word": "圆号",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "像蜗牛一样盘旋的大铜管右手插入喇叭口"
+  },
+  {
+    "id": "music_23",
+    "word": "长号",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "手握伸缩滑管拉长变短改变音高拉管"
+  },
+  {
+    "id": "music_24",
+    "word": "大号",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "管乐队中体型最大最沉重低音大铜管"
+  },
+  {
+    "id": "music_25",
+    "word": "单簧管",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "黑色木管身带吹嘴单簧片俗称黑管"
+  },
+  {
+    "id": "music_26",
+    "word": "双簧管",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "两片簧片贴在一起音色略带鼻音穿透力强"
+  },
+  {
+    "id": "music_27",
+    "word": "短笛",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "长笛一半长音调极高穿透整个交响乐团"
+  },
+  {
+    "id": "music_28",
+    "word": "琵琶",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "半梨形木质琴身四根琴弦怀抱弹拨"
+  },
+  {
+    "id": "music_29",
+    "word": "中阮",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "圆形音箱直柄四弦声音恬静优美阮咸"
+  },
+  {
+    "id": "music_30",
+    "word": "柳琴",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "体型小巧像柳叶高音弹拨乐器"
+  },
+  {
+    "id": "music_31",
+    "word": "扬琴",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "梯形木箱用两根竹制琴竹敲击众多琴弦"
+  },
+  {
+    "id": "music_32",
+    "word": "唢呐",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "长木管顶端大铜碗声音穿透力极强"
+  },
+  {
+    "id": "music_33",
+    "word": "笙",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "多根长短竹管插在铜斗里吹吸发音和声"
+  },
+  {
+    "id": "music_34",
+    "word": "箫",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "竖着吹奏的竹管音色深沉低回凄美"
+  },
+  {
+    "id": "music_35",
+    "word": "笛子",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "横吹竹管贴有笛膜音色清脆明亮"
+  },
+  {
+    "id": "music_36",
+    "word": "马头琴",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "蒙古族乐器琴杆顶端雕刻威武马头"
+  },
+  {
+    "id": "music_37",
+    "word": "冬不拉",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "哈萨克族长颈两弦弹拨木乐器"
+  },
+  {
+    "id": "music_38",
+    "word": "热瓦普",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "维吾尔族琴身带羊角弯曲琴柄弹拨乐器"
+  },
+  {
+    "id": "music_39",
+    "word": "手碟",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "像飞碟一样的双半球金属敲击空灵乐器"
+  },
+  {
+    "id": "music_40",
+    "word": "木琴",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "长短不一的木块排列用琴槌敲击清脆声"
+  },
+  {
+    "id": "music_41",
+    "word": "钢片琴",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "带键盘像立式钢琴敲击内部金属钢片"
+  },
+  {
+    "id": "music_42",
+    "word": "编钟",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "古代青铜铸造大小依次悬挂木架敲击"
+  },
+  {
+    "id": "music_43",
+    "word": "定音鼓",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "交响乐团后方巨大半球铜锅踏板调音鼓"
+  },
+  {
+    "id": "music_44",
+    "word": "大军鼓",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "挂在胸前双手持大鼓槌敲击行进大鼓"
+  },
+  {
+    "id": "music_45",
+    "word": "小军鼓",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "底部带响弦双鼓棒打出密集滚奏沙沙声"
+  },
+  {
+    "id": "music_46",
+    "word": "铃鼓",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "木圆框边缘嵌满小金属铜铃可拍可摇"
+  },
+  {
+    "id": "music_47",
+    "word": "沙锤",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "两个带手柄圆球里面装砂砾摇晃沙沙响"
+  },
+  {
+    "id": "music_48",
+    "word": "响板",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "两片贝壳状硬木握在手心打出清脆哒哒声"
+  },
+  {
+    "id": "music_49",
+    "word": "木箱鼓",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "坐在木箱上双手拍击前面板打出箱鼓节奏"
+  },
+  {
+    "id": "music_50",
+    "word": "康加鼓",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "高大桶状皮革鼓面拉丁打击乐器"
+  },
+  {
+    "id": "music_51",
+    "word": "电贝斯",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "粗粗四根弦负责乐队骨架低音铺底"
+  },
+  {
+    "id": "music_52",
+    "word": "合成器",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "电子音乐键盘旋钮调节各种科幻音色"
+  },
+  {
+    "id": "music_53",
+    "word": "效果器",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "踩在脚底改变吉他音色的单块踏板盒"
+  },
+  {
+    "id": "music_54",
+    "word": "防喷网",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "录音麦克风前阻挡爆音的黑色圆形网罩"
+  },
+  {
+    "id": "music_55",
+    "word": "调音台",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "一排排旋钮滑轨通道调节各路乐器音量"
+  },
+  {
+    "id": "music_56",
+    "word": "监听耳机",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "录音棚歌手乐手佩戴的专业大耳罩耳机"
+  },
+  {
+    "id": "music_57",
+    "word": "开盘机",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "两个巨大金属圆盘转动磁带母带录音机"
+  },
+  {
+    "id": "music_58",
+    "word": "卡带机",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "放入磁带按Play键齿轮转动的复古收录机"
+  },
+  {
+    "id": "music_59",
+    "word": "CD机",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "圆形便携播放器掀开盖子放入光盘听歌"
+  },
+  {
+    "id": "music_60",
+    "word": "歌剧院",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "红色天鹅绒幕布巨大拱形舞台金色雕花"
+  },
+  {
+    "id": "music_61",
+    "word": "交响乐团",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "管弦打击上百人扇形排开合奏宏伟乐章"
+  },
+  {
+    "id": "music_62",
+    "word": "合唱团",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "阶梯站立男女分声部张嘴齐唱合唱"
+  },
+  {
+    "id": "music_63",
+    "word": "三角钢琴",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "黑色烤漆大翅膀掀开支撑杆三只琴腿"
+  },
+  {
+    "id": "music_64",
+    "word": "管风琴",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "教堂墙壁上由数百根高大金属音管组成"
+  },
+  {
+    "id": "music_65",
+    "word": "天鹅湖",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "柴可夫斯基经典芭蕾舞四小天鹅配乐"
+  },
+  {
+    "id": "music_66",
+    "word": "音乐节",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "草地上搭建巨型露天舞台台下挥舞荧光棒"
+  },
+  {
+    "id": "music_67",
+    "word": "爵士乐",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "萨克斯钢琴低音提琴即兴摇摆切分节奏"
+  },
+  {
+    "id": "music_68",
+    "word": "Livehouse",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "小型室内摇滚现场观众近距离蹦跳听歌"
+  },
+  {
+    "id": "music_69",
+    "word": "高音谱号",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "五线谱最左端像优美花体G字母的谱号"
+  },
+  {
+    "id": "music_70",
+    "word": "低音谱号",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "五线谱上像倒写逗号旁边带两点的谱号"
+  },
+  {
+    "id": "music_71",
+    "word": "音符",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "带符头符干符尾记录声音高低的乐谱符号"
+  },
+  {
+    "id": "music_72",
+    "word": "休止符",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "挂在五线谱上表示音乐安静停顿的小黑块"
+  },
+  {
+    "id": "music_73",
+    "word": "升降号",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "井字形升号和降号改变半音符号"
+  },
+  {
+    "id": "music_74",
+    "word": "小节线",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "垂直穿过五线谱划分小节节拍的竖线"
+  },
+  {
+    "id": "music_75",
+    "word": "反复记号",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "双小节线带两颗黑点表示段落重复演奏"
+  },
+  {
+    "id": "music_76",
+    "word": "延音线",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "连接两个相同音高音符弧线延长时值"
+  },
+  {
+    "id": "music_77",
+    "word": "音叉",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "U型双叉金属柄配一个小手柄"
+  },
+  {
+    "id": "music_78",
+    "word": "口琴",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "两排小吹孔双手捂住左右滑动吹吸乐器"
+  },
+  {
+    "id": "music_79",
+    "word": "陶笛",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "陶瓷泥土烧制带指孔吹嘴吹出空灵鸟鸣声"
+  },
+  {
+    "id": "music_80",
+    "word": "卡祖笛",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "含在嘴里哼唱带动共鸣膜发出萨克斯嗡嗡声"
+  },
+  {
+    "id": "music_81",
+    "word": "排箫",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "长短不一的竹管并排固定吹出幽深风声"
+  },
+  {
+    "id": "music_82",
+    "word": "苏格兰风笛",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "苏格兰吹气皮囊夹在腋下插多根长共鸣管"
+  },
+  {
+    "id": "music_83",
+    "word": "阿卡贝拉",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "没有任何乐器伴奏全靠纯人声和声节奏"
+  },
+  {
+    "id": "music_84",
+    "word": "口技",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "用嘴唇牙齿舌头模仿架子鼓打击乐节拍"
+  },
+  {
+    "id": "music_85",
+    "word": "华尔兹",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "三拍子圆舞曲蓬蓬裙男士旋转优雅伴奏"
+  },
+  {
+    "id": "music_86",
+    "word": "踢踏舞",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "皮鞋脚尖脚跟铁片踏地敲击出清脆节奏"
+  },
+  {
+    "id": "music_87",
+    "word": "铜锣",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "大圆形铜盘用红布大槌重重敲击震天响"
+  },
+  {
+    "id": "music_88",
+    "word": "碰铃",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "两只带绳小铜铃轻轻碰击发出清亮叮铃声"
+  },
+  {
+    "id": "music_89",
+    "word": "木鱼",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "木制空心雕刻鱼鳞小木槌敲击诵经节奏"
+  },
+  {
+    "id": "music_90",
+    "word": "板胡",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "高亢明亮木板蒙琴筒北方戏曲主奏胡琴"
+  },
+  {
+    "id": "music_91",
+    "word": "京胡",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "细细竹筒蛇皮高音拉弦京剧领奏乐器"
+  },
+  {
+    "id": "music_92",
+    "word": "三弦",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "长长琴杆蟒皮大音箱用大骨板弹拨"
+  },
+  {
+    "id": "music_93",
+    "word": "月琴",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "形如满月短杆四弦京剧弹拨乐器"
+  },
+  {
+    "id": "music_94",
+    "word": "巴乌",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "横吹竹管带铜簧片音色低沉柔美云南乐器"
+  },
+  {
+    "id": "music_95",
+    "word": "葫芦丝",
+    "category": "MUSIC",
+    "difficulty": "EASY",
+    "hint": "天然葫芦插三根竹管吹出清甜傣家情调"
+  },
+  {
+    "id": "music_96",
+    "word": "埙",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "陶土烧制吹孔泥埙呜呜如古风吹过荒原"
+  },
+  {
+    "id": "music_97",
+    "word": "排鼓",
+    "category": "MUSIC",
+    "difficulty": "MEDIUM",
+    "hint": "一组五六个不同音高红色大鼓并排架设"
+  },
+  {
+    "id": "music_98",
+    "word": "板鼓",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "戏曲乐队指挥手握双箭敲击厚实小木鼓"
+  },
+  {
+    "id": "music_99",
+    "word": "风锣",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "薄铜无边大锣敲击泛音丰富如风声呼啸"
+  },
+  {
+    "id": "music_100",
+    "word": "水琴",
+    "category": "MUSIC",
+    "difficulty": "HARD",
+    "hint": "不锈钢圆盆插满金属针加水拉出恐怖音效"
+  },
+  {
+    "id": "cartoon_1",
+    "word": "皮卡丘",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黄身子红脸蛋闪电形大尾巴"
+  },
+  {
+    "id": "cartoon_2",
+    "word": "哆啦A梦",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "蓝圆身无耳猫肚子有半圆口袋"
+  },
+  {
+    "id": "cartoon_3",
+    "word": "孙悟空",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头戴金箍手握红黄两头金箍棒"
+  },
+  {
+    "id": "cartoon_4",
+    "word": "海绵宝宝",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "长方形黄色孔洞穿短裤打红领带"
+  },
+  {
+    "id": "cartoon_5",
+    "word": "小猪佩奇",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "吹风机状粉红猪鼻子穿红裙"
+  },
+  {
+    "id": "cartoon_6",
+    "word": "哪吒",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "踩两个火轮手拿金圈套红绸缎"
+  },
+  {
+    "id": "cartoon_7",
+    "word": "米老鼠",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头上顶两个大黑圆耳穿红短裤"
+  },
+  {
+    "id": "cartoon_8",
+    "word": "奥特曼",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "胸前红蓝彩色计时器发射十字交叉斯派修姆光线"
+  },
+  {
+    "id": "cartoon_9",
+    "word": "葫芦娃",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头顶小葫芦身穿七彩小马甲各有神奇本领兄弟"
+  },
+  {
+    "id": "cartoon_10",
+    "word": "马里奥",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "红帽子大胡子穿蓝色背带裤跳起"
+  },
+  {
+    "id": "cartoon_11",
+    "word": "龙猫",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "巨大灰色圆滚滚毛茸茸大肚子雨天打荷叶伞"
+  },
+  {
+    "id": "cartoon_12",
+    "word": "雪宝",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "胡萝卜长鼻子树枝手小雪人"
+  },
+  {
+    "id": "cartoon_13",
+    "word": "派大星",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "粉红色胖乎乎五角星穿绿色紫花沙滩大裤衩"
+  },
+  {
+    "id": "cartoon_14",
+    "word": "史努比",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黑耳朵白色小猎犬躺在红色狗屋屋顶看小说"
+  },
+  {
+    "id": "cartoon_15",
+    "word": "艾莎",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "浅蓝冰晶晚礼服抬手冻结一切冰雪女王"
+  },
+  {
+    "id": "cartoon_16",
+    "word": "黑猫警长",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "身穿制服骑着白色摩托车保护森林抓一只耳"
+  },
+  {
+    "id": "cartoon_17",
+    "word": "小黄人",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黄色胶囊身材大护目镜蓝色背带裤爱吃香蕉"
+  },
+  {
+    "id": "cartoon_18",
+    "word": "喜羊羊",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "脖子挂着金色小铃铛聪明机智羊村小英雄"
+  },
+  {
+    "id": "cartoon_19",
+    "word": "蜘蛛侠",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "红蓝网格紧身衣手腕射蛛丝"
+  },
+  {
+    "id": "cartoon_20",
+    "word": "阿宝",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黑白胖熊猫穿补丁裤学会神龙秘籍打出太极拳"
+  },
+  {
+    "id": "cartoon_21",
+    "word": "汤姆猫",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "灰色家猫总被聪明机灵小老鼠整得团团转"
+  },
+  {
+    "id": "cartoon_22",
+    "word": "杰瑞鼠",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "棕色聪明小老鼠爱吃三角奶酪钻小老鼠洞"
+  },
+  {
+    "id": "cartoon_23",
+    "word": "辛巴",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "站在荣耀石顶端迎风仰天长啸的年轻狮子王"
+  },
+  {
+    "id": "cartoon_24",
+    "word": "尼莫",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "一条小鳍短小勇敢寻找爸爸的橙白条纹小丑鱼"
+  },
+  {
+    "id": "cartoon_25",
+    "word": "无脸男",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "戴着白色面具黑色长袍默默递出金子跟随千寻"
+  },
+  {
+    "id": "cartoon_26",
+    "word": "加菲猫",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "橙色黑条纹胖猫懒洋洋爱吃千层面讨厌星期一"
+  },
+  {
+    "id": "cartoon_27",
+    "word": "蜡笔小新",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "粗粗浓眉毛土豆脑袋穿红上衣黄短裤动感光波"
+  },
+  {
+    "id": "cartoon_28",
+    "word": "柯南",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "戴黑框眼镜红蝴蝶结变声器蓝西装小小学生侦探"
+  },
+  {
+    "id": "cartoon_29",
+    "word": "路飞",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头戴草帽红马甲咬大肉块手臂伸长橡胶果实"
+  },
+  {
+    "id": "cartoon_30",
+    "word": "鸣人",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "金发脸颊猫须橙色连体服手搓旋转蓝色螺旋丸"
+  },
+  {
+    "id": "cartoon_31",
+    "word": "高达",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "白色蓝红黄经典涂装巨大战斗机器人手握光剑"
+  },
+  {
+    "id": "cartoon_32",
+    "word": "水手月亮",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "金发双马尾水手服手持月棱镜代表月亮消灭你"
+  },
+  {
+    "id": "cartoon_33",
+    "word": "樱桃小丸子",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "锯齿形刘海黄色小圆帽红色百褶裙小女孩"
+  },
+  {
+    "id": "cartoon_34",
+    "word": "白雪公主",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "蓝上衣黄裙子红发带咬下毒苹果的善良公主"
+  },
+  {
+    "id": "cartoon_35",
+    "word": "灰姑娘",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "午夜十二点逃跑在城堡台阶遗落一只透明水晶鞋"
+  },
+  {
+    "id": "cartoon_36",
+    "word": "匹诺曹",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "一说谎鼻子就会变长的木头小男孩"
+  },
+  {
+    "id": "cartoon_37",
+    "word": "爱丽儿",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "红头发绿色鱼尾巴坐在礁石上仰望人类世界"
+  },
+  {
+    "id": "cartoon_38",
+    "word": "阿拉丁",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "坐着会飞的飞毯手擦神灯召唤出蓝色大精灵"
+  },
+  {
+    "id": "cartoon_39",
+    "word": "花木兰",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "女扮男装替父从军策马弯弓射箭巾帼英雄"
+  },
+  {
+    "id": "cartoon_40",
+    "word": "维尼熊",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "穿红色短T恤双手伸进蜜罐舔甜蜂蜜的小熊"
+  },
+  {
+    "id": "cartoon_41",
+    "word": "跳跳虎",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "橙黑条纹把尾巴当弹簧到处蹦蹦跳跳大老虎"
+  },
+  {
+    "id": "cartoon_42",
+    "word": "唐老鸭",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "穿蓝色水手服戴水手帽生气时呱呱叫暴躁鸭子"
+  },
+  {
+    "id": "cartoon_43",
+    "word": "高飞狗",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "耷拉长黑耳朵穿高领毛衣绿色小帽子的忠厚长腿狗"
+  },
+  {
+    "id": "cartoon_44",
+    "word": "兔八哥",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "嚼着胡萝卜悠闲说出出什么事了伙计灰兔"
+  },
+  {
+    "id": "cartoon_45",
+    "word": "达菲鸭",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "黑羽毛大扁嘴说话喷吐沫的自大滑稽鸭子"
+  },
+  {
+    "id": "cartoon_46",
+    "word": "大力水手",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "抽烟斗捏开一罐菠菜吞下手臂肌肉瞬间隆起"
+  },
+  {
+    "id": "cartoon_47",
+    "word": "丁丁",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "头顶金色小翘发带着小白狗米卢环球历险记"
+  },
+  {
+    "id": "cartoon_48",
+    "word": "蓝精灵",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "三个苹果高蓝色皮肤戴白帽子住在蘑菇村"
+  },
+  {
+    "id": "cartoon_49",
+    "word": "史瑞克",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "绿色大个子头顶圆筒喇叭耳住在沼泽里的怪物"
+  },
+  {
+    "id": "cartoon_50",
+    "word": "朱迪",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "长耳朵身穿深蓝警服手握胡萝卜录音笔勇敢小兔"
+  },
+  {
+    "id": "cartoon_51",
+    "word": "尼克",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "穿绿色夏威夷花衬衫打斜纹领带机智狐狸"
+  },
+  {
+    "id": "cartoon_52",
+    "word": "瓦力",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "履带底盘方形身躯大眼睛望远镜在地球压垃圾"
+  },
+  {
+    "id": "cartoon_53",
+    "word": "卡尔爷爷",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "戴黑框眼镜领结拉着万千气球飞屋的老爷爷"
+  },
+  {
+    "id": "cartoon_54",
+    "word": "忧忧",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "戴大圆眼镜穿蓝毛衣趴在地上叹气的蓝色小人"
+  },
+  {
+    "id": "cartoon_55",
+    "word": "埃克托",
+    "category": "CARTOON",
+    "difficulty": "HARD",
+    "hint": "亡灵世界里骨骼弹吉他想念女儿Coco的骷髅"
+  },
+  {
+    "id": "cartoon_56",
+    "word": "胡迪",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头戴棕色牛仔帽拉背部绳子会说话的玩具警长"
+  },
+  {
+    "id": "cartoon_57",
+    "word": "巴斯光年",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "白绿紫太空战甲按按钮展开翅膀飞向太空"
+  },
+  {
+    "id": "cartoon_58",
+    "word": "超人",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "胸前大S盾牌红色斗篷内裤外穿双眼发射热视线"
+  },
+  {
+    "id": "cartoon_59",
+    "word": "蝙蝠侠",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黑面具尖耳朵黑色斗篷蝙蝠车手握蝙蝠飞镖"
+  },
+  {
+    "id": "cartoon_60",
+    "word": "闪电侠",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "全身红色紧身衣带金色闪电条纹极速狂奔穿越时空"
+  },
+  {
+    "id": "cartoon_61",
+    "word": "绿巨人",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "愤怒时身体膨胀变绿撑破上衣怒吼砸碎一切"
+  },
+  {
+    "id": "cartoon_62",
+    "word": "雷神",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "身披红披风手握沉重雷神之锤召唤九天雷电"
+  },
+  {
+    "id": "cartoon_63",
+    "word": "美国队长",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "手持红白蓝星条旗圆盾牌一身正气超级英雄"
+  },
+  {
+    "id": "cartoon_64",
+    "word": "灭霸",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "紫色大下巴金色战甲戴无限手套打出毁灭响指"
+  },
+  {
+    "id": "cartoon_65",
+    "word": "奇异博士",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "双手结印画出旋转火花金色传送门悬浮斗篷"
+  },
+  {
+    "id": "cartoon_66",
+    "word": "图图",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "圆圆大脑袋两只大耳朵会动耳神功小男孩"
+  },
+  {
+    "id": "cartoon_67",
+    "word": "大头儿子",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头大手脚细小头戴小黄帽和小头爸爸在一起"
+  },
+  {
+    "id": "cartoon_68",
+    "word": "小头爸爸",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "细高个戴眼镜穿毛衣慈爱的大头儿子爸爸"
+  },
+  {
+    "id": "cartoon_69",
+    "word": "围裙妈妈",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "扎围裙经常在厨房做饭温柔贤惠的妈妈"
+  },
+  {
+    "id": "cartoon_70",
+    "word": "舒克",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "开着白色直升机戴飞行头盔的正义小老鼠"
+  },
+  {
+    "id": "cartoon_71",
+    "word": "贝塔",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "开着绿色小坦克戴头盔开炮的机智小老鼠"
+  },
+  {
+    "id": "cartoon_72",
+    "word": "阿童木",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黑短发绿色小腰带脚底喷火在空中飞行机器人"
+  },
+  {
+    "id": "cartoon_73",
+    "word": "樱木花道",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "一头惹眼红头发大猩猩灌篮背号10号天才篮球手"
+  },
+  {
+    "id": "cartoon_74",
+    "word": "流川枫",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黑发冷酷帅气防守反击华丽扣篮湘北11号"
+  },
+  {
+    "id": "cartoon_75",
+    "word": "索隆",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "绿色短发嘴里咬一把和道一文字三刀流剑豪"
+  },
+  {
+    "id": "cartoon_76",
+    "word": "乔巴",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "戴大粉红帽子蓝色小鼻子变身蹄子驯鹿船医"
+  },
+  {
+    "id": "cartoon_77",
+    "word": "卡卡西",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "银发面罩遮半脸护额斜戴遮住一只写轮眼老师"
+  },
+  {
+    "id": "cartoon_78",
+    "word": "我爱罗",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "背后背着巨大沉重沙葫芦额头刻着爱字红发少年"
+  },
+  {
+    "id": "cartoon_79",
+    "word": "犬夜叉",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "一头银白长发头顶两只白色狗耳朵握铁碎牙"
+  },
+  {
+    "id": "cartoon_80",
+    "word": "杀生丸",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "额头月印脸颊红纹单肩搭巨大雪白绒尾大妖怪"
+  },
+  {
+    "id": "cartoon_81",
+    "word": "千寻",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "穿白绿相间T恤在神隐小镇寻找父母勇敢少女"
+  },
+  {
+    "id": "cartoon_82",
+    "word": "哈尔",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "金发蓝眼身披花外套可以变成黑色大鸟的魔法师"
+  },
+  {
+    "id": "cartoon_83",
+    "word": "幽灵公主",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "骑在巨大白狼神背上脸戴红面具与山林同在"
+  },
+  {
+    "id": "cartoon_84",
+    "word": "波妞",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "长着小手小脚想变成人类乘风破浪找宗介的金鱼姬"
+  },
+  {
+    "id": "cartoon_85",
+    "word": "猪八戒",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "大耳朵长鼻子挺着大肚皮手握九齿钉耙天蓬元帅"
+  },
+  {
+    "id": "cartoon_86",
+    "word": "沙和尚",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "脖子上挂着大念珠手拿降妖宝杖忠心耿耿和尚"
+  },
+  {
+    "id": "cartoon_87",
+    "word": "牛魔王",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头顶巨大尖锐双角身穿铠甲手握混铁棍大力牛魔"
+  },
+  {
+    "id": "cartoon_88",
+    "word": "红孩儿",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "穿红肚兜手持火尖枪口鼻喷出三昧真火圣婴大王"
+  },
+  {
+    "id": "cartoon_89",
+    "word": "二郎神",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "额头生第三只神目手持三尖两刃枪带哮天犬"
+  },
+  {
+    "id": "cartoon_90",
+    "word": "太白金星",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "白胡子白头发手拿拂尘下凡招安老神仙"
+  },
+  {
+    "id": "cartoon_91",
+    "word": "姜子牙",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "直钩无饵在渭水边钓鱼封神榜手握打神鞭"
+  },
+  {
+    "id": "cartoon_92",
+    "word": "申公豹",
+    "category": "CARTOON",
+    "difficulty": "HARD",
+    "hint": "骑着白额黑点虎一句道友请留步大反派"
+  },
+  {
+    "id": "cartoon_93",
+    "word": "灰太狼",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "脸上一道疤补丁灰帽子抓不到羊总喊我一定会回来的"
+  },
+  {
+    "id": "cartoon_94",
+    "word": "红太狼",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头戴金色小王冠手握平底锅敲打灰太狼"
+  },
+  {
+    "id": "cartoon_95",
+    "word": "懒羊羊",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头顶冰淇淋便便发型总是抱枕头睡觉贪吃小羊"
+  },
+  {
+    "id": "cartoon_96",
+    "word": "美羊羊",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头戴粉红蝴蝶结羊角挂蝴蝶结爱美小羊"
+  },
+  {
+    "id": "cartoon_97",
+    "word": "沸羊羊",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "皮肤黝黑健美喜欢健身跑步直爽小羊"
+  },
+  {
+    "id": "cartoon_98",
+    "word": "慢羊羊",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "胡子长到地面头顶长草行动缓慢村长"
+  },
+  {
+    "id": "cartoon_99",
+    "word": "熊大",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "聪明沉稳深棕色大狗熊保护森林抵抗伐木工"
+  },
+  {
+    "id": "cartoon_100",
+    "word": "熊二",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "黄色毛皮爱吃蜂蜜懒散憨厚熊大俺的蜂蜜"
+  },
+  {
+    "id": "cartoon_101",
+    "word": "光头强",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "戴黄色安全帽穿棉背心扛着电锯伐木的小个子"
+  },
+  {
+    "id": "cartoon_102",
+    "word": "吉吉国王",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "头上戴着一顶小草王冠自封国王的猴子"
+  },
+  {
+    "id": "cartoon_103",
+    "word": "毛毛",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "手里捧着新鲜水果紧跟吉吉国王的小猴子"
+  },
+  {
+    "id": "cartoon_104",
+    "word": "萝卜头",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "住在地底下爱吃胡萝卜擅长挖洞的小地鼠"
+  },
+  {
+    "id": "cartoon_105",
+    "word": "蹦蹦",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "住在树洞里大蓬松尾巴送信报警的小松鼠"
+  },
+  {
+    "id": "cartoon_106",
+    "word": "涂涂",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "白天睡觉晚上飞来飞去经常迷糊的小猫头鹰"
+  },
+  {
+    "id": "art_1",
+    "word": "蒙娜丽莎",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "画框里微笑着双臂交叠的卷发女子"
+  },
+  {
+    "id": "art_2",
+    "word": "向日葵",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "黄色花盘插在陶罐中粗犷线条"
+  },
+  {
+    "id": "art_3",
+    "word": "星空",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "深蓝夜空中黄色涡卷旋转星云与高大柏树"
+  },
+  {
+    "id": "art_4",
+    "word": "调色盘",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "带指孔的椭圆木板上挤满彩色点"
+  },
+  {
+    "id": "art_5",
+    "word": "石膏像",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "美术画室里白色大卫海盗素描排线光影"
+  },
+  {
+    "id": "art_6",
+    "word": "自画像",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "画家对着镜子画出自己的容貌神态画卷"
+  },
+  {
+    "id": "art_7",
+    "word": "日出印象",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "莫奈笔下橙红朝阳初升倒映在晨雾蓝色海面"
+  },
+  {
+    "id": "art_8",
+    "word": "千纸鹤",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "一张彩色正方形纸折叠出尖尖嘴巴翅膀飞鹤"
+  },
+  {
+    "id": "art_9",
+    "word": "陶艺",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "旋转拉胚机上双手把泥巴捏出花瓶陶罐造型"
+  },
+  {
+    "id": "art_10",
+    "word": "剪纸窗花",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "红色宣纸折叠后剪刀剪出镂空喜字与窗花"
+  },
+  {
+    "id": "art_11",
+    "word": "水墨画",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "毛笔蘸浓墨在宣纸上晕染出黑白意境山水"
+  },
+  {
+    "id": "art_12",
+    "word": "画架",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "人字形木质三脚架架着白色画布"
+  },
+  {
+    "id": "art_13",
+    "word": "思想者",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "罗丹青铜雕塑全身肌肉紧绷右手托下巴沉思"
+  },
+  {
+    "id": "art_14",
+    "word": "涂鸦",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "手持彩色喷漆罐在水泥墙上喷出街头文字艺术"
+  },
+  {
+    "id": "art_15",
+    "word": "透视法",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "两条道路向远方延伸最终消失在一个灭点"
+  },
+  {
+    "id": "art_16",
+    "word": "静物画",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "白布桌面上摆放陶罐红苹果切开香蕉练习画"
+  },
+  {
+    "id": "art_17",
+    "word": "印章",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "方形石条底面盖出红色方框字"
+  },
+  {
+    "id": "art_18",
+    "word": "彩绘玻璃",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "教堂大圆窗由五彩斑斓几何碎玻璃拼接透光"
+  },
+  {
+    "id": "art_19",
+    "word": "马克笔",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "双头斜口斜面在白纸上画出平滑渐变动漫色彩"
+  },
+  {
+    "id": "art_20",
+    "word": "万花筒",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "转动圆筒透过小孔看见三棱镜折射对称碎花"
+  },
+  {
+    "id": "art_21",
+    "word": "最后的晚餐",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "长长餐桌耶稣与十二门徒神态各异巨幅壁画"
+  },
+  {
+    "id": "art_22",
+    "word": "珍珠耳环少女",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "深黑背景侧身回眸戴蓝头巾大珍珠耳环少女"
+  },
+  {
+    "id": "art_23",
+    "word": "维纳斯的诞生",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "金色长发女神站在巨大贝壳上从海中升起"
+  },
+  {
+    "id": "art_24",
+    "word": "呐喊",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "桥上双手捂脸张大嘴巴扭曲血红天空表现主义"
+  },
+  {
+    "id": "art_25",
+    "word": "倒牛奶女仆",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "窗边光线照亮女仆专注缓缓将牛奶倒入陶罐"
+  },
+  {
+    "id": "art_26",
+    "word": "拾穗者",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "金黄麦田里三位农妇弯腰低头捡拾麦穗名画"
+  },
+  {
+    "id": "art_27",
+    "word": "自由引导人民",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "高举三色旗带领人民跨越街垒冲锋战斗女神"
+  },
+  {
+    "id": "art_28",
+    "word": "点彩画",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "无数细密纯色小色点在画布上汇聚成画"
+  },
+  {
+    "id": "art_29",
+    "word": "神奈川冲浪里",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "浮世绘巨大蓝色巨浪翻卷白浪花远处小富士山"
+  },
+  {
+    "id": "art_30",
+    "word": "清明上河图",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "北宋汴京虹桥繁华商铺人群长卷古画"
+  },
+  {
+    "id": "art_31",
+    "word": "富春山居图",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "黄公望水墨长卷描绘富春江两岸初秋山峦"
+  },
+  {
+    "id": "art_32",
+    "word": "步辇图",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "唐太宗端坐六人抬步辇接见吐蕃使臣名画"
+  },
+  {
+    "id": "art_33",
+    "word": "洛神赋图",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "顾恺之画卷描绘曹植与凌波微步洛水女神相会"
+  },
+  {
+    "id": "art_34",
+    "word": "夜宴图",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "韩熙载宅邸琵琶起舞观乐梳洗奢华长卷"
+  },
+  {
+    "id": "art_35",
+    "word": "簪花仕女图",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "唐代贵妇身穿轻纱高髻插花戏犬优雅画卷"
+  },
+  {
+    "id": "art_36",
+    "word": "大写意",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "大笔挥洒水墨淋漓不求形似但求神韵国画"
+  },
+  {
+    "id": "art_37",
+    "word": "工笔画",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "细致工整用细勾线填色描绘花鸟人物国画"
+  },
+  {
+    "id": "art_38",
+    "word": "水墨虾",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "齐白石寥寥几笔水墨画出透明灵动大龙虾"
+  },
+  {
+    "id": "art_39",
+    "word": "八骏图",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "徐悲鸿浓淡笔墨画出八匹昂首扬蹄奔腾骏马"
+  },
+  {
+    "id": "art_40",
+    "word": "青绿山水",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "用石青石绿矿物颜料画出千里江山富丽堂皇"
+  },
+  {
+    "id": "art_41",
+    "word": "同心圆",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "圆规针尖扎在中心画出一圈圈套在一起圆环"
+  },
+  {
+    "id": "art_42",
+    "word": "平行线",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "三角板和直尺画出永不相交的两条笔直线"
+  },
+  {
+    "id": "art_43",
+    "word": "明暗交界线",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "素描球体上受光面与背光面分界的深色线条"
+  },
+  {
+    "id": "art_44",
+    "word": "高光",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "物体表面最亮反射光源处留出的纯白亮斑"
+  },
+  {
+    "id": "art_45",
+    "word": "投影",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "光线照射物体在地面投射出的深色影子"
+  },
+  {
+    "id": "art_46",
+    "word": "反光",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "背光面接收周围环境反射出的微弱亮面"
+  },
+  {
+    "id": "art_47",
+    "word": "留白",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "国画中不着一笔留出空白表现云雾水天辽阔"
+  },
+  {
+    "id": "art_48",
+    "word": "油画刀",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "金属小刮刀挑起厚厚油画颜料在画布刮出肌理"
+  },
+  {
+    "id": "art_49",
+    "word": "刮画纸",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "用竹笔刮掉黑色涂层露底下七彩斑斓底色"
+  },
+  {
+    "id": "art_50",
+    "word": "版画",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "在木板上刻出反向图案滚上油墨压印到纸上"
+  },
+  {
+    "id": "art_51",
+    "word": "丝网印",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "油墨透过网纱孔洞刮印出波普风格玛丽莲梦露"
+  },
+  {
+    "id": "art_52",
+    "word": "马赛克拼贴",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "用成千上万彩色小瓷砖方块拼贴出巨幅壁画"
+  },
+  {
+    "id": "art_53",
+    "word": "浮雕",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "在坚硬大理石或铜板上雕刻凸出平面的立体人像"
+  },
+  {
+    "id": "art_54",
+    "word": "圆雕",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "可以四面360度全方位欣赏的完全立体雕塑"
+  },
+  {
+    "id": "art_55",
+    "word": "泥塑",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "用彩泥捏出栩栩如生的小泥人张手工艺"
+  },
+  {
+    "id": "art_56",
+    "word": "面塑",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "彩色面团在竹签上揉捏搓出武将孙悟空面人"
+  },
+  {
+    "id": "art_57",
+    "word": "糖画",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "小铜勺舀起滚烫晶莹糖稀在铁板快速浇出飞龙"
+  },
+  {
+    "id": "art_58",
+    "word": "刺绣",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "细细丝线银针在绸缎上绣出双面可爱猫咪"
+  },
+  {
+    "id": "art_59",
+    "word": "皮影",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "兽皮雕刻上色彩色人物隔着白布拉杆表演"
+  },
+  {
+    "id": "art_60",
+    "word": "风筝",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "细竹篾扎成骨架糊上宣纸画上彩绘带长尾巴"
+  },
+  {
+    "id": "art_61",
+    "word": "漆器",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "红黑相间反复髹漆打磨光亮描金盘子碗盒"
+  },
+  {
+    "id": "art_62",
+    "word": "景泰蓝",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "铜胎上掐出细铜丝花纹填入彩色珐琅釉烧制"
+  },
+  {
+    "id": "art_63",
+    "word": "青花瓷",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "白底瓷器上用钴料画出深蓝缠枝莲花纹梅瓶"
+  },
+  {
+    "id": "art_64",
+    "word": "紫砂壶",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "宜兴红泥手工拍打成型泡茶小茶壶"
+  },
+  {
+    "id": "art_65",
+    "word": "唐三彩",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "盛唐黄绿白三种低温釉色陶马陶骆驼"
+  },
+  {
+    "id": "art_66",
+    "word": "兵马俑雕塑",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "等身大小神态各异古代秦国陶土武士俑"
+  },
+  {
+    "id": "art_67",
+    "word": "三原色",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "红黄蓝三种无法由其他颜色调配的基础颜色"
+  },
+  {
+    "id": "art_68",
+    "word": "色轮",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "十二色相圆环展示冷暖对比与互补颜色"
+  },
+  {
+    "id": "art_69",
+    "word": "互补色",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "色轮上180度正对的红与绿黄与紫强烈对比"
+  },
+  {
+    "id": "art_70",
+    "word": "暖色调",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "红橙黄让人感到温暖热烈如阳光火焰"
+  },
+  {
+    "id": "art_71",
+    "word": "冷色调",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "蓝绿紫让人感到冰凉宁静如冰雪深海"
+  },
+  {
+    "id": "art_72",
+    "word": "对称构图",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "以画面中线为轴左右两侧图案完全平衡"
+  },
+  {
+    "id": "art_73",
+    "word": "黄金分割",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "0.618螺旋线海螺贝壳完美比例构图"
+  },
+  {
+    "id": "art_74",
+    "word": "九宫格构图",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "井字分割线四条交点放置视觉主体焦点"
+  },
+  {
+    "id": "art_75",
+    "word": "对角线构图",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "主体沿对角线倾斜排列富有动感冲击力"
+  },
+  {
+    "id": "art_76",
+    "word": "空气透视",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "近处山峦深浓清晰远处群山浅淡灰蓝空间感"
+  },
+  {
+    "id": "art_77",
+    "word": "一点透视",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "街景高楼两侧直线向中间同一个灭点消失"
+  },
+  {
+    "id": "art_78",
+    "word": "两点透视",
+    "category": "ART",
+    "difficulty": "HARD",
+    "hint": "建筑物拐角正对观察者两侧向两个灭点消失"
+  },
+  {
+    "id": "art_79",
+    "word": "俯视图",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "从高空正上方鸟瞰大地拼图视角"
+  },
+  {
+    "id": "art_80",
+    "word": "仰视图",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "从地面向上仰望高楼大厦直插云霄压迫感"
+  },
+  {
+    "id": "art_81",
+    "word": "鱼眼透视",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "超广角将直线弯曲成凸起球面的奇特视觉"
+  },
+  {
+    "id": "art_82",
+    "word": "色调",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "整幅画统一呈现出的蓝灰或暖黄整体色彩倾向"
+  },
+  {
+    "id": "art_83",
+    "word": "笔触",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "油画画布上粗犷或细腻留下的刷子刮刀痕迹"
+  },
+  {
+    "id": "art_84",
+    "word": "肌理",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "画面表面呈现出的粗糙凹凸砂砾质感纹理"
+  },
+  {
+    "id": "art_85",
+    "word": "素描排线",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "握铅笔平行快速来回画出深浅不一线条组"
+  },
+  {
+    "id": "art_86",
+    "word": "留白胶",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "水彩作画前涂抹遮挡干后撕下留出纯白高光"
+  },
+  {
+    "id": "art_87",
+    "word": "油画棒",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "像粗蜡笔一样色彩浓郁可以厚涂刮色"
+  },
+  {
+    "id": "art_88",
+    "word": "水彩纸",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "厚实表面有棉质纹理吸水不起皱画纸"
+  },
+  {
+    "id": "art_89",
+    "word": "宣纸",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "吸水吸墨迅速产生晕染毛边的中国传统书画纸"
+  },
+  {
+    "id": "art_90",
+    "word": "毛笔",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "竹子笔杆前端连着尖尖的黑兽毛"
+  },
+  {
+    "id": "art_91",
+    "word": "墨汁",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "砚台加水磨出乌黑发亮带有松香味墨汁"
+  },
+  {
+    "id": "art_92",
+    "word": "砚台",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "端石雕刻光滑石槽倒墨磨墨器具"
+  },
+  {
+    "id": "art_93",
+    "word": "镇纸",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "压在宣纸两端防止纸张移动吹飞的铜条木块"
+  },
+  {
+    "id": "art_94",
+    "word": "画毡",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "铺在画桌最底下吸附多余墨汁黑白羊毛毡"
+  },
+  {
+    "id": "art_95",
+    "word": "水粉颜料",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "装在小塑料盒里色彩遮盖力极强的糊状颜料"
+  },
+  {
+    "id": "art_96",
+    "word": "丙烯颜料",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "干得极快防水不掉色可以在帆布鞋上画画"
+  },
+  {
+    "id": "art_97",
+    "word": "定画液",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "素描木炭画画完后喷一层防止掉粉蹭脏的喷雾"
+  },
+  {
+    "id": "art_98",
+    "word": "木炭条",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "烧焦的细柳木枝画出深黑松软线条炭笔"
+  },
+  {
+    "id": "entertainment_1",
+    "word": "飞天扫帚",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "哈利波特骑在魔法扫帚上在魁地奇球场飞驰"
+  },
+  {
+    "id": "entertainment_2",
+    "word": "光剑",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "绝地武士按下按钮嗡嗡作响的激光武器剑刃"
+  },
+  {
+    "id": "entertainment_3",
+    "word": "擎天柱",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "红蓝大卡车机械变形咔咔咔变成威武机器人"
+  },
+  {
+    "id": "entertainment_4",
+    "word": "大黄蜂",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "黄色雪佛兰跑车变形变成机敏可爱汽车人"
+  },
+  {
+    "id": "entertainment_5",
+    "word": "海盗船",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "巨大黑色风帆挂着骷髅旗在暴风雨破浪而行"
+  },
+  {
+    "id": "entertainment_6",
+    "word": "霸王龙",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "侏罗纪巨大牙齿短小前肢仰天咆哮恐龙霸主"
+  },
+  {
+    "id": "entertainment_7",
+    "word": "泰坦尼克号",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "四根巨大倾斜烟囱巨型邮轮船头迎风相拥"
+  },
+  {
+    "id": "entertainment_8",
+    "word": "卓别林",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "黑白默片圆顶礼帽小胡子手拿细拐杖滑稽大师"
+  },
+  {
+    "id": "entertainment_9",
+    "word": "小丑",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "红鼻头涂白脸大笑脸踩着独轮车抛彩球"
+  },
+  {
+    "id": "entertainment_10",
+    "word": "过山车",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "轨道盘旋俯冲车上乘客高举双手尖叫狂欢"
+  },
+  {
+    "id": "entertainment_11",
+    "word": "旋转木马",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "伴随音乐金色顶棚上下起伏旋转的彩绘木马"
+  },
+  {
+    "id": "entertainment_12",
+    "word": "摩天轮",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "巨大圆轮悬挂一个个发光观景轿厢缓缓升空"
+  },
+  {
+    "id": "entertainment_13",
+    "word": "碰碰车",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "头顶导电金属杆地面四处碰撞火花橡胶防撞圈"
+  },
+  {
+    "id": "entertainment_14",
+    "word": "激流勇进",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "木船顺着水道从高台陡坡俯冲砸起滔天水花"
+  },
+  {
+    "id": "entertainment_15",
+    "word": "鬼屋",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "阴森昏暗走廊突然跳出白骨骷髅吓人乐园项目"
+  },
+  {
+    "id": "entertainment_16",
+    "word": "打气球",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "手握塑料气枪瞄准红黄蓝气球啪啪打爆赢娃娃"
+  },
+  {
+    "id": "entertainment_17",
+    "word": "套圈",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "手里拿着小竹圈瞄准地上玩具大鹅扔出"
+  },
+  {
+    "id": "entertainment_18",
+    "word": "抓娃娃机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "摇杆操纵三爪机械铁爪瞄准毛绒小熊下抓"
+  },
+  {
+    "id": "entertainment_19",
+    "word": "打地鼠",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "双手握大软锤哪个洞冒出土拨鼠就咚咚敲"
+  },
+  {
+    "id": "entertainment_20",
+    "word": "太鼓达人",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "大红鼓面听到音乐节奏用红蓝鼓槌狂敲"
+  },
+  {
+    "id": "entertainment_21",
+    "word": "跳舞机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "站在踏板上看屏幕随着四向发光箭头踩节奏"
+  },
+  {
+    "id": "entertainment_22",
+    "word": "赛车机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "坐在赛车座舱双手握方向盘脚踩油门漂移"
+  },
+  {
+    "id": "entertainment_23",
+    "word": "3D眼镜",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "电影院看立体大片佩戴的红蓝双色偏光眼镜"
+  },
+  {
+    "id": "entertainment_24",
+    "word": "爆米花桶",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "红白相间大纸筒装满奶油香甜金黄爆米花"
+  },
+  {
+    "id": "entertainment_25",
+    "word": "场记板",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "黑白条纹木板拍在镜头前咔哒一声Action"
+  },
+  {
+    "id": "entertainment_26",
+    "word": "红地毯",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "电影节明星走在红毯两侧镁光灯疯狂闪烁"
+  },
+  {
+    "id": "entertainment_27",
+    "word": "奥斯卡小金人",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "双手按长剑金色健美男子尊贵电影奖杯"
+  },
+  {
+    "id": "entertainment_28",
+    "word": "金棕榈奖杯",
+    "category": "ENTERTAINMENT",
+    "difficulty": "HARD",
+    "hint": "戛纳电影节颁发给最佳电影的金色棕榈叶奖杯"
+  },
+  {
+    "id": "entertainment_29",
+    "word": "电影放映机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "两个巨大胶卷圆盘转动强光镜头投射银幕"
+  },
+  {
+    "id": "entertainment_30",
+    "word": "巨幕影院",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "巨大弧形IMAX银幕震耳欲聋多声道环绕立体声"
+  },
+  {
+    "id": "entertainment_31",
+    "word": "摇滚吉他手",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "电吉他喷射火花主唱纵身跳入万人人海浪潮"
+  },
+  {
+    "id": "entertainment_32",
+    "word": "舞台烟雾机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "干冰机喷出滚滚白色浓烟弥漫整个舞台仙气"
+  },
+  {
+    "id": "entertainment_33",
+    "word": "高空烟花",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "夜空中砰的一声绽放出五彩缤纷大礼花菊花"
+  },
+  {
+    "id": "entertainment_34",
+    "word": "冷烟花瀑布",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "舞台两侧喷射出数米高金色银色璀璨火花瀑布"
+  },
+  {
+    "id": "entertainment_35",
+    "word": "激光秀",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "夜空交织穿梭的五彩激光束配合动感电音"
+  },
+  {
+    "id": "entertainment_36",
+    "word": "无人机编队",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "成百上千架发光无人机在夜空拼出巨幅图案"
+  },
+  {
+    "id": "entertainment_37",
+    "word": "热气球节",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "大草坪上升起几十个五彩斑斓巨大热气球"
+  },
+  {
+    "id": "entertainment_38",
+    "word": "荧光棒",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "演唱会观众席挥舞成片蓝色粉色发光海洋"
+  },
+  {
+    "id": "entertainment_39",
+    "word": "大黄鸭",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "海港水面上漂浮的数十米高巨大充气黄色橡皮鸭"
+  },
+  {
+    "id": "entertainment_40",
+    "word": "密室逃脱",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "昏暗房间寻找墙壁暗号转动齿轮解开密码锁"
+  },
+  {
+    "id": "entertainment_41",
+    "word": "剧本杀",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "玩家围坐圆桌各自拿着厚厚剧本推理寻找凶手"
+  },
+  {
+    "id": "entertainment_42",
+    "word": "狼人杀",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "天黑请闭眼预言家女巫村民揪出潜藏的狼人"
+  },
+  {
+    "id": "entertainment_43",
+    "word": "三国杀",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "桌游卡牌出杀出闪万箭齐发主公忠臣内奸反贼"
+  },
+  {
+    "id": "entertainment_44",
+    "word": "大富翁",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "掷骰子走格子买地皮盖房子收过路费桌游"
+  },
+  {
+    "id": "entertainment_45",
+    "word": "飞行棋",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "四种颜色小飞机掷出六点起飞撞翻对手回老家"
+  },
+  {
+    "id": "entertainment_46",
+    "word": "叠叠乐",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "木条堆叠的高塔小心翼翼抽出一根防止倒塌"
+  },
+  {
+    "id": "entertainment_47",
+    "word": "多米诺骨牌",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "千万张骨牌整齐排列推倒第一张连环倒下"
+  },
+  {
+    "id": "entertainment_48",
+    "word": "魔方",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "六面六种颜色手指飞转将打乱方块全部还原"
+  },
+  {
+    "id": "entertainment_49",
+    "word": "乐高城堡",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "带凸粒的彩色塑料小积木拼插出巨型城堡"
+  },
+  {
+    "id": "entertainment_50",
+    "word": "篝火晚会",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "木柴架成圆锥形燃烧熊熊大火大家围着跳舞"
+  },
+  {
+    "id": "entertainment_51",
+    "word": "野餐垫",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "公园草地上铺着红白方格布摆满水果三明治"
+  },
+  {
+    "id": "entertainment_52",
+    "word": "露天电影",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "夏夜微风中大挂布拉起全村人搬板凳看电影"
+  },
+  {
+    "id": "entertainment_53",
+    "word": "吹糖人",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "手艺师傅揪下一团麦芽糖吹出金黄小动物"
+  },
+  {
+    "id": "entertainment_54",
+    "word": "面人摊",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "各色彩色面团手指翻飞捏出栩栩如生孙悟空"
+  },
+  {
+    "id": "entertainment_55",
+    "word": "抓娃娃",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "铁爪摇晃对准心仪毛绒玩具投币启动"
+  },
+  {
+    "id": "entertainment_56",
+    "word": "扭蛋机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "投入硬币旋转把手咔哒掉出一颗塑料彩蛋"
+  },
+  {
+    "id": "entertainment_57",
+    "word": "投篮机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "计时倒数双手连续投进篮球计数板狂跳"
+  },
+  {
+    "id": "entertainment_58",
+    "word": "VR摩托",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "戴上头显骑在动感摩托上压弯超车"
+  },
+  {
+    "id": "entertainment_59",
+    "word": "水上滑梯",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "螺旋巨大管道坐在皮筏飞速滑入水池"
+  },
+  {
+    "id": "entertainment_60",
+    "word": "漂流艇",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "穿救生衣戴头盔在急流险滩皮筏颠簸"
+  },
+  {
+    "id": "entertainment_61",
+    "word": "海盗秋千",
+    "category": "ENTERTAINMENT",
+    "difficulty": "HARD",
+    "hint": "高空大钟摆巨型秋千在空中360度旋转"
+  },
+  {
+    "id": "entertainment_62",
+    "word": "跳楼机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "HARD",
+    "hint": "直冲几十米高空瞬间自由落体下坠失重"
+  },
+  {
+    "id": "entertainment_63",
+    "word": "旋转飞椅",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "链条悬挂座椅随着巨伞旋转在半空飞扬"
+  },
+  {
+    "id": "entertainment_64",
+    "word": "卡丁车赛道",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "黑白方格旗挥动贴地小跑车弯道漂移"
+  },
+  {
+    "id": "entertainment_65",
+    "word": "射击馆",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "手戴护目镜握激光枪瞄准远处靶纸射击"
+  },
+  {
+    "id": "entertainment_66",
+    "word": "保龄球馆",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "光滑木质球道荧光灯下十个球瓶全中开花"
+  },
+  {
+    "id": "entertainment_67",
+    "word": "台球厅",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "绿色绒布桌上一盏吊灯照亮白球开球炸球"
+  },
+  {
+    "id": "entertainment_68",
+    "word": "KTV包厢",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "大屏幕MV点歌台沙发麦克风七彩旋转灯"
+  },
+  {
+    "id": "entertainment_69",
+    "word": "电竞房",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "曲面发光显示器电竞椅RGB主机彩色流光"
+  },
+  {
+    "id": "entertainment_70",
+    "word": "桌游吧",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "整面墙摆满各种纸牌棋盘益智盒子游戏"
+  },
+  {
+    "id": "entertainment_71",
+    "word": "猫咪咖啡馆",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "一边喝咖啡一边抱各色可爱猫咪撸猫"
+  },
+  {
+    "id": "entertainment_72",
+    "word": "女仆咖啡厅",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "身穿可爱蕾丝围裙女仆端上蛋包饭画爱心"
+  },
+  {
+    "id": "entertainment_73",
+    "word": "手办展示柜",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "玻璃陈列柜打射灯摆满精密动漫手办模型"
+  },
+  {
+    "id": "entertainment_74",
+    "word": "盲盒墙",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "未拆封纸盒整齐码放抽隐藏款惊喜玩偶"
+  },
+  {
+    "id": "entertainment_75",
+    "word": "天文馆天象厅",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "半球形巨大穹顶仰躺观看逼真四季星空宇宙"
+  },
+  {
+    "id": "entertainment_76",
+    "word": "海洋馆水下隧道",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "透明亚克力拱形隧道头顶游过魔鬼鱼大鲨鱼"
+  },
+  {
+    "id": "entertainment_77",
+    "word": "极地馆企鹅岛",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "人造冰川雪地里成群企鹅扑通跳入冰水"
+  },
+  {
+    "id": "entertainment_78",
+    "word": "野生动物园猛兽车",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "铁丝网防护车穿越狮子老虎漫步草原"
+  },
+  {
+    "id": "entertainment_79",
+    "word": "马戏大帐篷",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "红黄尖顶条纹巨大帐篷空中飞人驯兽表演"
+  },
+  {
+    "id": "entertainment_80",
+    "word": "木偶剧场",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "木偶戏台上牵线木偶动作灵活演绎童话"
+  },
+  {
+    "id": "entertainment_81",
+    "word": "皮影小舞台",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "幕布后点亮油灯双手舞动兽皮皮影神仙打架"
+  },
+  {
+    "id": "entertainment_82",
+    "word": "露天音乐节帐篷",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "大草坪五彩露营帐篷挂星星串灯听吉他民谣"
+  },
+  {
+    "id": "entertainment_83",
+    "word": "滑雪场缆车",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "悬挂缆车吊箱载着滑雪者缓缓升上皑皑雪山"
+  },
+  {
+    "id": "entertainment_84",
+    "word": "雪地摩托",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "宽履带在厚厚雪原风驰电掣扬起漫天雪雾"
+  },
+  {
+    "id": "entertainment_85",
+    "word": "冰雕展",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "晶莹剔透冰块雕刻出巨大城堡内置五彩内透光"
+  },
+  {
+    "id": "entertainment_86",
+    "word": "沙雕节",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "沙滩上海水细沙堆塑雕刻出巨幅埃及神话"
+  },
+  {
+    "id": "entertainment_87",
+    "word": "热气球起飞场",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "鼓风机喷射熊熊火焰巨大热气球缓缓立起"
+  },
+  {
+    "id": "entertainment_88",
+    "word": "滑翔伞起跳点",
+    "category": "ENTERTAINMENT",
+    "difficulty": "HARD",
+    "hint": "高山山顶迎风助跑彩色伞翼张开翱翔蓝天"
+  },
+  {
+    "id": "entertainment_89",
+    "word": "蹦极跳台",
+    "category": "ENTERTAINMENT",
+    "difficulty": "HARD",
+    "hint": "峡谷玻璃悬索桥中央伸出跳台下临万丈深渊"
+  },
+  {
+    "id": "entertainment_90",
+    "word": "攀岩墙",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "室内高大人工岩壁打满各色抓手支点安全绳"
+  },
+  {
+    "id": "entertainment_91",
+    "word": "卡拉OK麦克风",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "自带音箱混响蓝牙连手机随时随地高歌"
+  },
+  {
+    "id": "entertainment_92",
+    "word": "拍立得相机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "按快门咔嚓吐出一张白色边框即拍即得相纸"
+  },
+  {
+    "id": "art_100",
+    "word": "水彩画",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "透明轻快水色交融的水彩写生画"
+  },
+  {
+    "id": "art_101",
+    "word": "素描画",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "铅笔木炭排线黑白灰光影练习"
+  },
+  {
+    "id": "art_102",
+    "word": "速写",
+    "category": "ART",
+    "difficulty": "EASY",
+    "hint": "寥寥数笔快速捕捉人物动态神态"
+  },
+  {
+    "id": "art_103",
+    "word": "木刻画",
+    "category": "ART",
+    "difficulty": "MEDIUM",
+    "hint": "锋利木刻刀在木板雕刻黑白木刻"
+  },
+  {
+    "id": "entertainment_100",
+    "word": "游乐园",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "充满摩天轮旋转木马欢笑梦幻乐园"
+  },
+  {
+    "id": "entertainment_101",
+    "word": "碰碰船",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "充气圆圈水上小船互相碰撞打水仗"
+  },
+  {
+    "id": "entertainment_102",
+    "word": "魔术帽",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "高筒黑礼帽翻开里面飞出一对白鸽"
+  },
+  {
+    "id": "entertainment_103",
+    "word": "假面舞会",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "戴着华丽羽毛面具身着礼服翩翩起舞"
+  },
+  {
+    "id": "entertainment_104",
+    "word": "泡泡秀",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "巨大铁环拉出包裹整个人七彩大泡泡"
+  },
+  {
+    "id": "entertainment_105",
+    "word": "打地鼠机",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "五彩发光机身拿软锤快速打地鼠"
+  },
+  {
+    "id": "entertainment_106",
+    "word": "射箭馆",
+    "category": "ENTERTAINMENT",
+    "difficulty": "MEDIUM",
+    "hint": "戴护臂拉开反曲弓射向十米靶心"
+  },
+  {
+    "id": "entertainment_107",
+    "word": "滑冰场",
+    "category": "ENTERTAINMENT",
+    "difficulty": "EASY",
+    "hint": "洁白真冰场穿冰刀鞋自由飞驰"
+  }
+]

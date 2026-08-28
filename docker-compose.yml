@@ -1,0 +1,51 @@
+version: '3.8'
+
+services:
+  # 1. PostgreSQL 数据库 (仅在 online 模式下启动，本地模式完全跳过)
+  postgres:
+    image: docker.1ms.run/library/postgres:16-alpine
+    container_name: whiteboard-postgres
+    restart: unless-stopped
+    profiles:
+      - online
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB:-whiteboard_db}
+      POSTGRES_USER: ${POSTGRES_USER:-whiteboard_user}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-whiteboard_secret_password}
+    volumes:
+      - ./data/postgres:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-whiteboard_user} -d ${POSTGRES_DB:-whiteboard_db}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # 2. 前端画板 + Hono API + 游戏房间 WebSocket 同步服务器
+  whiteboard-app:
+    image: whiteboard-app:v2.0.0
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: whiteboard-app
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+        required: false
+    env_file:
+      - .env
+    ports:
+      - "3000:80"
+    volumes:
+      - ./words.json:/app/words.json:ro
+      - ./words_en.json:/app/words_en.json:ro
+
+  # 3. Excalidraw 协作室（WebSocket 底层笔迹流）
+  excalidraw-room:
+    image: docker.1ms.run/excalidraw/excalidraw-room:latest
+    container_name: whiteboard-room
+    restart: unless-stopped
+    ports:
+      - "5002:5002"

@@ -1,0 +1,3558 @@
+[
+  {
+    "id": "en_animals_1",
+    "word": "Panda",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Black eye patches, round ears, eating bamboo"
+  },
+  {
+    "id": "en_animals_2",
+    "word": "Dog",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Floppy ears, wagging tail, sticking tongue out"
+  },
+  {
+    "id": "en_animals_3",
+    "word": "Giraffe",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Super long neck with brown polygon spots"
+  },
+  {
+    "id": "en_animals_4",
+    "word": "Penguin",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Black and white round body with small flippers"
+  },
+  {
+    "id": "en_animals_5",
+    "word": "Elephant",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Long curved trunk, big fan ears, thick legs"
+  },
+  {
+    "id": "en_animals_6",
+    "word": "Chameleon",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Curled spiral tail, bulging eyes, long tongue"
+  },
+  {
+    "id": "en_animals_7",
+    "word": "Kangaroo",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Pouch with baby inside, large hopping tail"
+  },
+  {
+    "id": "en_animals_8",
+    "word": "Jellyfish",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Translucent dome bell with trailing tentacles"
+  },
+  {
+    "id": "en_animals_9",
+    "word": "Flamingo",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Pink curved body, long neck, standing on one leg"
+  },
+  {
+    "id": "en_animals_10",
+    "word": "Unicorn",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "White horse with a spiral golden horn on forehead"
+  },
+  {
+    "id": "en_animals_11",
+    "word": "Rabbit",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Long upright ears, twitching pink nose, fluffy tail"
+  },
+  {
+    "id": "en_animals_12",
+    "word": "Sloth",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Hanging upside down from a tree branch sleeping"
+  },
+  {
+    "id": "en_animals_13",
+    "word": "Hedgehog",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Ball of brown pointy spines with tiny pointed snout"
+  },
+  {
+    "id": "en_animals_14",
+    "word": "Peacock",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Huge fan shaped tail feathers with colorful eyespots"
+  },
+  {
+    "id": "en_animals_15",
+    "word": "Dolphin",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Sleek curved body leaping out of ocean wave"
+  },
+  {
+    "id": "en_animals_16",
+    "word": "Owl",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Large round forward facing eyes on rotating head"
+  },
+  {
+    "id": "en_animals_17",
+    "word": "Squirrel",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Big bushy tail holding an acorn with two paws"
+  },
+  {
+    "id": "en_animals_18",
+    "word": "Crocodile",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Long flat snout with sharp zigzag teeth above water"
+  },
+  {
+    "id": "en_animals_19",
+    "word": "Koala",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Fluffy round ears hugging an eucalyptus tree trunk"
+  },
+  {
+    "id": "en_animals_20",
+    "word": "Octopus",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Bulbous head with eight suction cupped curly arms"
+  },
+  {
+    "id": "en_animals_21",
+    "word": "Zebra",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Striped horse in black and white pattern galloping"
+  },
+  {
+    "id": "en_animals_22",
+    "word": "Hippo",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Large bulky grey body, huge mouth yawning in water"
+  },
+  {
+    "id": "en_animals_23",
+    "word": "Lion",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "King of beast with a massive golden fluffy mane"
+  },
+  {
+    "id": "en_animals_24",
+    "word": "Tiger",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Orange fur with bold black stripes and fierce eyes"
+  },
+  {
+    "id": "en_animals_25",
+    "word": "Polar Bear",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Large furry white bear walking across snowy ice"
+  },
+  {
+    "id": "en_animals_26",
+    "word": "Camel",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Tall desert animal with one or two round humps"
+  },
+  {
+    "id": "en_animals_27",
+    "word": "Frog",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Green bulging eyed amphibian sitting on water lily"
+  },
+  {
+    "id": "en_animals_28",
+    "word": "Butterfly",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Symmetrical patterned wings resting on flower"
+  },
+  {
+    "id": "en_animals_29",
+    "word": "Bee",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Yellow and black striped body with tiny clear wings"
+  },
+  {
+    "id": "en_animals_30",
+    "word": "Snail",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Spiral shell on back with two antenna tentacles"
+  },
+  {
+    "id": "en_animals_31",
+    "word": "Duck",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Flat yellow beak, paddling webbed feet in pond"
+  },
+  {
+    "id": "en_animals_32",
+    "word": "Swan",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Graceful S-curved long white neck floating on lake"
+  },
+  {
+    "id": "en_animals_33",
+    "word": "Fox",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Pointy triangular ears and large bushy red tail"
+  },
+  {
+    "id": "en_animals_34",
+    "word": "Wolf",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Howling silhouette on cliff under a glowing full moon"
+  },
+  {
+    "id": "en_animals_35",
+    "word": "Bat",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Hanging upside down in cave with folded leathery wings"
+  },
+  {
+    "id": "en_animals_36",
+    "word": "Sea Turtle",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Large patterned carapace swimming with flipper paddles"
+  },
+  {
+    "id": "en_animals_37",
+    "word": "Crab",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Two big serrated pinchers walking sideways"
+  },
+  {
+    "id": "en_animals_38",
+    "word": "Lobster",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Long red antennae and heavy shelled tail fan"
+  },
+  {
+    "id": "en_animals_39",
+    "word": "Otter",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Floating on back cracking shell open on stomach"
+  },
+  {
+    "id": "en_animals_40",
+    "word": "Walrus",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Pair of long white downward tusks with whisker snout"
+  },
+  {
+    "id": "en_animals_41",
+    "word": "Sea Lion",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Balancing a colorful ball on tip of its nose"
+  },
+  {
+    "id": "en_animals_42",
+    "word": "Whale",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Gigantic dark body spouting a water fountain into sky"
+  },
+  {
+    "id": "en_animals_43",
+    "word": "Shark",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Triangular sharp dorsal fin slicing through water"
+  },
+  {
+    "id": "en_animals_44",
+    "word": "Seahorse",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Curled spiral tail holding sea grass upright"
+  },
+  {
+    "id": "en_animals_45",
+    "word": "Clownfish",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Orange body with bold white vertical stripes"
+  },
+  {
+    "id": "en_animals_46",
+    "word": "Goldfish",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Wavy flowing fin tail swimming in round fishbowl"
+  },
+  {
+    "id": "en_animals_47",
+    "word": "Parrot",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Bright red, blue, and yellow feathers curved beak"
+  },
+  {
+    "id": "en_animals_48",
+    "word": "Woodpecker",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Pointy beak tapping rapid holes into tree trunk"
+  },
+  {
+    "id": "en_animals_49",
+    "word": "Hummingbird",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Tiny bird hovering mid-air sipping flower nectar"
+  },
+  {
+    "id": "en_animals_50",
+    "word": "Eagle",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Sharp hooked beak and powerful outstretched wings"
+  },
+  {
+    "id": "en_animals_51",
+    "word": "Turkey",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Fan tail feathers with bumpy red wattle under chin"
+  },
+  {
+    "id": "en_animals_52",
+    "word": "Rooster",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Bright red comb on head crowing at sunrise"
+  },
+  {
+    "id": "en_animals_53",
+    "word": "Hen",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Plump feathery mother sitting on round white eggs"
+  },
+  {
+    "id": "en_animals_54",
+    "word": "Chick",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Tiny fluffy yellow ball pecking at seeds"
+  },
+  {
+    "id": "en_animals_55",
+    "word": "Dove",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "White bird in flight carrying green olive branch"
+  },
+  {
+    "id": "en_animals_56",
+    "word": "Crow",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Glossy black bird dropping small pebble into jar"
+  },
+  {
+    "id": "en_animals_57",
+    "word": "Swallow",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Forked scissor tail swooping through spring air"
+  },
+  {
+    "id": "en_animals_58",
+    "word": "Sparrow",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Little brown bird hopping on telephone wire"
+  },
+  {
+    "id": "en_animals_59",
+    "word": "Pangolin",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Hard overlapping scales curled into protective ball"
+  },
+  {
+    "id": "en_animals_60",
+    "word": "Anteater",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Long tubular snout with sticky long pink tongue"
+  },
+  {
+    "id": "en_animals_61",
+    "word": "Alpaca",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Fluffy woolly coat with long neck and stylish fringe"
+  },
+  {
+    "id": "en_animals_62",
+    "word": "Deer",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Delicate spotted fawn with branched velvet antlers"
+  },
+  {
+    "id": "en_animals_63",
+    "word": "Reindeer",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Majestic antlers pulling Santa's magical sleigh"
+  },
+  {
+    "id": "en_animals_64",
+    "word": "Moose",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Huge palmate flat antlers wading through pine river"
+  },
+  {
+    "id": "en_animals_65",
+    "word": "Hamster",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Chubby cheeks stuffed with seeds running in wheel"
+  },
+  {
+    "id": "en_animals_66",
+    "word": "Chinchilla",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Round fluffy soft grey body with cute whiskers"
+  },
+  {
+    "id": "en_animals_67",
+    "word": "Guinea Pig",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Tailless plump body with short ears squeaking"
+  },
+  {
+    "id": "en_animals_68",
+    "word": "Raccoon",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Black bandit eye mask washing sugar cube in water"
+  },
+  {
+    "id": "en_animals_69",
+    "word": "Honey Badger",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Fearless flat head with white dorsal stripe"
+  },
+  {
+    "id": "en_animals_70",
+    "word": "Skunk",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Black body with two white stripes spraying tail"
+  },
+  {
+    "id": "en_animals_71",
+    "word": "Prairie Dog",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Standing on hind legs barking warning at burrow"
+  },
+  {
+    "id": "en_animals_72",
+    "word": "Capybara",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Giant chill rodent balancing orange on head in bath"
+  },
+  {
+    "id": "en_animals_73",
+    "word": "Platypus",
+    "category": "ANIMALS",
+    "difficulty": "HARD",
+    "hint": "Duck bill, beaver tail, webbed feet laying eggs"
+  },
+  {
+    "id": "en_animals_74",
+    "word": "Lizard",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Slender reptile with long tail basking on warm rock"
+  },
+  {
+    "id": "en_animals_75",
+    "word": "Cobra",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Hood flared wide on erect upper body ready to strike"
+  },
+  {
+    "id": "en_animals_76",
+    "word": "Rattlesnake",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Coiled body with buzzing segmented tail tip"
+  },
+  {
+    "id": "en_animals_77",
+    "word": "Python",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Heavy muscular coils wrapped around jungle tree"
+  },
+  {
+    "id": "en_animals_78",
+    "word": "Starfish",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Five pointed star shape clinging to coral reef"
+  },
+  {
+    "id": "en_animals_79",
+    "word": "Sea Urchin",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Round dark spiky ball resting on ocean floor"
+  },
+  {
+    "id": "en_animals_80",
+    "word": "Hermit Crab",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Tiny crab peeking out of spiral sea snail shell"
+  },
+  {
+    "id": "en_animals_81",
+    "word": "Pearl Oyster",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Open clam shell revealing a glowing shiny round pearl"
+  },
+  {
+    "id": "en_animals_82",
+    "word": "Firefly",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Glowing bioluminescent green light abdomen in night"
+  },
+  {
+    "id": "en_animals_83",
+    "word": "Ladybug",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Red round dome back with distinct black dots"
+  },
+  {
+    "id": "en_animals_84",
+    "word": "Praying Mantis",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Spiky bent forelegs held up in folded posture"
+  },
+  {
+    "id": "en_animals_85",
+    "word": "Dragonfly",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Long slender needle body with four transparent wings"
+  },
+  {
+    "id": "en_animals_86",
+    "word": "Cicada",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Bulging eyes and clear veined wings buzzing on bark"
+  },
+  {
+    "id": "en_animals_87",
+    "word": "Ant",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Tiny segmented three part body in marching line"
+  },
+  {
+    "id": "en_animals_88",
+    "word": "Caterpillar",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Segmented creeping body chewing green leaf"
+  },
+  {
+    "id": "en_animals_89",
+    "word": "Beetle",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Heavy shiny armored shell with horned pincer head"
+  },
+  {
+    "id": "en_animals_90",
+    "word": "Stag Beetle",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Two massive antler-like pincer jaws on head"
+  },
+  {
+    "id": "en_animals_91",
+    "word": "Stingray",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Flat diamond winged body gliding with whip tail"
+  },
+  {
+    "id": "en_animals_92",
+    "word": "Squid",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Streamlined torpedo mantle with ten tentacles"
+  },
+  {
+    "id": "en_animals_93",
+    "word": "Pelican",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Large expandable pouch bill scooping up fish"
+  },
+  {
+    "id": "en_animals_94",
+    "word": "Cheetah",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Slender aerodynamic body with black tear stripes"
+  },
+  {
+    "id": "en_animals_95",
+    "word": "Gorilla",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Broad muscular chest beating knuckles in jungle"
+  },
+  {
+    "id": "en_animals_96",
+    "word": "Sloth",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Hanging upside down from branch smiling calmly"
+  },
+  {
+    "id": "en_animals_97",
+    "word": "Walrus",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Heavy whiskered body with long downward ivory tusks"
+  },
+  {
+    "id": "en_animals_98",
+    "word": "Orca",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Black and white killer whale dorsal fin breaching wave"
+  },
+  {
+    "id": "en_animals_99",
+    "word": "Mammoth",
+    "category": "ANIMALS",
+    "difficulty": "MEDIUM",
+    "hint": "Curved gigantic tusks and shaggy brown fur ice age"
+  },
+  {
+    "id": "en_animals_100",
+    "word": "Dinosaur",
+    "category": "ANIMALS",
+    "difficulty": "EASY",
+    "hint": "Giant green Tyrannosaurus with tiny arms roaring"
+  },
+  {
+    "id": "en_food_1",
+    "word": "Watermelon",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Green striped rind with red sweet seeded slice"
+  },
+  {
+    "id": "en_food_2",
+    "word": "Hamburger",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Juicy beef patty, melted cheese, lettuce in sesame bun"
+  },
+  {
+    "id": "en_food_3",
+    "word": "Ice Cream",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Scoop of creamy strawberry swirl on waffle cone"
+  },
+  {
+    "id": "en_food_4",
+    "word": "Pizza",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Round baked pie with melted cheese and pepperoni slices"
+  },
+  {
+    "id": "en_food_5",
+    "word": "Bubble Tea",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Clear plastic cup with wide straw and dark tapioca pearls"
+  },
+  {
+    "id": "en_food_6",
+    "word": "Donut",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Round ring pastry with pink strawberry glaze and sprinkles"
+  },
+  {
+    "id": "en_food_7",
+    "word": "Hot Dog",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Grilled frankfurter inside long bun with mustard squiggles"
+  },
+  {
+    "id": "en_food_8",
+    "word": "Fried Egg",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Sunny side up with runny yellow yolk in skillet"
+  },
+  {
+    "id": "en_food_9",
+    "word": "French Fries",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Red paper carton overflowing with crispy golden potato sticks"
+  },
+  {
+    "id": "en_food_10",
+    "word": "Ramen",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Deep bowl of rich broth, noodles, boiled egg and pork"
+  },
+  {
+    "id": "en_food_11",
+    "word": "Steak",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Thick beef cut sizzling with criss-cross grill marks"
+  },
+  {
+    "id": "en_food_12",
+    "word": "Croissant",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Crescent shaped flaky golden butter pastry"
+  },
+  {
+    "id": "en_food_13",
+    "word": "Birthday Cake",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Layered frosted cake topped with burning candles"
+  },
+  {
+    "id": "en_food_14",
+    "word": "Dumpling",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Pleated dough pocket with meat and cabbage filling"
+  },
+  {
+    "id": "en_food_15",
+    "word": "Rice Ball",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Triangular white rice wrapped with dark green seaweed"
+  },
+  {
+    "id": "en_food_16",
+    "word": "Mooncake",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Round baked pastry with ornate traditional stamp"
+  },
+  {
+    "id": "en_food_17",
+    "word": "Pancake",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Stack of round golden fluffy cakes topped with butter syrup"
+  },
+  {
+    "id": "en_food_18",
+    "word": "Waffle",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Square grid baked cake drizzled with honey and berries"
+  },
+  {
+    "id": "en_food_19",
+    "word": "Sandwich",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Diagonal cut bread slices packed with ham and cheese"
+  },
+  {
+    "id": "en_food_20",
+    "word": "Spaghetti",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Swirl of pasta noodles on fork with red tomato meat sauce"
+  },
+  {
+    "id": "en_food_21",
+    "word": "Curry Rice",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Thick golden savory gravy over plate of steamed white rice"
+  },
+  {
+    "id": "en_food_22",
+    "word": "Fried Rice",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Grains tossed in wok with chopped carrots and green peas"
+  },
+  {
+    "id": "en_food_23",
+    "word": "Sushi",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Slice of fresh orange salmon draped over compact rice"
+  },
+  {
+    "id": "en_food_24",
+    "word": "Tempura",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Crispy golden battered fried shrimp with dipping sauce"
+  },
+  {
+    "id": "en_food_25",
+    "word": "Roast Chicken",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Whole golden browned seasoned bird on serving platter"
+  },
+  {
+    "id": "en_food_26",
+    "word": "Pudding",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Inverted caramel custard dome wobbling on small plate"
+  },
+  {
+    "id": "en_food_27",
+    "word": "Cream Puff",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Round hollow pastry shell bursting with whipped vanilla cream"
+  },
+  {
+    "id": "en_food_28",
+    "word": "Popcorn",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Red and white striped bucket filled with popped yellow kernels"
+  },
+  {
+    "id": "en_food_29",
+    "word": "Cotton Candy",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Huge fluffy pink spun sugar cloud on paper cone"
+  },
+  {
+    "id": "en_food_30",
+    "word": "Lollipop",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Round colorful rainbow swirl candy on plastic stick"
+  },
+  {
+    "id": "en_food_31",
+    "word": "Chocolate",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Divided rectangular dark brown bar with foil wrapper open"
+  },
+  {
+    "id": "en_food_32",
+    "word": "Cookie",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Crispy golden brown circle studded with dark chocolate chips"
+  },
+  {
+    "id": "en_food_33",
+    "word": "Toast",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Square sliced bread lightly toasted with melting yellow butter"
+  },
+  {
+    "id": "en_food_34",
+    "word": "Baguette",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Long crusty French loaf with slanted diagonal score marks"
+  },
+  {
+    "id": "en_food_35",
+    "word": "Bacon",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Wavy strips of crispy fried red and white streaky pork"
+  },
+  {
+    "id": "en_food_36",
+    "word": "Sausage",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Plump link tied with string with grill marks"
+  },
+  {
+    "id": "en_food_37",
+    "word": "Cheese",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Wedge of yellow cheese with distinct round swiss holes"
+  },
+  {
+    "id": "en_food_38",
+    "word": "Taco",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Folded crispy corn tortilla shell filled with meat, cheese, lettuce"
+  },
+  {
+    "id": "en_food_39",
+    "word": "Burrito",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Thick cylindrical flour tortilla rolled with seasoned rice beans"
+  },
+  {
+    "id": "en_food_40",
+    "word": "Noodle",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Long steaming strands of wheat noodles pulled with chopsticks"
+  },
+  {
+    "id": "en_food_41",
+    "word": "Coconut",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Hairy brown sphere cracked open with white flesh and water"
+  },
+  {
+    "id": "en_food_42",
+    "word": "Avocado",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Pear shaped green fruit sliced in half with big round pit"
+  },
+  {
+    "id": "en_food_43",
+    "word": "Strawberry",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Red heart-shaped berry dotted with tiny seeds and green cap"
+  },
+  {
+    "id": "en_food_44",
+    "word": "Blueberry",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Cluster of small round deep indigo berries with light bloom"
+  },
+  {
+    "id": "en_food_45",
+    "word": "Cherry",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Pair of glossy deep red cherries joined by green stems"
+  },
+  {
+    "id": "en_food_46",
+    "word": "Grape",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Hanging bunch of juicy purple spherical fruits on vine"
+  },
+  {
+    "id": "en_food_47",
+    "word": "Banana",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Bright yellow curved peel exposing white sweet fruit"
+  },
+  {
+    "id": "en_food_48",
+    "word": "Pineapple",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Diamond textured golden body crowned with spiky green leaves"
+  },
+  {
+    "id": "en_food_49",
+    "word": "Kiwi",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Fuzzy brown oval cut open to reveal bright green seeded wheel"
+  },
+  {
+    "id": "en_food_50",
+    "word": "Melon",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Round cantaloupe with webbed beige rind and orange center"
+  },
+  {
+    "id": "en_food_51",
+    "word": "Dragon Fruit",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Vibrant magenta rind with green scales and speckled white pulp"
+  },
+  {
+    "id": "en_food_52",
+    "word": "Mango",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Smooth golden orange kidney-shaped tropical stone fruit"
+  },
+  {
+    "id": "en_food_53",
+    "word": "Orange",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Round citrus fruit sliced into juicy bright orange segments"
+  },
+  {
+    "id": "en_food_54",
+    "word": "Lemon",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Bright yellow oval fruit with pointed ends, very sour"
+  },
+  {
+    "id": "en_food_55",
+    "word": "Pomegranate",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Split crimson sphere bursting with ruby jewel-like seeds"
+  },
+  {
+    "id": "en_food_56",
+    "word": "Peach",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Velvety fuzzy pink blush heart-shaped sweet stone fruit"
+  },
+  {
+    "id": "en_food_57",
+    "word": "Apple",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Classic round red fruit with single brown stem and leaf"
+  },
+  {
+    "id": "en_food_58",
+    "word": "Papaya",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Elongated orange-fleshed fruit with center of black round seeds"
+  },
+  {
+    "id": "en_food_59",
+    "word": "Fig",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Tear-drop purple fruit cut open showing pink seeded center"
+  },
+  {
+    "id": "en_food_60",
+    "word": "Cupcake",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Single-serving cake baked in pleated paper liner with swirl frosting"
+  },
+  {
+    "id": "en_food_61",
+    "word": "Macaron",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Smooth round colorful meringue cookie sandwich with ganache"
+  },
+  {
+    "id": "en_food_62",
+    "word": "Tart",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Fluted pastry shell filled with shiny glossy fruit slices"
+  },
+  {
+    "id": "en_food_63",
+    "word": "Bagel",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Dense chewy boiled bread ring with hole in the center"
+  },
+  {
+    "id": "en_food_64",
+    "word": "Pretzel",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Knot-twisted brown baked dough sprinkled with coarse salt"
+  },
+  {
+    "id": "en_food_65",
+    "word": "Omelet",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Folded yellow cooked eggs enclosing cheese and sautéed veggies"
+  },
+  {
+    "id": "en_food_66",
+    "word": "Salad",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Fresh mixed green leaves with cherry tomatoes and cucumber slices"
+  },
+  {
+    "id": "en_food_67",
+    "word": "Soup",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Steaming liquid served in round bowl with spoon dipping in"
+  },
+  {
+    "id": "en_food_68",
+    "word": "Honey",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Clear glass jar dripping with thick golden syrup from wooden dipper"
+  },
+  {
+    "id": "en_food_69",
+    "word": "Jam",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Preserve jar with gingham cloth cover showing strawberry spread"
+  },
+  {
+    "id": "en_food_70",
+    "word": "Butter",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Yellow rectangular block on dish with butter knife slicing off slab"
+  },
+  {
+    "id": "en_food_71",
+    "word": "Milk",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Classic cardboard carton with white pitcher pouring glass"
+  },
+  {
+    "id": "en_food_72",
+    "word": "Juice",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Tall glass of orange drink with striped straw and citrus wheel"
+  },
+  {
+    "id": "en_food_73",
+    "word": "Tea",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Delicate porcelain cup on saucer with steam rising and tea bag tag"
+  },
+  {
+    "id": "en_food_74",
+    "word": "Coffee",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Ceramic mug with frothy cappuccino heart latte art"
+  },
+  {
+    "id": "en_food_75",
+    "word": "Milkshake",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Tall fluted soda glass topped with whipped cream and cherry"
+  },
+  {
+    "id": "en_food_76",
+    "word": "Smoothie",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Blended tropical fruit slush in mason jar with colorful straw"
+  },
+  {
+    "id": "en_food_77",
+    "word": "Soda",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Aluminum can pulled open with fizzing bubbling carbonated drink"
+  },
+  {
+    "id": "en_food_78",
+    "word": "Marshmallow",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Puffy white cylinder being toasted golden brown over campfire"
+  },
+  {
+    "id": "en_food_79",
+    "word": "Pretzel",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Twisted knot bread baked golden with white salt grains"
+  },
+  {
+    "id": "en_food_80",
+    "word": "Peanut",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Tan hourglass-shaped textured shell holding two nuts inside"
+  },
+  {
+    "id": "en_food_81",
+    "word": "Walnut",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Wrinkled brain-like edible nut kernel inside hard split shell"
+  },
+  {
+    "id": "en_food_82",
+    "word": "Almond",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Teardrop-shaped light brown edible seed on wooden table"
+  },
+  {
+    "id": "en_food_83",
+    "word": "Corn",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Yellow cob packed with rows of kernels wrapped in green husk"
+  },
+  {
+    "id": "en_food_84",
+    "word": "Potato",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Earthy brown tuber scrubbed clean with leafy green sprouts"
+  },
+  {
+    "id": "en_food_85",
+    "word": "Tomato",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Glossy bright red round garden fruit with star-shaped green calyx"
+  },
+  {
+    "id": "en_food_86",
+    "word": "Carrot",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Bright orange tapered root vegetable with feathery green leafy tops"
+  },
+  {
+    "id": "en_food_87",
+    "word": "Broccoli",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Tree-like miniature green vegetable with dense flowering head"
+  },
+  {
+    "id": "en_food_88",
+    "word": "Mushroom",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Fleshy umbrella cap with white stem growing on forest floor"
+  },
+  {
+    "id": "en_food_89",
+    "word": "Onion",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Papery layered round bulb with stringy root base"
+  },
+  {
+    "id": "en_food_90",
+    "word": "Garlic",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "White composite bulb made of multiple curved cloves wrapped tight"
+  },
+  {
+    "id": "en_food_91",
+    "word": "Chili",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Curved tapered bright red spicy pepper with green stem"
+  },
+  {
+    "id": "en_food_92",
+    "word": "Cucumber",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Long cylindrical dark green vegetable with cool watery interior"
+  },
+  {
+    "id": "en_food_93",
+    "word": "Pumpkin",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Large ribbed round orange squash with sturdy curved brown stem"
+  },
+  {
+    "id": "en_food_94",
+    "word": "Eggplant",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Glossy deep violet teardrop vegetable with green cap"
+  },
+  {
+    "id": "en_food_95",
+    "word": "Pea Pod",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Green pod split open to reveal row of spherical sweet green peas"
+  },
+  {
+    "id": "en_food_96",
+    "word": "Ginger",
+    "category": "FOOD",
+    "difficulty": "MEDIUM",
+    "hint": "Knobby irregular beige rhizome root with spicy pungent aroma"
+  },
+  {
+    "id": "en_food_97",
+    "word": "Cabbage",
+    "category": "FOOD",
+    "difficulty": "EASY",
+    "hint": "Dense spherical head of tightly packed wrinkled leafy layers"
+  },
+  {
+    "id": "en_objects_1",
+    "word": "Umbrella",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Dome canopy with curved handle for rainy days"
+  },
+  {
+    "id": "en_objects_2",
+    "word": "Glasses",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Two circular lenses in frame sitting on nose"
+  },
+  {
+    "id": "en_objects_3",
+    "word": "Smartphone",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Rectangular touchscreen device with cameras"
+  },
+  {
+    "id": "en_objects_4",
+    "word": "Fan",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Round protective cage with three rotating blades"
+  },
+  {
+    "id": "en_objects_5",
+    "word": "Toothbrush",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Long handle with rows of tiny nylon cleaning bristles"
+  },
+  {
+    "id": "en_objects_6",
+    "word": "Guitar",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Hourglass wooden body with six tensioned strings"
+  },
+  {
+    "id": "en_objects_7",
+    "word": "Desk Lamp",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Adjustable arched neck casting light over book"
+  },
+  {
+    "id": "en_objects_8",
+    "word": "Vacuum Cleaner",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Wheeled motorized canister with long suction nozzle"
+  },
+  {
+    "id": "en_objects_9",
+    "word": "Telescope",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Long optical tube mounted on tripod pointing to moon"
+  },
+  {
+    "id": "en_objects_10",
+    "word": "Hot Air Balloon",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Huge rainbow envelope with wicker basket below"
+  },
+  {
+    "id": "en_objects_11",
+    "word": "Scissors",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Two pivoting metal blades with plastic finger loops"
+  },
+  {
+    "id": "en_objects_12",
+    "word": "Alarm Clock",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Round dial with twin bells and hammer on top"
+  },
+  {
+    "id": "en_objects_13",
+    "word": "Backpack",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Dual shoulder strap canvas bag with zip pouches"
+  },
+  {
+    "id": "en_objects_14",
+    "word": "Bicycle",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Two rubber wheels, chain pedals, and handlebar"
+  },
+  {
+    "id": "en_objects_15",
+    "word": "Hair Dryer",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Pistol-shaped electric blower with cord"
+  },
+  {
+    "id": "en_objects_16",
+    "word": "Headphones",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Over-ear cushioned cups connected with headband"
+  },
+  {
+    "id": "en_objects_17",
+    "word": "Compass",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Round pocket dial with red magnetic needle pointing North"
+  },
+  {
+    "id": "en_objects_18",
+    "word": "Hourglass",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Two bulb glass vessel with sand trickling through neck"
+  },
+  {
+    "id": "en_objects_19",
+    "word": "Key",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Metal shaft with unique cut notches on keyring"
+  },
+  {
+    "id": "en_objects_20",
+    "word": "First Aid Kit",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "White case marked with bold red cross emergency symbol"
+  },
+  {
+    "id": "en_objects_21",
+    "word": "Wristwatch",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Leather strap with analog circular minute dial"
+  },
+  {
+    "id": "en_objects_22",
+    "word": "Calculator",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "LCD screen with grid of numeric input buttons"
+  },
+  {
+    "id": "en_objects_23",
+    "word": "Pencil Case",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Zippered fabric pouch holding pens and erasers"
+  },
+  {
+    "id": "en_objects_24",
+    "word": "Stapler",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Spring-loaded press tool clamping metal wire staples"
+  },
+  {
+    "id": "en_objects_25",
+    "word": "Glue",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Twist-cap bottle dispensing sticky white paste"
+  },
+  {
+    "id": "en_objects_26",
+    "word": "Tape Measure",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Circular plastic case with retractable metal rule"
+  },
+  {
+    "id": "en_objects_27",
+    "word": "Flashlight",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Cylindrical torch casting bright yellow cone of light"
+  },
+  {
+    "id": "en_objects_28",
+    "word": "Thermos",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Insulated stainless steel vacuum flask with screw cup lid"
+  },
+  {
+    "id": "en_objects_29",
+    "word": "Rain Boots",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Waterproof yellow rubber high boots for jumping in puddles"
+  },
+  {
+    "id": "en_objects_30",
+    "word": "Suitcase",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Hard-shell luggage case with telescopic handle and wheels"
+  },
+  {
+    "id": "en_objects_31",
+    "word": "Raincoat",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Bright yellow hooded waterproof outerwear jacket"
+  },
+  {
+    "id": "en_objects_32",
+    "word": "Gloves",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Pair of five-fingered wool knit winter hand warmers"
+  },
+  {
+    "id": "en_objects_33",
+    "word": "Scarf",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Long knitted wool muffler wrapped around neck with tassels"
+  },
+  {
+    "id": "en_objects_34",
+    "word": "Sun Hat",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Wide circular brimmed straw hat protecting from sun"
+  },
+  {
+    "id": "en_objects_35",
+    "word": "Sunglasses",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Dark tinted UV protection lenses in stylish frame"
+  },
+  {
+    "id": "en_objects_36",
+    "word": "Lighter",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Thumb flicking spark wheel producing orange flame"
+  },
+  {
+    "id": "en_objects_37",
+    "word": "Matchbox",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Small sliding cardboard drawer with striker strip"
+  },
+  {
+    "id": "en_objects_38",
+    "word": "Candle",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Cylindrical wax pillar with burning wick and wax drips"
+  },
+  {
+    "id": "en_objects_39",
+    "word": "Fire Extinguisher",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Red pressurized steel cylinder with hose and safety pin"
+  },
+  {
+    "id": "en_objects_40",
+    "word": "Bucket",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Metal wire bail handle on plastic utility pail"
+  },
+  {
+    "id": "en_objects_41",
+    "word": "Mop",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Long wooden handle with bundle of absorbent cotton yarn"
+  },
+  {
+    "id": "en_objects_42",
+    "word": "Broom",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Sweeping bristles bound to end of tall handle"
+  },
+  {
+    "id": "en_objects_43",
+    "word": "Dustpan",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Flat angled tray collecting swept floor dirt"
+  },
+  {
+    "id": "en_objects_44",
+    "word": "Trash Can",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Cylinder waste bin with foot step pedal lifting lid"
+  },
+  {
+    "id": "en_objects_45",
+    "word": "Hanger",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Triangular wire or wood hook supporting shirt shoulders"
+  },
+  {
+    "id": "en_objects_46",
+    "word": "Washing Machine",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Front-loading appliance with circular glass porthole"
+  },
+  {
+    "id": "en_objects_47",
+    "word": "Microwave",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Countertop oven box with digital keypad and rotating platter"
+  },
+  {
+    "id": "en_objects_48",
+    "word": "Refrigerator",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Tall two-door kitchen appliance with frost cooling"
+  },
+  {
+    "id": "en_objects_49",
+    "word": "Oven",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Baking chamber with glass door viewing glowing heated coils"
+  },
+  {
+    "id": "en_objects_50",
+    "word": "Rice Cooker",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Electric pot steaming fluffy white rice with single toggle"
+  },
+  {
+    "id": "en_objects_51",
+    "word": "Frying Pan",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Flat skillet with long handle searing fried eggs"
+  },
+  {
+    "id": "en_objects_52",
+    "word": "Wok",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Deep curved spherical bottom pan with twin helper handles"
+  },
+  {
+    "id": "en_objects_53",
+    "word": "Kitchen Knife",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Rectangular wide steel blade slicing across cutting board"
+  },
+  {
+    "id": "en_objects_54",
+    "word": "Cutting Board",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Thick rectangular wooden block for chopping ingredients"
+  },
+  {
+    "id": "en_objects_55",
+    "word": "Chopsticks",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Pair of tapered slender wooden sticks grasping food"
+  },
+  {
+    "id": "en_objects_56",
+    "word": "Spoon",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Oval shallow bowl at end of stem for soup and cereal"
+  },
+  {
+    "id": "en_objects_57",
+    "word": "Fork",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Four pointed metal tines on handle spearing steak"
+  },
+  {
+    "id": "en_objects_58",
+    "word": "Mug",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Sturdy ceramic cylinder with large ear-shaped C-handle"
+  },
+  {
+    "id": "en_objects_59",
+    "word": "Wine Glass",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Delicate bowl supported on tall slender stem and flat base"
+  },
+  {
+    "id": "en_objects_60",
+    "word": "Teapot",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Curved pouring spout, lid knob, and looped handle"
+  },
+  {
+    "id": "en_objects_61",
+    "word": "Coffee Maker",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Drip carafe sitting on hotplate with filter basket above"
+  },
+  {
+    "id": "en_objects_62",
+    "word": "Blender",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Glass pitcher with rotating multi-blade base pulverizing fruit"
+  },
+  {
+    "id": "en_objects_63",
+    "word": "Scale",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Glass platform displaying digital weight readout"
+  },
+  {
+    "id": "en_objects_64",
+    "word": "Wall Clock",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Circular room dial ticking with second, minute, hour hands"
+  },
+  {
+    "id": "en_objects_65",
+    "word": "Vase",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Ceramic decorative container holding bouquet of fresh blossoms"
+  },
+  {
+    "id": "en_objects_66",
+    "word": "Picture Frame",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Wooden bordered moulding displaying family portrait"
+  },
+  {
+    "id": "en_objects_67",
+    "word": "Mirror",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Reflective silvered glass showing clear facial reflection"
+  },
+  {
+    "id": "en_objects_68",
+    "word": "Comb",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Row of even fine teeth detangling combed hair"
+  },
+  {
+    "id": "en_objects_69",
+    "word": "Razor",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Triple rotating blade head shaving beard stubble"
+  },
+  {
+    "id": "en_objects_70",
+    "word": "Nail Clipper",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Lever arm pressing curved cutting blades together"
+  },
+  {
+    "id": "en_objects_71",
+    "word": "Cotton Swab",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Small plastic stick tipped with soft white cotton buds"
+  },
+  {
+    "id": "en_objects_72",
+    "word": "Bandage",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Adhesive strip with central absorbent sterile gauze pad"
+  },
+  {
+    "id": "en_objects_73",
+    "word": "Thermometer",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Narrow glass tube with red mercury line measuring fever"
+  },
+  {
+    "id": "en_objects_74",
+    "word": "Stethoscope",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Doctor's binaural earpieces connected to round chest piece"
+  },
+  {
+    "id": "en_objects_75",
+    "word": "Syringe",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Calibrated barrel with plunger and sharp hollow needle"
+  },
+  {
+    "id": "en_objects_76",
+    "word": "Wheelchair",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Large push-rim wheels with seat for mobility assistance"
+  },
+  {
+    "id": "en_objects_77",
+    "word": "Crutch",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Underarm supportive staff assisting walking on injured leg"
+  },
+  {
+    "id": "en_objects_78",
+    "word": "Ladder",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Two upright poles joined by climbing horizontal rungs"
+  },
+  {
+    "id": "en_objects_79",
+    "word": "Toolbox",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Sturdy handle case with latch compartments holding tools"
+  },
+  {
+    "id": "en_objects_80",
+    "word": "Hammer",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Heavy steel head with claw mounted on wooden striking handle"
+  },
+  {
+    "id": "en_objects_81",
+    "word": "Screwdriver",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Crossed Phillips or flat tip driving threaded screws"
+  },
+  {
+    "id": "en_objects_82",
+    "word": "Wrench",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Adjustable open-ended jaw tightening hexagonal nuts"
+  },
+  {
+    "id": "en_objects_83",
+    "word": "Power Drill",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Pistol grip tool with chuck rotating spiraled drill bit"
+  },
+  {
+    "id": "en_objects_84",
+    "word": "Hand Saw",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Broad steel blade with sharp serrated teeth cutting timber"
+  },
+  {
+    "id": "en_objects_85",
+    "word": "Hard Hat",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Sturdy bright yellow plastic protective construction helmet"
+  },
+  {
+    "id": "en_objects_86",
+    "word": "Walkie Talkie",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Handheld radio transmitter with top whip antenna"
+  },
+  {
+    "id": "en_objects_87",
+    "word": "Megaphone",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Cone-shaped acoustic horn amplifying shouted voice"
+  },
+  {
+    "id": "en_objects_88",
+    "word": "Tripod",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Three collapsible telescoping legs supporting heavy camera"
+  },
+  {
+    "id": "en_objects_89",
+    "word": "Selfie Stick",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Extendable handheld pole with phone mount clamp on end"
+  },
+  {
+    "id": "en_objects_90",
+    "word": "Drone",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Quadcopter with four spinning horizontal propellers in flight"
+  },
+  {
+    "id": "en_objects_91",
+    "word": "VR Headset",
+    "category": "OBJECTS",
+    "difficulty": "HARD",
+    "hint": "Goggle visor strapped to face for virtual reality"
+  },
+  {
+    "id": "en_objects_92",
+    "word": "Game Controller",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Dual analog joysticks with directional pad and action buttons"
+  },
+  {
+    "id": "en_objects_93",
+    "word": "Keyboard",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Rows of mechanical alphanumeric keys with backlight glow"
+  },
+  {
+    "id": "en_objects_94",
+    "word": "Computer Mouse",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Ergonomic curved body with left right click and scroll wheel"
+  },
+  {
+    "id": "en_objects_95",
+    "word": "Drawing Tablet",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Flat black pad used with pressure-sensitive digital stylus"
+  },
+  {
+    "id": "en_objects_96",
+    "word": "Projector",
+    "category": "OBJECTS",
+    "difficulty": "MEDIUM",
+    "hint": "Optical device shining beam to cast giant display on wall"
+  },
+  {
+    "id": "en_objects_97",
+    "word": "Power Bank",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Portable rechargeable rectangular battery pack with USB cable"
+  },
+  {
+    "id": "en_objects_98",
+    "word": "Tent",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Canvas dome shelter pitched with flexible poles and ground stakes"
+  },
+  {
+    "id": "en_objects_99",
+    "word": "Sleeping Bag",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Insulated quilted zippered sack for outdoor sleeping"
+  },
+  {
+    "id": "en_objects_100",
+    "word": "Hammock",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Suspended fabric sling tied between two shady trees"
+  },
+  {
+    "id": "en_objects_101",
+    "word": "Grill",
+    "category": "OBJECTS",
+    "difficulty": "EASY",
+    "hint": "Charcoal kettle cooker with dome lid and cooking grate"
+  },
+  {
+    "id": "en_actions_1",
+    "word": "Swimming",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Goggles and swim cap paddling through blue water"
+  },
+  {
+    "id": "en_actions_2",
+    "word": "Jumping Rope",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Hands turning looped cord jumping repeatedly"
+  },
+  {
+    "id": "en_actions_3",
+    "word": "Fishing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Holding rod with line cast into rippling lake water"
+  },
+  {
+    "id": "en_actions_4",
+    "word": "Kite Flying",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Running outdoors holding string as kite soars high"
+  },
+  {
+    "id": "en_actions_5",
+    "word": "Piano Playing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Fingers dancing across black and white keyboard keys"
+  },
+  {
+    "id": "en_actions_6",
+    "word": "Basketball",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Leaping up to shoot basketball through hoop net"
+  },
+  {
+    "id": "en_actions_7",
+    "word": "Photography",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Holding DSLR camera with one eye squinting at viewfinder"
+  },
+  {
+    "id": "en_actions_8",
+    "word": "Dreaming",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Sleeping on pillow with fluffy cloud thought bubbles above"
+  },
+  {
+    "id": "en_actions_9",
+    "word": "Soccer",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Kicking checkered ball into the corner of the goal net"
+  },
+  {
+    "id": "en_actions_10",
+    "word": "Skiing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Holding dual ski poles gliding down snowy mountain slope"
+  },
+  {
+    "id": "en_actions_11",
+    "word": "Rock Climbing",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Gripping textured holds with harness and safety rope"
+  },
+  {
+    "id": "en_actions_12",
+    "word": "Watering Plants",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Tilting watering can to sprinkle droplets on potted flowers"
+  },
+  {
+    "id": "en_actions_13",
+    "word": "Haircut",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Barber holding comb and scissors snipping client's hair"
+  },
+  {
+    "id": "en_actions_14",
+    "word": "Hide and Seek",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Covering eyes counting while friends hide behind trees"
+  },
+  {
+    "id": "en_actions_15",
+    "word": "Sneezing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Holding tissue to nose with eyes pinched shut shouting achoo"
+  },
+  {
+    "id": "en_actions_16",
+    "word": "Ballet",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Balancing on pointe toe shoes in graceful tutu pose"
+  },
+  {
+    "id": "en_actions_17",
+    "word": "Fencing",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Wearing mesh wire mask thrusting slender foil sword"
+  },
+  {
+    "id": "en_actions_18",
+    "word": "Archery",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Drawing bowstring tight aiming arrow at bullseye target"
+  },
+  {
+    "id": "en_actions_19",
+    "word": "Badminton",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Swinging racket overhead to smash white feathered shuttlecock"
+  },
+  {
+    "id": "en_actions_20",
+    "word": "Table Tennis",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Quick backhand paddle return across miniature green table"
+  },
+  {
+    "id": "en_actions_21",
+    "word": "Skateboarding",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Popping four-wheeled wooden deck into mid-air kickflip"
+  },
+  {
+    "id": "en_actions_22",
+    "word": "Roller Skating",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Gliding along pavement on four-wheel quad skate boots"
+  },
+  {
+    "id": "en_actions_23",
+    "word": "Horseback Riding",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Gripping leather reins with boots in stirrups galloping"
+  },
+  {
+    "id": "en_actions_24",
+    "word": "Yawning",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Stretching arms wide with huge open mouth teary eyes"
+  },
+  {
+    "id": "en_actions_25",
+    "word": "Brushing Teeth",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Foamy white toothpaste suds scrubbing back and forth"
+  },
+  {
+    "id": "en_actions_26",
+    "word": "Applying Makeup",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Dabbing red lipstick and blush in front of vanity mirror"
+  },
+  {
+    "id": "en_actions_27",
+    "word": "Folding Blanket",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Smoothing quilt into neat square stack on bed"
+  },
+  {
+    "id": "en_actions_28",
+    "word": "Tying Shoelaces",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Looping two laces together into a symmetrical bow knot"
+  },
+  {
+    "id": "en_actions_29",
+    "word": "Tying a Tie",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Adjusting silk necktie knot neatly under collared shirt"
+  },
+  {
+    "id": "en_actions_30",
+    "word": "Threading a Needle",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Squinting to guide thin cotton thread through needle eye"
+  },
+  {
+    "id": "en_actions_31",
+    "word": "Yoga",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Balancing on one leg in serene tree pose on yoga mat"
+  },
+  {
+    "id": "en_actions_32",
+    "word": "Push-ups",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Plank posture pushing chest up and down from floor"
+  },
+  {
+    "id": "en_actions_33",
+    "word": "Sit-ups",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Lying on back with hands behind head curling torso upward"
+  },
+  {
+    "id": "en_actions_34",
+    "word": "Pull-ups",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Gripping overhead bar to pull chin up above iron bar"
+  },
+  {
+    "id": "en_actions_35",
+    "word": "Long Jump",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Sprinting down runway launching body into sand pit"
+  },
+  {
+    "id": "en_actions_36",
+    "word": "Running",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Leaning forward sprinting across red finish line tape"
+  },
+  {
+    "id": "en_actions_37",
+    "word": "Weightlifting",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Lifting heavy loaded iron barbell overhead with power"
+  },
+  {
+    "id": "en_actions_38",
+    "word": "Wrestling",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Grappling opponent on padded mat attempting takedown"
+  },
+  {
+    "id": "en_actions_39",
+    "word": "Tug of War",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Two teams pulling thick knotted rope with red flag center"
+  },
+  {
+    "id": "en_actions_40",
+    "word": "Relay Race",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Extending arm forward to pass smooth baton to teammate"
+  },
+  {
+    "id": "en_actions_41",
+    "word": "Cutting Onions",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Chopping onion with kitchen knife wiping watery tears"
+  },
+  {
+    "id": "en_actions_42",
+    "word": "Eating Watermelon",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Biting deep into large green and red fruit wedge"
+  },
+  {
+    "id": "en_actions_43",
+    "word": "Blowing Bubbles",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Puffing cheeks to inflate big pink bubblegum balloon"
+  },
+  {
+    "id": "en_actions_44",
+    "word": "Peeling a Banana",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Stripping yellow banana skin down from top four ways"
+  },
+  {
+    "id": "en_actions_45",
+    "word": "Sipping Drink",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Drinking cold smoothie through a bent colorful straw"
+  },
+  {
+    "id": "en_actions_46",
+    "word": "Barbecuing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Using metal tongs to flip sizzling meat patties over coals"
+  },
+  {
+    "id": "en_actions_47",
+    "word": "Making Dumplings",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Pinching crimped pleats to seal meat inside round dough"
+  },
+  {
+    "id": "en_actions_48",
+    "word": "Wok Stir-fry",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Chef tossing vegetables high into air above flaming wok"
+  },
+  {
+    "id": "en_actions_49",
+    "word": "Dishwashing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Scrubbing soapy foam plate with sponge wearing rubber gloves"
+  },
+  {
+    "id": "en_actions_50",
+    "word": "Window Cleaning",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Squeegee wiping soapy glass pane until sparkling clean"
+  },
+  {
+    "id": "en_actions_51",
+    "word": "Mopping",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Swishing wet mop back and forth across shiny tiled floor"
+  },
+  {
+    "id": "en_actions_52",
+    "word": "Taking out Trash",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Carrying tied black garbage bag out to outdoor bin"
+  },
+  {
+    "id": "en_actions_53",
+    "word": "Dog Walking",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Holding taut leash as excited dog trots happily ahead"
+  },
+  {
+    "id": "en_actions_54",
+    "word": "Pet Grooming",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Brushing soft shedding fur off fluffy purring cat"
+  },
+  {
+    "id": "en_actions_55",
+    "word": "Fish Feeding",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Pinching flakes of fish food sprinkling over aquarium"
+  },
+  {
+    "id": "en_actions_56",
+    "word": "Catching Butterflies",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Swinging mesh butterfly net through wildflower garden"
+  },
+  {
+    "id": "en_actions_57",
+    "word": "Building Sandcastle",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Using bucket and trowel to sculpt towers and moat in sand"
+  },
+  {
+    "id": "en_actions_58",
+    "word": "Swinging",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Pumping legs high into sky on playground swing set"
+  },
+  {
+    "id": "en_actions_59",
+    "word": "Sliding",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Swooshing down winding colorful playground slide with glee"
+  },
+  {
+    "id": "en_actions_60",
+    "word": "Seesaw",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Two kids balanced on plank tipping up and down in turn"
+  },
+  {
+    "id": "en_actions_61",
+    "word": "Inflating Balloon",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Blowing air into latex balloon until round and plump"
+  },
+  {
+    "id": "en_actions_62",
+    "word": "Unboxing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Cutting packing tape with utility knife opening brown box"
+  },
+  {
+    "id": "en_actions_63",
+    "word": "Reading",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Sitting under warm lamp turning crisp printed pages of novel"
+  },
+  {
+    "id": "en_actions_64",
+    "word": "Microscope Viewing",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Adjusting fine focus knob looking into monocular eyepiece"
+  },
+  {
+    "id": "en_actions_65",
+    "word": "Science Experiment",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Pouring bubbling colorful liquid between glass beakers"
+  },
+  {
+    "id": "en_actions_66",
+    "word": "Color Mixing",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Blending paint blobs together on artist wooden palette"
+  },
+  {
+    "id": "en_actions_67",
+    "word": "Acoustic Performance",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Strumming guitar while singing into microphone stand"
+  },
+  {
+    "id": "en_actions_68",
+    "word": "Drumming",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Twin drumsticks striking snare drum and brass cymbals"
+  },
+  {
+    "id": "en_actions_69",
+    "word": "Saxophone Playing",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Blowing into brass mouthpiece pressing shiny key pads"
+  },
+  {
+    "id": "en_actions_70",
+    "word": "Orchestra Conducting",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Waving slender baton in expressive musical cadence"
+  },
+  {
+    "id": "en_actions_71",
+    "word": "Belting a Song",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Holding wireless mic tilting head back with passion"
+  },
+  {
+    "id": "en_actions_72",
+    "word": "Breakdancing",
+    "category": "ACTIONS",
+    "difficulty": "HARD",
+    "hint": "Balancing on one hand in inverted freeze spin on street"
+  },
+  {
+    "id": "en_actions_73",
+    "word": "Magic Trick",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Reaching into tall black top hat pulling out live white dove"
+  },
+  {
+    "id": "en_actions_74",
+    "word": "Stand-up Comedy",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Speaking into spotlight microphone making crowd roar with laugh"
+  },
+  {
+    "id": "en_actions_75",
+    "word": "Tightrope Walking",
+    "category": "ACTIONS",
+    "difficulty": "HARD",
+    "hint": "Balancing on high wire in sky holding long horizontal pole"
+  },
+  {
+    "id": "en_actions_76",
+    "word": "Trapeze",
+    "category": "ACTIONS",
+    "difficulty": "HARD",
+    "hint": "Swinging through circus air catching partner by the wrists"
+  },
+  {
+    "id": "en_actions_77",
+    "word": "Stilt Walking",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Walking tall on pair of elevated strapped wooden poles"
+  },
+  {
+    "id": "en_actions_78",
+    "word": "Hula Hooping",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Swiveling hips in rhythm to keep plastic hoop spinning"
+  },
+  {
+    "id": "en_actions_79",
+    "word": "Shuttlecock Kicking",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Kicking feathered footbag with instep keeping it in air"
+  },
+  {
+    "id": "en_actions_80",
+    "word": "Beanbag Toss",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Tossing square cloth beanbag into slanted target hole"
+  },
+  {
+    "id": "en_actions_81",
+    "word": "Snowball Fight",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Packing fluffy snow sphere throwing at laughing friend"
+  },
+  {
+    "id": "en_actions_82",
+    "word": "Building a Snowman",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Rolling huge snowballs stacking carrot nose and coal eyes"
+  },
+  {
+    "id": "en_actions_83",
+    "word": "Figure Skating",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Spinning on sharp toe pick on glinting white ice sheet"
+  },
+  {
+    "id": "en_actions_84",
+    "word": "Surfing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Riding fiberglass surfboard inside barrel of curling wave"
+  },
+  {
+    "id": "en_actions_85",
+    "word": "Scuba Diving",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Breathing from regulator tank swimming with coral reef fish"
+  },
+  {
+    "id": "en_actions_86",
+    "word": "Skydiving",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Leaping from airplane spreading limbs before parachute opens"
+  },
+  {
+    "id": "en_actions_87",
+    "word": "Bungee Jumping",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Diving off high gorge bridge attached to thick elastic cord"
+  },
+  {
+    "id": "en_actions_88",
+    "word": "Kayaking",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Paddling double-bladed oar through winding whitewater river"
+  },
+  {
+    "id": "en_actions_89",
+    "word": "Dragon Boat Racing",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Team paddling in unison to booming rhythm of bow drum"
+  },
+  {
+    "id": "en_actions_90",
+    "word": "Go-karting",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Gripping small steering wheel drifting low around race track"
+  },
+  {
+    "id": "en_actions_91",
+    "word": "Flying an Airplane",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Pushing control yoke in cockpit climbing above fluffy clouds"
+  },
+  {
+    "id": "en_actions_92",
+    "word": "Train Driving",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Pulling whistle cord as locomotive chugs on steel rails"
+  },
+  {
+    "id": "en_actions_93",
+    "word": "Motorcycle Riding",
+    "category": "ACTIONS",
+    "difficulty": "MEDIUM",
+    "hint": "Leaning deep into sharp highway curve on sports motorbike"
+  },
+  {
+    "id": "en_actions_94",
+    "word": "Hailing a Taxi",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Standing at curb raising arm to flag yellow cab"
+  },
+  {
+    "id": "en_actions_95",
+    "word": "Crossing the Street",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Walking across striped zebra crosswalk with green walk sign"
+  },
+  {
+    "id": "en_actions_96",
+    "word": "Giving up a Seat",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Standing up on crowded bus offering seat to elderly person"
+  },
+  {
+    "id": "en_actions_97",
+    "word": "Saluting",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Snapping right hand flat to brow in crisp respectful salute"
+  },
+  {
+    "id": "en_actions_98",
+    "word": "Flag Raising",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Hoisting bright banner up tall pole during national anthem"
+  },
+  {
+    "id": "en_actions_99",
+    "word": "Handshake",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Extending right hands gripping firmly in friendly greeting"
+  },
+  {
+    "id": "en_actions_100",
+    "word": "Mountain Climbing",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Planting trekking poles carrying pack ascending summit"
+  },
+  {
+    "id": "en_actions_101",
+    "word": "High Jump",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Arching back backwards to clear high horizontal bar"
+  },
+  {
+    "id": "en_actions_102",
+    "word": "Bowling",
+    "category": "ACTIONS",
+    "difficulty": "EASY",
+    "hint": "Swinging heavy ball down polished lane to strike ten pins"
+  },
+  {
+    "id": "en_k12_science_1",
+    "word": "Black Hole",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Gravitational singularity where not even light can escape"
+  },
+  {
+    "id": "en_k12_science_2",
+    "word": "Saturn Rings",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Spectacular ring system orbiting giant gas planet"
+  },
+  {
+    "id": "en_k12_science_3",
+    "word": "Volcano",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Mountain summit erupting with billowing smoke and red lava"
+  },
+  {
+    "id": "en_k12_science_4",
+    "word": "Rainbow",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Seven-colored optical spectrum arching across sky after rain"
+  },
+  {
+    "id": "en_k12_science_5",
+    "word": "Dinosaur Fossil",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Ancient prehistoric skeleton preserved in layered rock"
+  },
+  {
+    "id": "en_k12_science_6",
+    "word": "Lunar Eclipse",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Earth's shadow casting a blood-red tint on full moon"
+  },
+  {
+    "id": "en_k12_science_7",
+    "word": "Microscope",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "High magnification dual-eyepiece lens viewing cells"
+  },
+  {
+    "id": "en_k12_science_8",
+    "word": "DNA Helix",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "Intertwined double-helix molecular genetic strands"
+  },
+  {
+    "id": "en_k12_science_9",
+    "word": "Solar Panel",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Grid of dark blue photovoltaic cells generating electricity"
+  },
+  {
+    "id": "en_k12_science_10",
+    "word": "Magnet",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Horseshoe magnet with red and blue poles attracting iron"
+  },
+  {
+    "id": "en_k12_science_11",
+    "word": "Tornado",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Violent rotating funnel column connecting storm cloud to ground"
+  },
+  {
+    "id": "en_k12_science_12",
+    "word": "Rocket",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Streamlined spacecraft launching with bright flame plume"
+  },
+  {
+    "id": "en_k12_science_13",
+    "word": "Photosynthesis",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Green leaf absorbing sunlight converting carbon to oxygen"
+  },
+  {
+    "id": "en_k12_science_14",
+    "word": "Astronaut",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Space explorer in pressurized suit walking on lunar surface"
+  },
+  {
+    "id": "en_k12_science_15",
+    "word": "Submarine",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Deep sea naval vessel with periscope and ballast tanks"
+  },
+  {
+    "id": "en_k12_science_16",
+    "word": "Test Tube",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Cylindrical clear glass lab tube holding colored reagent"
+  },
+  {
+    "id": "en_k12_science_17",
+    "word": "Meteor Crater",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Deep circular impact depression formed by space asteroid"
+  },
+  {
+    "id": "en_k12_science_18",
+    "word": "Northern Lights",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Dancing green aurora curtains shimmering in Arctic night"
+  },
+  {
+    "id": "en_k12_science_19",
+    "word": "Lightning",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Bright jagged electric discharge striking from dark thundercloud"
+  },
+  {
+    "id": "en_k12_science_20",
+    "word": "Prism",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Clear triangular glass splitting white beam into rainbow"
+  },
+  {
+    "id": "en_k12_science_21",
+    "word": "Hot Air Balloon",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Heated buoyant air lifting giant colorful envelope aloft"
+  },
+  {
+    "id": "en_k12_science_22",
+    "word": "Electric Circuit",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Battery, wires, and switch connected to light up small bulb"
+  },
+  {
+    "id": "en_k12_science_23",
+    "word": "Sundial",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Gnomon pointer casting shadow on calibrated circular dial"
+  },
+  {
+    "id": "en_k12_science_24",
+    "word": "Atom Model",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "Central nucleus orbited by rings of spinning electrons"
+  },
+  {
+    "id": "en_k12_science_25",
+    "word": "Stalactite",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Icicle-shaped mineral deposit hanging from cave ceiling"
+  },
+  {
+    "id": "en_k12_science_26",
+    "word": "Shooting Star",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Bright meteor burning across night sky leaving glowing trail"
+  },
+  {
+    "id": "en_k12_science_27",
+    "word": "Hubble Telescope",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "Space observatory orbiting in deep cosmos"
+  },
+  {
+    "id": "en_k12_science_28",
+    "word": "Space Station",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "Modular habitat in zero gravity with giant solar arrays"
+  },
+  {
+    "id": "en_k12_science_29",
+    "word": "Mars Rover",
+    "category": "K12_SCIENCE",
+    "difficulty": "HARD",
+    "hint": "Six-wheeled robotic vehicle exploring red martian landscape"
+  },
+  {
+    "id": "en_k12_science_30",
+    "word": "Satellite",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Orbital communications craft with paired solar wings"
+  },
+  {
+    "id": "en_k12_science_31",
+    "word": "Magnifying Glass",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Convex glass lens focusing sunlight to kindle warmth"
+  },
+  {
+    "id": "en_k12_science_32",
+    "word": "Periscope",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Dual angled mirror tube looking out from submerged depth"
+  },
+  {
+    "id": "en_k12_science_33",
+    "word": "Pulley System",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Grooved wheels and rope lifting heavy cargo with ease"
+  },
+  {
+    "id": "en_k12_science_34",
+    "word": "Thermometer",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Glass capillary containing rising red liquid scale"
+  },
+  {
+    "id": "en_k12_science_35",
+    "word": "Hydropower Dam",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Concrete barrage releasing torrential water to drive turbines"
+  },
+  {
+    "id": "en_k12_science_36",
+    "word": "Geyser",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Natural geothermal vent shooting column of boiling steam"
+  },
+  {
+    "id": "en_k12_science_37",
+    "word": "Food Chain",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Grass to caterpillar to frog to hawk ecological pyramid"
+  },
+  {
+    "id": "en_k12_science_38",
+    "word": "Tree Rings",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Concentric growth rings visible across sawn tree stump"
+  },
+  {
+    "id": "en_k12_science_39",
+    "word": "Skeleton",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Articulated framework of white human bones supporting body"
+  },
+  {
+    "id": "en_k12_science_40",
+    "word": "Heart",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Four-chambered muscular organ pumping blood through vessels"
+  },
+  {
+    "id": "en_k12_science_41",
+    "word": "Lungs",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Paired spongy organs expanding with breath"
+  },
+  {
+    "id": "en_k12_science_42",
+    "word": "Brain",
+    "category": "K12_SCIENCE",
+    "difficulty": "MEDIUM",
+    "hint": "Two convoluted hemispheres of central nervous intelligence"
+  },
+  {
+    "id": "en_k12_science_43",
+    "word": "Compass",
+    "category": "K12_SCIENCE",
+    "difficulty": "EASY",
+    "hint": "Magnetic pointer floating inside pocket housing pointing north"
+  },
+  {
+    "id": "en_k12_geo_1",
+    "word": "Great Wall",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Ancient defensive stone rampart winding over mountain ridges"
+  },
+  {
+    "id": "en_k12_geo_2",
+    "word": "Eiffel Tower",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Iconic latticed wrought-iron monument in Paris skyline"
+  },
+  {
+    "id": "en_k12_geo_3",
+    "word": "Pyramid",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Gigantic triangular stone monument rising from Egyptian desert"
+  },
+  {
+    "id": "en_k12_geo_4",
+    "word": "Statue of Liberty",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Neoclassical colossal copper goddess holding torch in harbor"
+  },
+  {
+    "id": "en_k12_geo_5",
+    "word": "Sydney Opera House",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Distinctive interlocking concrete sail roofs on harbor water"
+  },
+  {
+    "id": "en_k12_geo_6",
+    "word": "Leaning Tower of Pisa",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "White marble freestanding bell tower leaning at famous tilt"
+  },
+  {
+    "id": "en_k12_geo_7",
+    "word": "Taj Mahal",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Symmetrical white marble mausoleum reflecting in long pool"
+  },
+  {
+    "id": "en_k12_geo_8",
+    "word": "Big Ben",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Gothic four-faced clock tower beside Thames river in London"
+  },
+  {
+    "id": "en_k12_geo_9",
+    "word": "Mount Fuji",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Iconic snow-capped symmetrical cone volcano in Japan"
+  },
+  {
+    "id": "en_k12_geo_10",
+    "word": "Globe",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Spherical map of Earth rotating on tilted desktop axis"
+  },
+  {
+    "id": "en_k12_geo_11",
+    "word": "Oasis",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Lush patch of date palms surrounding water pool in desert"
+  },
+  {
+    "id": "en_k12_geo_12",
+    "word": "Iceberg",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Towering mass of frozen glacial ice drifting on sea"
+  },
+  {
+    "id": "en_k12_geo_13",
+    "word": "Windmill",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Traditional Dutch tower with four rotating sail arms"
+  },
+  {
+    "id": "en_k12_geo_14",
+    "word": "Rainforest",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Dense tropical canopy with giant trees and winding vines"
+  },
+  {
+    "id": "en_k12_geo_15",
+    "word": "Grand Canyon",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Vast steep-sided gorge carved by Colorado river erosion"
+  },
+  {
+    "id": "en_k12_geo_16",
+    "word": "Lighthouse",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Striped coastal beacon flashing rotational light out to sea"
+  },
+  {
+    "id": "en_k12_geo_17",
+    "word": "Mount Everest",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Highest mountain peak on Earth piercing the Himalayas sky"
+  },
+  {
+    "id": "en_k12_geo_18",
+    "word": "Forbidden City",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Massive complex of imperial red-walled gold-roofed palaces"
+  },
+  {
+    "id": "en_k12_geo_19",
+    "word": "Terracotta Army",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Subterranean pits filled with thousands of clay warriors"
+  },
+  {
+    "id": "en_k12_geo_20",
+    "word": "Niagara Falls",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Massive curtain of thundering water crashing into gorge"
+  },
+  {
+    "id": "en_k12_geo_21",
+    "word": "Stonehenge",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Prehistoric circle of towering standing sarsen stones"
+  },
+  {
+    "id": "en_k12_geo_22",
+    "word": "Colosseum",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Elliptical ancient amphitheater with tiered stone arches"
+  },
+  {
+    "id": "en_k12_geo_23",
+    "word": "London Tower Bridge",
+    "category": "K12_GEO",
+    "difficulty": "MEDIUM",
+    "hint": "Twin Gothic suspension towers with central lifting bascules"
+  },
+  {
+    "id": "en_k12_geo_24",
+    "word": "Canal",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Narrow artificial waterway with stone bridges and boats"
+  },
+  {
+    "id": "en_k12_geo_25",
+    "word": "Desert Dunes",
+    "category": "K12_GEO",
+    "difficulty": "EASY",
+    "hint": "Endless rolling waves of wind-swept golden sands"
+  },
+  {
+    "id": "en_cartoon_1",
+    "word": "Pikachu",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Yellow electric rodent with lightning tail and red cheeks"
+  },
+  {
+    "id": "en_cartoon_2",
+    "word": "Doraemon",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Earless blue robotic cat with 4D pocket and bamboo copter"
+  },
+  {
+    "id": "en_cartoon_3",
+    "word": "SpongeBob",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Square yellow sea sponge in brown trousers at pineapple home"
+  },
+  {
+    "id": "en_cartoon_4",
+    "word": "Peppa Pig",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Cute pink pig in red dress jumping in muddy puddles"
+  },
+  {
+    "id": "en_cartoon_5",
+    "word": "Mickey Mouse",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Iconic mouse with round black ears and red button shorts"
+  },
+  {
+    "id": "en_cartoon_6",
+    "word": "Mario",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Plumber with red cap, moustache jumping to hit coin block"
+  },
+  {
+    "id": "en_cartoon_7",
+    "word": "Totoro",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Giant friendly round grey forest spirit under rain leaf"
+  },
+  {
+    "id": "en_cartoon_8",
+    "word": "Olaf",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Happy snowman with carrot nose and twig arms who loves summer"
+  },
+  {
+    "id": "en_cartoon_9",
+    "word": "Patrick Star",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Chubby pink sea star wearing green purple-flowered shorts"
+  },
+  {
+    "id": "en_cartoon_10",
+    "word": "Snoopy",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Black-eared white beagle sleeping on top of red doghouse"
+  },
+  {
+    "id": "en_cartoon_11",
+    "word": "Elsa",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "Ice queen in sparkling cyan gown casting freezing magic"
+  },
+  {
+    "id": "en_cartoon_12",
+    "word": "Minion",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Yellow capsule-shaped body with goggles and blue overalls"
+  },
+  {
+    "id": "en_cartoon_13",
+    "word": "Spider-Man",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Hero in red and blue webbed suit swinging from skyscraper"
+  },
+  {
+    "id": "en_cartoon_14",
+    "word": "Po Panda",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Kung fu warrior panda in patched pants eating dumplings"
+  },
+  {
+    "id": "en_cartoon_15",
+    "word": "Tom Cat",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Grey cat scheming to catch brown clever mouse"
+  },
+  {
+    "id": "en_cartoon_16",
+    "word": "Jerry Mouse",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Tiny brown mouse nibbling cheese dodging cat traps"
+  },
+  {
+    "id": "en_cartoon_17",
+    "word": "Simba",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Young lion cub poised to become king of Pride Rock"
+  },
+  {
+    "id": "en_cartoon_18",
+    "word": "Nemo",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Orange and white striped clownfish with tiny lucky fin"
+  },
+  {
+    "id": "en_cartoon_19",
+    "word": "Garfield",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Lazy orange tabby cat eating whole pan of lasagna"
+  },
+  {
+    "id": "en_cartoon_20",
+    "word": "Gundam",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "Heroic giant white and blue mecha warrior with beam saber"
+  },
+  {
+    "id": "en_cartoon_21",
+    "word": "Sailor Moon",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Blonde twintail magical girl holding moon scepter"
+  },
+  {
+    "id": "en_cartoon_22",
+    "word": "Snow White",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Princess with yellow dress and red ribbon holding poisoned apple"
+  },
+  {
+    "id": "en_cartoon_23",
+    "word": "Cinderella",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Leaving single glass slipper behind on palace stairs at midnight"
+  },
+  {
+    "id": "en_cartoon_24",
+    "word": "Pinocchio",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Wooden puppet boy whose nose grows long when lying"
+  },
+  {
+    "id": "en_cartoon_25",
+    "word": "Little Mermaid",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Red-haired mermaid with emerald tail sitting on ocean rock"
+  },
+  {
+    "id": "en_cartoon_26",
+    "word": "Aladdin",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Flying on magical Persian rug holding golden oil lamp"
+  },
+  {
+    "id": "en_cartoon_27",
+    "word": "Winnie the Pooh",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Yellow bear in red crop shirt dipping paw in honey pot"
+  },
+  {
+    "id": "en_cartoon_28",
+    "word": "Donald Duck",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Blue sailor suit duck quacking with fiery temper"
+  },
+  {
+    "id": "en_cartoon_29",
+    "word": "Bugs Bunny",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Grey rabbit munching carrot saying What's up doc"
+  },
+  {
+    "id": "en_cartoon_30",
+    "word": "Popeye",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Sailor with anchor tattoo squeezing open can of spinach"
+  },
+  {
+    "id": "en_cartoon_31",
+    "word": "Smurf",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Three apples high blue creature with floppy white hat"
+  },
+  {
+    "id": "en_cartoon_32",
+    "word": "Shrek",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "Big friendly green ogre living peacefully in swamp"
+  },
+  {
+    "id": "en_cartoon_33",
+    "word": "Wall-E",
+    "category": "CARTOON",
+    "difficulty": "MEDIUM",
+    "hint": "Treaded trash compacting robot with binocular eyes on Earth"
+  },
+  {
+    "id": "en_cartoon_34",
+    "word": "Buzz Lightyear",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Space ranger in white-green suit with wings flying to infinity"
+  },
+  {
+    "id": "en_cartoon_35",
+    "word": "Woody",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Pull-string cowboy sheriff doll with brown hat and badge"
+  },
+  {
+    "id": "en_cartoon_36",
+    "word": "Superman",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Hero with red cape, blue suit, S-shield on chest in flight"
+  },
+  {
+    "id": "en_cartoon_37",
+    "word": "Batman",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Masked dark vigilante with batarang standing on gargoyle"
+  },
+  {
+    "id": "en_cartoon_38",
+    "word": "Hulk",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Giant muscular green titan smashing fist into ground"
+  },
+  {
+    "id": "en_cartoon_39",
+    "word": "Thor",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Norse god of thunder swinging heavy enchanted war hammer"
+  },
+  {
+    "id": "en_cartoon_40",
+    "word": "Captain America",
+    "category": "CARTOON",
+    "difficulty": "EASY",
+    "hint": "Super soldier carrying round red-white-blue star shield"
+  }
+]

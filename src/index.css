@@ -1,0 +1,316 @@
+@import "tailwindcss";
+@import "@excalidraw/excalidraw/index.css";
+
+@theme {
+  /* 背景层级体系 (Aget UI) */
+  --color-paper: #fdf8f6;        /* 页面画布（燕麦暖纸色，默认 #fdf8f6） */
+  --color-card: #ffffff;         /* 内容卡片纯白底 */
+  --color-warm: #ece9e4;         /* 暖灰石色（次级底/Tag底） */
+  --color-tint: #e6f4f2;         /* 浅松绿高亮底 */
+  
+  /* 边框与分割线 */
+  --color-edge: #d4d0c9;         /* 自然暖灰边框 */
+  --color-divider: #e1dfda;      /* 浅分割线 */
+
+  /* 文字层级体系 */
+  --color-ink: #1b1813;          /* 暖碳墨黑主字 */
+  --color-ink-soft: #6d6b64;     /* 暖岩灰次要文字 */
+  --color-ink-faint: #b8b7b2;    /* 弱化辅助字 */
+
+  /* 核心功能与交互 */
+  --color-primary: #007a66;      /* 森林松石绿主按钮底 */
+  --color-primary-hover: #005c4d;/* 深林绿悬浮 */
+  --color-dark-btn: #1b1813;     /* 黑色 Pill 按钮底 */
+  --color-link: #007a66;         /* 主链接色 */
+  --color-success: #1b7a42;      /* 成功绿 */
+  --color-gold: #f2c343;         /* 暖金 */
+  --color-gold-deep: #c18500;    /* 深金 */
+  --color-danger: #eb1919;       /* 红 */
+  --color-danger-deep: #c02727;  /* 危险按钮底/警示文字 */
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  user-select: none;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-edge);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-ink-soft);
+}
+
+/* ==========================================================================
+   Excalidraw 游戏专属纯净界面重写与冗余元素强力屏蔽
+   ========================================================================== */
+
+/* 1. 屏蔽顶部工具栏的 Insert Image (上传图片) */
+.excalidraw .ToolIcon_type_image,
+.excalidraw [data-testid="toolbar-image"],
+.excalidraw [data-testid="image"],
+.excalidraw [aria-label*="Image" i],
+.excalidraw [aria-label*="image" i],
+.excalidraw [aria-label*="图片"],
+.excalidraw [aria-label*="Insert image" i],
+.excalidraw button[value="image"],
+.excalidraw label[value="image"],
+.excalidraw label:has(input[value="image"]),
+.excalidraw label:has(input[type="file"]),
+.excalidraw label:has(input[name="editor-current-shape"][value="image"]),
+.excalidraw .ToolIcon:has(input[value="image"]) {
+  display: none !important;
+}
+
+/* 2. 屏蔽顶部工具栏的 More tools / Generate / Magic / Extra tools */
+.excalidraw .ToolIcon_type_magic,
+.excalidraw [data-testid="toolbar-magic"],
+.excalidraw [data-testid="toolbar-extra-tools"],
+.excalidraw [data-testid="extra-tools"],
+.excalidraw [data-testid="toolbar-more-tools"],
+.excalidraw [data-testid="more-tools"],
+.excalidraw [data-testid="magic"],
+.excalidraw [data-testid*="magic"],
+.excalidraw [data-testid*="extra-tool"],
+.excalidraw [data-testid*="more-tool"],
+.excalidraw [aria-label*="More tools" i],
+.excalidraw [aria-label*="more tools" i],
+.excalidraw [aria-label*="更多工具"],
+.excalidraw [title*="More tools" i],
+.excalidraw [title*="more tools" i],
+.excalidraw [title*="更多工具"],
+.excalidraw [aria-label*="Generate" i],
+.excalidraw [aria-label*="Magic" i],
+.excalidraw [aria-label*="Extra tools" i],
+.excalidraw [aria-label*="Text to diagram" i],
+.excalidraw [aria-label*="Mermaid" i],
+.excalidraw button[value="magic"],
+.excalidraw button:has([aria-label*="More tools" i]),
+.excalidraw button:has([aria-label*="更多工具"]),
+.excalidraw .App-toolbar-content > .dropdown-menu-button,
+.excalidraw .App-toolbar-content > button:last-child,
+.excalidraw .App-toolbar .dropdown-menu-button,
+.excalidraw .dropdown-menu-button:has([data-testid*="extra-tools"]),
+.excalidraw .dropdown-menu-button:has([data-testid*="more-tools"]),
+.excalidraw .dropdown-menu-button[aria-label*="More" i],
+.excalidraw .dropdown-menu-button[title*="More" i],
+.excalidraw .dropdown-menu-button[aria-label*="更多" i],
+.excalidraw .dropdown-menu-button[title*="更多" i] {
+  display: none !important;
+}
+
+/* 2.1 屏蔽顶部工具栏末尾遗留的分隔符 (Divider / Separator) */
+.excalidraw .App-toolbar__divider:last-child,
+.excalidraw .App-toolbar__divider:last-of-type,
+.excalidraw .App-toolbar__divider:nth-last-of-type(1),
+.excalidraw .App-toolbar-content .App-toolbar__divider:last-child,
+.excalidraw .App-toolbar-content .App-toolbar__divider:last-of-type,
+.excalidraw .App-toolbar-content > .App-toolbar__divider:last-of-type,
+.excalidraw .App-toolbar-content .ToolIcon_type_divider:last-of-type,
+.excalidraw .App-toolbar-content .divider:last-of-type,
+.excalidraw .App-toolbar-content .ToolIcon__divider:last-of-type,
+.excalidraw .App-toolbar-content div[class*="divider"]:last-of-type,
+.excalidraw .App-toolbar-content > div[class*="divider"]:last-child,
+.excalidraw .App-toolbar-content > div[class*="separator"]:last-child,
+.excalidraw .App-toolbar-content > .ToolIcon__divider,
+.excalidraw .App-toolbar-content > .ToolIcon_type_divider:last-child,
+.excalidraw .App-toolbar-content hr:last-child,
+.excalidraw .App-toolbar__extra-tools-trigger {
+  display: none !important;
+}
+
+/* 3. 屏蔽右下角帮助问号图标 (Help Icon)、顶部悬浮操作提示 (HintViewer) 及左上角三道杠主菜单 (MainMenu) */
+.excalidraw .help-icon,
+.excalidraw [data-testid="help-icon"],
+.excalidraw [aria-label*="Help" i],
+.excalidraw [aria-label*="帮助"],
+.excalidraw .HintViewer,
+.excalidraw .App-toolbar .HintViewer,
+.excalidraw .main-menu-trigger,
+.excalidraw [data-testid="main-menu-trigger"],
+.excalidraw [aria-label*="Main menu" i],
+.excalidraw [aria-label*="主菜单" i],
+.excalidraw .layer-ui__wrapper__top-left .dropdown-menu-button {
+  display: none !important;
+}
+
+/* 4. 屏蔽左侧画板工具箱底部的 Actions 区域及 “Actions / 操作” 标题文字 */
+.excalidraw .App-menu__left .actions,
+.excalidraw .App-menu__left .buttonList,
+.excalidraw .App-menu__left [aria-label*="Duplicate" i],
+.excalidraw .App-menu__left [aria-label*="复制"],
+.excalidraw .App-menu__left [aria-label*="Delete" i],
+.excalidraw .App-menu__left [aria-label*="删除"],
+.excalidraw .App-menu__left [aria-label*="Link" i],
+.excalidraw .App-menu__left [aria-label*="链接"],
+.excalidraw .App-menu__left [data-testid="trash"],
+.excalidraw .App-menu__left [data-testid="duplicate-button"],
+.excalidraw .App-menu__left [data-testid="link-button"],
+.excalidraw .App-menu__left [data-testid="actions-group"],
+.excalidraw .App-menu__left fieldset:has(.actions),
+.excalidraw .App-menu__left fieldset:has([data-testid="trash"]),
+.excalidraw .App-menu__left fieldset:has([aria-label*="Duplicate" i]),
+.excalidraw .App-menu__left .properties-group:has(.actions),
+.excalidraw .App-menu__left .properties-group:has([data-testid="trash"]),
+.excalidraw .App-menu__left h3:has(+ .actions),
+.excalidraw .App-menu__left h3:has(+ .buttonList) {
+  display: none !important;
+}
+
+/* ==========================================================================
+   5. Excalidraw 全局主题色与顶部/侧边选中工具图标 -> 品牌森林松石绿
+   ========================================================================== */
+.excalidraw,
+.excalidraw.theme--light,
+.excalidraw.theme--dark,
+.excalidraw-container,
+:root {
+  --color-primary: #007a66 !important;
+  --color-primary-darker: #005c4d !important;
+  --color-primary-darkest: #004539 !important;
+  --color-primary-light: #e6f4f2 !important;
+  --color-primary-light-darker: #d1ebe7 !important;
+  --color-primary-light-darkest: #bde2dd !important;
+  --color-primary-container: #e6f4f2 !important;
+  --color-surface-primary-container: #e6f4f2 !important;
+  --color-on-primary-container: #007a66 !important;
+  --color-brand: #007a66 !important;
+  --color-brand-active: #e6f4f2 !important;
+  --color-brand-hover: rgba(0, 122, 102, 0.08) !important;
+  --button-selected-bg: #e6f4f2 !important;
+  --button-selected-border: #007a66 !important;
+  --button-selected-hover-bg: #d1ebe7 !important;
+  --button-hover-bg: rgba(0, 122, 102, 0.08) !important;
+}
+
+/* 顶部栏及所有工具箱图标 (单选/多选/按钮选中状态) 彻底替换掉原生薰衣草紫 */
+.excalidraw .ToolIcon .ToolIcon_type_radio:checked + .ToolIcon__icon,
+.excalidraw .ToolIcon .ToolIcon_type_checkbox:checked + .ToolIcon__icon,
+.excalidraw .ToolIcon_type_radio:checked + .ToolIcon__icon,
+.excalidraw .ToolIcon_type_checkbox:checked + .ToolIcon__icon,
+.excalidraw .ToolIcon_type_button.ToolIcon--selected,
+.excalidraw .ToolIcon_type_button.ToolIcon--selected:hover,
+.excalidraw .ToolIcon_type_button.ToolIcon--selected:active,
+.excalidraw .ToolIcon--selected,
+.excalidraw .ToolIcon.active .ToolIcon__icon,
+.excalidraw .ToolIcon__icon.active,
+.excalidraw [aria-checked="true"] > .ToolIcon__icon,
+.excalidraw [aria-checked="true"].ToolIcon__icon {
+  background: #e6f4f2 !important;
+  background-color: #e6f4f2 !important;
+  color: #007a66 !important;
+  --keybinding-color: #007a66 !important;
+  --icon-fill-color: #007a66 !important;
+}
+
+/* 选中图标内的 SVG 线条与填充色 */
+.excalidraw .ToolIcon .ToolIcon_type_radio:checked + .ToolIcon__icon svg,
+.excalidraw .ToolIcon .ToolIcon_type_checkbox:checked + .ToolIcon__icon svg,
+.excalidraw .ToolIcon_type_radio:checked + .ToolIcon__icon svg,
+.excalidraw .ToolIcon_type_checkbox:checked + .ToolIcon__icon svg,
+.excalidraw .ToolIcon_type_button.ToolIcon--selected svg,
+.excalidraw .ToolIcon--selected svg,
+.excalidraw .ToolIcon.active .ToolIcon__icon svg,
+.excalidraw .ToolIcon__icon.active svg {
+  color: #007a66 !important;
+}
+
+.excalidraw .ToolIcon.fillable .ToolIcon_type_radio:checked + .ToolIcon__icon svg,
+.excalidraw .ToolIcon.fillable .ToolIcon_type_checkbox:checked + .ToolIcon__icon svg {
+  fill: #007a66 !important;
+}
+
+/* 鼠标悬停未选中图标时的微透浅绿反馈 */
+.excalidraw .ToolIcon .ToolIcon__icon:hover:not(.active) {
+  background: rgba(0, 122, 102, 0.08) !important;
+}
+
+/* ==========================================================================
+   6. Canvas & Background (画布背景色) 及颜色选择器色块样式修复与强化
+   ========================================================================== */
+/* 色块容器与间距 */
+.excalidraw .color-picker__top-picks,
+.excalidraw .color-picker-control-container,
+.excalidraw .color-picker-container {
+  gap: 6px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 颜色选择器中的每个色块：独立边界、清晰浅色边框与精致微阴影 */
+.excalidraw .color-picker__button {
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+  border-radius: 6px !important;
+  border: 1px solid rgba(0, 0, 0, 0.16) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08) !important;
+  transition: transform 0.12s ease, box-shadow 0.12s ease !important;
+  margin: 0 !important;
+}
+
+.excalidraw.theme--dark .color-picker__button {
+  border: 1px solid rgba(255, 255, 255, 0.25) !important;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3) !important;
+}
+
+/* 悬停与放大反馈 */
+.excalidraw .color-picker__button:hover {
+  transform: scale(1.1) !important;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15) !important;
+  z-index: 2 !important;
+}
+
+/* 选中的颜色块：高亮双环选中框 */
+.excalidraw .color-picker__button.active,
+.excalidraw .color-picker__button.active-color,
+.excalidraw .color-picker__button[aria-checked="true"] {
+  box-shadow: 0 0 0 2px #ffffff, 0 0 0 3.5px #007a66 !important;
+  border-radius: 6px !important;
+  z-index: 3 !important;
+}
+
+.excalidraw.theme--dark .color-picker__button.active,
+.excalidraw.theme--dark .color-picker__button.active-color {
+  box-shadow: 0 0 0 2px #1f1e1b, 0 0 0 3.5px #007a66 !important;
+}
+
+/* 弹出色板内部色块矩阵网格间距与超高层级（防遮挡） */
+.excalidraw .color-picker {
+  border-radius: 10px !important;
+  border: 1px solid var(--color-edge) !important;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12) !important;
+  padding: 8px !important;
+  z-index: 9999 !important;
+}
+
+/* 调色板与弹出层 (Popover) 全局提权，确保不被 Stroke、标题或其它面板元素遮挡 */
+.excalidraw .popover,
+.excalidraw .color-picker-popover-container,
+.excalidraw .color-picker-container + .popover,
+.excalidraw .color-picker-control-container + .popover {
+  z-index: 9999 !important;
+}
+
+.excalidraw .App-menu__left,
+.excalidraw .App-menu__left .properties-group,
+.excalidraw .App-menu__left fieldset,
+.excalidraw .App-menu__left .panelColumn {
+  overflow: visible !important;
+}
+
+
+
+

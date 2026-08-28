@@ -1,0 +1,7 @@
+[req]
+req_extensions = v3_req
+[v3_req]
+subjectAltName = @alt_names
+[alt_names]
+DNS.1 = ivy.pet
+DNS.2 = *.ivy.pet

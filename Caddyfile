@@ -1,0 +1,18 @@
+{
+    # 禁止 Caddy 自动做 HTTP→HTTPS 跳转（避免抢占 80 端口）
+    auto_https off
+    admin off
+}
+
+# 局域网自定义域名，标准 HTTPS 443 端口（无需输端口）
+ivy.pet {
+    tls internal
+
+    reverse_proxy whiteboard-app:80
+}
+
+# Excalidraw 协作室 WebSocket
+ivy.pet:5002 {
+    tls internal
+    reverse_proxy excalidraw-room:5002
+}

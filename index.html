@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="description" content="iFOTO 开源有趣的益智互动游戏" />
+    <meta name="keywords" content="iFOTO，开源，你画我猜，益智互动，游戏，在线，实时游戏，多人游戏" />
+    <title>iFOTO 你画我猜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+      html, body, #root {
+        width: 100%;
+        height: 100%;
+        height: 100dvh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+      }
+      /* 适配安全区域，避免顶栏被 Safari 工具栏切断 */
+      .excalidraw .App-toolbar-content {
+        top: max(4px, env(safe-area-inset-top, 0px)) !important;
+      }
+    </style>
+  </head>
+
+
+  <body class="bg-paper text-ink selection:bg-tint selection:text-primary antialiased overflow-hidden">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
