@@ -8,11 +8,11 @@
 ivy.pet {
     tls internal
 
-    reverse_proxy whiteboard-app:80
+    reverse_proxy ifoto-app:80
 }
 
 # Excalidraw 协作室 WebSocket
 ivy.pet:5002 {
     tls internal
-    reverse_proxy excalidraw-room:5002
+    reverse_proxy ifoto-room:5002
 }

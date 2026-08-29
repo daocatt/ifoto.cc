@@ -174,7 +174,7 @@ server.listen(PORT, '0.0.0.0', async () => {
   }
 
   console.log(`=======================================================`)
-  console.log(`🎨 你画我猜 (Whiteboard Game V2) 服务已启动`)
+  console.log(`🎨 你画我猜 (iFOTO Game) 服务已启动`)
   console.log(`📡 运行模式: [${mode.toUpperCase()}] | 监听端口: ${PORT}`)
   console.log(`🚀 访问地址: http://localhost:${PORT}`)
   console.log(`=======================================================`)
