@@ -335,8 +335,11 @@ export function App() {
             // 验证登录状态
             try {
               const meRes = await api.getMe()
-              setCurrentUser(meRes.user)
-              setStoredUser(meRes.user)
+              // 兜底：若 getMe 未返回 uid，则沿用本地已存储的 uid，避免个人主页链接失效
+              const storedUser = getStoredUser()
+              const me = meRes.user.uid != null ? meRes.user : { ...meRes.user, uid: storedUser?.uid }
+              setCurrentUser(me)
+              setStoredUser(me)
             } catch (e) {
               setCurrentUser(null)
               setStoredUser(null)
