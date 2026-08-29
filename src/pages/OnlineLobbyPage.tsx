@@ -241,37 +241,55 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
         </div>
       </div>
 
-      {/* 我的专属房间卡片 */}
+      {/* 我的专属画室卡片 */}
       {myRoom && (
-        <div className="p-4 rounded-[10px] bg-card/95 backdrop-blur-md border border-primary/30 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 relative overflow-hidden">
-          <div className="flex items-center gap-3 z-10">
-            <div className="w-10 h-10 rounded-[8px] bg-tint flex items-center justify-center text-primary text-xl shrink-0 border border-primary/20">
-              {myRoom.type === 'english' ? '🔤' : '🎨'}
+        <div className="p-4 sm:p-4.5 rounded-[12px] bg-card/95 backdrop-blur-md border border-primary/25 shadow-[0_2px_8px_rgba(0,0,0,0.04)] flex flex-col md:flex-row items-start md:items-center justify-between gap-4 relative overflow-hidden group">
+          {/* 左侧装饰小光晕 */}
+          <div className="absolute -left-12 -top-12 w-28 h-28 rounded-full bg-primary/10 blur-xl pointer-events-none" />
+
+          <div className="flex items-center gap-3.5 z-10 min-w-0 flex-1">
+            <div className="w-11 h-11 rounded-[10px] bg-tint flex items-center justify-center text-primary text-2xl shrink-0 border border-primary/20 shadow-xs">
+              {(() => {
+                const emojiMatch = myRoom.name.match(/^(\p{Emoji_Presentation}|\p{Emoji}️)/u);
+                if (emojiMatch) return emojiMatch[0];
+                return myRoom.type === 'english' ? '🔤' : '🎨';
+              })()}
             </div>
-            <div className="flex flex-col">
-              <div className="flex items-center gap-2">
-                <span className="text-xs font-normal text-ink">{myRoom.name}</span>
-                <span className="text-[9px] font-normal px-1.5 py-0.2 rounded-md bg-warm text-ink-soft border border-edge/60">
+            <div className="flex flex-col min-w-0">
+              <div className="flex items-center gap-2 flex-wrap">
+                <span className="text-sm font-medium text-ink truncate">
+                  {myRoom.name.replace(/^(\p{Emoji_Presentation}|\p{Emoji}️)\s*/u, '')}
+                </span>
+                <span className="text-[10px] font-normal px-2 py-0.5 rounded-full bg-primary/10 text-primary border border-primary/20">
                   我的专属画室
                 </span>
                 {myRoom.hasPassword && (
-                  <span className="flex items-center gap-0.5 text-[9px] text-gold font-normal bg-gold/10 px-1.5 py-0.2 rounded-md border border-gold/20">
-                    <Lock className="w-2.5 h-2.5" />
-                    <span>密码</span>
+                  <span className="inline-flex items-center gap-1 text-[10px] text-gold font-normal bg-gold/10 px-2 py-0.5 rounded-full border border-gold/20">
+                    <Lock className="w-3 h-3" />
+                    <span>密码房</span>
+                  </span>
+                )}
+                {myRoom.isPublic === false && (
+                  <span className="text-[10px] text-ink-soft font-normal bg-warm px-2 py-0.5 rounded-full border border-edge/60">
+                    隐藏于大厅
                   </span>
                 )}
               </div>
-              <div className="flex items-center gap-2.5 text-xs text-ink-soft mt-0.5 font-normal">
-                <span>类型: {myRoom.type === 'english' ? '英语猜猜看' : '你画我猜'}</span>
-                <span>•</span>
-                <span className={myRoom.isOpen ? 'text-primary' : 'text-coral'}>
-                  {myRoom.isOpen ? '开放中' : '已手动关闭'}
+
+              <div className="flex items-center gap-2 text-xs text-ink-soft mt-1 font-normal flex-wrap">
+                <span className="flex items-center gap-1.5">
+                  <span className={`w-1.5 h-1.5 rounded-full ${myRoom.isOpen ? 'bg-primary animate-pulse' : 'bg-coral'}`} />
+                  <span className={myRoom.isOpen ? 'text-primary font-medium' : 'text-coral'}>
+                    {myRoom.isOpen ? '营业开放中' : '休息中 (已关闭)'}
+                  </span>
                 </span>
+                <span className="text-edge">•</span>
+                <span>{myRoom.type === 'english' ? '英语猜猜看' : '你画我猜'}</span>
                 {myRoom.openStartTime && myRoom.openEndTime && (
                   <>
-                    <span>•</span>
-                    <span className="flex items-center gap-1 font-mono text-[11px]">
-                      <Clock className="w-3 h-3" />
+                    <span className="text-edge">•</span>
+                    <span className="inline-flex items-center gap-1 font-mono text-[11px] text-ink-soft bg-warm/80 px-1.5 py-0.2 rounded border border-edge/40">
+                      <Clock className="w-3 h-3 text-primary" />
                       <span>{myRoom.openStartTime} ~ {myRoom.openEndTime}</span>
                     </span>
                   </>
@@ -280,25 +298,37 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
             </div>
           </div>
 
-          <div className="flex items-center gap-2 w-full sm:w-auto z-10">
+          <div className="flex items-center gap-2 w-full md:w-auto z-10 shrink-0">
             <Button
               variant="outline"
               size="sm"
               onClick={() => setShareModalRoom(myRoom)}
-              className="flex-1 sm:flex-none text-xs font-normal gap-1.5 rounded-md"
+              className="flex-1 md:flex-none text-xs font-normal gap-1.5 rounded-md"
+              title="获取分享链接与二维码"
             >
               <Share2 className="w-3.5 h-3.5 text-primary" />
-              <span>分享与二维码</span>
+              <span>分享</span>
+            </Button>
+
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => setIsEditingMyRoom(true)}
+              className="flex-1 md:flex-none text-xs font-normal gap-1.5 rounded-md"
+              title="配置房间规则、密码与开放时间"
+            >
+              <Settings2 className="w-3.5 h-3.5 text-ink-soft" />
+              <span>设置</span>
             </Button>
 
             <Button
               variant="primary"
               size="sm"
               onClick={() => handleEnterRoom(myRoom)}
-              className="flex-1 sm:flex-none text-xs font-normal gap-1.5 shadow-xs rounded-md"
+              className="flex-1 md:flex-none text-xs font-medium gap-1.5 shadow-xs rounded-md px-3.5"
             >
               <Play className="w-3.5 h-3.5 fill-current" />
-              <span>进入我的房间</span>
+              <span>进入画室</span>
             </Button>
           </div>
         </div>
