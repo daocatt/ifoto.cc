@@ -619,10 +619,10 @@ export function App() {
               />
             </Suspense>
 
-            {/* 左上角退出游戏按钮（图标化，与顶部工具栏同高对齐；移动端下移对齐工具栏） */}
+            {/* 左上角退出游戏按钮（图标化，小而轻，与顶部工具栏对齐，避免遮挡） */}
             <button
               onClick={handleLeaveGame}
-              className="absolute top-3 max-md:top-12 left-3 z-30 w-9 h-9 rounded-md bg-card/95 backdrop-blur-md border border-edge/80 hover:border-coral/60 hover:text-coral hover:bg-warm/70 text-ink flex items-center justify-center transition-all cursor-pointer select-none active:scale-95"
+              className="absolute top-2 left-2 z-30 w-8 h-8 rounded-md bg-card/80 backdrop-blur-md border border-edge/60 hover:border-coral/60 hover:text-coral hover:bg-warm/70 text-ink flex items-center justify-center transition-all cursor-pointer select-none active:scale-95"
               title="退出当前游戏，返回大厅"
             >
               <LogOut className="w-4 h-4" />

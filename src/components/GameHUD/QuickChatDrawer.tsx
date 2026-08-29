@@ -24,7 +24,7 @@ export const QuickChatDrawer: React.FC<QuickChatDrawerProps> = ({
     <div className="fixed bottom-4 right-4 z-40 flex flex-col items-end gap-1 select-none">
       {/* 展开的选择面板 */}
       {isOpen && (
-        <div className="bg-card/95 backdrop-blur-md p-2 rounded-[10px] border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex flex-col gap-1.5 w-72 max-w-[calc(100vw-2rem)] mb-1 animate-in fade-in slide-in-from-bottom-2 duration-150">
+        <div className="bg-card/95 backdrop-blur-md p-2 rounded-[10px] border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex flex-col gap-1.5 w-72 max-md:w-60 max-w-[calc(100vw-2rem)] mb-1 animate-in fade-in slide-in-from-bottom-2 duration-150">
           <div className="flex items-center justify-between px-1 pb-1 border-b border-divider/60">
             <span className="text-[11px] font-normal text-ink flex items-center gap-1">
               <span>💬 快捷互动弹幕</span>
@@ -48,12 +48,12 @@ export const QuickChatDrawer: React.FC<QuickChatDrawerProps> = ({
         </div>
       )}
 
-      {/* 底部触发按钮 */}
+      {/* 底部触发按钮（移动端更紧凑） */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="flex items-center gap-1.5 bg-card/95 hover:bg-card backdrop-blur-md px-3 py-1.5 rounded-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] text-ink transition-all cursor-pointer active:scale-95 text-xs font-normal"
+        className="flex items-center gap-1.5 bg-card/95 hover:bg-card backdrop-blur-md px-3 max-md:px-2 py-1.5 max-md:py-1 rounded-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] text-ink transition-all cursor-pointer active:scale-95 text-xs font-normal"
       >
-        <MessageSquarePlus className="w-3.5 h-3.5 text-primary shrink-0" />
+        <MessageSquarePlus className="w-3.5 h-3.5 max-md:w-3 max-md:h-3 text-primary shrink-0" />
         <span className="font-normal">{lastSentText ? `已发送: ${lastSentText.slice(0, 6)}...` : '快捷发言'}</span>
         {isOpen ? <ChevronDown className="w-3 h-3 text-ink-soft" /> : <ChevronUp className="w-3 h-3 text-ink-soft" />}
       </button>

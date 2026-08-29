@@ -46,12 +46,12 @@ export const MobileGameHUD: React.FC<MobileGameHUDProps> = ({
 
   return (
     <div className="absolute inset-0 z-30 pointer-events-none">
-      {/* 右上角：倒计时 + 头像堆叠 + 展开积分榜 */}
-      <div className="absolute top-3 right-3 flex flex-col items-end gap-1.5 pointer-events-auto max-w-[45vw]">
-        {/* 倒计时胶囊（与顶部工具栏同高） */}
-        <div className="bg-card/90 backdrop-blur-md border border-edge/70 rounded-lg px-3 py-1.5 shadow-xs select-none">
+      {/* 右上角：倒计时 + 头像堆叠 + 展开积分榜（下移到 Excalidraw 右侧图标之下） */}
+      <div className="absolute top-14 right-3 flex flex-col items-end gap-1.5 pointer-events-auto max-w-[45vw]">
+        {/* 倒计时胶囊（小巧、不加粗，不与顶部工具栏错位） */}
+        <div className="bg-card/85 backdrop-blur-md border border-edge/60 rounded-md px-2.5 py-1 shadow-xs select-none">
           <span
-            className={`font-mono text-base font-bold tabular-nums ${
+            className={`font-mono text-sm font-medium tabular-nums ${
               gameState.isTimerRunning ? 'text-primary' : 'text-ink-soft'
             }`}
           >
