@@ -20,7 +20,10 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({
   const [records, setRecords] = useState<any[]>([])
   const [loading, setLoading] = useState(true)
 
-  const isMe = !viewUserId || viewUserId === currentUser.id
+  // viewUserId 可以是用户的 uid（如 100001 / "100001"）或者数据库 uuid
+  const isMe = !viewUserId || 
+    String(viewUserId) === String(currentUser.id) || 
+    (currentUser.uid && String(viewUserId) === String(currentUser.uid))
 
   useEffect(() => {
     const loadProfile = async () => {
