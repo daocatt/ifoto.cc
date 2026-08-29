@@ -90,8 +90,12 @@ export const Navbar: React.FC<NavbarProps> = ({
                   <span>游戏大厅</span>
                 </button>
 
-                <button
-                  onClick={() => onNavigate('profile')}
+                <a
+                  href={`/u/${currentUser.uid}`}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    onNavigate('profile');
+                  }}
                   className={`px-3 py-1.5 rounded-xl text-xs font-bold transition-all flex items-center gap-1.5 cursor-pointer ${
                     currentRoute === 'profile'
                       ? 'bg-primary text-white shadow-xs'
@@ -100,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                   title="查看个人主页"
                 >
                   <span className="max-w-[80px] truncate">主页</span>
-                </button>
+                </a>
 
                 <button
                   onClick={() => onNavigate('settings')}
