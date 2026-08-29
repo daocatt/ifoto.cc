@@ -194,9 +194,6 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
                 {currentUser.role === 'admin' ? '超级管理员' : '玩家'}
               </span>
             </div>
-            <p className="text-xs text-ink-soft font-normal">
-              欢迎来到你画我猜大厅，随时进入公开房间或管理您的专属画室
-            </p>
             {summary && (
               <div className="flex items-center gap-4 mt-1.5">
                 <div className="flex items-center gap-1">
