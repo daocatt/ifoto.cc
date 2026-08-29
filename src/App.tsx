@@ -1,6 +1,7 @@
 import { lazy, Suspense, useState, useEffect, useRef, useCallback, useMemo } from 'react'
 import type { ExcalidrawImperativeAPI } from '@excalidraw/excalidraw/types'
 import { ScoreboardPanel } from './components/GameHUD/ScoreboardPanel'
+import { MobileGameHUD } from './components/GameHUD/MobileGameHUD'
 import { QuickChatDrawer } from './components/GameHUD/QuickChatDrawer'
 import { Navbar } from './components/Navigation/Navbar'
 import { Loader2, LogOut } from 'lucide-react'
@@ -14,6 +15,7 @@ import { HelpPage } from './pages/HelpPage'
 import { AdminPage } from './pages/AdminPage'
 import { useGameState } from './hooks/useGameState'
 import { useSEO } from './hooks/useSEO'
+import { useIsMobileLayout } from './hooks/useIsMobileLayout'
 import { api, ApiUser, getStoredUser, setStoredToken, setStoredUser, setLastPlayedRoom } from './services/api'
 import { RoomId } from './types/game'
 
@@ -210,13 +212,11 @@ export function App() {
     joinRoom,
     leaveRoom,
     drawWord,
-    toggleRevealWord,
     startTimer,
     pauseTimer,
     resetTimer,
     nextRound,
     addScore,
-    passDrawer,
     sendQuickChat,
     broadcastCanvasScene,
     broadcastClearCanvas
@@ -224,6 +224,20 @@ export function App() {
 
   // ── 判断当前画师 ──
   const isDrawer = gameUser?.id === gameState.currentDrawerId
+
+  // ── 移动端竖屏布局判定 ──
+  const isMobileLayout = useIsMobileLayout()
+
+  // 本回合是否已产生加分（用于「下一轮」结算提示）
+  const scoresAwardedThisRoundRef = useRef(false)
+  const handleAddScore = useCallback((id: string, delta: number, event: React.MouseEvent) => {
+    if (delta > 0) scoresAwardedThisRoundRef.current = true
+    addScore(id, delta, event)
+  }, [addScore])
+  const handleNextRound = useCallback(() => {
+    scoresAwardedThisRoundRef.current = false
+    nextRound()
+  }, [nextRound])
 
   // 跨端笔迹本地变更防抖广播
   const handleExcalidrawChange = (elements: readonly any[]) => {
@@ -605,34 +619,45 @@ export function App() {
               />
             </Suspense>
 
-            {/* 左上角退出游戏按钮 */}
+            {/* 左上角退出游戏按钮（图标化，与顶部工具栏同高对齐；移动端下移对齐工具栏） */}
             <button
               onClick={handleLeaveGame}
-              className="absolute top-3 left-3 z-30 h-7.5 px-2.5 rounded-md bg-card/95 backdrop-blur-md border border-edge/80 hover:border-coral/60 hover:text-coral hover:bg-warm/70 text-ink text-xs font-normal flex items-center gap-1.5 transition-all cursor-pointer select-none active:scale-95"
+              className="absolute top-3 max-md:top-12 left-3 z-30 w-9 h-9 rounded-md bg-card/95 backdrop-blur-md border border-edge/80 hover:border-coral/60 hover:text-coral hover:bg-warm/70 text-ink flex items-center justify-center transition-all cursor-pointer select-none active:scale-95"
               title="退出当前游戏，返回大厅"
             >
-              <LogOut className="w-3.5 h-3.5 text-ink-soft hover:text-coral" />
-              <span>退出游戏</span>
+              <LogOut className="w-4 h-4" />
             </button>
 
-            {/* 右上角悬浮毛玻璃积分与控制台 */}
-            <ScoreboardPanel
-              currentRoomId={roomId}
-              currentUser={gameUser}
-              players={players}
-              gameState={gameState}
-              activeChatBubbles={activeChatBubbles}
-              onLeaveRoom={handleLeaveGame}
-              onAddScore={addScore}
-              onPassDrawer={passDrawer}
-              onDrawWord={drawWord}
-              onToggleReveal={toggleRevealWord}
-              onStartTimer={startTimer}
-              onPauseTimer={pauseTimer}
-              onResetTimer={resetTimer}
-              onNextRound={nextRound}
-              onClearCanvas={handleClearCanvas}
-            />
+            {/* 右上方积分与控制台（PC/平板横屏用悬浮面板；移动端竖屏用专属 HUD） */}
+            {isMobileLayout ? (
+              <MobileGameHUD
+                currentUser={gameUser}
+                players={players}
+                gameState={gameState}
+                scoresAwarded={scoresAwardedThisRoundRef.current}
+                activeChatBubbles={activeChatBubbles}
+                onAddScore={handleAddScore}
+                onDrawWord={() => drawWord()}
+                onNextRound={handleNextRound}
+              />
+            ) : (
+              <ScoreboardPanel
+                currentRoomId={roomId}
+                currentUser={gameUser}
+                players={players}
+                gameState={gameState}
+                activeChatBubbles={activeChatBubbles}
+                scoresAwarded={scoresAwardedThisRoundRef.current}
+                onLeaveRoom={handleLeaveGame}
+                onAddScore={handleAddScore}
+                onDrawWord={() => drawWord()}
+                onStartTimer={startTimer}
+                onPauseTimer={pauseTimer}
+                onResetTimer={resetTimer}
+                onNextRound={handleNextRound}
+                onClearCanvas={handleClearCanvas}
+              />
+            )}
 
             {/* 底部快速发言抽屉 */}
             <QuickChatDrawer onSendChat={sendQuickChat} />

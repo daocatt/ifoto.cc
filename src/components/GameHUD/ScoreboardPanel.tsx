@@ -3,7 +3,7 @@ import { Trophy, ChevronDown, ChevronUp, Palette, Crown } from 'lucide-react'
 import { Player, GameState, RoomId } from '../../types/game'
 import { PlayerScoreCard } from './PlayerScoreCard'
 import { TimerControl } from './TimerControl'
-import { WordDrawerModal } from './WordDrawerModal'
+import { DrawControls } from './DrawControls'
 import { Button } from '../Common/Button'
 
 interface ScoreboardPanelProps {
@@ -11,16 +11,15 @@ interface ScoreboardPanelProps {
   currentUser?: Player | null
   players: Player[]
   gameState: GameState
+  scoresAwarded?: boolean
   activeChatBubbles?: Record<string, { text: string; timestamp: number }>
   onLeaveRoom?: () => void
   onAddScore: (id: string, delta: number, event: React.MouseEvent) => void
-  onPassDrawer: () => void
-  onDrawWord: (category?: string) => void
-  onToggleReveal: () => void
+  onDrawWord: () => void
   onStartTimer: () => void
   onPauseTimer: () => void
   onResetTimer: (time?: number) => void
-  onNextRound: (winnerId?: string) => void
+  onNextRound: () => void
   onClearCanvas: () => void
 }
 
@@ -29,12 +28,11 @@ export const ScoreboardPanel: React.FC<ScoreboardPanelProps> = ({
   currentUser,
   players,
   gameState,
+  scoresAwarded = false,
   activeChatBubbles = {},
   onLeaveRoom,
   onAddScore,
-  onPassDrawer,
   onDrawWord,
-  onToggleReveal,
   onStartTimer,
   onPauseTimer,
   onResetTimer,
@@ -51,7 +49,6 @@ export const ScoreboardPanel: React.FC<ScoreboardPanelProps> = ({
 
   const currentDrawerId = gameState.currentDrawerId || players[0]?.id
   const isCurrentUserDrawer = Boolean(currentUser && currentDrawerId && currentUser.id === currentDrawerId)
-  const currentDrawer = players.find(p => p.id === currentDrawerId) || players[0]
   const isMultiPlayer = players.length >= 4
 
   // 排序：出题画师始终置顶排在第 1 个位置，其余玩家按积分降序排列在其后
@@ -121,22 +118,23 @@ export const ScoreboardPanel: React.FC<ScoreboardPanelProps> = ({
         {/* 展开内容区 */}
         {!isCollapsed && (
           <div className="flex flex-col gap-1.5 animate-in fade-in slide-in-from-top-2 duration-150">
-            {/* 板块 2：题词出题区 (WordDrawerModal 内部采用浮岛样式) */}
-            <WordDrawerModal
-              currentWord={gameState.currentWord}
-              currentDrawer={currentDrawer}
-              currentUser={currentUser}
-              isRevealed={gameState.isWordRevealed}
-              roundNumber={gameState.roundNumber}
-              timeLeft={gameState.timeLeft}
-              onPassDrawer={onPassDrawer}
-              onDrawWord={onDrawWord}
-              onToggleReveal={onToggleReveal}
-              onNextRound={() => {
-                onNextRound()
-                onClearCanvas()
-              }}
-            />
+            {/* 板块 2：出题区（简化：抽题按钮 + 题目 + 随机换题 / 下一轮） */}
+            <div className="bg-card/95 backdrop-blur-md rounded-[10px] border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] p-2">
+              <DrawControls
+                currentWord={gameState.currentWord}
+                isDrawer={isCurrentUserDrawer}
+                timeLeft={gameState.timeLeft}
+                scoresAwarded={scoresAwarded}
+                onDrawWord={onDrawWord}
+                onNextRound={() => { onNextRound(); onClearCanvas() }}
+                variant="panel"
+              />
+              {!isCurrentUserDrawer && (
+                <div className="text-center text-[10px] text-ink-soft font-normal py-1">
+                  🎨 等待画师抽词开始...
+                </div>
+              )}
+            </div>
 
             {/* 板块 3：积分榜卡片 (Excalidraw 浮岛设计 + 内嵌 Table 网格分割线) */}
             <div className="bg-card/95 backdrop-blur-md rounded-[10px] border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex flex-col overflow-hidden">
