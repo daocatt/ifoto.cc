@@ -58,7 +58,8 @@ authRouter.post('/register', async (c) => {
     email: newUser.email,
     name: newUser.name,
     role: newUser.role,
-    avatarKey: newUser.avatarKey
+    avatarKey: newUser.avatarKey,
+    superAdmin: false
   })
 
   return c.json({
@@ -70,7 +71,8 @@ authRouter.post('/register', async (c) => {
       email: newUser.email,
       name: newUser.name,
       role: newUser.role,
-      avatarKey: newUser.avatarKey
+      avatarKey: newUser.avatarKey,
+      superAdmin: false
     }
   })
 })
@@ -110,7 +112,8 @@ authRouter.post('/login', async (c) => {
     email: user.email,
     name: user.name,
     role: user.role,
-    avatarKey: user.avatarKey
+    avatarKey: user.avatarKey,
+    superAdmin: user.superAdmin === true
   })
 
   return c.json({
@@ -122,7 +125,8 @@ authRouter.post('/login', async (c) => {
       email: user.email,
       name: user.name,
       role: user.role,
-      avatarKey: user.avatarKey
+      avatarKey: user.avatarKey,
+      superAdmin: user.superAdmin === true
     }
   })
 })
@@ -145,6 +149,7 @@ authRouter.get('/me', authMiddleware, async (c) => {
       name: user.name,
       role: user.role,
       avatarKey: user.avatarKey,
+      superAdmin: user.superAdmin === true,
       isStatsPublic: user.isStatsPublic,
       createdAt: user.createdAt
     }

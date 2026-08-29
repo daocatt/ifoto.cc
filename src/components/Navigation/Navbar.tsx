@@ -91,7 +91,7 @@ export const Navbar: React.FC<NavbarProps> = ({
                 </button>
 
                 <a
-                  href={`/u/${currentUser.uid}`}
+                  href={currentUser.uid ? `/u/${currentUser.uid}` : '/u'}
                   onClick={(e) => {
                     e.preventDefault();
                     onNavigate('profile');

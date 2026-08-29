@@ -66,6 +66,7 @@ adminRouter.get('/users', async (c) => {
     name: schema.users.name,
     role: schema.users.role,
     avatarKey: schema.users.avatarKey,
+    superAdmin: schema.users.superAdmin,
     enabled: schema.users.enabled,
     isStatsPublic: schema.users.isStatsPublic,
     createdAt: schema.users.createdAt
@@ -96,16 +97,26 @@ adminRouter.put('/users/:id', async (c) => {
 
   const { enabled, role, name, avatarKey, password } = await c.req.json()
 
-  // 1. 不能封禁自己，不能降级自己的管理权限
-  if (targetId === me.id) {
+  const isSelf = targetId === me.id
+
+  // 1. 自我保护：不能封禁/降级自己（所有管理员通用）
+  if (isSelf) {
     if (enabled === false) return c.json({ error: '不能封禁自己的账号' }, 400)
     if (role !== undefined && role !== 'admin') return c.json({ error: '不能降级自己的管理权限' }, 400)
   }
 
-  // 2. 管理员相互之间不能封禁和降级权限
-  if (target.role === 'admin' && targetId !== me.id) {
-    if (enabled === false) return c.json({ error: '管理员之间不能相互封禁' }, 403)
-    if (role !== undefined && role !== 'admin') return c.json({ error: '管理员之间不能相互降级权限' }, 403)
+  // 2. 非本人时按管理员层级限制
+  if (!isSelf) {
+    if (me.superAdmin !== true) {
+      // 普通管理员：不能管理其他管理员，也不能修改任何用户角色（仅超管可提升/撤销管理员）
+      if (target.role === 'admin') {
+        return c.json({ error: '无权管理其他管理员' }, 403)
+      }
+      if (role !== undefined && role !== target.role) {
+        return c.json({ error: '无权修改用户角色' }, 403)
+      }
+    }
+    // 超级管理员：可管理任意用户（含其他管理员）
   }
 
   const update = { updatedAt: new Date() }
@@ -147,8 +158,9 @@ adminRouter.delete('/users/:id', async (c) => {
   const [target] = await db.select().from(schema.users).where(eq(schema.users.id, targetId)).limit(1)
   if (!target) return c.json({ error: '用户不存在' }, 404)
 
-  if (target.role === 'admin') {
-    return c.json({ error: '不能直接删除其他管理员账号' }, 403)
+  // 超级管理员可删除任意用户（除自己）；普通管理员仅能删除普通用户
+  if (me.superAdmin !== true && target.role === 'admin') {
+    return c.json({ error: '无权删除其他管理员' }, 403)
   }
 
   forceCloseUserConnections(targetId)

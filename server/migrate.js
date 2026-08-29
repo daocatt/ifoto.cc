@@ -24,6 +24,9 @@ export async function runAutoMigrations() {
     // 1.2 用户表补充 enabled 字段（禁用后登录失效）
     await db.execute(`
       ALTER TABLE "users" ADD COLUMN IF NOT EXISTS "enabled" boolean DEFAULT true NOT NULL;
+      ALTER TABLE "users" ADD COLUMN IF NOT EXISTS "is_super" boolean DEFAULT false NOT NULL;
+      -- 迁移：既有管理员晋升为超级管理员
+      UPDATE "users" SET "is_super" = true WHERE "role" = 'admin' AND "is_super" = false;
     `)
 
     // 1.3 房间表补充 admin_disabled 字段（管理员禁用，无法进入/房主无法编辑）

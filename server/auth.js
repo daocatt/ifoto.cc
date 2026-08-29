@@ -73,6 +73,7 @@ export async function authMiddleware(c, next) {
         name: user.name,
         role: user.role,
         avatarKey: user.avatarKey,
+        superAdmin: user.superAdmin === true,
         enabled: user.enabled
       })
       return next()

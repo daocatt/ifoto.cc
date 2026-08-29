@@ -546,9 +546,9 @@ export function App() {
           <HelpPage onNavigate={handleNavigate} />
         )}
 
-        {/* 5.1 管理后台 */}
+        {/* 5.1 管理后台（门控保证 currentUser 为非空管理员） */}
         {effectiveRoute.name === 'admin' && (
-          <AdminPage currentUser={currentUser} />
+          <AdminPage currentUser={currentUser!} />
         )}
 
         {/* 6. 个人设置页面 */}

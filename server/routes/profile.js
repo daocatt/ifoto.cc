@@ -68,6 +68,7 @@ profileRouter.put('/me', authMiddleware, async (c) => {
       name: updated.name,
       role: updated.role,
       avatarKey: updated.avatarKey,
+      superAdmin: updated.superAdmin === true,
       isStatsPublic: updated.isStatsPublic
     }
   })

@@ -9,6 +9,7 @@ export interface ApiUser {
   email: string
   name: string
   role: 'admin' | 'user'
+  superAdmin?: boolean
   avatarKey: string
   isStatsPublic?: boolean
   createdAt?: string
@@ -53,6 +54,7 @@ export interface AdminUser {
   name: string
   role: 'admin' | 'user'
   avatarKey: string
+  superAdmin: boolean
   enabled: boolean
   isStatsPublic: boolean
   createdAt: string

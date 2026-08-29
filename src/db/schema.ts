@@ -21,6 +21,7 @@ export const users = pgTable('users', {
   passwordHash: text('password_hash').notNull(),
   avatarKey: varchar('avatar_key', { length: 50 }).notNull().default('voxel_01'), // 绑定的体素头像 key
   role: varchar('role', { length: 20 }).notNull().default('user'), // 'admin' | 'user'
+  superAdmin: boolean('is_super').notNull().default(false), // 唯一超级管理员（仅 init-admin 创建者）
   enabled: boolean('enabled').notNull().default(true), // 账号是否启用（禁用后登录失效且禁止登录）
   isStatsPublic: boolean('is_stats_public').notNull().default(true), // 个人战绩是否公开
   createdAt: timestamp('created_at', { withTimezone: true }).notNull().defaultNow(),

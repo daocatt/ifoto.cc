@@ -15,7 +15,7 @@ import {
   AlertCircle,
   Check
 } from 'lucide-react'
-import { api, AdminUser, AdminRoom, SystemSettings } from '../services/api'
+import { api, ApiUser, AdminUser, AdminRoom, SystemSettings } from '../services/api'
 import { Button } from '../components/Common/Button'
 import { VoxelAvatar } from '../components/Common/VoxelAvatar'
 
@@ -31,7 +31,7 @@ interface EditRoomState {
 }
 
 interface AdminPageProps {
-  currentUser: any
+  currentUser: ApiUser
 }
 
 export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
@@ -292,9 +292,9 @@ export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
                     </td>
                     <td className="px-3 py-2">
                       <div className="flex items-center justify-end gap-1.5">
-                        {u.id === currentUser?.id ? (
+                        {u.id === currentUser.id ? (
                           <span className="text-[11px] text-ink-soft italic px-2 py-1">当前账号</span>
-                        ) : u.role === 'admin' ? (
+                        ) : u.role === 'admin' && currentUser.superAdmin !== true ? (
                           <span className="text-[11px] text-ink-soft italic px-2 py-1">同级管理员</span>
                         ) : (
                           <>
@@ -302,10 +302,12 @@ export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
                               {u.enabled ? <UserX className="w-3.5 h-3.5" /> : <UserCheck className="w-3.5 h-3.5" />}
                               <span className="hidden sm:inline">{u.enabled ? '禁用' : '启用'}</span>
                             </Button>
-                            <Button variant="outline" size="sm" pill={false} className="rounded-md" title="设为管理员" onClick={() => toggleUserRole(u)}>
-                              <ShieldCheck className="w-3.5 h-3.5" />
-                              <span className="hidden sm:inline">设为管理</span>
-                            </Button>
+                            {currentUser.superAdmin === true && (
+                              <Button variant="outline" size="sm" pill={false} className="rounded-md" title={u.role === 'admin' ? '取消管理员' : '设为管理员'} onClick={() => toggleUserRole(u)}>
+                                <ShieldCheck className="w-3.5 h-3.5" />
+                                <span className="hidden sm:inline">{u.role === 'admin' ? '取消管理' : '设为管理'}</span>
+                              </Button>
+                            )}
                             <Button variant="danger" size="sm" pill={false} className="rounded-md" title="删除用户" onClick={() => deleteUser(u)}>
                               <Trash2 className="w-3.5 h-3.5" />
                             </Button>

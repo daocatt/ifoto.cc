@@ -66,6 +66,7 @@ statusRouter.post('/init-admin', async (c) => {
     passwordHash,
     avatarKey: avatarKey || 'voxel_01',
     role: 'admin',
+    superAdmin: true, // 首个创建者为唯一超级管理员
     isStatsPublic: true
   }).returning()
 
@@ -75,7 +76,8 @@ statusRouter.post('/init-admin', async (c) => {
     email: newUser.email,
     name: newUser.name,
     role: newUser.role,
-    avatarKey: newUser.avatarKey
+    avatarKey: newUser.avatarKey,
+    superAdmin: true
   })
 
   return c.json({
@@ -87,7 +89,8 @@ statusRouter.post('/init-admin', async (c) => {
       email: newUser.email,
       name: newUser.name,
       role: newUser.role,
-      avatarKey: newUser.avatarKey
+      avatarKey: newUser.avatarKey,
+      superAdmin: true
     }
   })
 })
