@@ -65,7 +65,7 @@ export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
     name: string
     avatarKey: string
     role: 'admin' | 'user'
-    password: ''
+    password: string
     enabled: boolean
   } | null>(null)
 
@@ -421,7 +421,7 @@ export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
                           {r.adminDisabled ? <Unlock className="w-3.5 h-3.5" /> : <Lock className="w-3.5 h-3.5" />}
                           <span className="hidden sm:inline">{r.adminDisabled ? '启用' : '禁用'}</span>
                         </Button>
-                        <Button variant="outline" size="sm" pill={false} className="rounded-md" title="编辑房间" onClick={() => setEditRoom({ room: r, name: r.name.replace(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)\s*/u, ''), type: r.type, isOpen: r.isOpen, isPublic: r.isPublic, password: '' })}>
+                        <Button variant="outline" size="sm" pill={false} className="rounded-md" title="编辑房间" onClick={() => setEditRoom({ room: r, name: r.name.replace(/^(\p{Emoji_Presentation}|\p{Emoji}\uFE0F)\s*/u, ''), type: r.type, isOpen: r.isOpen, isPublic: r.isPublic, password: string })}>
                           <Pencil className="w-3.5 h-3.5" />
                         </Button>
                         <Button variant="danger" size="sm" pill={false} className="rounded-md" title="删除房间" onClick={() => deleteRoom(r)}>
