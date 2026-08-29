@@ -229,15 +229,17 @@ export const OnlineLobbyPage: React.FC<OnlineLobbyPageProps> = ({
               <span>上次玩过的房间</span>
             </Button>
           )}
-          <Button
-            variant="primary"
-            size="sm"
-            onClick={() => setIsEditingMyRoom(true)}
-            className="flex-1 sm:flex-none text-xs font-normal gap-1.5 shadow-xs rounded-md"
-          >
-            <Settings2 className="w-3.5 h-3.5" />
-            <span>{myRoom ? '管理我的专属房间' : '创建我的房间'}</span>
-          </Button>
+          {!myRoom && (
+            <Button
+              variant="primary"
+              size="sm"
+              onClick={() => setIsEditingMyRoom(true)}
+              className="flex-1 sm:flex-none text-xs font-normal gap-1.5 shadow-xs rounded-md"
+            >
+              <Settings2 className="w-3.5 h-3.5" />
+              <span>创建我的房间</span>
+            </Button>
+          )}
         </div>
       </div>
 
