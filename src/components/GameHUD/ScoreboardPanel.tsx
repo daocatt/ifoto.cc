@@ -41,7 +41,13 @@ export const ScoreboardPanel: React.FC<ScoreboardPanelProps> = ({
   onNextRound,
   onClearCanvas
 }) => {
-  const [isCollapsed, setIsCollapsed] = useState(false)
+  // 移动端小屏（<768px）默认收起详细面板，避免遮挡顶部居中的 Excalidraw 画板工具栏
+  const [isCollapsed, setIsCollapsed] = useState(() => {
+    if (typeof window !== 'undefined') {
+      return window.innerWidth < 768
+    }
+    return false
+  })
 
   const currentDrawerId = gameState.currentDrawerId || players[0]?.id
   const isCurrentUserDrawer = Boolean(currentUser && currentDrawerId && currentUser.id === currentDrawerId)
@@ -61,7 +67,7 @@ export const ScoreboardPanel: React.FC<ScoreboardPanelProps> = ({
       {/* 
         整体上移至 top-3 right-3，宽度适中 w-64，布局整洁不遮挡
       */}
-      <div className="absolute top-3 right-3 z-30 w-64 max-w-[calc(100vw-1.5rem)] flex flex-col gap-1.5 transition-all duration-200">
+      <div className="absolute top-3 right-3 z-30 w-64 max-w-[calc(100vw-5.5rem)] sm:max-w-xs flex flex-col gap-1.5 transition-all duration-200 pointer-events-auto">
         {/* 板块 1：顶部主控制卡片 (Excalidraw 浮岛设计) */}
         <div className="bg-card/95 backdrop-blur-md p-2 rounded-[10px] border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex flex-col gap-1.5 select-none">
           {/* 第一行：[🏆图标] [🧩 puzzle 房间] ······ [👑榜首] [∧/∨ 折叠] */}
