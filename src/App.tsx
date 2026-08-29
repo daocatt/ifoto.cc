@@ -101,23 +101,39 @@ export function App() {
     }
   }, [])
 
-  // ── 供 Navbar/各页面 onNavigate 使用：字符串路由名 → 跳转 ──
-  const handleNavigate = useCallback((name: string) => {
-    switch (name) {
-      case 'home': return go({ name: 'home' })
+  // ── 供 Navbar/各页面 onNavigate 使用：字符串路由名/路径 → 跳转 ──
+  const handleNavigate = useCallback((target: string) => {
+    // 支持直接传入 /u/100001 或 /room/draw 等标准路径
+    if (target.startsWith('/')) {
+      const segs = target.split('/').filter(Boolean);
+      if (segs.length === 0) return go({ name: 'home' });
+      const [a, b] = segs;
+      if (a === 'u' && b) return go({ name: 'profile', uid: b });
+      if (a === 'room' && b) return go({ name: 'game', roomId: b });
+      if (a === 'lobby') return go({ name: 'lobby' });
+      if (a === 'settings') return go({ name: 'settings' });
+      if (a === 'login') return go({ name: 'login' });
+      if (a === 'register') return go({ name: 'register' });
+      if (a === 'help') return go({ name: 'help' });
+      if (a === 'admin') return go({ name: 'admin' });
+      return go({ name: 'home' });
+    }
+
+    switch (target) {
+      case 'home': return go({ name: 'home' });
       case 'lobby':
-      case 'local-lobby': return go({ name: 'lobby' })
-      case 'settings': return go({ name: 'settings' })
-      case 'login': return go({ name: 'login' })
-      case 'register': return go({ name: 'register' })
-      case 'init-admin': return go({ name: 'init-admin' })
-      case 'help': return go({ name: 'help' })
-      case 'admin': return go({ name: 'admin' })
+      case 'local-lobby': return go({ name: 'lobby' });
+      case 'settings': return go({ name: 'settings' });
+      case 'login': return go({ name: 'login' });
+      case 'register': return go({ name: 'register' });
+      case 'init-admin': return go({ name: 'init-admin' });
+      case 'help': return go({ name: 'help' });
+      case 'admin': return go({ name: 'admin' });
       case 'profile':
         return currentUser?.uid
           ? go({ name: 'profile', uid: String(currentUser.uid) })
-          : go({ name: 'lobby' })
-      default: return go({ name: 'home' })
+          : go({ name: 'lobby' });
+      default: return go({ name: 'home' });
     }
   }, [go, currentUser?.uid])
 
