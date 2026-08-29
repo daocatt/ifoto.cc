@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { ArrowLeft, Lock, Check, AlertCircle, Globe } from 'lucide-react'
+import { ArrowLeft, Lock, Check, AlertCircle, Globe, Pencil } from 'lucide-react'
 import { api, ApiUser, setStoredUser } from '../services/api'
 import { VOXEL_AVATAR_LIST } from '../constants/voxelAvatars'
 import { VoxelAvatar } from '../components/Common/VoxelAvatar'
@@ -18,6 +18,7 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
 }) => {
   const [name, setName] = useState(currentUser.name)
   const [avatarKey, setAvatarKey] = useState(currentUser.avatarKey || 'voxel_01')
+  const [avatarModalOpen, setAvatarModalOpen] = useState(false)
   const [isStatsPublic, setIsStatsPublic] = useState(currentUser.isStatsPublic !== false)
 
   // 密码表单
@@ -109,29 +110,23 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
           {/* 1. 更换体素头像 */}
           <div className="flex flex-col gap-1.5">
             <div className="flex items-center justify-between">
-              <label className="font-normal text-ink">1. 选择头像</label>
+              <label className="font-normal text-ink">1. 头像</label>
             </div>
 
-            <div className="grid grid-cols-4 sm:grid-cols-6 gap-2 max-h-48 overflow-y-auto p-2 bg-paper/70 rounded-[8px] border border-edge/60">
-              {VOXEL_AVATAR_LIST.map((avatar) => {
-                const isSelected = avatarKey === avatar.id
-                return (
-                  <button
-                    key={avatar.id}
-                    type="button"
-                    onClick={() => setAvatarKey(avatar.id)}
-                    className={`flex flex-col items-center gap-1 p-1.5 rounded-md border transition-all cursor-pointer ${
-                      isSelected
-                        ? 'bg-tint/80 border-primary ring-1 ring-primary/30 scale-105 shadow-xs'
-                        : 'bg-card border-edge/60 hover:border-primary/40'
-                    }`}
-                  >
-                    <VoxelAvatar avatarKey={avatar.id} size={32} />
-                    <span className="text-[9px] font-normal text-ink-soft truncate max-w-[50px]">{avatar.name}</span>
-                  </button>
-                )
-              })}
-            </div>
+            <button
+              type="button"
+              onClick={() => setAvatarModalOpen(true)}
+              className="flex items-center gap-3 p-3 rounded-[10px] border border-edge/60 bg-paper/70 hover:border-primary/40 hover:bg-tint/30 transition-colors cursor-pointer text-left w-fit min-w-[200px]"
+            >
+              <VoxelAvatar avatarKey={avatarKey} size={56} className="border-2 border-tint shadow-xs" />
+              <div className="flex flex-col gap-0.5">
+                <span className="text-xs font-normal text-ink flex items-center gap-1.5">
+                  <Pencil className="w-3.5 h-3.5 text-primary" />
+                  点击更换头像
+                </span>
+                <span className="text-[10px] text-ink-soft font-normal">点击打开头像选择</span>
+              </div>
+            </button>
           </div>
 
           {/* 2. 玩家唯一昵称 */}
@@ -213,6 +208,48 @@ export const SettingsPage: React.FC<SettingsPageProps> = ({
           </Button>
         </form>
       </div>
+
+      {/* 头像选择弹窗 */}
+      {avatarModalOpen && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/40 backdrop-blur-sm animate-in fade-in"
+          onClick={() => setAvatarModalOpen(false)}
+        >
+          <div
+            className="bg-card w-full max-w-md rounded-[10px] border border-edge shadow-[0_4px_16px_rgba(0,0,0,0.12)] p-5 flex flex-col gap-3.5 animate-in zoom-in-95 max-h-[85vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-edge/60 pb-2.5">
+              <h3 className="text-xs font-bold text-ink flex items-center gap-2">
+                <Pencil className="w-4 h-4 text-primary" /> 选择头像
+              </h3>
+              <button onClick={() => setAvatarModalOpen(false)} className="text-xs text-ink-soft hover:text-ink font-normal cursor-pointer">
+                关闭
+              </button>
+            </div>
+            <div className="grid grid-cols-4 sm:grid-cols-5 gap-2 overflow-y-auto max-h-[55vh]">
+              {VOXEL_AVATAR_LIST.map((avatar) => {
+                const isSelected = avatarKey === avatar.id
+                return (
+                  <button
+                    key={avatar.id}
+                    type="button"
+                    onClick={() => { setAvatarKey(avatar.id); setAvatarModalOpen(false) }}
+                    className={`flex flex-col items-center gap-1 p-2 rounded-md border transition-all cursor-pointer ${
+                      isSelected
+                        ? 'bg-tint/80 border-primary ring-1 ring-primary/30 scale-105 shadow-xs'
+                        : 'bg-card border-edge/60 hover:border-primary/40'
+                    }`}
+                  >
+                    <VoxelAvatar avatarKey={avatar.id} size={44} />
+                    <span className="text-[9px] font-normal text-ink-soft truncate max-w-[60px]">{avatar.name}</span>
+                  </button>
+                )
+              })}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   )
 }

@@ -130,10 +130,12 @@ export function App() {
       case 'help': return go({ name: 'help' });
       case 'admin': return go({ name: 'admin' });
       case 'profile': {
-        const uid = currentUser?.uid || getStoredUser()?.uid;
-        return uid
-          ? go({ name: 'profile', uid: String(uid) })
-          : go({ name: 'lobby' });
+        const uid = currentUser?.uid || getStoredUser()?.uid
+        // uid 缺失时用 uuid 兜底，确保始终能进入自己的个人主页
+        const profileKey = uid ? String(uid) : currentUser?.id
+        return profileKey
+          ? go({ name: 'profile', uid: profileKey })
+          : go({ name: 'lobby' })
       }
       default: return go({ name: 'home' });
     }
