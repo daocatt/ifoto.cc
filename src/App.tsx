@@ -69,7 +69,7 @@ function urlFor(r: Route): string {
     case 'init-admin': return '/init-admin'
     case 'help': return '/help'
     case 'admin': return '/admin'
-    case 'profile': return `/u/${r.uid || ''}`
+    case 'profile': return r.uid ? `/u/${r.uid}` : '/u'
     default: return '/'
   }
 }
@@ -129,10 +129,12 @@ export function App() {
       case 'init-admin': return go({ name: 'init-admin' });
       case 'help': return go({ name: 'help' });
       case 'admin': return go({ name: 'admin' });
-      case 'profile':
-        return currentUser?.uid
-          ? go({ name: 'profile', uid: String(currentUser.uid) })
+      case 'profile': {
+        const uid = currentUser?.uid || getStoredUser()?.uid;
+        return uid
+          ? go({ name: 'profile', uid: String(uid) })
           : go({ name: 'lobby' });
+      }
       default: return go({ name: 'home' });
     }
   }, [go, currentUser?.uid])
