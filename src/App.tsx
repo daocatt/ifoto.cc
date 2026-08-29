@@ -548,7 +548,7 @@ export function App() {
 
         {/* 5.1 管理后台 */}
         {effectiveRoute.name === 'admin' && (
-          <AdminPage />
+          <AdminPage currentUser={currentUser} />
         )}
 
         {/* 6. 个人设置页面 */}
