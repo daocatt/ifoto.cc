@@ -288,16 +288,25 @@ export const AdminPage: React.FC = () => {
                     </td>
                     <td className="px-3 py-2">
                       <div className="flex items-center justify-end gap-1.5">
-                        <Button variant="outline" size="sm" pill={false} className="rounded-md" title={u.enabled ? '禁用' : '启用'} onClick={() => toggleUserEnabled(u)}>
-                          {u.enabled ? <UserX className="w-3.5 h-3.5" /> : <UserCheck className="w-3.5 h-3.5" />}
-                          <span className="hidden sm:inline">{u.enabled ? '禁用' : '启用'}</span>
-                        </Button>
-                        <Button variant="outline" size="sm" pill={false} className="rounded-md" title={u.role === 'admin' ? '取消管理员' : '设为管理员'} onClick={() => toggleUserRole(u)}>
-                          <ShieldCheck className="w-3.5 h-3.5" />
-                        </Button>
-                        <Button variant="danger" size="sm" pill={false} className="rounded-md" title="删除用户" onClick={() => deleteUser(u)}>
-                          <Trash2 className="w-3.5 h-3.5" />
-                        </Button>
+                        {u.id === currentUser.id ? (
+                          <span className="text-[11px] text-ink-soft italic px-2 py-1">当前登录账号</span>
+                        ) : u.role === 'admin' ? (
+                          <span className="text-[11px] text-ink-soft italic px-2 py-1">同级管理员</span>
+                        ) : (
+                          <>
+                            <Button variant="outline" size="sm" pill={false} className="rounded-md" title={u.enabled ? '禁用' : '启用'} onClick={() => toggleUserEnabled(u)}>
+                              {u.enabled ? <UserX className="w-3.5 h-3.5" /> : <UserCheck className="w-3.5 h-3.5" />}
+                              <span className="hidden sm:inline">{u.enabled ? '禁用' : '启用'}</span>
+                            </Button>
+                            <Button variant="outline" size="sm" pill={false} className="rounded-md" title={u.role === 'admin' ? '取消管理员' : '设为管理员'} onClick={() => toggleUserRole(u)}>
+                              <ShieldCheck className="w-3.5 h-3.5" />
+                              <span className="hidden sm:inline">{u.role === 'admin' ? '取消管理' : '设为管理'}</span>
+                            </Button>
+                            <Button variant="danger" size="sm" pill={false} className="rounded-md" title="删除用户" onClick={() => deleteUser(u)}>
+                              <Trash2 className="w-3.5 h-3.5" />
+                            </Button>
+                          </>
+                        )}
                       </div>
                     </td>
                   </tr>

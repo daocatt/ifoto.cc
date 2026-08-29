@@ -91,13 +91,22 @@ adminRouter.put('/users/:id', async (c) => {
   const me = c.get('user')
   const targetId = c.req.param('id')
 
-  if (targetId === me.id) {
-    return c.json({ error: '不能修改自己的账号' }, 400)
-  }
-
-  const { enabled, role, name, avatarKey, password } = await c.req.json()
   const [target] = await db.select().from(schema.users).where(eq(schema.users.id, targetId)).limit(1)
   if (!target) return c.json({ error: '用户不存在' }, 404)
+
+  const { enabled, role, name, avatarKey, password } = await c.req.json()
+
+  // 1. 不能封禁自己，不能降级自己的管理权限
+  if (targetId === me.id) {
+    if (enabled === false) return c.json({ error: '不能封禁自己的账号' }, 400)
+    if (role !== undefined && role !== 'admin') return c.json({ error: '不能降级自己的管理权限' }, 400)
+  }
+
+  // 2. 管理员相互之间不能封禁和降级权限
+  if (target.role === 'admin' && targetId !== me.id) {
+    if (enabled === false) return c.json({ error: '管理员之间不能相互封禁' }, 403)
+    if (role !== undefined && role !== 'admin') return c.json({ error: '管理员之间不能相互降级权限' }, 403)
+  }
 
   const update = { updatedAt: new Date() }
   if (enabled !== undefined) update.enabled = Boolean(enabled)
@@ -137,6 +146,10 @@ adminRouter.delete('/users/:id', async (c) => {
 
   const [target] = await db.select().from(schema.users).where(eq(schema.users.id, targetId)).limit(1)
   if (!target) return c.json({ error: '用户不存在' }, 404)
+
+  if (target.role === 'admin') {
+    return c.json({ error: '不能直接删除其他管理员账号' }, 403)
+  }
 
   forceCloseUserConnections(targetId)
   // 清理其在线的专属房间
