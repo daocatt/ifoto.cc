@@ -145,6 +145,7 @@ authRouter.get('/me', authMiddleware, async (c) => {
   return c.json({
     user: {
       id: user.id,
+      uid: user.uid,
       email: user.email,
       name: user.name,
       role: user.role,
