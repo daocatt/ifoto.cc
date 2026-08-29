@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react'
-import { Trophy, Calendar, Sparkles, Lock, Globe, ArrowLeft, Award, Layers } from 'lucide-react'
+import { Trophy, Calendar, Sparkles, Lock, Globe, ArrowLeft, Award, Layers, UserX } from 'lucide-react'
 import { api, ApiUser } from '../services/api'
 import { VoxelAvatar } from '../components/Common/VoxelAvatar'
 import { Button } from '../components/Common/Button'
 
 interface ProfilePageProps {
-  currentUser: ApiUser
+  currentUser: ApiUser | null
   viewUserId?: string | null // 可以是 uid 或 uuid
   onNavigate: (route: string) => void
 }
@@ -21,9 +21,11 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({
   const [loading, setLoading] = useState(true)
 
   // viewUserId 可以是用户的 uid（如 100001 / "100001"）或者数据库 uuid
-  const isMe = !viewUserId || 
-    String(viewUserId) === String(currentUser.id) || 
+  // 未登录（currentUser 为 null）时只能查看他人主页
+  const isMe = !!viewUserId && !!currentUser && (
+    String(viewUserId) === String(currentUser.id) ||
     (currentUser.uid && String(viewUserId) === String(currentUser.uid))
+  )
 
   useEffect(() => {
     const loadProfile = async () => {
@@ -64,6 +66,28 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({
   }
 
   const user = profileUser || currentUser
+
+  // 他人且未公开成绩时，隐藏成绩与战绩明细
+  const statsPrivate = !isMe && profileUser?.isStatsPublic === false
+
+  // 未找到目标玩家（未登录且加载失败等）
+  if (!user) {
+    return (
+      <div className="min-h-[calc(100vh-64px)] p-4 md:p-8 max-w-4xl mx-auto flex flex-col gap-5">
+        <button
+          onClick={() => onNavigate('lobby')}
+          className="inline-flex items-center gap-1.5 text-xs text-ink-soft hover:text-ink font-normal bg-warm hover:bg-edge/80 px-2.5 py-1 rounded-md border border-edge/60 transition-colors cursor-pointer w-fit"
+        >
+          <ArrowLeft className="w-3.5 h-3.5" />
+          <span>返回大厅</span>
+        </button>
+        <div className="py-20 flex flex-col items-center justify-center text-center gap-2 text-ink-soft font-normal">
+          <UserX className="w-8 h-8 text-edge" />
+          <span className="text-xs">未找到该玩家</span>
+        </div>
+      </div>
+    )
+  }
 
   return (
     <div className="min-h-[calc(100vh-64px)] p-4 md:p-8 max-w-4xl mx-auto flex flex-col gap-5 animate-in fade-in duration-200">
@@ -133,28 +157,39 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({
         )}
       </div>
 
-      {/* 数据概览卡片 */}
-      <div className="grid grid-cols-2 gap-3.5">
-        <div className="p-4 rounded-[10px] bg-card/95 backdrop-blur-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex items-center gap-3.5">
-          <div className="w-10 h-10 rounded-[8px] bg-gold/10 flex items-center justify-center text-gold border border-gold/20 shrink-0">
-            <Trophy className="w-5 h-5" />
+      {/* 数据概览卡片（他人未公开成绩时隐藏） */}
+      {statsPrivate ? (
+        <div className="p-5 rounded-[10px] bg-card/95 backdrop-blur-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex items-center gap-3.5">
+          <div className="w-10 h-10 rounded-[8px] bg-ink/5 flex items-center justify-center text-ink-soft border border-edge/60 shrink-0">
+            <Lock className="w-4 h-4" />
           </div>
           <div className="flex flex-col">
-            <span className="text-xs text-ink-soft font-normal">历史总累计积分</span>
-            <span className="text-lg font-medium text-ink font-mono">{stats.totalScore} 分</span>
+            <span className="text-xs text-ink-soft font-normal">该玩家未公开战绩数据</span>
           </div>
         </div>
+      ) : (
+        <div className="grid grid-cols-2 gap-3.5">
+          <div className="p-4 rounded-[10px] bg-card/95 backdrop-blur-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-[8px] bg-gold/10 flex items-center justify-center text-gold border border-gold/20 shrink-0">
+              <Trophy className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xs text-ink-soft font-normal">历史总累计积分</span>
+              <span className="text-lg font-medium text-ink font-mono">{stats.totalScore} 分</span>
+            </div>
+          </div>
 
-        <div className="p-4 rounded-[10px] bg-card/95 backdrop-blur-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex items-center gap-3.5">
-          <div className="w-10 h-10 rounded-[8px] bg-primary/10 flex items-center justify-center text-primary border border-primary/20 shrink-0">
-            <Layers className="w-5 h-5" />
-          </div>
-          <div className="flex flex-col">
-            <span className="text-xs text-ink-soft font-normal">参与比赛总局数</span>
-            <span className="text-lg font-medium text-ink font-mono">{stats.totalGames} 局</span>
+          <div className="p-4 rounded-[10px] bg-card/95 backdrop-blur-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex items-center gap-3.5">
+            <div className="w-10 h-10 rounded-[8px] bg-primary/10 flex items-center justify-center text-primary border border-primary/20 shrink-0">
+              <Layers className="w-5 h-5" />
+            </div>
+            <div className="flex flex-col">
+              <span className="text-xs text-ink-soft font-normal">参与比赛总局数</span>
+              <span className="text-lg font-medium text-ink font-mono">{stats.totalGames} 局</span>
+            </div>
           </div>
         </div>
-      </div>
+      )}
 
       {/* 历史对局流水记录表 */}
       <div className="p-5 rounded-[10px] bg-card/95 backdrop-blur-md border border-edge/80 shadow-[0_1px_4px_rgba(0,0,0,0.08)] flex flex-col gap-3.5">
@@ -164,11 +199,16 @@ export const ProfilePage: React.FC<ProfilePageProps> = ({
             <h3 className="text-xs font-normal text-ink">比赛战绩记录明细</h3>
           </div>
           <span className="text-[10px] text-ink-soft font-mono font-normal">
-            {records.length > 0 ? `最近 ${records.length} 场记录` : '暂无对局记录'}
+            {statsPrivate ? '未公开' : (records.length > 0 ? `最近 ${records.length} 场记录` : '暂无对局记录')}
           </span>
         </div>
 
-        {records.length === 0 ? (
+        {statsPrivate ? (
+          <div className="py-10 flex flex-col items-center justify-center text-center gap-2 text-ink-soft font-normal">
+            <Lock className="w-7 h-7 text-edge" />
+            <span className="text-xs">该玩家未公开战绩记录</span>
+          </div>
+        ) : records.length === 0 ? (
           <div className="py-10 flex flex-col items-center justify-center text-center gap-2 text-ink-soft font-normal">
             <Sparkles className="w-7 h-7 text-edge" />
             <span className="text-xs">还没有产生比赛积分记录，快去大厅开一局吧！</span>

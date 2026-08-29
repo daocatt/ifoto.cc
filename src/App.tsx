@@ -270,11 +270,14 @@ export function App() {
       case 'lobby':
         if (!isLocal && !currentUser) return { name: 'login' }
         return null
-      // 设置 / 个人主页：需账号（本地模式无账号 → 首页；线上未登录 → 登录）
+      // 设置：需账号（本地模式无账号 → 首页；线上未登录 → 登录）
       case 'settings':
-      case 'profile':
         if (isLocal) return { name: 'home' }
         if (!currentUser) return { name: 'login' }
+        return null
+      // 个人主页：公开可访问，无需登录（本地模式无账号数据 → 首页）
+      case 'profile':
+        if (isLocal) return { name: 'home' }
         return null
       // 已登录访问登录/注册页 → 大厅
       case 'login':
@@ -554,8 +557,8 @@ export function App() {
           />
         )}
 
-        {/* 4. 个人主页 */}
-        {effectiveRoute.name === 'profile' && currentUser && (
+        {/* 4. 个人主页（公开可访问，未登录也能查看） */}
+        {effectiveRoute.name === 'profile' && (
           <ProfilePage
             currentUser={currentUser}
             viewUserId={effectiveRoute.uid}
