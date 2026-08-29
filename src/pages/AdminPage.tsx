@@ -18,6 +18,7 @@ import {
 import { api, ApiUser, AdminUser, AdminRoom, SystemSettings } from '../services/api'
 import { Button } from '../components/Common/Button'
 import { VoxelAvatar } from '../components/Common/VoxelAvatar'
+import { VOXEL_AVATAR_LIST } from '../constants/voxelAvatars'
 
 type Tab = 'settings' | 'users' | 'rooms'
 
@@ -58,6 +59,16 @@ export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
   const [roomsLoading, setRoomsLoading] = useState(false)
   const [editRoom, setEditRoom] = useState<EditRoomState | null>(null)
 
+  // 编辑用户资料弹窗
+  const [editUser, setEditUser] = useState<{
+    user: AdminUser
+    name: string
+    avatarKey: string
+    role: 'admin' | 'user'
+    password: ''
+    enabled: boolean
+  } | null>(null)
+
   const flash = (msg: string | null) => { setNotice(msg); setError(null) }
   const flashErr = (msg: string) => { setError(msg); setNotice(null) }
 
@@ -92,6 +103,27 @@ export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
       setSettings(r.settings)
       flash('设置已保存')
     } catch (e: any) { flashErr(e.message) } finally { setSaving(false) }
+  }
+
+  const saveUserEdit = async () => {
+    if (!editUser) return
+    try {
+      const updateData: any = {
+        name: editUser.name.trim(),
+        avatarKey: editUser.avatarKey,
+        role: editUser.role,
+        enabled: editUser.enabled
+      }
+      if (editUser.password && editUser.password.trim()) {
+        updateData.password = editUser.password.trim()
+      }
+      await api.updateAdminUser(editUser.user.id, updateData)
+      flash('用户资料已更新')
+      setEditUser(null)
+      loadUsers()
+    } catch (e: any) {
+      flashErr(e.message)
+    }
   }
 
   const toggleUserEnabled = async (u: AdminUser) => {
@@ -405,6 +437,120 @@ export const AdminPage: React.FC<AdminPageProps> = ({ currentUser }) => {
           {roomTotal > roomPageSize && (
             <Pagination page={roomPage} totalPages={Math.ceil(roomTotal / roomPageSize)} onChange={setRoomPage} />
           )}
+        </div>
+      )}
+
+      {/* 编辑用户资料弹窗 */}
+      {editUser && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-ink/40 backdrop-blur-sm animate-in fade-in">
+          <div className="bg-card w-full max-w-md rounded-[10px] border border-edge shadow-[0_4px_16px_rgba(0,0,0,0.12)] p-5 flex flex-col gap-3.5 animate-in zoom-in-95 max-h-[90vh] overflow-y-auto">
+            <div className="flex items-center justify-between border-b border-edge/60 pb-2.5">
+              <h3 className="text-xs font-bold text-ink flex items-center gap-2">
+                <Pencil className="w-4 h-4 text-primary" /> 编辑用户资料 · {editUser.user.name}
+              </h3>
+              <button onClick={() => setEditUser(null)} className="text-xs text-ink-soft hover:text-ink font-normal cursor-pointer">关闭</button>
+            </div>
+
+            {/* 1. 头像选择 */}
+            <div className="flex flex-col gap-1.5">
+              <label className="text-xs font-normal text-ink flex items-center justify-between">
+                <span>更换头像</span>
+                <span className="text-[10px] text-ink-soft font-mono">当前: {editUser.avatarKey}</span>
+              </label>
+              <div className="grid grid-cols-6 gap-1.5 max-h-32 overflow-y-auto p-2 bg-paper/70 rounded-[8px] border border-edge/60">
+                {VOXEL_AVATAR_LIST.map((avatar) => {
+                  const isSelected = editUser.avatarKey === avatar.id
+                  return (
+                    <button
+                      key={avatar.id}
+                      type="button"
+                      onClick={() => setEditUser({ ...editUser, avatarKey: avatar.id })}
+                      className={`p-1 rounded-md border transition-all cursor-pointer flex items-center justify-center ${
+                        isSelected
+                          ? 'bg-tint/80 border-primary ring-1 ring-primary/30 scale-105 shadow-xs'
+                          : 'bg-card border-edge/60 hover:border-primary/40'
+                      }`}
+                      title={avatar.name}
+                    >
+                      <VoxelAvatar avatarKey={avatar.id} size={28} />
+                    </button>
+                  )
+                })}
+              </div>
+            </div>
+
+            {/* 2. 昵称 */}
+            <label className="flex flex-col gap-1 text-xs font-normal text-ink">
+              <span>玩家昵称</span>
+              <input
+                value={editUser.name}
+                maxLength={16}
+                onChange={e => setEditUser({ ...editUser, name: e.target.value })}
+                className="px-3 py-2 rounded-md bg-paper/80 border border-edge/80 text-ink outline-none focus:border-primary font-normal"
+              />
+            </label>
+
+            {/* 3. 邮箱 (只读展示) */}
+            <label className="flex flex-col gap-1 text-xs font-normal text-ink">
+              <span>注册邮箱 (不可更改)</span>
+              <input
+                disabled
+                value={editUser.user.email}
+                className="px-3 py-2 rounded-md bg-warm/50 border border-edge/60 text-ink-soft font-mono cursor-not-allowed text-xs"
+              />
+            </label>
+
+            {/* 4. 重置密码 */}
+            <label className="flex flex-col gap-1 text-xs font-normal text-ink">
+              <span className="flex items-center justify-between">
+                <span>重置登录密码</span>
+                <span className="text-[10px] text-ink-soft">不修改请留空 (至少8位)</span>
+              </span>
+              <input
+                type="password"
+                value={editUser.password}
+                placeholder="输入新密码将直接覆盖原有密码"
+                onChange={e => setEditUser({ ...editUser, password: e.target.value as any })}
+                className="px-3 py-2 rounded-md bg-paper/80 border border-edge/80 text-ink outline-none focus:border-primary font-normal"
+              />
+            </label>
+
+            {/* 5. 权限与状态 */}
+            {editUser.user.id !== currentUser?.id && (
+              <>
+                <div className="flex items-center justify-between p-2.5 bg-paper/70 rounded-[8px] border border-edge/60">
+                  <div className="flex flex-col">
+                    <span className="text-xs font-normal text-ink">超级管理员权限</span>
+                    <span className="text-[10px] text-ink-soft">开启后拥有后台管理权限</span>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={editUser.role === 'admin'}
+                    onChange={e => setEditUser({ ...editUser, role: e.target.checked ? 'admin' : 'user' })}
+                    className="w-4 h-4 text-primary cursor-pointer"
+                  />
+                </div>
+
+                <div className="flex items-center justify-between p-2.5 bg-paper/70 rounded-[8px] border border-edge/60">
+                  <div className="flex flex-col">
+                    <span className="text-xs font-normal text-ink">账号启用状态</span>
+                    <span className="text-[10px] text-ink-soft">禁用后立即登出且禁止登录</span>
+                  </div>
+                  <input
+                    type="checkbox"
+                    checked={editUser.enabled}
+                    onChange={e => setEditUser({ ...editUser, enabled: e.target.checked })}
+                    className="w-4 h-4 text-primary cursor-pointer"
+                  />
+                </div>
+              </>
+            )}
+
+            <div className="flex items-center justify-end gap-2 pt-2 border-t border-edge/60">
+              <Button variant="outline" size="sm" pill={false} onClick={() => setEditUser(null)} className="rounded-md">取消</Button>
+              <Button variant="primary" size="sm" pill={false} onClick={saveUserEdit} className="rounded-md">保存修改</Button>
+            </div>
+          </div>
         </div>
       )}
 
