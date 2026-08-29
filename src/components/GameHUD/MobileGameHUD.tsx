@@ -44,10 +44,14 @@ export const MobileGameHUD: React.FC<MobileGameHUDProps> = ({
   const displayPlayers = drawerPlayer ? [drawerPlayer, ...otherPlayers] : [...players].sort((a, b) => b.score - a.score)
   const topThree = displayPlayers.slice(0, 3)
 
+  // 最新的快捷气泡（显示在头像堆叠上方）
+  const bubbles = Object.values(activeChatBubbles)
+  const latestBubble = bubbles.length ? bubbles.reduce((a, b) => (b.timestamp >= a.timestamp ? b : a)) : null
+
   return (
     <div className="absolute inset-0 z-30 pointer-events-none">
       {/* 右上角：倒计时 + 头像堆叠 + 展开积分榜（下移到 Excalidraw 右侧图标之下） */}
-      <div className="absolute top-14 right-3 flex flex-col items-end gap-1.5 pointer-events-auto max-w-[45vw]">
+      <div className="absolute top-24 right-3 flex flex-col items-end gap-1.5 pointer-events-auto max-w-[45vw]">
         {/* 倒计时胶囊（小巧、不加粗，不与顶部工具栏错位） */}
         <div className="bg-card/85 backdrop-blur-md border border-edge/60 rounded-md px-2.5 py-1 shadow-xs select-none">
           <span
@@ -58,6 +62,13 @@ export const MobileGameHUD: React.FC<MobileGameHUDProps> = ({
             {formatTime(gameState.timeLeft)}
           </span>
         </div>
+
+        {/* 快捷气泡（显示在头像堆叠上方） */}
+        {latestBubble && (
+          <div className="bg-ink text-white text-[10px] font-normal px-2.5 py-1 rounded-full shadow-sm animate-in fade-in max-w-[160px] truncate">
+            {latestBubble.text}
+          </div>
+        )}
 
         {/* 头像堆叠（最多3个） */}
         <button

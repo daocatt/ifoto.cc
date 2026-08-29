@@ -87,13 +87,7 @@ export const ExcalidrawBoard: React.FC<ExcalidrawBoardProps> = React.memo(
 
         {/* 隐藏外部素材库、手抓工具、帮助图标、图片上传、AI 生成等无关项 */}
         <style>{`
-          /* 移动端优化：顶部工具栏紧凑排布，不额外下沉以免与右侧图标错位 */
-          @media (max-width: 768px) {
-            .excalidraw .App-toolbar-content {
-              padding: 2px !important;
-              gap: 2px !important;
-            }
-          }
+          /* 顶部工具栏沿用 Excalidraw 原生布局（不再覆盖 padding，保持与左侧汉堡位对齐） */
           .excalidraw-custom-wrapper .ToolIcon_type_diamond,
           .excalidraw-custom-wrapper .ToolIcon_type_image,
           .excalidraw-custom-wrapper .ToolIcon_type_frame,
