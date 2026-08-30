@@ -19,6 +19,7 @@ out/
 .env.test.local
 .env.production.local
 !.env.example
+certs/
 
 # Logs and Run-time Data
 *.log
